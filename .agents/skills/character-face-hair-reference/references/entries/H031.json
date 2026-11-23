@@ -1,0 +1,34 @@
+{
+  "id": "H031",
+  "type": "hairstyle",
+  "group": "男性 · 现代与动漫潮流",
+  "gender": "男性",
+  "era": "现代/成熟精英",
+  "name": "两鬓霜白大背头",
+  "en_name": "Mature Silver-Templed Swept-Back Hair",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "饱满成熟额角发际线 + 向后自然梳拢微浪 + 两鬓清晰自然斑白",
+  "formula_slots_ref_only": {
+    "color": "乌黑底色配两鬓自然霜白 (Salt-and-pepper temples)",
+    "texture": "干爽微硬成熟质感",
+    "noun": "成熟两鬓霜白后梳短发",
+    "motion": "发际线自然微后移显真实阅历，稳重有压迫感"
+  },
+  "prompt_en_ref_only": "mature men's swept-back hair with natural salt-and-pepper graying temples, authentic receding hairline, authoritative presence",
+  "prompt_zh_ref_only": "成熟自然的向后微浪梳发，两鬓点缀真实斑白霜丝与微后移发际线，尽显中年重臣、父辈或商界大佬威仪",
+  "suggested_bones": [
+    "B003",
+    "B013",
+    "B017",
+    "B021"
+  ],
+  "svg_file": "assets/hairs/H031.svg",
+  "svg_params": {
+    "shape": "male_silver_back",
+    "accent": "#475569",
+    "gender": "男性"
+  }
+}

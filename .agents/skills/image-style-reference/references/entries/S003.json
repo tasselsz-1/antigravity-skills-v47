@@ -1,0 +1,21 @@
+{
+  "category": "手绘",
+  "slug": "pencil-sketch",
+  "name": "石墨素描",
+  "style_prompt_zh": "石墨铅笔，方向性排线塑造体积，黑白灰层次分明，轮廓虚实变化，背景简化",
+  "reference_image": "assets/pencil-sketch.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/pencil-sketch.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/pencil-sketch.webp",
+  "source_title": "石墨铅笔素描",
+  "source_original_prompt_zh": "将附带照片转换为绘制在暖白粗纹纸上的精细石墨铅笔肖像。采用腰部以上构图、探寻式轮廓、HB结构线、层叠的2B与6B排线、核心阴影中的交叉排线、擦抹过渡、可塑橡皮提亮，以及来自左侧窗户的定向光。将姿势和表情调整为安静的观察式坐姿。通过脸型、黑色长发和碎花连衣裙保持她的辨识度，但将包括脸部、眼睛和皮肤在内的整个人物，只用石墨痕迹与纸面明度重绘；不得出现摄影质感皮肤或粘贴式写实脸。让老街淡化为浅色透视线。以灰度输出竖版 2:3，不得出现颜色、文字、签名或水印。",
+  "source_negative_prompt_zh": "摄影质感脸部，粘贴式写实脸，墨线轮廓，炭笔色块，彩色铅笔，水彩晕染，平滑喷枪效果，塑料皮肤，完整渲染的背景，强烈数字噪点，文字，签名，水印",
+  "sha256": "76ace1da6e2ca85671a1412c9fd75d1c059ac7a37d0a8892b719554d89b4787b",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S003"
+}

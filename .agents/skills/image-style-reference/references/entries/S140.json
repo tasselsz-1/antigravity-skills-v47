@@ -1,0 +1,50 @@
+{
+  "id": "S140",
+  "category": "成熟商业·特色工艺",
+  "slug": "commercial-style-medieval-illuminated",
+  "name": "中世纪泥金手抄本（真羊皮纸与金叶压花画法）",
+  "aliases": [
+    "凯尔经手抄",
+    "泥金画法",
+    "MEDIEVAL ILLUMINATED"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "欧洲中世纪修道院泥金手抄本艺术（Illuminated Manuscript）；泛黄带有天然毛孔的羊皮纸基底，铁胆墨水羽毛笔勾勒严整轮廓；24K打磨真金叶反光与昂贵青金石群青平涂，周围环绕繁复几何藤蔓花纹，神圣庄严",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "中世纪泥金手抄本（真羊皮纸与金叶压花画法）",
+  "source_original_prompt_en": "commercial-style-medieval-illuminated",
+  "summary": "人类手抄本时代的艺术结晶：真金箔与羊皮纸构筑的神秘史诗感。",
+  "visual_genes": {
+    "笔": "羽毛笔精细黑墨勾线，繁密交织的凯尔特结与植物藤蔓",
+    "光": "平面装饰光，利用打磨真金叶在不同光线下耀眼反光",
+    "色": "群青蓝、朱砂红、孔雀绿搭配奢华纯金，羊皮纸米黄温润底",
+    "质": "老旧羊皮纸毛孔肌理、金箔微小裂纹浮凸、古老植物颜料",
+    "镜": "全平面无透视二维装饰构图，外带规整的四方装饰花框"
+  },
+  "palette": [
+    "#0D2040",
+    "#990000",
+    "#D4AF37",
+    "#1F4E3B",
+    "#EDE0C4"
+  ],
+  "use_cases": [
+    "史诗奇幻世界观序章",
+    "古老预言书与圣典揭秘",
+    "塔罗与神秘学短片"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

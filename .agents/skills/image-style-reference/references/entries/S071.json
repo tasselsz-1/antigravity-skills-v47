@@ -1,0 +1,57 @@
+{
+  "id": "S071",
+  "category": "成熟商业·日漫与二游",
+  "slug": "cinematic-animecity",
+  "name": "今敏式都市心理悬疑（精密写实建筑透视与荧光灯镜像分割法）",
+  "aliases": [
+    "都市心理",
+    "银幕画风志11",
+    "URBAN PSYCHE"
+  ],
+  "style_prompt_zh": "日式成人都市心理悬疑动画画法，精密冷峻的建筑写实透视线稿搭配略微简化的写实骨相人物；夜间便利店惨白荧光灯、钠黄路灯与品红霓虹构成冷调多光源照明；大量运用湿滑路面、玻璃幕墙与后视镜进行几何分割构图与镜像折射，制造强烈心理疏离感",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/国漫电影感画风清单.html",
+  "source_snapshot": "references/sources/cinematic-2026-10-30/国漫电影感画风清单.html",
+  "source_title": "都市心理",
+  "source_original_prompt_zh": "日式都市心理动画，精密线条写实背景，霓虹雨夜，青灰与品红，玻璃幕墙反射与分割，荧光灯冷调，重复镜像构图，广角畸变，2.39:1，电影感",
+  "source_original_prompt_en": "japanese urban psychological animation, precise linework realistic background, neon rainy night, cyan-grey and magenta, glass curtain wall reflections cutting the figure, fluorescent cold light, repetitive mirrored composition, wide-angle distortion, 2.39:1, cinematic",
+  "source_negative_prompt_zh": "温暖阳光，手绘水粉，低饱和，自然风景，萌系角色",
+  "visual_genes": {
+    "笔": "精密线条，背景近乎写实，人物略简化",
+    "光": "霓虹与荧光灯，冷调，反光面多",
+    "色": "青灰、品红、钠黄，低明度与高明度反差",
+    "质": "玻璃幕墙、雨水、招牌、电视雪花",
+    "镜": "广角畸变，镜面反射，重复与对称构图"
+  },
+  "palette": [
+    "#0A0E14",
+    "#1F3B4D",
+    "#3E7C8C",
+    "#C2185B",
+    "#E8C547"
+  ],
+  "use_cases": [
+    "雨夜街口",
+    "镜屋",
+    "电视监控"
+  ],
+  "tags": [
+    "日漫",
+    "都市",
+    "心理",
+    "霓虹",
+    "悬疑"
+  ],
+  "summary": "精密线条画出的写实都市，配冷调霓虹与荧光灯。玻璃幕墙把人物切成碎片，重复的构图让人分不清现实与幻觉。它适合悬疑、心理与身份题材。",
+  "reference_coordinates": "参考坐标 · 未麻的部屋 · 攻壳机动队",
+  "sha256": null,
+  "image_size": null,
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页面未提供此画风样图；不得宣称已按图参考。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。",
+  "optional_effects_note": "雨夜、广角畸变、重复镜像按剧情选择，不把反射当成身份复制。",
+  "license_note": "源页注明样图来自公开模型示例，版权归原作者，仅用于本地画风观察；未核实图片或模型商业许可。",
+  "tier": "mature_commercial",
+  "original_short_name": "都市心理"
+}

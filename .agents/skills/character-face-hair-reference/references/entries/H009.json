@@ -1,0 +1,33 @@
+{
+  "id": "H009",
+  "type": "hairstyle",
+  "group": "女性 · 现代与动漫幻想",
+  "gender": "女性",
+  "era": "国潮/动漫",
+  "name": "双丸子头 / 哪吒头",
+  "en_name": "Double High Hair Buns",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "头顶两侧对称圆润发包 + 轻盈胎毛碎发 + 可配丝带或流苏",
+  "formula_slots_ref_only": {
+    "color": "漆黑 / 深棕 / 红黑挑染",
+    "texture": "饱满紧实盘发配软萌碎发",
+    "noun": "对称高双丸子头",
+    "motion": "额角细碎绒发随微风颤动，俏皮利落"
+  },
+  "prompt_en_ref_only": "symmetrical double high hair buns, playful wispy forehead strands, energetic silhouette",
+  "prompt_zh_ref_only": "头顶左右对称盘起饱满双丸子头，耳际自然散落轻盈碎发，灵动俏皮辨识度高",
+  "suggested_bones": [
+    "B006",
+    "B007",
+    "B012"
+  ],
+  "svg_file": "assets/hairs/H009.svg",
+  "svg_params": {
+    "shape": "double_buns",
+    "accent": "#f97316",
+    "gender": "女性"
+  }
+}

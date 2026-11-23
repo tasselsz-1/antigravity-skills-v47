@@ -1,0 +1,21 @@
+{
+  "category": "动漫",
+  "slug": "ghibli-hand-painted",
+  "name": "手绘动画电影",
+  "style_prompt_zh": "温暖手绘动画，柔和简化人物，水彩与水粉背景，自然环境光，轻盈色彩，富有生活感的细节",
+  "reference_image": "assets/ghibli-hand-painted.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/ghibli-hand-painted.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/ghibli-hand-painted.webp",
+  "source_title": "手绘动画电影",
+  "source_original_prompt_zh": "将附带照片转换为温暖的手绘动画电影场景。绘制柔和圆润的轮廓、适度简化的动漫五官、哑光水彩与水粉色彩、纸张纹理、自然衣褶，并在漫射晨光下使用苔藓绿、陶土色、米白和天蓝。将姿势和表情调整为轻松、好奇且适合家庭动画的表演。通过脸型、黑色长发和碎花连衣裙保持她的辨识度，但将包括脸部、眼睛和皮肤在内的整个人物，以同样柔和的手绘动画语言重绘；不得出现摄影质感皮肤或粘贴式写实脸。把老街、灯笼、植物和海面画成亲切而有生活气息的背景。输出竖版 2:3，不得出现文字、标志或水印。",
+  "source_negative_prompt_zh": "摄影质感脸部，粘贴式写实脸，光滑3D角色，锐利矢量边缘，霓虹色，戏剧性动作姿势，冷清建筑，照片级写实皮肤，硬聚光，排版文字，标志，水印",
+  "sha256": "ea89335cfc8dbd4703a0f975333a3ec0475f2c2f1aceda90ece71924e1a5ab44",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S025"
+}

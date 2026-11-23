@@ -1,0 +1,33 @@
+{
+  "id": "H039",
+  "type": "hairstyle",
+  "group": "男性 · 古风束冠与史诗奇幻",
+  "gender": "男性",
+  "era": "历史/高僧苦行",
+  "name": "写实戒疤/青茬光头（全露颅骨）",
+  "en_name": "Authentic Shaved Monk Head with Stubble",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "完全呈现颅骨顶骨/额骨/枕骨真实起伏 + 极浅青灰色剃发发茬",
+  "formula_slots_ref_only": {
+    "color": "极浅青灰短剃茬",
+    "texture": "真实头皮纹理、毛孔与轻微风霜晒痕",
+    "noun": "写实青茬光头",
+    "motion": "全无遮挡，头骨解剖比例与光影立体度一览无余"
+  },
+  "prompt_en_ref_only": "authentic shaved monk head showing cranial bone contour and subtle bluish hair stubble, weathered natural scalp skin texture",
+  "prompt_zh_ref_only": "全露真实颅骨起伏与极浅青灰剃发发茬，保留头皮真实光影与岁月肌理，绝非塑料反光卤蛋头",
+  "suggested_bones": [
+    "B019",
+    "B020",
+    "B024"
+  ],
+  "svg_file": "assets/hairs/H039.svg",
+  "svg_params": {
+    "shape": "ancient_m_monk",
+    "accent": "#57534e",
+    "gender": "男性"
+  }
+}

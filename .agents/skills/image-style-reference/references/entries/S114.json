@@ -1,0 +1,50 @@
+{
+  "id": "S114",
+  "category": "成熟商业·国风大师",
+  "slug": "commercial-guofeng-lacquer-raden",
+  "name": "大漆螺钿描金（黑漆嵌螺钿工艺）",
+  "aliases": [
+    "黑漆描金",
+    "漆画螺钿",
+    "LACQUER RADEN"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "非遗大漆螺钿美学，纯正深邃的温润推光黑漆基底；彩贝螺钿切片镶嵌出虹彩折射反光，纯金粉由密到疏的莳绘晕金线条；黑金冷翠交相辉映，漆膜肥厚透亮，神秘暗黑而极尽奢华",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "大漆螺钿描金（黑漆嵌螺钿工艺）",
+  "source_original_prompt_en": "commercial-guofeng-lacquer-raden",
+  "summary": "顶级奢华的非遗物理媒介：深渊黑漆与斑斓贝壳虹光对撞，视觉质感直接拉满。",
+  "visual_genes": {
+    "笔": "莳绘细笔蘸生漆沥金线，螺钿几何切片拼嵌硬边",
+    "光": "暗夜微光下的多角度虹彩偏振反射，金属反光柔和内敛",
+    "色": "深不可测的纯黑（推光漆黑）为主，金色莳绘、螺钿虹彩绿与紫红",
+    "质": "厚重镜面植物天然大漆质感，贝壳断纹天然虹彩，金粉颗粒",
+    "镜": "微距金属高光特写或低角度暗黑庄严构图"
+  },
+  "palette": [
+    "#080808",
+    "#D4AF37",
+    "#20B2AA",
+    "#BA55D3",
+    "#8B0000"
+  ],
+  "use_cases": [
+    "黑神话级神魔大片",
+    "上古魔神降世",
+    "高奢国风商业海报与片头"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

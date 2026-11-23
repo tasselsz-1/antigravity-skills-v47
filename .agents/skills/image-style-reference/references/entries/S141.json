@@ -1,0 +1,50 @@
+{
+  "id": "S141",
+  "category": "成熟商业·特色工艺",
+  "slug": "commercial-style-soviet-constructivist-screen",
+  "name": "构成主义丝网套印海报（粗网目半调与红黑斜角）",
+  "aliases": [
+    "苏联构成主义",
+    "丝网版画海报",
+    "CONSTRUCTIVIST SCREEN"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "早期构成主义与粗网目丝网套印海报艺术；极具煽动力的强劲对角线与斜角冲击构图，粗大半调网点压制沉重黑影；鲜红与纯黑两色厚重丝网油墨套印错位，几何图形切割空间，力量感排山倒海",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "构成主义丝网套印海报（粗网目半调与红黑斜角）",
+  "source_original_prompt_en": "commercial-style-soviet-constructivist-screen",
+  "summary": "最富力量感的平面宣传艺术：斜角几何与红黑油墨压迫，气势如虹。",
+  "visual_genes": {
+    "笔": "锐利粗厚的几何直线与正圆形，全无拖泥带水的曲线修饰",
+    "光": "无真实光源，利用红黑高反差几何光影营造视觉压迫",
+    "色": "极端精简：纯正红旗红、纯重油墨黑、粗糙新闻纸淡米黄",
+    "质": "丝网印刷厚重油墨微凸感、半调粗网点、套印错版边痕",
+    "镜": "低机位极端仰拍斜角透视，如纪念碑般巍峨耸立"
+  },
+  "palette": [
+    "#D63031",
+    "#111111",
+    "#DFE6E9",
+    "#2D3436",
+    "#B71540"
+  ],
+  "use_cases": [
+    "热血革命誓师短剧",
+    "工业硬核科幻口播",
+    "反乌托邦反抗高潮"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

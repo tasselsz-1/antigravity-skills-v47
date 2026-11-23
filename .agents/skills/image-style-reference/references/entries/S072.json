@@ -1,0 +1,57 @@
+{
+  "id": "S072",
+  "category": "成熟商业·欧美与跨文化",
+  "slug": "cinematic-pixar",
+  "name": "皮克斯三维合家欢（柔和丁达尔体积光与皮肤次表面散射补光法）",
+  "aliases": [
+    "皮克斯体积光",
+    "银幕画风志12",
+    "PIXAR VOLUME"
+  ],
+  "style_prompt_zh": "顶级好莱坞三维动画电影渲染工艺，温暖夕阳窗光形成柔和体积光束，搭配青蓝色暗部环境反弹补光；人物皮肤具备细腻真实的次表面散射（SSS）红润透光感，毛发、针织粗布与木纹材质微观结构清晰可信，35mm浅景深焦外光斑圆润自然",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/国漫电影感画风清单.html",
+  "source_snapshot": "references/sources/cinematic-2026-10-30/国漫电影感画风清单.html",
+  "source_title": "皮克斯体积光",
+  "source_original_prompt_zh": "皮克斯式三维动画电影画面，体积光穿过窗户与尘埃，次表面散射皮肤，暖橙主光配青色补光，布料与毛发材质，35mm 中景，浅景深柔和光斑，2.39:1，高完成度电影感",
+  "source_original_prompt_en": "pixar style 3d animated film still, volumetric god rays through window and dust, subsurface scattering skin, warm orange key with teal fill, fabric and fur materials, 35mm medium shot, shallow depth of field with soft bokeh, 2.39:1, polished cinematic",
+  "source_negative_prompt_zh": "笔触，网点，平涂，黑白，颗粒噪点，粗糙边缘",
+  "visual_genes": {
+    "笔": "无笔触，形体由光照与材质定义",
+    "光": "体积光、窗光、暖色反弹光，光源可见",
+    "色": "暖橙主调 + 青色补光，明度高，暗部干净",
+    "质": "布料、毛发、皮肤次表面散射、微尘",
+    "镜": "35mm 中景，浅景深，大量柔和光斑"
+  },
+  "palette": [
+    "#2A1A12",
+    "#8C4A2A",
+    "#D98E4A",
+    "#F2D9A8",
+    "#2E6B7A"
+  ],
+  "use_cases": [
+    "家庭晚餐",
+    "回忆长廊",
+    "尘埃光束"
+  ],
+  "tags": [
+    "欧美",
+    "三维",
+    "体积光",
+    "合家欢",
+    "高完成度"
+  ],
+  "summary": "好莱坞三维动画的工业标准：体积光穿过窗与尘埃，次表面散射让皮肤透出暖意，布料与毛发各有各的软硬。它不炫技，只是把真实调到比真实更讨喜。",
+  "reference_coordinates": "参考坐标 · 寻梦环游记 · 心灵奇旅",
+  "sha256": null,
+  "image_size": null,
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页面未提供此画风样图；不得宣称已按图参考。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。",
+  "optional_effects_note": "窗光、35mm、浅景深为镜头选择，不默认添加尘埃粒子。",
+  "license_note": "源页注明样图来自公开模型示例，版权归原作者，仅用于本地画风观察；未核实图片或模型商业许可。",
+  "tier": "mature_commercial",
+  "original_short_name": "皮克斯体积光"
+}

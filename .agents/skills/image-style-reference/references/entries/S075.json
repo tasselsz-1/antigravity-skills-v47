@@ -1,0 +1,57 @@
+{
+  "id": "S075",
+  "category": "成熟商业·电影大师",
+  "slug": "cinematic-noir",
+  "name": "经典好莱坞黑色电影（百叶窗单一硬光切割死黑与荷兰角湿街反光法）",
+  "aliases": [
+    "黑色电影",
+    "银幕画风志15",
+    "FILM NOIR"
+  ],
+  "style_prompt_zh": "1940年代好莱坞经典黑色电影（Film Noir）摄影法，极端黑白高反差照明，几乎剥离中间灰调；单一硬朗侧逆光穿过百叶窗或门缝，将人物与空间切割为锐利的黑白条纹与死黑剪影；雨夜湿润沥青路面形成高光镜面反射，低角度广角配合微倾荷兰角构图，仅允许极少量叙事血红点睛",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/国漫电影感画风清单.html",
+  "source_snapshot": "references/sources/cinematic-2026-10-30/国漫电影感画风清单.html",
+  "source_title": "黑色电影",
+  "source_original_prompt_zh": "黑色电影画面，黑白高对比，单一硬光，百叶窗条纹投影，浓烟与雨夜湿街，湿润沥青反光，低角度广角，深焦，荷兰角倾斜，胶片颗粒，2.39:1，一点血红",
+  "source_original_prompt_en": "film noir frame, high-contrast black and white, single hard key light, venetian blind shadows, thick smoke and rainy wet street, wet asphalt reflections, low-angle wide lens, deep focus, dutch tilt, film grain, 2.39:1, a single touch of blood red",
+  "source_negative_prompt_zh": "彩色，柔光，平涂，卡通，高饱和，日光",
+  "visual_genes": {
+    "笔": "写实黑白，边缘硬，暗部大面积死黑",
+    "光": "单一硬光，百叶窗/门缝光，强逆光剪影",
+    "色": "黑白灰 + 一点血红，几乎无中间调",
+    "质": "胶片颗粒、烟雾、雨水、湿沥青反光",
+    "镜": "低角度广角，深焦，荷兰角倾斜"
+  },
+  "palette": [
+    "#050505",
+    "#1A1A1A",
+    "#4D4D4D",
+    "#A6A6A6",
+    "#8C1010"
+  ],
+  "use_cases": [
+    "雨夜审讯",
+    "百叶窗独白",
+    "码头交易"
+  ],
+  "tags": [
+    "实验",
+    "黑白",
+    "硬光",
+    "悬疑",
+    "胶片"
+  ],
+  "summary": "单一硬光、百叶窗条纹、浓烟与湿地面。黑白之间只留一点血红。它是最省的画风，也是最电影的画风——因为观众会自动补全黑暗里的东西。",
+  "reference_coordinates": "参考坐标 · 罪恶之城 · 马耳他之鹰",
+  "sha256": null,
+  "image_size": null,
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页面未提供此画风样图；不得宣称已按图参考。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。",
+  "optional_effects_note": "胶片颗粒默认关闭；烟雾、荷兰角与红色点睛按剧情选择。",
+  "license_note": "源页注明样图来自公开模型示例，版权归原作者，仅用于本地画风观察；未核实图片或模型商业许可。",
+  "tier": "mature_commercial",
+  "original_short_name": "黑色电影"
+}

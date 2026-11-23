@@ -1,0 +1,63 @@
+{
+  "id": "S067",
+  "category": "成熟商业·国风大师",
+  "slug": "cinematic-dunhuang",
+  "name": "盛唐敦煌飞天岩彩（土红石绿矿物平涂与流线飘带装饰构图法）",
+  "aliases": [
+    "敦煌岩彩",
+    "银幕画风志07",
+    "DUNHUANG MINERAL"
+  ],
+  "style_prompt_zh": "敦煌壁画重彩岩彩画法，以流畅婉转的兰叶描与吴带当风的飘带曲线组织画面节奏；土红、石青、石绿与赭石矿物颜料厚重平涂，依靠局部金箔反光提亮平面装饰空间；保留有序细腻的天然矿石晶体颗粒感，色调温暖沉稳",
+  "reference_image": "assets/cinematic/S067-dunhuang.jpg",
+  "source_page": "http://127.0.0.1:8766/国漫电影感画风清单.html",
+  "source_snapshot": "references/sources/cinematic-2026-10-30/国漫电影感画风清单.html",
+  "source_title": "敦煌岩彩",
+  "source_original_prompt_zh": "敦煌壁画岩彩，土红石青石绿，金箔剥落，壁面龟裂与烟熏痕，飞天飘带，装饰性平面构图，暖调沉稳，矿物颜料颗粒，2.39:1，电影静帧",
+  "source_original_prompt_en": "dunhuang mural mineral color painting, earth red azurite and malachite, flaking gold leaf, cracked wall surface with soot stains, flying apsara ribbons, decorative flat composition, warm restrained palette, mineral pigment granulation, 2.39:1, cinematic still",
+  "source_negative_prompt_zh": "三维渲染，霓虹，光滑表面，现代建筑，冷白光",
+  "visual_genes": {
+    "笔": "壁画平涂，色块边缘有剥落与晕染",
+    "光": "平面装饰光，靠金箔反光提亮",
+    "色": "土红、石青、石绿、金、赭，暖而沉",
+    "质": "壁面龟裂、金箔、矿物颗粒、烟熏痕",
+    "镜": "横向叙事，装饰性构图，飘带引导视线"
+  },
+  "palette": [
+    "#3B1F14",
+    "#9C3B24",
+    "#C97B3C",
+    "#2F6B6B",
+    "#D9B45B"
+  ],
+  "use_cases": [
+    "飞天降临",
+    "本生故事",
+    "洞窟烛光"
+  ],
+  "tags": [
+    "敦煌",
+    "岩彩",
+    "壁画",
+    "金箔",
+    "神话"
+  ],
+  "summary": "土红、石青、石绿、金箔，加上壁面龟裂与剥落。它的电影感不来自镜头，而来自时间的痕迹——好像画面本身已经存在了一千年。适合神话、寓言与轮回题材。",
+  "reference_coordinates": "参考坐标 · 九色鹿 · 敦煌",
+  "sha256": "982fbc1b352f8dfb682feedf0416c1493a59d587488dae33d5645ee463a493da",
+  "image_size": [
+    760,
+    950
+  ],
+  "visual_review": "已查看8图总览：未见明显水印、签名或平台标识；实际调用前需看单张原图并复核。",
+  "reference_limitations": "样图为敦煌服饰人物和装饰背景，人物偏写实；并非完整平面岩彩壁画标准。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。",
+  "optional_effects_note": "龟裂、剥落和烟熏旧化默认关闭，用户明确要求时再启用。",
+  "license_note": "源页注明样图来自公开模型示例，版权归原作者，仅用于本地画风观察；未核实图片或模型商业许可。",
+  "source_image_page": "https://civitai.com/models/45727",
+  "source_sample_prompt_zh": "一张电影静帧：洞窟里的飞天。敦煌壁画岩彩，土红、石青、石绿、金箔，壁面龟裂剥落，带着烟熏的痕迹。飘带横穿画面引导视线。装饰性的平面构图，暖而沉。矿物颜料的颗粒感，2.39:1。",
+  "source_sample_caption": "氛围参考：飞天造型与圆光，色感接近",
+  "tier": "mature_commercial",
+  "original_short_name": "敦煌岩彩"
+}

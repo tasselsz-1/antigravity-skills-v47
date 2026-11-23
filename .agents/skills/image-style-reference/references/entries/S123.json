@@ -1,0 +1,50 @@
+{
+  "id": "S123",
+  "category": "成熟商业·电影大师",
+  "slug": "commercial-cinema-deakins-silhouette",
+  "name": "罗杰·狄金斯（单光源轮廓与大气体积雾）",
+  "aliases": [
+    "狄金斯光影",
+    "自然极简布光",
+    "DEAKINS SILHOUETTE"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "大师罗杰·狄金斯电影布光语言，严苛遵循单一物理自然光源；人物以极为精准利落的暗部剪影切入画面，背景浓烈大气体积雾穿透金黄日落或冷蓝天光；构图极简严谨，视觉主次一目了然，极具叙事厚重感",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "罗杰·狄金斯（单光源轮廓与大气体积雾）",
+  "source_original_prompt_en": "commercial-cinema-deakins-silhouette",
+  "summary": "好莱坞封神级摄影语言：用单一光源和大气雾气构建极度干净有力量的画面。",
+  "visual_genes": {
+    "笔": "轮廓极为清晰的纯黑剪影，边缘带微弱菲涅尔柔和漫射光",
+    "光": "单一大光源（如车灯、火海、窗外晨昏），大面积体积雾丁达尔光束",
+    "色": "极度干净的冷青蓝搭配极度纯净的黄金暖光，色温两极分化",
+    "质": "细腻胶片微粒，空气微尘丁达尔颗粒，湿漉沥青反光",
+    "镜": "黄金分割中心构图，长焦空间压缩或深邃广角纵深"
+  },
+  "palette": [
+    "#050810",
+    "#102A43",
+    "#E28743",
+    "#F4B266",
+    "#223843"
+  ],
+  "use_cases": [
+    "顶级大片开场",
+    "荒野求生孤独独白",
+    "宿命决斗定格帧"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

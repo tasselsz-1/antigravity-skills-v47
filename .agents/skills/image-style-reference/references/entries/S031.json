@@ -1,0 +1,21 @@
+{
+  "category": "三维",
+  "slug": "pixar-style-3d",
+  "name": "三维动画角色",
+  "style_prompt_zh": "原创三维动画角色，富有表现力的比例，圆润清晰造型，柔和物理材质，细腻面部表情，自然全局光照",
+  "reference_image": "assets/pixar-style-3d.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/pixar-style-3d.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/pixar-style-3d.webp",
+  "source_title": "3D动画电影角色",
+  "source_original_prompt_zh": "将附上的照片转换为精致的家庭向动画电影3D角色肖像。塑造柔和圆润的面部转折、略微放大且富有表现力的眼睛、梳理整齐的发丝、柔软布料褶皱、风格化比例、基于物理的材质和细微次表面散射。采用宽广温暖的主光与冷色轮廓光，营造乐观的电影暖意。通过脸型、黑色长发和碎花太阳裙线索保持她可辨识，但包括脸部、眼睛和皮肤在内的每个部分都要重建为同一种风格化3D角色；不要摄影质感皮肤，也绝不粘贴写实面孔。让她姿态放松挺拔，神情温和且闭口不笑。将环境重建为简化的童话书街道。输出竖版2:3，不要文字、标志或水印。",
+  "source_negative_prompt_zh": "平面赛璐珞着色，照片级写实的成人比例，玻璃般皮肤，斗鸡眼，僵硬头发，摄影面孔，粘贴的写实面孔，人物身份被改变，多余手指，文字，标志，水印",
+  "sha256": "0bfde8bb0fc7e44d8cbec29e60ee2e7dc8a0037dfca1d7bdff2aacd5822f823b",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S031"
+}

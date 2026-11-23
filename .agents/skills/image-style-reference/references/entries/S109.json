@@ -1,0 +1,50 @@
+{
+  "id": "S109",
+  "category": "成熟商业·国风大师",
+  "slug": "commercial-guofeng-qianli-jiangshan",
+  "name": "北宋青绿重彩（千里江山法）",
+  "aliases": [
+    "青绿山水",
+    "金碧山水",
+    "QIANLI JIANGSHAN"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "北宋院体青绿重彩，绢本赭石温底，工整铁线勾勒形体并施小斧劈皴；石青与石绿矿物颜料多层厚罩，山石脊线与衣褶受光处以细泥金复勾；矿物哑光微粒质感与沉稳冷青辉映，气韵高古磅礴，空间层次开阔",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "北宋青绿重彩（千里江山法）",
+  "source_original_prompt_en": "commercial-guofeng-qianli-jiangshan",
+  "summary": "真正脱离廉价网游感的国画大宗师级技法：勾斫皴染俱全，以天然石青石绿矿物厚涂与泥金复勾为核心。",
+  "visual_genes": {
+    "笔": "工整铁线描骨架，山石辅以紧密小斧劈皴，脊线泥金复勾",
+    "光": "无明显强直射光，绢本散光漫射，靠矿物纯度与泥金反光提亮",
+    "色": "深赭石温润绢底，群青、孔雀石绿厚重覆盖，局部点缀朱砂与金线",
+    "质": "天然矿物细研颗粒感，熟绢紧密织纹，金属泥金微光，无现代高光",
+    "镜": "大全景散点透视或高古平远长卷，气势开阔雄浑"
+  },
+  "palette": [
+    "#1B3B48",
+    "#2D6A4F",
+    "#B38B3F",
+    "#8C3B24",
+    "#D2B48C"
+  ],
+  "use_cases": [
+    "仙侠大剧宏大场景",
+    "史诗权谋朝堂开篇",
+    "高端国潮品牌视觉"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

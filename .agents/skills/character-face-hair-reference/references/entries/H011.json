@@ -1,0 +1,34 @@
+{
+  "id": "H011",
+  "type": "hairstyle",
+  "group": "女性 · 现代与动漫幻想",
+  "gender": "女性",
+  "era": "现代/职场/古典",
+  "name": "慵懒低盘丸子头",
+  "en_name": "Low Messy Chignon Bun",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "后枕低位松弛盘结 + 纤细脖颈完全露出 + 几缕自然垂落发丝",
+  "formula_slots_ref_only": {
+    "color": "自然黑 / 冷茶棕 / 银灰",
+    "texture": "柔和哑光轻蓬松质感",
+    "noun": "法式慵懒低盘丸子头",
+    "motion": "几缕碎发散落颈侧与脸颊边缘，松弛从容"
+  },
+  "prompt_en_ref_only": "low messy chignon hair bun at nape, loose face-framing strands, refined effortless updo",
+  "prompt_zh_ref_only": "发丝在后颈低位松弛盘成慵懒丸子髻，露出修长颈线，脸颊边零星碎发温柔随性",
+  "suggested_bones": [
+    "B002",
+    "B003",
+    "B005",
+    "B008"
+  ],
+  "svg_file": "assets/hairs/H011.svg",
+  "svg_params": {
+    "shape": "low_bun",
+    "accent": "#64748b",
+    "gender": "女性"
+  }
+}

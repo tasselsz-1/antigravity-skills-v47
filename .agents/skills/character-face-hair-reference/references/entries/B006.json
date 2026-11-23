@@ -1,0 +1,56 @@
+{
+  "id": "B006",
+  "type": "bone_structure",
+  "group": "基础骨相底盘",
+  "name": "幼态短中庭骨相",
+  "en_name": "Youthful Short Mid-Face Bone Structure",
+  "aesthetic_tier": "常规/少年少女",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "3. 面部细节特征",
+  "proportions": {
+    "upper": 0.37,
+    "mid": 0.3,
+    "lower": 0.33,
+    "jaw_angle_deg": 130,
+    "profile": "饱满微凸"
+  },
+  "anatomical_landmarks": [
+    "饱满高额结节 (Full frontal bossing)",
+    "偏短中庭 (Short mid-face)",
+    "圆润短小下巴"
+  ],
+  "formula_slots_ref_only": {
+    "eye": "圆润大眼、眼位略靠中下",
+    "brow": "眉骨平缓、眉眼间距舒展",
+    "nose": "小巧微翘鼻梁、鼻头柔和圆润",
+    "lips": "短人中、饱满微翘小嘴",
+    "jaw": "下颌线圆润柔和、双颊带自然胶原感"
+  },
+  "prompt_en_ref_only": "youthful short mid-face, full rounded forehead, soft small chin, gentle rounded jawline, innocent natural proportions",
+  "prompt_zh_ref_only": "上庭饱满开阔，中下庭偏短显幼态朝气，下巴圆巧柔和，颊部有自然饱满感",
+  "suitable_roles": [
+    "元气少年少女",
+    "童真主角",
+    "软萌配角",
+    "青涩学徒"
+  ],
+  "linked_anatomy_plates": [
+    "A001",
+    "A003"
+  ],
+  "anti_copy_note": "成年角色慎用过度幼态比例，避免比例失调或低龄化违和。",
+  "svg_file": "assets/bones/B006.svg",
+  "svg_params": {
+    "face_w": 52,
+    "cheek_w": 54,
+    "jaw_w": 40,
+    "chin_y": 138,
+    "chin_w": 17,
+    "brow_depth": 3,
+    "mid_ratio": 0.3,
+    "accent": "#f43f5e",
+    "tag": "短中庭幼态"
+  }
+}

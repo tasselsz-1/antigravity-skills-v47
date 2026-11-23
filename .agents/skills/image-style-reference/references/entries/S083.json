@@ -1,0 +1,58 @@
+{
+  "id": "S083",
+  "category": "成熟商业·国漫与实验视觉",
+  "slug": "commercial-3d-donghua",
+  "name": "玄幻修仙3D国漫（高精度PBR丝绸金属与次表面散射体积光法）",
+  "aliases": [
+    "3D 国漫",
+    "3D DONGHUA"
+  ],
+  "style_prompt_zh": "主流大制作三维玄幻国漫（《凡人修仙传》《完美世界》电影级番剧）渲染工艺；采用东方审美的俊朗建模骨相与真实皮肤次表面散射（SSS），彻底消除塑胶死白感；刺绣暗纹丝绸、精雕鎏金护甲、寒铁兵刃与微风吹拂的成束飘逸长发具备高精度PBR物理反射，搭配仙气体积光与流光粒子",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/styles.html",
+  "source_snapshot": "references/sources/commercial-2026-11-01/styles.html",
+  "source_title": "3D 国漫",
+  "source_original_prompt_en": "chinese 3d donghua, realistic proportions, detailed fabric and metal, fantasy",
+  "summary": "国内3D玄幻番剧工业标杆：高颜值建模骨相配顶级丝绸金属PBR物理质感。",
+  "use_cases": [
+    "修仙玄幻大男主短剧",
+    "宗门圣女/仙帝登场",
+    "法宝对轰仙侠大片"
+  ],
+  "reference_coordinates": "《斗罗大陆》《完美世界》",
+  "source_position": "main",
+  "source_position_note": "源作者的主流/细分/实验判断，未经独立市场数据验证。",
+  "related_entries": [],
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页未提供图片，代表作品名称仅作来源坐标，不等于已查看作品。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。",
+  "optional_effects_note": "颗粒、脏污、沙尘、旧化、光斑与抖动不默认继承；规则网点、像素与必要媒介纹理可受控保留。",
+  "license_note": "用户指定本地文本页面；未发现明确授权声明，不沿用其他来源的CC0许可。",
+  "sha256": null,
+  "image_size": null,
+  "substyles": [
+    {
+      "id": "S083-A",
+      "name": "柔光唯美三维国漫",
+      "entry": "references/entries/S083-A.json",
+      "status": "特写已确认；全身、对话、中远景待审核"
+    }
+  ],
+  "tier": "mature_commercial",
+  "original_short_name": "3D 国漫",
+  "visual_genes": {
+    "笔": "无二维描边，依靠高精度法线贴图、刺绣凹凸微浮雕与凌厉剑气光效定义边缘",
+    "光": "大光比电影级三点布光：轮廓光勾勒飘逸仙袍与发丝，体积光束穿透云海大殿",
+    "色": "玄黑、帝王金、仙家青白与高饱和灵力光效（冰蓝/紫金/赤炎）冷暖分明",
+    "质": "丝绸各向异性高光、古铜鎏金金属磨损细节、通透白玉配饰与真实皮肤微纹理",
+    "镜": "85mm特写浅景深凸显绝美骨相，或大广角航拍展现修仙宗门宏伟气象"
+  },
+  "palette": [
+    "#0E131F",
+    "#1F2D4A",
+    "#C59B27",
+    "#38BDF8",
+    "#F1F5F9"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "S085",
+  "category": "商业画风·国漫",
+  "slug": "commercial-oriental-impasto",
+  "name": "东方厚涂",
+  "aliases": [
+    "ORIENTAL IMPASTO"
+  ],
+  "style_prompt_zh": "东方厚涂，清楚可见且有方向的绘画笔触，硬边高光与暖色暗部形成层次，皮肤和物体通过笔触过渡塑形，材质干净",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/styles.html",
+  "source_snapshot": "references/sources/commercial-2026-11-01/styles.html",
+  "source_title": "东方厚涂",
+  "source_original_prompt_en": "oriental impasto, visible brushstrokes, hard specular, warm palette",
+  "summary": "可见笔触、硬边高光、暖调压暗部，皮肤有笔触过渡",
+  "use_cases": [
+    "神话",
+    "热血",
+    "古风"
+  ],
+  "reference_coordinates": "《哪吒之魔童降世》《姜子牙》",
+  "source_position": "main",
+  "source_position_note": "源作者的主流/细分/实验判断，未经独立市场数据验证。",
+  "related_entries": [
+    "S062"
+  ],
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页未提供图片，代表作品名称仅作来源坐标，不等于已查看作品。",
+  "prompt_status": "根据源页特点通用化改写，未做出图实测。",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。",
+  "optional_effects_note": "颗粒、脏污、沙尘、旧化、光斑与抖动不默认继承；规则网点、像素与必要媒介纹理可受控保留。",
+  "license_note": "用户指定本地文本页面；未发现明确授权声明，不沿用其他来源的CC0许可。",
+  "sha256": null,
+  "image_size": null
+}

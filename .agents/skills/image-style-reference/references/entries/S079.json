@@ -1,0 +1,50 @@
+{
+  "id": "S079",
+  "category": "成熟商业·日漫与二游",
+  "slug": "commercial-slice-of-life",
+  "name": "京阿尼微表情日常（极细柔化线稿与逆光发丝透光法）",
+  "aliases": [
+    "京都日常",
+    "SLICE OF LIFE"
+  ],
+  "style_prompt_zh": "京都动画（KyoAni）级细腻日常动画画法，采用极细且染入环境棕灰色的柔化收锋线稿；面部五官克制清秀，重在刻画瞳孔多层通透高光、眼睑微红与脸颊微妙红晕；柔和午后阳光形成半透明逆光发丝边缘与空气感柔光晕染（Bloom），室内外生活道具细节考究真实",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/styles.html",
+  "source_snapshot": "references/sources/commercial-2026-11-01/styles.html",
+  "source_title": "京都日常",
+  "source_original_prompt_en": "kyoani style, fine lineart, soft coloring, backlit hair, daily life",
+  "summary": "用最细腻的瞳孔光感、逆光发丝和微表情打动人心，治愈与青春题材的不二之选。",
+  "use_cases": [
+    "青春校园暗恋短剧",
+    "治愈系日常情感番",
+    "高好感度女性向角色特写"
+  ],
+  "reference_coordinates": "《轻音少女》《冰菓》",
+  "source_position": "main",
+  "source_position_note": "源作者的主流/细分/实验判断，未经独立市场数据验证。",
+  "related_entries": [],
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页未提供图片，代表作品名称仅作来源坐标，不等于已查看作品。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。",
+  "optional_effects_note": "颗粒、脏污、沙尘、旧化、光斑与抖动不默认继承；规则网点、像素与必要媒介纹理可受控保留。",
+  "license_note": "用户指定本地文本页面；未发现明确授权声明，不沿用其他来源的CC0许可。",
+  "sha256": null,
+  "image_size": null,
+  "tier": "mature_commercial",
+  "original_short_name": "京都日常",
+  "visual_genes": {
+    "笔": "极细且带温和收锋的彩色融合线稿，发梢与睫毛分束精细柔和",
+    "光": "温暖通透的窗边侧逆光，发丝边缘呈现半透明琥珀金透光与柔和光晕",
+    "色": "明亮干净的奶油白、樱花粉、浅空蓝与温暖木质原色，暗部绝不发黑",
+    "质": "清澈多层玻璃质感瞳孔、柔软校服百褶裙布料、教室木桌与阳光微尘",
+    "镜": "50mm/85mm浅景深生活化平视机位，聚焦眼神颤动与指尖微动作叙事"
+  },
+  "palette": [
+    "#2E3A46",
+    "#6D8299",
+    "#F2D7D5",
+    "#F9E79F",
+    "#FDFEFE"
+  ]
+}

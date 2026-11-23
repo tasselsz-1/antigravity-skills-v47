@@ -1,0 +1,34 @@
+{
+  "id": "H007",
+  "type": "hairstyle",
+  "group": "女性 · 现代与动漫幻想",
+  "gender": "女性",
+  "era": "现代/职场/科幻",
+  "name": "一刀切齐短发 / 波波头",
+  "en_name": "Sleek Blunt Bob Cut",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "齐下颌线锋利水平底边 + 贴合头型几何直切轮廓",
+  "formula_slots_ref_only": {
+    "color": "冷乌黑 / 铂金灰 / 银白",
+    "texture": "哑光偏光直顺、发尾锐利整齐",
+    "noun": "一刀切齐下颌短波波头",
+    "motion": "发尾如刀裁般整齐，微微随转头轻扫下颌线"
+  },
+  "prompt_en_ref_only": "sleek blunt bob cut, chin-length razor-straight hair, crisp geometric edge",
+  "prompt_zh_ref_only": "齐下颌线一刀切直短发，发尾锋利整齐，紧贴头骨勾勒干练酷飒轮廓",
+  "suggested_bones": [
+    "B001",
+    "B005",
+    "B008",
+    "B014"
+  ],
+  "svg_file": "assets/hairs/H007.svg",
+  "svg_params": {
+    "shape": "blunt_bob",
+    "accent": "#6366f1",
+    "gender": "女性"
+  }
+}

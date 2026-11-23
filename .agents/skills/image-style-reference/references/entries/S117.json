@@ -1,0 +1,50 @@
+{
+  "id": "S117",
+  "category": "成熟商业·国风大师",
+  "slug": "commercial-guofeng-dynamic-ink-comic",
+  "name": "新国风水墨漫剧（毛笔压感与水痕边）",
+  "aliases": [
+    "国潮条漫",
+    "修仙漫剧",
+    "DYNAMIC INK COMIC"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "成熟新国风商业漫剧，书法压感毛笔勾勒人物面容与动势轮廓；清爽赛璐珞二分明暗打底，阴影边缘带有水彩扩散水痕硬边；发丝与衣摆带行草飞白，色彩通透现代，结构精准利落",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "新国风水墨漫剧（毛笔压感与水痕边）",
+  "source_original_prompt_en": "commercial-guofeng-dynamic-ink-comic",
+  "summary": "目前短剧/动态漫市场最赚钱、量产效率最高的新国风商业画法。",
+  "visual_genes": {
+    "笔": "压感数位毛笔线，起笔藏锋收笔出锋，兼具动势与精准形体",
+    "光": "现代商业漫剧二分光，局部点缀半透明环境色冷暖反弹",
+    "色": "黛青、朱红、茶白配现代高透亮冷暖色，暗部通透不脏",
+    "质": "数字矢量平滑与水墨边缘水痕结合，兼顾高清与手绘手感",
+    "镜": "9:16竖屏电影级景别切换，仰拍斜角透视，冲击力强"
+  },
+  "palette": [
+    "#1A252C",
+    "#C0392B",
+    "#2980B9",
+    "#ECF0F1",
+    "#D4AC0D"
+  ],
+  "use_cases": [
+    "爆款修仙漫剧/短剧",
+    "男频玄幻系统流",
+    "都市异能国风战斗"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

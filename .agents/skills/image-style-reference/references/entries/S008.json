@@ -1,0 +1,21 @@
+{
+  "category": "手绘",
+  "slug": "caricature",
+  "name": "夸张肖像",
+  "style_prompt_zh": "选择性放大有辨识度的特征，富有表现力的比例，清晰立体明暗，幽默但友善，轮廓易读",
+  "reference_image": "assets/caricature.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/caricature.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/caricature.webp",
+  "source_title": "精细渲染夸张肖像",
+  "source_original_prompt_zh": "将附带照片转换为夸张效果明确、渲染精细且幽默的漫画肖像。让头部达到身体的两倍大，放大笑容和眼形，并使用活泼且富有变化的墨线轮廓、精致数字上色、清晰虹膜、成组发束、暖桃色、深梅紫、青绿色点缀和聚焦的柔和聚光。将姿势调整为紧凑活泼的站姿，并以亲切幽默放大表情。通过脸型、黑色长发和碎花连衣裙线索保持她的辨识度，但将包括脸部、眼睛和皮肤在内的整个人物，以夸张肖像方式重绘；不得出现摄影质感皮肤或粘贴式写实脸。把街道简化为由弧形灯笼与屋顶构成的小景。输出竖版 2:3，不得出现文字、签名、标志或水印。",
+  "source_negative_prompt_zh": "摄影质感脸部，粘贴式写实脸，夸张不明显，写实比例，恶意怪诞扭曲，千篇一律的脸，平面儿童涂鸦，单色铅笔研究，拥挤完整场景，头部过小，图注，签名，水印",
+  "sha256": "b029e887952e027578c02218158df27bd7bf6ae666bf8428e040528269d0d1cc",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S008"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "A006",
+  "name": "侧面颅面解剖细节全标注图（骨性标志点字典）",
+  "en_name": "Human Skull Side Details — Labeled Landmarks",
+  "file": "assets/anatomy/skull_side_details.svg",
+  "view": "侧面骨点术语标注",
+  "license": "Public domain (LadyofHats)",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Human_skull_side_details.svg",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_link": {
+    "dimension": "3. 面部细节特征（英文解剖 Prompt 精准选词）",
+    "slots": [
+      "Zygomatic arch",
+      "Superciliary arch",
+      "Nasal spine",
+      "Mandibular angle",
+      "Mental protuberance"
+    ],
+    "how_to_use": "编写高精度英文生图词或做历史人物防网红脸校验时，直接查阅骨性标志点的准确解剖英文术语。"
+  },
+  "mapped_landmarks": [
+    {
+      "landmark": "Superciliary Arch / Glabella",
+      "slot": "brow_ridge",
+      "related_bones": [
+        "B001",
+        "B013",
+        "B017",
+        "B019"
+      ]
+    },
+    {
+      "landmark": "Zygomatic Arch / Malar Bone",
+      "slot": "jawline_bone",
+      "related_bones": [
+        "B003",
+        "B014",
+        "B018",
+        "B022"
+      ]
+    },
+    {
+      "landmark": "Mental Protuberance & Mandibular Angle",
+      "slot": "jawline_bone",
+      "related_bones": [
+        "B004",
+        "B017",
+        "B019",
+        "B021"
+      ]
+    }
+  ],
+  "linked_bones": [
+    "B001",
+    "B003",
+    "B004",
+    "B013",
+    "B017",
+    "B018",
+    "B019",
+    "B020",
+    "B021"
+  ]
+}

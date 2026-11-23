@@ -1,0 +1,35 @@
+{
+  "id": "S095",
+  "category": "商业画风·欧美",
+  "slug": "commercial-superhero",
+  "name": "美式超英",
+  "aliases": [
+    "SUPERHERO"
+  ],
+  "style_prompt_zh": "美式英雄漫画质感，坚实形体块面、粗黑轮廓、规则半调网点和强明暗对比；动作与透视张力依剧情选择",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/styles.html",
+  "source_snapshot": "references/sources/commercial-2026-11-01/styles.html",
+  "source_title": "美式超英",
+  "source_original_prompt_en": "american superhero comic, halftone, bold inks, dynamic composition",
+  "summary": "肌肉块面、粗黑轮廓、网点阴影、动态构图",
+  "use_cases": [
+    "动作",
+    "都市",
+    "热血"
+  ],
+  "reference_coordinates": "《蜘蛛侠：平行宇宙》",
+  "source_position": "sub",
+  "source_position_note": "源作者的主流/细分/实验判断，未经独立市场数据验证。",
+  "related_entries": [
+    "S073"
+  ],
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页未提供图片，代表作品名称仅作来源坐标，不等于已查看作品。",
+  "prompt_status": "根据源页特点通用化改写，未做出图实测。",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。",
+  "optional_effects_note": "颗粒、脏污、沙尘、旧化、光斑与抖动不默认继承；规则网点、像素与必要媒介纹理可受控保留。",
+  "license_note": "用户指定本地文本页面；未发现明确授权声明，不沿用其他来源的CC0许可。",
+  "sha256": null,
+  "image_size": null
+}

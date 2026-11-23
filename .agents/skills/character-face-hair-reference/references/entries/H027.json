@@ -1,0 +1,34 @@
+{
+  "id": "H027",
+  "type": "hairstyle",
+  "group": "男性 · 现代与动漫潮流",
+  "gender": "男性",
+  "era": "现代/动漫/酷哥",
+  "name": "层次不羁男性狼尾",
+  "en_name": "Layered Men's Shaggy Wolf Mullet",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "顶区蓬松抓乱 + 两侧锐利鬓发修饰颧颊 + 后颈修长层次碎尾",
+  "formula_slots_ref_only": {
+    "color": "冷乌黑 / 银灰挑染 / 暗蓝黑",
+    "texture": "干爽锋利分缕碎发肌理",
+    "noun": "高层次不羁男性狼尾发",
+    "motion": "后颈发尾随风扬起，前额碎发微遮半眼显叛逆"
+  },
+  "prompt_en_ref_only": "layered men's wolf cut, shaggy elongated mullet nape, sharp face-framing side locks, rebellious edge",
+  "prompt_zh_ref_only": "前碎后长的锐利层次男性狼尾，后颈修长碎尾自然外散，极具现代酷哥与二次元不羁辨识度",
+  "suggested_bones": [
+    "B001",
+    "B005",
+    "B014",
+    "B015"
+  ],
+  "svg_file": "assets/hairs/H027.svg",
+  "svg_params": {
+    "shape": "male_wolf",
+    "accent": "#6366f1",
+    "gender": "男性"
+  }
+}

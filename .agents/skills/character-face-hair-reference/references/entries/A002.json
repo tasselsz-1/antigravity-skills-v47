@@ -1,0 +1,82 @@
+{
+  "id": "A002",
+  "name": "正面颅面分骨色块图（额骨/颧骨/鼻骨/上下颌骨）",
+  "en_name": "Human Skull Front — Color-Coded Facial Bones",
+  "file": "assets/anatomy/skull_front_bones.svg",
+  "view": "正面分骨解剖",
+  "license": "Public domain (Mariana Ruiz Villarreal / LadyofHats)",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Human_skull_front_bones.svg",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_link": {
+    "dimension": "3. 面部细节特征",
+    "slots": [
+      "眉骨特征",
+      "眼眶开口形状",
+      "颧骨外扩/内收",
+      "鼻骨宽窄",
+      "下颌骨体量"
+    ],
+    "how_to_use": "对照正面色块明确区分多人脸型骨量：颧骨（Zygomatic）决定面部折叠度与外轮廓宽窄，下颌骨（Mandible）决定方圆/锐角/鹅蛋底盘。"
+  },
+  "mapped_landmarks": [
+    {
+      "landmark": "额骨与眉弓 (Frontal / Brow Ridge)",
+      "slot": "3. 眉骨特征",
+      "related_bones": [
+        "B001",
+        "B013",
+        "B015",
+        "B017"
+      ]
+    },
+    {
+      "landmark": "颧骨与颧弓 (Zygomatic Arch)",
+      "slot": "3. 下颌线 / 骨相特征",
+      "related_bones": [
+        "B003",
+        "B007",
+        "B014",
+        "B018"
+      ]
+    },
+    {
+      "landmark": "鼻骨与梨状孔 (Nasal Bone)",
+      "slot": "3. 鼻梁特征",
+      "related_bones": [
+        "B001",
+        "B010",
+        "B013",
+        "B019"
+      ]
+    },
+    {
+      "landmark": "下颌体与颏隆凸 (Mandible / Chin)",
+      "slot": "3. 下颌线 / 骨相特征",
+      "related_bones": [
+        "B003",
+        "B004",
+        "B019",
+        "B021"
+      ]
+    }
+  ],
+  "linked_bones": [
+    "B001",
+    "B002",
+    "B003",
+    "B004",
+    "B007",
+    "B009",
+    "B010",
+    "B013",
+    "B014",
+    "B015",
+    "B017",
+    "B018",
+    "B019",
+    "B021"
+  ]
+}

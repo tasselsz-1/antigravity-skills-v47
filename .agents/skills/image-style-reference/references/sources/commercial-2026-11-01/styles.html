@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>商业画风全集 · 漫剧可用的视觉体系</title>
+<style>
+  :root{
+    --bg:#0B0908; --panel:#13100D; --line:#2A231C;
+    --ink:#EDE4D2; --ink2:#B8AB95; --mute:#7C7160;
+    --gold:#C9A227; --red:#B33A2B; --teal:#4E8C80;
+    --serif:"Noto Serif SC","Source Han Serif SC","Songti SC","SimSun",serif;
+    --sans:"Noto Sans SC","Source Han Sans SC","Microsoft YaHei",system-ui,sans-serif;
+    --mono:"SFMono-Regular",Consolas,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.7;
+    background-image:radial-gradient(circle at 50% -8%,rgba(201,162,39,.09),transparent 52%)}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 26px}
+  header{padding:60px 0 38px;border-bottom:1px solid var(--line)}
+  .kicker{font-family:var(--mono);font-size:10.5px;letter-spacing:.28em;color:var(--gold);margin:0 0 16px}
+  h1{font-family:var(--serif);font-size:clamp(28px,4.2vw,44px);line-height:1.22;margin:0 0 14px}
+  h1 em{font-style:normal;color:var(--gold)}
+  .lede{color:var(--ink2);max-width:720px;font-size:14.5px;margin:0 0 22px}
+  .basis{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin-top:10px}
+  .basis div{background:var(--panel);border:1px solid var(--line);padding:12px 14px;font-size:11.5px;color:var(--mute);line-height:1.6}
+  .basis b{display:block;color:var(--ink);font-family:var(--serif);font-size:13px;margin-bottom:3px}
+
+  .group{padding:44px 0 6px;border-bottom:1px solid var(--line)}
+  .ghead{display:flex;align-items:baseline;gap:14px;margin-bottom:4px}
+  .gno{font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.12em}
+  h2{font-family:var(--serif);font-size:26px;margin:0}
+  .gen{font-family:var(--mono);font-size:10px;color:var(--mute);letter-spacing:.16em}
+  .gnote{color:var(--mute);font-size:12.5px;margin:0 0 18px;padding-left:38px}
+
+  .row{display:grid;grid-template-columns:190px 1fr 120px;gap:16px;padding:14px 0;border-top:1px solid rgba(42,35,28,.75);align-items:start}
+  .row:hover{background:rgba(201,162,39,.04)}
+  .nm{font-family:var(--serif);font-size:15px;color:var(--ink);line-height:1.35}
+  .nm small{display:block;font-family:var(--mono);font-size:9px;color:var(--mute);margin-top:3px;letter-spacing:.05em}
+  .det{font-size:12.5px;color:var(--ink2);line-height:1.65}
+  .det b{color:var(--ink);font-weight:400;font-family:var(--serif)}
+  .prompt{display:block;margin-top:6px;font-family:var(--mono);font-size:10.5px;color:var(--teal);line-height:1.6;word-break:break-word}
+  .ref{display:block;margin-top:4px;font-size:11px;color:var(--mute)}
+  .pos{font-family:var(--mono);font-size:9.5px;text-align:center;padding:3px 0;border:1px solid;white-space:nowrap}
+  .p-main{color:#7FB069;border-color:rgba(127,176,105,.4)}
+  .p-sub{color:var(--gold);border-color:rgba(201,162,39,.4)}
+  .p-exp{color:var(--blue,#5B8FB9);border-color:rgba(91,143,185,.4)}
+
+  .foot{padding:34px 0 60px;font-size:11.5px;color:var(--mute);line-height:1.8}
+  .foot a{color:var(--teal);text-decoration:none}
+  .foot a:hover{text-decoration:underline}
+  .warn{margin-top:18px;padding:13px 16px;border-left:2px solid var(--red);background:rgba(179,58,43,.08);color:var(--ink2);font-size:12px}
+  @media (max-width:760px){
+    .row{grid-template-columns:1fr;gap:6px}
+    .pos{justify-self:start;padding:3px 10px}
+    .gnote{padding-left:0}
+    .wrap{padding:0 18px}
+  }
+  @media print{body{background:#fff;color:#000}.pos{display:none}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <p class="kicker">COMMERCIAL ART STYLES FOR MANJU</p>
+  <h1>商业画风全集<br><em>漫剧真正在用的六大体系</em></h1>
+  <p class="lede">不是艺术史分类，是商业项目在用的画风。六大体系、32 种具体做法，每种给特点、适合题材、提示词关键词与代表作品。分类依据来自行业培训教材与两部破亿漫剧的拆解报道。</p>
+  <div class="basis">
+    <div><b>依据一 · 行业教材</b>《AI 漫剧美术风格指南》列出 AI 漫剧常见五类：日式动画、国漫、写实、美式卡通、黑白暗黑</div>
+    <div><b>依据二 · 爆款拆解</b>《西游后传真假大圣》1.8 亿：水墨国风；《从赖皮蛇开始吞噬进化》2 亿：玄幻精细</div>
+    <div><b>依据三 · 平台数据</b>巨量引擎漫剧生态大会：总供给破 10 万部，多画风演进，优质 2D/3D/仿真人稀缺</div>
+  </div>
+</header>
+
+<main class="wrap" id="app"></main>
+
+<footer class="wrap foot">
+  <p>分类框架来自公开行业资料；「位置」一栏（主流 / 细分 / 实验）是按报道中的市场描述归的，不是官方统计。每条的代表作品只用于说明风格来源，不含任何原作素材。</p>
+  <p>来源：
+    <a href="https://www.2ds.cn/ai%e6%bc%ab%e5%89%a7%e7%be%8e%e6%9c%af%e9%a3%8e%e6%a0%bc%e6%8c%87%e5%8d%97%ef%bc%9a%e5%a6%82%e4%bd%95%e5%88%b6%e5%ae%9a%e5%b9%b6%e7%bb%9f%e4%b8%80%e8%a7%86%e8%a7%89%e9%a3%8e%e6%a0%bc/" target="_blank" rel="noopener">AI 漫剧美术风格指南</a> ·
+    <a href="https://vv.lmtw.com/mzs/content/detail/id/250813/keyword_id/-1" target="_blank" rel="noopener">《西游后传》拆解</a> ·
+    <a href="https://vv.lmtw.com/mzw/content/detail/id/250983/keyword_id/-1" target="_blank" rel="noopener">《从赖皮蛇开始吞噬进化》拆解</a>
+  </p>
+  <p class="warn">选型顺序建议：先按题材定体系 → 再按平台定精度 → 最后用 30 秒样片测完播。别一上来就调参数。</p>
+</footer>
+
+<script>
+const GROUPS = [
+  {
+    no: '01', name: '日式动画', en: 'ANIME', note: 'AI 漫剧最常用的一类。校园、恋爱、日常、异世界的主力。',
+    styles: [
+      { n: '经典赛璐璐 TV', en: 'CEL TV', feat: '平涂两三层阴影、干净线条、网点做暗部，制作成本最低', fit: '校园、恋爱、日常', prompt: 'anime style, cel shading, flat colors, clean lineart, screentone', ref: '《美少女战士》《新世纪福音战士》', pos: 'main' },
+      { n: '剧场版精细', en: 'FILM GRADE', feat: '高密度云层、强镜头光斑、超细节背景，单帧信息量最大', fit: '青春、恋爱、治愈', prompt: 'anime film style, detailed clouds, lens flare, cinematic lighting', ref: '《你的名字》《天气之子》', pos: 'main' },
+      { n: '京都日常', en: 'SLICE OF LIFE', feat: '线条精细、上色柔和、逆光发丝，靠微动作叙事', fit: '治愈、日常、青春', prompt: 'kyoani style, fine lineart, soft coloring, backlit hair, daily life', ref: '《轻音少女》《冰菓》', pos: 'main' },
+      { n: '二游向', en: 'GACHA ANIME', feat: '萌系比例、幻想感、高饱和，强调角色设定与服装细节', fit: '异世界、游戏改、冒险', prompt: 'anime game style, vibrant colors, fantasy costume, detailed character design', ref: '《原神》PV、《明日方舟》动画', pos: 'main' },
+      { n: '少年热血', en: 'SHONEN', feat: '粗线条、速度线、夸张透视，靠动势而非细节', fit: '战斗、冒险、成长', prompt: 'shonen manga style, bold outlines, speed lines, dynamic pose', ref: '《火影忍者》《海贼王》', pos: 'main' },
+      { n: '90 年代 OVA', en: '90S OVA', feat: '胶片颗粒、暗调、机械与城市细节，手绘赛璐璐的旧质感', fit: '科幻、赛博、悬疑', prompt: '90s anime, film grain, dark palette, hand-painted cel, cyberpunk city', ref: '《攻壳机动队》《AKIRA》', pos: 'sub' },
+    ],
+  },
+  {
+    no: '02', name: '国漫', en: 'CHINESE ANIMATION', note: '近年增长最快。行业教材给的特点：线条简洁、色彩偏写实、比例接近真人。',
+    styles: [
+      { n: '3D 国漫', en: '3D DONGHUA', feat: '写实比例、布料与金属质感、大量特效，国产玄幻的标准形态', fit: '玄幻、修仙、热血', prompt: 'chinese 3d donghua, realistic proportions, detailed fabric and metal, fantasy', ref: '《斗罗大陆》《完美世界》', pos: 'main' },
+      { n: '三渲二', en: 'STYLIZED 3D', feat: '三维打光配手绘贴图，既有镜头自由度又保留笔触', fit: '热血、玄幻、科幻', prompt: 'stylized 3d, hand-painted textures, 3d lighting, painterly shading', ref: '《双城之战》《宝石之国》', pos: 'main' },
+      { n: '东方厚涂', en: 'ORIENTAL IMPASTO', feat: '可见笔触、硬边高光、暖调压暗部，皮肤有笔触过渡', fit: '神话、热血、古风', prompt: 'oriental impasto, visible brushstrokes, hard specular, warm palette', ref: '《哪吒之魔童降世》《姜子牙》', pos: 'main' },
+      { n: '水墨国风', en: 'INK GUOFENG', feat: '水墨与素描混用，上美影味道，二维里带三渲二运镜', fit: '暗黑西游、古风、寓言', prompt: 'chinese ink animation, sumi-e, sketch texture, shanghai animation style', ref: '《西游后传真假大圣》（1.8 亿）', pos: 'sub' },
+      { n: '赛博国潮', en: 'CYBER GUOCHAO', feat: '机械结构叠鎏金纹样，青紫霓虹配全息符文', fit: '神话科幻、都市玄幻', prompt: 'cyber guochao, mechanical deity, gilded patterns, neon magenta cyan', ref: '《新神榜：杨戬》《白蛇 2》', pos: 'sub' },
+      { n: '港漫硬派', en: 'HK COMIC', feat: '粗黑描边、网点阴影、肌肉块面，红黑金三色', fit: '武侠、格斗、热血', prompt: 'hong kong comic, bold outlines, halftone shadows, red black gold', ref: '《风云决》《龙虎门》', pos: 'sub' },
+      { n: '剪纸皮影', en: 'PAPER CUT', feat: '镂空剪影、背光透射、正红墨黑米黄三色', fit: '民俗、寓言、片头', prompt: 'paper cut animation, silhouette, backlit, vermilion black beige', ref: '《葫芦兄弟》《中国奇谭》', pos: 'exp' },
+    ],
+  },
+  {
+    no: '03', name: '韩漫', en: 'KOREAN WEBTOON', note: '竖屏条漫的源头，节奏与分镜最贴近漫剧。',
+    styles: [
+      { n: 'Webtoon 竖屏', en: 'WEBTOON', feat: '干净线稿、柔和渐变上色、肤色通透，大量特写', fit: '都市、恋爱、校园', prompt: 'korean webtoon style, clean lineart, soft gradient coloring, vertical framing', ref: '《女神降临》《看脸时代》', pos: 'main' },
+      { n: '韩式厚涂', en: 'KOREAN PAINTERLY', feat: '半写实、皮肤有质感、光影柔和偏冷，成人向感强', fit: '悬疑、情感、职场', prompt: 'korean semi-realistic, painterly skin, soft cool lighting, mature tone', ref: '《与神同行》原作漫画', pos: 'sub' },
+      { n: '韩式武侠', en: 'KOREAN WUXIA', feat: '水墨笔触叠加厚涂，动作飘逸，留白多', fit: '武侠、古风、江湖', prompt: 'korean wuxia, ink wash with impasto, flowing motion, negative space', ref: '《热血江湖》《龙飞不败》', pos: 'sub' },
+    ],
+  },
+  {
+    no: '04', name: '欧美', en: 'WESTERN', note: '行业教材里叫「美式卡通」：造型夸张、色彩对比强、线条粗。',
+    styles: [
+      { n: '美式卡通', en: 'AMERICAN CARTOON', feat: '造型夸张、线条粗、色彩对比强，表情表演幅度大', fit: '喜剧、儿童、合家欢', prompt: 'american cartoon style, exaggerated shapes, bold outlines, high contrast colors', ref: '迪士尼经典、Cartoon Network', pos: 'main' },
+      { n: '3D 合家欢', en: '3D FAMILY', feat: '体积光、次表面散射、柔和景深，质感讨喜', fit: '合家欢、治愈、冒险', prompt: 'pixar style, volumetric light, subsurface scattering, soft bokeh', ref: '《寻梦环游记》《心灵奇旅》', pos: 'sub' },
+      { n: '美式超英', en: 'SUPERHERO', feat: '肌肉块面、粗黑轮廓、网点阴影、动态构图', fit: '动作、都市、热血', prompt: 'american superhero comic, halftone, bold inks, dynamic composition', ref: '《蜘蛛侠：平行宇宙》', pos: 'sub' },
+      { n: '法比清线派', en: 'LIGNE CLAIRE', feat: '等宽线条、不排线、平涂，空间关系极清楚', fit: '冒险、悬疑、推理', prompt: 'ligne claire, uniform line weight, flat colors, clear staging', ref: '《丁丁历险记》', pos: 'sub' },
+      { n: '暗黑哥特', en: 'GOTHIC', feat: '细密钢笔线、扭曲造型、单一冷光、深阴影', fit: '恐怖、寓言、悬疑', prompt: 'gothic dark fairytale, dense pen lines, cold single light, deep shadows', ref: '《圣诞夜惊魂》《鬼妈妈》', pos: 'exp' },
+    ],
+  },
+  {
+    no: '05', name: '写实', en: 'REALISTIC', note: '行业教材里叫「偏真人感」：接近真人照片，光影真实。对生成技术要求最高，容易假。',
+    styles: [
+      { n: '电影感写实', en: 'CINEMATIC', feat: '体积光、浅景深、胶片颗粒，按电影镜头语言打光', fit: '悬疑、犯罪、职场', prompt: 'cinematic photorealistic, volumetric light, shallow depth of field, film grain', ref: '真人剧照质感', pos: 'main' },
+      { n: 'AI 仿真人', en: 'SIMULATED HUMAN', feat: '皮肤纹理、微表情、真实毛发，接近真人短剧', fit: '都市、情感、家庭', prompt: 'hyperrealistic human, skin texture, micro expression, natural hair', ref: '平台稀缺品类', pos: 'sub' },
+      { n: '末世废土', en: 'POST-APOCALYPTIC', note: '', feat: '低饱和、脏、废墟与沙尘，2025 年漫剧刮了一整年', fit: '末世、生存、系统流', prompt: 'post-apocalyptic, desaturated, ruins, dust, gritty texture', ref: '《疯狂的麦克斯》', pos: 'main' },
+      { n: '赛博朋克', en: 'CYBERPUNK', feat: '冷底配高饱和霓虹、雨夜湿反射、雾气', fit: '科幻、犯罪、赛博', prompt: 'cyberpunk, neon lights, rainy night, wet reflections, cyan magenta', ref: '《银翼杀手》《攻壳机动队》', pos: 'main' },
+      { n: '复古胶片', en: 'VINTAGE FILM', feat: '颗粒、褪色、光晕、偏青绿，带年代记忆', fit: '年代、回忆、情感', prompt: 'vintage film look, faded colors, grain, halation, cyan cast', ref: '90 年代家庭录像', pos: 'sub' },
+    ],
+  },
+  {
+    no: '06', name: '特殊媒介', en: 'SPECIAL MEDIUM', note: '不是主流，但能做记忆点。适合片头、闪回、特殊段落。',
+    styles: [
+      { n: '定格黏土', en: 'CLAYMATION', feat: '指纹与工具痕、微缩布景、逐帧抖动', fit: '怪诞、喜剧、寓言', prompt: 'claymation, stop motion, plasticine texture, fingerprints, miniature set', ref: '《犬之岛》《超级无敌掌门狗》', pos: 'exp' },
+      { n: '像素', en: 'PIXEL ART', feat: '点阵、受限色板、抖动过渡', fit: '游戏改、复古、科幻', prompt: 'pixel art, 16-bit, limited palette, dithering', ref: '《像素大战》', pos: 'exp' },
+      { n: '水墨实验', en: 'INK EXPERIMENT', feat: '泼墨、飞白、大量留白，一笔成型', fit: '艺术短片、诗意段落', prompt: 'ink wash, splashed ink, dry brush, negative space', ref: '《山水情》《小蝌蚪找妈妈》', pos: 'exp' },
+      { n: '故障艺术', en: 'GLITCH', feat: 'RGB 分离、扫描线、数据块', fit: '科幻、心理、转场', prompt: 'glitch art, rgb split, scanlines, data blocks', ref: '音乐影像、实验动画', pos: 'exp' },
+      { n: '拼贴', en: 'COLLAGE', feat: '撕纸、剪报、胶带，各元素光源冲突', fit: '实验、讽喻、意识流', prompt: 'collage, torn paper, mixed media, conflicting light', ref: '达达主义拼贴', pos: 'exp' },
+      { n: '低多边形', en: 'LOW POLY', feat: '几何面片、平面着色、无纹理', fit: '轻科幻、独立游戏', prompt: 'low poly, flat shading, geometric facets, no texture', ref: '独立游戏美术', pos: 'exp' },
+    ],
+  },
+];
+
+const POS_LABEL = { main: '主流', sub: '细分', exp: '实验' };
+
+document.getElementById('app').innerHTML = GROUPS.map(g => `
+  <section class="group">
+    <div class="ghead"><span class="gno">${g.no}</span><h2>${g.name}</h2><span class="gen">${g.en}</span></div>
+    <p class="gnote">${g.note}</p>
+    ${g.styles.map(s => `
+      <div class="row">
+        <div class="nm">${s.n}<small>${s.en}</small></div>
+        <div class="det">
+          ${s.feat}
+          <span class="prompt">${s.prompt}</span>
+          <span class="ref">代表：${s.ref}</span>
+        </div>
+        <div class="pos p-${s.pos}">${POS_LABEL[s.pos]}</div>
+      </div>`).join('')}
+  </section>`).join('');
+</script>
+</body>
+</html>

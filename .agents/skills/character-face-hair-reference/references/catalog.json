@@ -1,0 +1,3429 @@
+{
+  "schema_version": "1.0.0",
+  "skill": "character-face-hair-reference",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "counts": {
+    "anatomy_plates": 7,
+    "bones": 24,
+    "hairs": 42,
+    "hair_color_modifiers": 10
+  },
+  "formula_7dim": {
+    "title": "人物设计公式模板（真人与动画人物通用）",
+    "policy": "reference_only_do_not_use_directly",
+    "warning": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+    "reference_image": "references/sources/7dim_character_formula_ref.jpg",
+    "overall_formula": "人物 = [1. 年龄 / 种族] + [2. 肤色 / 皮肤质感] + [3. 面部细节特征] + [4. 眼神 / 灵魂] + [5. 发型 / 发色] + [6. 服装 / 服装材质] + [7. 体型 / 情绪 / 气质] + [其他要求（如有）]",
+    "dimensions": [
+      {
+        "index": 1,
+        "key": "age_ethnicity",
+        "name": "年龄 / 种族",
+        "role": "锁定人物年龄基调、人种与基础脸型",
+        "sub_formula": "[具体岁数] + [具体国籍 / 人种] + [风格形容词] + [脸型名词]",
+        "linked_library": null,
+        "examples_ref_only": [
+          "22 岁东亚女性，清冷古典的丹凤脸",
+          "25 岁英国男性，瘦削高傲的英伦贵族脸",
+          "26 岁非裔黑人女性，骨相极其立体的黑珍珠超模脸"
+        ]
+      },
+      {
+        "index": 2,
+        "key": "skin_texture",
+        "name": "肤色 / 皮肤质感",
+        "role": "避免 AI 磨皮塑胶白，增强真实微细肌理",
+        "sub_formula": "[冷暖色调] + [具体肤色名词] + [皮肤质感形容词] + [强制保真后缀：保留真实的微细毛孔与肌肤纹理（可增加雀斑 / 瑕疵）]",
+        "linked_library": null,
+        "examples_ref_only": [
+          "冷调白皙肤色，透出细腻的温润玉石质感，保留真实的微细毛孔与肌肤纹理",
+          "暖调蜜糖色，带有阳光照射后的光泽感，鼻梁处有淡淡的真实雀斑，保留微细毛孔与肌肤纹理",
+          "粗糙的小麦色皮肤，带有风霜感与细微干纹，保留真实的粗大毛孔、胡茬质感与肌肤纹理"
+        ]
+      },
+      {
+        "index": 3,
+        "key": "facial_bone_details",
+        "name": "面部细节特征",
+        "role": "决定角色辨识度与多人防同脸（至少组合 3–4 个解剖维度）",
+        "sub_formula": "[眼型描述] + [眉骨特征] + [鼻梁特征] + [唇形特征] + [下颌线 / 骨相特征]",
+        "linked_library": "bones (B001–B024) + anatomy (A001–A007)",
+        "examples_ref_only": [
+          "细长的桃花眼（眼眶微润），鼻梁小巧挺直，唇部丰润且嘴角带着若有若无的浅笑，下颌线条柔和",
+          "微微上挑的丹凤眼，折叠度极高的立体眉骨，鼻梁高挺光洁，颧骨微凸，下颌线像刀削般清晰利落",
+          "圆润的杏眼，眼睑下至带无辜感，鼻头微翘略带肉感，饱满的唇珠，脸颊带有轻微的婴儿肥，面部线条流畅"
+        ]
+      },
+      {
+        "index": 4,
+        "key": "gaze_soul",
+        "name": "眼神 / 灵魂",
+        "role": "赋予人物情绪内核、心理层次与戏剧张力",
+        "sub_formula": "[眼神形容词] + [目光传达的信息 / 比喻] + [透出的深层情绪]",
+        "linked_library": null,
+        "examples_ref_only": [
+          "眼神极其深情、含情脉脉，眼底仿佛有一汪春水，目光温柔而专注，透着深深的眷恋与一丝不舍",
+          "眼神极为冷静、空洞，像深不见底的黑洞，目光锐利且极具压迫感，透着一丝难以捉摸的危险气息",
+          "眼神涣散、暗淡无光，目光低垂没有焦点，透着深深的疲惫与对生活的麻木感"
+        ]
+      },
+      {
+        "index": 5,
+        "key": "hair_style_color",
+        "name": "发型 / 发色",
+        "role": "拒绝单调词，明确发色、状态质感、具体发型名词与动静细节",
+        "sub_formula": "[具体发色] + [头发状态 / 质感] + [具体发型名词] + [环境与动静补充（如被风吹 / 凌乱）]",
+        "linked_library": "hairs (H001–H042)",
+        "examples_ref_only": [
+          "乌黑的发丝盘成随性典雅的古典低盘发，仅用一支素色玉簪固定，几缕细碎鬓发垂落脸颊随微风轻拂",
+          "焦糖棕色的微卷长发，呈现刚睡醒的自然蓬松与凌乱感，几缕发丝随意地搭在锁骨处",
+          "银白色的齐耳短发，带有强烈的哑光偏光质感，发丝边缘锐利，紧贴头皮"
+        ]
+      },
+      {
+        "index": 6,
+        "key": "costume_material",
+        "name": "服装 / 服装材质",
+        "role": "通过款式剪裁、面料肌理与新旧状态侧面烘托时代与身份",
+        "sub_formula": "[繁简 / 剪裁] + [颜色] + [具体服装名词] + [布料材质 / 新旧状态] + [穿着方式 / 细节]",
+        "linked_library": null,
+        "examples_ref_only": [
+          "极简的素白色交领古装，布料带有柔软光泽的素雅真丝或轻纱，衣领处微微敞开，无多余刺绣",
+          "宽大的做旧深棕色机车皮夹克，皮革表面带有真实的自然折痕与金属拉链反光，内搭洗到发白的灰色 T 恤",
+          "剪裁极其修身的深黑色双排扣西装，采用挺括的高级羊毛精纺面料，搭配酒红色真丝领带，一丝不苟"
+        ]
+      },
+      {
+        "index": 7,
+        "key": "body_mood_aura",
+        "name": "体型 / 情绪 / 气质",
+        "role": "决定骨架体态、镜头构图与整体故事氛围（若分镜已含构图/动作可省略该两项）",
+        "sub_formula": "[骨架 / 肩部特征] + [构图 / 镜头要求] + [人物动作 / 视线] + [整体散发的氛围词]",
+        "linked_library": null,
+        "examples_ref_only": [
+          "身姿纤细，双肩削瘦，胸部以上半身特写构图，眼神直视镜头，散发温婉深情的古典浪漫气质",
+          "骨架宽大，肩膀厚实微圆，低机位仰拍全身构图，侧身站立回头，散发绝境求生的悲壮电影史诗感",
+          "身形修长挺拔，面部大特写构图，半张脸隐没阴影中，散发神秘危险的惊悚电影主角气质"
+        ]
+      }
+    ]
+  },
+  "anatomy_plates": [
+    {
+      "id": "A001",
+      "name": "头部三庭五眼与标准比例图",
+      "en_name": "Human Head Proportions (Three Courts & Five Eyes)",
+      "file": "assets/anatomy/head_proportions.svg",
+      "view": "正面比例基准",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Human_head_proportions.svg",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_link": {
+        "dimension": "1. 年龄 / 种族 & 3. 面部细节特征",
+        "slots": [
+          "脸型名词",
+          "眼型描述",
+          "中庭比例",
+          "下颌收束比例"
+        ],
+        "how_to_use": "核对上/中/下三庭占比与眼距：幼态/少女调短中庭与下巴（B006/B012），清冷智性/谋士微拉长中庭（B005/B018），高级文艺脸微放宽眼距（B008）。"
+      },
+      "mapped_landmarks": [
+        {
+          "landmark": "上庭（发际线→眉弓）",
+          "slot": "1. 脸型名词 / 5. 发型发际线",
+          "related_bones": [
+            "B006",
+            "B007",
+            "B019"
+          ]
+        },
+        {
+          "landmark": "中庭（眉弓→鼻底）",
+          "slot": "3. 眼型 + 鼻梁特征",
+          "related_bones": [
+            "B005",
+            "B008",
+            "B010",
+            "B016"
+          ]
+        },
+        {
+          "landmark": "下庭（鼻底→颏下）",
+          "slot": "3. 唇形 + 下颌线特征",
+          "related_bones": [
+            "B003",
+            "B004",
+            "B017",
+            "B021"
+          ]
+        }
+      ],
+      "linked_bones": [
+        "B002",
+        "B005",
+        "B006",
+        "B007",
+        "B008",
+        "B010",
+        "B011",
+        "B012",
+        "B016",
+        "B017",
+        "B018",
+        "B019",
+        "B021"
+      ]
+    },
+    {
+      "id": "A002",
+      "name": "正面颅面分骨色块图（额骨/颧骨/鼻骨/上下颌骨）",
+      "en_name": "Human Skull Front — Color-Coded Facial Bones",
+      "file": "assets/anatomy/skull_front_bones.svg",
+      "view": "正面分骨解剖",
+      "license": "Public domain (Mariana Ruiz Villarreal / LadyofHats)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Human_skull_front_bones.svg",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_link": {
+        "dimension": "3. 面部细节特征",
+        "slots": [
+          "眉骨特征",
+          "眼眶开口形状",
+          "颧骨外扩/内收",
+          "鼻骨宽窄",
+          "下颌骨体量"
+        ],
+        "how_to_use": "对照正面色块明确区分多人脸型骨量：颧骨（Zygomatic）决定面部折叠度与外轮廓宽窄，下颌骨（Mandible）决定方圆/锐角/鹅蛋底盘。"
+      },
+      "mapped_landmarks": [
+        {
+          "landmark": "额骨与眉弓 (Frontal / Brow Ridge)",
+          "slot": "3. 眉骨特征",
+          "related_bones": [
+            "B001",
+            "B013",
+            "B015",
+            "B017"
+          ]
+        },
+        {
+          "landmark": "颧骨与颧弓 (Zygomatic Arch)",
+          "slot": "3. 下颌线 / 骨相特征",
+          "related_bones": [
+            "B003",
+            "B007",
+            "B014",
+            "B018"
+          ]
+        },
+        {
+          "landmark": "鼻骨与梨状孔 (Nasal Bone)",
+          "slot": "3. 鼻梁特征",
+          "related_bones": [
+            "B001",
+            "B010",
+            "B013",
+            "B019"
+          ]
+        },
+        {
+          "landmark": "下颌体与颏隆凸 (Mandible / Chin)",
+          "slot": "3. 下颌线 / 骨相特征",
+          "related_bones": [
+            "B003",
+            "B004",
+            "B019",
+            "B021"
+          ]
+        }
+      ],
+      "linked_bones": [
+        "B001",
+        "B002",
+        "B003",
+        "B004",
+        "B007",
+        "B009",
+        "B010",
+        "B013",
+        "B014",
+        "B015",
+        "B017",
+        "B018",
+        "B019",
+        "B021"
+      ]
+    },
+    {
+      "id": "A003",
+      "name": "侧面颅面分骨色块图（眉弓/鼻骨/颧弓/下颌角转折）",
+      "en_name": "Human Skull Lateral — Color-Coded Facial Bones",
+      "file": "assets/anatomy/skull_side_bones.svg",
+      "view": "侧面分骨解剖",
+      "license": "Public domain (LadyofHats)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Human_skull_side_bones.svg",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_link": {
+        "dimension": "3. 面部细节特征（3/4 侧颜与侧剪影锁模）",
+        "slots": [
+          "眉骨前突深度",
+          "鼻根山根落差",
+          "下颌角折角（100°–135°）",
+          "直面/微凹/微凸颌面型"
+        ],
+        "how_to_use": "角色设定卡统一采用朝右 3/4 视角时，重点参考此图的眉弓前探量、鼻梁起势角度与下颌角折点位置，避免角色“侧面纸片化”。"
+      },
+      "mapped_landmarks": [
+        {
+          "landmark": "眉间与鼻根转折 (Glabella & Nasion)",
+          "slot": "3. 眉骨特征 + 鼻梁特征",
+          "related_bones": [
+            "B001",
+            "B013",
+            "B015",
+            "B023"
+          ]
+        },
+        {
+          "landmark": "下颌角折角 (Gonial / Mandibular Angle)",
+          "slot": "3. 下颌线 / 骨相特征",
+          "related_bones": [
+            "B003",
+            "B004",
+            "B017",
+            "B022"
+          ]
+        },
+        {
+          "landmark": "上颌齿槽与颏部前突度 (Maxilla & Chin)",
+          "slot": "3. 唇形特征 + 下颌线",
+          "related_bones": [
+            "B006",
+            "B008",
+            "B012",
+            "B020"
+          ]
+        }
+      ],
+      "linked_bones": [
+        "B001",
+        "B003",
+        "B004",
+        "B006",
+        "B008",
+        "B012",
+        "B013",
+        "B015",
+        "B017",
+        "B019",
+        "B020",
+        "B022",
+        "B023"
+      ]
+    },
+    {
+      "id": "A004",
+      "name": "正面完整人颅骨结构图（含骨缝与眼眶比例）",
+      "en_name": "Human Skull Front Complete Vector",
+      "file": "assets/anatomy/skull_front_complete.svg",
+      "view": "正面精细骨相",
+      "license": "Public domain (LadyofHats)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Human_skull_front_complete.svg",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_link": {
+        "dimension": "3. 面部细节特征 & 2. 皮肤质感（光影显骨）",
+        "slots": [
+          "眼窝深浅与眶缘形态",
+          "颧下颊窝阴影区",
+          "鼻梁骨软骨交界"
+        ],
+        "how_to_use": "用于高写实、历史正剧、暗调电影布光时定位正面受光骨点（额结节、眉弓、颧点、鼻尖、颏点）与暗面落影区。"
+      },
+      "mapped_landmarks": [
+        {
+          "landmark": "眶上缘与眶下缘 (Orbital Rim)",
+          "slot": "3. 眼型描述 + 4. 眼神阴影",
+          "related_bones": [
+            "B001",
+            "B014",
+            "B018",
+            "B024"
+          ]
+        },
+        {
+          "landmark": "犬齿窝与颊凹 (Canine Fossa)",
+          "slot": "2. 肤质纹理 + 3. 骨相特征",
+          "related_bones": [
+            "B005",
+            "B018",
+            "B020",
+            "B024"
+          ]
+        }
+      ],
+      "linked_bones": [
+        "B001",
+        "B005",
+        "B014",
+        "B017",
+        "B018",
+        "B020",
+        "B024"
+      ]
+    },
+    {
+      "id": "A005",
+      "name": "侧面完整人颅骨结构图（含颞窝/枕骨/颈部承托）",
+      "en_name": "Human Skull Side Complete Vector",
+      "file": "assets/anatomy/skull_side_complete.svg",
+      "view": "侧面精细骨相",
+      "license": "Public domain (LadyofHats)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Human_skull_side_complete.svg",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_link": {
+        "dimension": "3. 面部细节特征 & 5. 发型轮廓（颅顶与后脑勺饱满度）",
+        "slots": [
+          "颅顶高度",
+          "后脑勺枕骨弧度",
+          "颞窝凹陷度",
+          "下颌支长度"
+        ],
+        "how_to_use": "不仅定侧脸骨相，也决定第 5 维发型的头包脸比例、高颅顶/束冠受力点与后脑勺发髻支撑位置。"
+      },
+      "mapped_landmarks": [
+        {
+          "landmark": "颞窝与颞线 (Temporal Fossa)",
+          "slot": "3. 眉骨与太阳穴轮廓",
+          "related_bones": [
+            "B018",
+            "B020",
+            "B024"
+          ]
+        },
+        {
+          "landmark": "顶骨与枕骨隆凸 (Parietal & Occipital)",
+          "slot": "5. 发型颅顶与盘发支撑",
+          "related_bones": [
+            "B002",
+            "B016",
+            "B021",
+            "B022"
+          ]
+        }
+      ],
+      "linked_bones": [
+        "B002",
+        "B015",
+        "B016",
+        "B018",
+        "B019",
+        "B020",
+        "B021",
+        "B022",
+        "B024"
+      ]
+    },
+    {
+      "id": "A006",
+      "name": "侧面颅面解剖细节全标注图（骨性标志点字典）",
+      "en_name": "Human Skull Side Details — Labeled Landmarks",
+      "file": "assets/anatomy/skull_side_details.svg",
+      "view": "侧面骨点术语标注",
+      "license": "Public domain (LadyofHats)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Human_skull_side_details.svg",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_link": {
+        "dimension": "3. 面部细节特征（英文解剖 Prompt 精准选词）",
+        "slots": [
+          "Zygomatic arch",
+          "Superciliary arch",
+          "Nasal spine",
+          "Mandibular angle",
+          "Mental protuberance"
+        ],
+        "how_to_use": "编写高精度英文生图词或做历史人物防网红脸校验时，直接查阅骨性标志点的准确解剖英文术语。"
+      },
+      "mapped_landmarks": [
+        {
+          "landmark": "Superciliary Arch / Glabella",
+          "slot": "brow_ridge",
+          "related_bones": [
+            "B001",
+            "B013",
+            "B017",
+            "B019"
+          ]
+        },
+        {
+          "landmark": "Zygomatic Arch / Malar Bone",
+          "slot": "jawline_bone",
+          "related_bones": [
+            "B003",
+            "B014",
+            "B018",
+            "B022"
+          ]
+        },
+        {
+          "landmark": "Mental Protuberance & Mandibular Angle",
+          "slot": "jawline_bone",
+          "related_bones": [
+            "B004",
+            "B017",
+            "B019",
+            "B021"
+          ]
+        }
+      ],
+      "linked_bones": [
+        "B001",
+        "B003",
+        "B004",
+        "B013",
+        "B017",
+        "B018",
+        "B019",
+        "B020",
+        "B021"
+      ]
+    },
+    {
+      "id": "A007",
+      "name": "写实侧面头骨体积光影医学插画（Patrick J. Lynch）",
+      "en_name": "Realistic Lateral Skull Medical Illustration",
+      "file": "assets/anatomy/skull_lateral_view.jpg",
+      "view": "写实明暗体积解剖",
+      "license": "CC BY 2.5 (Patrick J. Lynch)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Human_skull_lateral_view.jpg",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_link": {
+        "dimension": "2. 肤质纹理 & 3. 历史写实沧桑骨相（B017–B024 专用）",
+        "slots": [
+          "骨性体积明暗交界",
+          "颧弓与下颌支粗壮度",
+          "眼眶与鼻骨真实凹凸"
+        ],
+        "how_to_use": "专为历史正剧、乱世武将、谋士与老者角色提供真实体积与光影参照，彻底杜绝“平面贴图感”和“现代医美磨皮脸”。"
+      },
+      "mapped_landmarks": [
+        {
+          "landmark": "明暗交界与侧光显骨",
+          "slot": "2. 皮肤质感 + 3. 骨相特征",
+          "related_bones": [
+            "B017",
+            "B018",
+            "B019",
+            "B020",
+            "B021",
+            "B022",
+            "B023",
+            "B024"
+          ]
+        }
+      ],
+      "linked_bones": [
+        "B017",
+        "B018",
+        "B019",
+        "B020",
+        "B021",
+        "B022",
+        "B023",
+        "B024"
+      ]
+    }
+  ],
+  "bones": [
+    {
+      "id": "B001",
+      "type": "bone_structure",
+      "group": "基础骨相底盘",
+      "name": "高立体深邃骨相",
+      "en_name": "High-Relief Deep-Set Bone Structure",
+      "aesthetic_tier": "常规/美型/奇幻",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.32,
+        "mid": 0.35,
+        "lower": 0.33,
+        "jaw_angle_deg": 116,
+        "profile": "高立体深折"
+      },
+      "anatomical_landmarks": [
+        "高突眉弓 (Prominent brow ridge)",
+        "深陷眼窝 (Deep orbital rim)",
+        "高直鼻骨 (High straight nasal bridge)",
+        "利落下颌折角"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "深邃窄双或欧式大双，眼窝阴影清晰",
+        "brow": "眉弓高挑立体、眉眼距偏近",
+        "nose": "山根起势高、鼻梁笔直如刻",
+        "lips": "唇峰清晰、薄厚适中",
+        "jaw": "颧下微收、下颌线锐利分明"
+      },
+      "prompt_en_ref_only": "defined facial bone structure, prominent brow ridge, deep-set eyes, high straight nose bridge, sharp sculpted jawline",
+      "prompt_zh_ref_only": "高眉弓深眼窝，山根高挺笔直，颧颌转折立体分明，下颌线利落清晰",
+      "suitable_roles": [
+        "暗黑奇幻主角",
+        "冷艳御姐",
+        "硬朗贵族",
+        "高定视觉人物"
+      ],
+      "linked_anatomy_plates": [
+        "A002",
+        "A003",
+        "A004",
+        "A006"
+      ],
+      "anti_copy_note": "仅借鉴立体度与眉鼻落差，须结合角色种族与年龄重定肤质、眉形与眼神。",
+      "svg_file": "assets/bones/B001.svg",
+      "svg_params": {
+        "face_w": 52,
+        "cheek_w": 55,
+        "jaw_w": 39,
+        "chin_y": 146,
+        "chin_w": 13,
+        "brow_depth": 9,
+        "mid_ratio": 0.35,
+        "accent": "#6366f1",
+        "tag": "高立体"
+      }
+    },
+    {
+      "id": "B002",
+      "type": "bone_structure",
+      "group": "基础骨相底盘",
+      "name": "东方流畅柔和骨相",
+      "en_name": "Smooth East Asian Oval Bone Structure",
+      "aesthetic_tier": "常规/美型/古典",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.33,
+        "mid": 0.34,
+        "lower": 0.33,
+        "jaw_angle_deg": 126,
+        "profile": "温润直面"
+      },
+      "anatomical_landmarks": [
+        "内收颧弓 (Tucked zygomatic arch)",
+        "平顺面中 (Smooth mid-face)",
+        "柔和鹅蛋下颌 (Soft oval mandible)"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "线条温润的杏眼或细长桃花眼",
+        "brow": "眉骨平缓过渡、无强烈压迫阴影",
+        "nose": "鼻梁秀气挺直、鼻头圆润精致",
+        "lips": "唇珠饱满、唇角微扬柔和",
+        "jaw": "下颌角圆润隐约、轮廓如玉流畅"
+      },
+      "prompt_en_ref_only": "smooth East Asian facial contours, gentle balanced bone structure, tucked cheekbones, soft oval jawline, delicate proportions",
+      "prompt_zh_ref_only": "面中平整温润，颧弓柔和内收，下颌转折圆润流畅，三庭五眼均衡舒展",
+      "suitable_roles": [
+        "国风古典美人",
+        "温婉女主",
+        "清雅文人",
+        "日系治愈角色"
+      ],
+      "linked_anatomy_plates": [
+        "A001",
+        "A002",
+        "A005"
+      ],
+      "anti_copy_note": "切忌套成千篇一律磨皮网红瓜子脸，需搭配真实肌理与独特眼型神态。",
+      "svg_file": "assets/bones/B002.svg",
+      "svg_params": {
+        "face_w": 50,
+        "cheek_w": 51,
+        "jaw_w": 38,
+        "chin_y": 145,
+        "chin_w": 16,
+        "brow_depth": 4,
+        "mid_ratio": 0.34,
+        "accent": "#10b981",
+        "tag": "柔和直面"
+      }
+    },
+    {
+      "id": "B003",
+      "type": "bone_structure",
+      "group": "基础骨相底盘",
+      "name": "方圆大气量感骨相",
+      "en_name": "Dignified Square-Round Bone Structure",
+      "aesthetic_tier": "常规/正剧/大女主",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.32,
+        "mid": 0.34,
+        "lower": 0.34,
+        "jaw_angle_deg": 112,
+        "profile": "端正稳重"
+      },
+      "anatomical_landmarks": [
+        "饱满颧骨撑肉 (Broad supportive malar)",
+        "清晰下颌角 110°–120°",
+        "敦实稳重下庭"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "眉眼舒展端方、眼裂开阔有定力",
+        "brow": "眉骨平直大气、眉间开阔",
+        "nose": "鼻梁端正挺拔、鼻翼规整",
+        "lips": "唇形端庄饱满、闭合沉稳",
+        "jaw": "方圆下颌角有骨量支撑、抗老大气"
+      },
+      "prompt_en_ref_only": "well-defined mandibular angle around 115 degrees, balanced square-round face, broad supportive cheekbones, dignified bone structure",
+      "prompt_zh_ref_only": "颧骨宽阔撑肉，下颌角清晰约 115° 呈方圆大气轮廓，整体骨量稳重端庄",
+      "suitable_roles": [
+        "正剧大女主",
+        "皇后/贵妃",
+        "稳重精英",
+        "中青年中坚主角"
+      ],
+      "linked_anatomy_plates": [
+        "A002",
+        "A003",
+        "A006"
+      ],
+      "anti_copy_note": "保持下颌角的真实支撑感，不要为了“显瘦”削成尖下巴。",
+      "svg_file": "assets/bones/B003.svg",
+      "svg_params": {
+        "face_w": 55,
+        "cheek_w": 57,
+        "jaw_w": 48,
+        "chin_y": 144,
+        "chin_w": 22,
+        "brow_depth": 6,
+        "mid_ratio": 0.34,
+        "accent": "#d97706",
+        "tag": "方圆大气"
+      }
+    },
+    {
+      "id": "B004",
+      "type": "bone_structure",
+      "group": "基础骨相底盘",
+      "name": "直角棱角硬朗骨相",
+      "en_name": "Chiseled Angular Masculine Bone Structure",
+      "aesthetic_tier": "常规/硬汉/动作",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.31,
+        "mid": 0.34,
+        "lower": 0.35,
+        "jaw_angle_deg": 102,
+        "profile": "强块面直面"
+      },
+      "anatomical_landmarks": [
+        "强直角下颌 (Strong squared mandible)",
+        "方正颏隆凸 (Squared mental protuberance)",
+        "粗壮颧弓切面"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "狭长刚毅眼型、上睑紧实",
+        "brow": "粗厚平直眉骨、略微前探压眼",
+        "nose": "鼻骨宽直硬朗、棱线分明",
+        "lips": "薄而紧实的唇线、嘴角平直",
+        "jaw": "下颌角近直角折转、块面硬朗"
+      },
+      "prompt_en_ref_only": "angular masculine jawline, squared chin, strong zygomatic arch, chiseled facial planes, rugged bone mass",
+      "prompt_zh_ref_only": "方正下巴与硬朗直角下颌线，颧弓切面清晰，面部骨骼块面感强烈",
+      "suitable_roles": [
+        "动作片硬汉",
+        "现代军官",
+        "机甲驾驶员",
+        "正派刚毅男主"
+      ],
+      "linked_anatomy_plates": [
+        "A002",
+        "A003",
+        "A006"
+      ],
+      "anti_copy_note": "仅参考硬朗块面逻辑，按年代与身份调整胡茬、皮肤粗细与眉眼情绪。",
+      "svg_file": "assets/bones/B004.svg",
+      "svg_params": {
+        "face_w": 56,
+        "cheek_w": 58,
+        "jaw_w": 51,
+        "chin_y": 146,
+        "chin_w": 25,
+        "brow_depth": 8,
+        "mid_ratio": 0.34,
+        "accent": "#2563eb",
+        "tag": "棱角硬朗"
+      }
+    },
+    {
+      "id": "B005",
+      "type": "bone_structure",
+      "group": "基础骨相底盘",
+      "name": "窄长清冷骨相",
+      "en_name": "Slender Elongated Aloof Bone Structure",
+      "aesthetic_tier": "常规/美型/智性",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.31,
+        "mid": 0.38,
+        "lower": 0.31,
+        "jaw_angle_deg": 124,
+        "profile": "清瘦微直"
+      },
+      "anatomical_landmarks": [
+        "略长中庭 (Slightly elongated mid-face)",
+        "轻盈颊凹 (Subtle canine fossa)",
+        "窄收下颌支"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "细长单眼皮或窄扇双、眼尾平展疏离",
+        "brow": "眉骨清秀微起、眉形平长",
+        "nose": "细长高直鼻梁、鼻翼收窄",
+        "lips": "薄唇色淡、唇珠秀气克制",
+        "jaw": "两颊微收无多余软肉、窄长利落"
+      },
+      "prompt_en_ref_only": "slender elongated face, slightly long mid-face, subtle hollow cheeks, minimalist low-contrast features, aloof elegance",
+      "prompt_zh_ref_only": "脸型偏窄长，中庭略拉长显清冷克制，两颊微收，五官留白高雅疏离",
+      "suitable_roles": [
+        "高智感谋士",
+        "清冷师尊",
+        "禁欲系贵公子",
+        "冷面调查员"
+      ],
+      "linked_anatomy_plates": [
+        "A001",
+        "A004"
+      ],
+      "anti_copy_note": "中庭不可过度拉长失真，需通过眼神克制与淡颜留白塑造清冷感。",
+      "svg_file": "assets/bones/B005.svg",
+      "svg_params": {
+        "face_w": 45,
+        "cheek_w": 46,
+        "jaw_w": 33,
+        "chin_y": 152,
+        "chin_w": 13,
+        "brow_depth": 5,
+        "mid_ratio": 0.38,
+        "accent": "#0ea5e9",
+        "tag": "窄长清冷"
+      }
+    },
+    {
+      "id": "B006",
+      "type": "bone_structure",
+      "group": "基础骨相底盘",
+      "name": "幼态短中庭骨相",
+      "en_name": "Youthful Short Mid-Face Bone Structure",
+      "aesthetic_tier": "常规/少年少女",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.37,
+        "mid": 0.3,
+        "lower": 0.33,
+        "jaw_angle_deg": 130,
+        "profile": "饱满微凸"
+      },
+      "anatomical_landmarks": [
+        "饱满高额结节 (Full frontal bossing)",
+        "偏短中庭 (Short mid-face)",
+        "圆润短小下巴"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "圆润大眼、眼位略靠中下",
+        "brow": "眉骨平缓、眉眼间距舒展",
+        "nose": "小巧微翘鼻梁、鼻头柔和圆润",
+        "lips": "短人中、饱满微翘小嘴",
+        "jaw": "下颌线圆润柔和、双颊带自然胶原感"
+      },
+      "prompt_en_ref_only": "youthful short mid-face, full rounded forehead, soft small chin, gentle rounded jawline, innocent natural proportions",
+      "prompt_zh_ref_only": "上庭饱满开阔，中下庭偏短显幼态朝气，下巴圆巧柔和，颊部有自然饱满感",
+      "suitable_roles": [
+        "元气少年少女",
+        "童真主角",
+        "软萌配角",
+        "青涩学徒"
+      ],
+      "linked_anatomy_plates": [
+        "A001",
+        "A003"
+      ],
+      "anti_copy_note": "成年角色慎用过度幼态比例，避免比例失调或低龄化违和。",
+      "svg_file": "assets/bones/B006.svg",
+      "svg_params": {
+        "face_w": 52,
+        "cheek_w": 54,
+        "jaw_w": 40,
+        "chin_y": 138,
+        "chin_w": 17,
+        "brow_depth": 3,
+        "mid_ratio": 0.3,
+        "accent": "#f43f5e",
+        "tag": "短中庭幼态"
+      }
+    },
+    {
+      "id": "B007",
+      "type": "bone_structure",
+      "group": "基础骨相底盘",
+      "name": "心形倒三角锐利骨相",
+      "en_name": "Heart-Shaped Tapered Bone Structure",
+      "aesthetic_tier": "美型/奇幻/动漫",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.35,
+        "mid": 0.33,
+        "lower": 0.32,
+        "jaw_angle_deg": 128,
+        "profile": "灵动收尖"
+      },
+      "anatomical_landmarks": [
+        "宽润额骨与高点颧骨",
+        "快速内收下颌体",
+        "小巧精巧尖颏"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "灵动上扬眼型、眼瞳明亮聚焦",
+        "brow": "微挑细眉骨、灵气鲜明",
+        "nose": "精巧细挺小翘鼻",
+        "lips": "唇角灵巧微翘、立体唇珠",
+        "jaw": "颧部饱满而下颌快速收窄至精巧尖下巴"
+      },
+      "prompt_en_ref_only": "heart-shaped face, slightly wider forehead and high cheek fullness, sharply tapered delicate chin, agile lively contours",
+      "prompt_zh_ref_only": "额与高颧处微宽饱满，下颌线迅速利落收尖，整体呈灵动精巧的心形倒三角",
+      "suitable_roles": [
+        "灵动精灵",
+        "机敏大小姐",
+        "傲娇女配",
+        "敏锐刺客少年"
+      ],
+      "linked_anatomy_plates": [
+        "A001",
+        "A002"
+      ],
+      "anti_copy_note": "防止做成畸形蛇精尖下巴，尖收幅度必须保留真实骨肉过渡。",
+      "svg_file": "assets/bones/B007.svg",
+      "svg_params": {
+        "face_w": 54,
+        "cheek_w": 56,
+        "jaw_w": 33,
+        "chin_y": 146,
+        "chin_w": 10,
+        "brow_depth": 5,
+        "mid_ratio": 0.33,
+        "accent": "#ec4899",
+        "tag": "心形灵动"
+      }
+    },
+    {
+      "id": "B008",
+      "type": "bone_structure",
+      "group": "基础骨相底盘",
+      "name": "宽眼距留白高级脸",
+      "en_name": "Wide-Set Editorial High-Fashion Bone Structure",
+      "aesthetic_tier": "电影/文艺/时尚",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.33,
+        "mid": 0.34,
+        "lower": 0.33,
+        "jaw_angle_deg": 118,
+        "profile": "舒展松弛"
+      },
+      "anatomical_landmarks": [
+        "略宽眼距 (>1 眼宽)",
+        "平直微宽鼻骨",
+        "高颧骨微外扩留白"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "眼距略宽显神秘空灵，眼神慵懒松弛",
+        "brow": "平直自然野生眉骨",
+        "nose": "鼻梁平直略宽、自带故事感",
+        "lips": "厚润松弛唇形、微张带呼吸感",
+        "jaw": "颧骨与下颌有清晰转折与高级留白"
+      },
+      "prompt_en_ref_only": "wide-set eyes with generous facial negative space, high sculpted cheekbones, relaxed full lips, editorial cinema bone structure",
+      "prompt_zh_ref_only": "眼距略宽留白充裕，颧骨微高有电影切面感，唇形丰润松弛，极具银幕文艺辨识度",
+      "suitable_roles": [
+        "文艺电影女主",
+        "神秘异域旅人",
+        "国际时尚角色",
+        "疏离感主角"
+      ],
+      "linked_anatomy_plates": [
+        "A001",
+        "A003"
+      ],
+      "anti_copy_note": "高级脸核心在留白与松弛神态，切忌叠加俗艳浓妆与尖锐美颜滤镜。",
+      "svg_file": "assets/bones/B008.svg",
+      "svg_params": {
+        "face_w": 53,
+        "cheek_w": 57,
+        "jaw_w": 42,
+        "chin_y": 144,
+        "chin_w": 17,
+        "brow_depth": 6,
+        "mid_ratio": 0.34,
+        "accent": "#8b5cf6",
+        "tag": "留白电影脸"
+      }
+    },
+    {
+      "id": "B009",
+      "type": "bone_structure",
+      "group": "动物系防同脸美型",
+      "name": "猫系冷艳娇俏骨相",
+      "en_name": "Cat-Like Aloof & Agile Bone Structure",
+      "aesthetic_tier": "常规/美型/奇幻",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.34,
+        "mid": 0.32,
+        "lower": 0.34,
+        "jaw_angle_deg": 124,
+        "profile": "紧致微翘"
+      },
+      "anatomical_landmarks": [
+        "微上挑眼眶外缘",
+        "尖锐内眼角与短人中",
+        "紧致小巧 V 颌"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "微上挑猫眼/桃花眼，尖内眼角带疏离感",
+        "brow": "轻扬细挺眉弓",
+        "nose": "小巧精致略带微翘感鼻尖",
+        "lips": "短人中、薄翘花瓣唇",
+        "jaw": "下颌紧致小巧，侧颜线条利落"
+      },
+      "prompt_en_ref_only": "cat-like upturned eyes, sharp inner canthus, short philtrum, taut delicate V-line jaw, aloof mysterious elegance",
+      "prompt_zh_ref_only": "微上挑猫眼配尖内眼角，人中偏短，鼻尖精巧微翘，下颌紧致清冷难驯",
+      "suitable_roles": [
+        "傲娇女主",
+        "神秘暗夜侠女",
+        "高冷大小姐",
+        "灵动妖猫人设"
+      ],
+      "linked_anatomy_plates": [
+        "A002"
+      ],
+      "anti_copy_note": "保持眼神冷傲与短人中的平衡，避免流于二次元模板化尖脸。",
+      "svg_file": "assets/bones/B009.svg",
+      "svg_params": {
+        "face_w": 50,
+        "cheek_w": 53,
+        "jaw_w": 34,
+        "chin_y": 141,
+        "chin_w": 12,
+        "brow_depth": 5,
+        "mid_ratio": 0.32,
+        "accent": "#a855f7",
+        "tag": "猫系冷艳"
+      }
+    },
+    {
+      "id": "B010",
+      "type": "bone_structure",
+      "group": "动物系防同脸美型",
+      "name": "狐系狭长魅惑骨相",
+      "en_name": "Fox-Like Narrow & Cunning Bone Structure",
+      "aesthetic_tier": "常规/美型/奇幻",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.31,
+        "mid": 0.36,
+        "lower": 0.33,
+        "jaw_angle_deg": 126,
+        "profile": "纤细锋利"
+      },
+      "anatomical_landmarks": [
+        "狭长上扬眼裂",
+        "细直水滴鼻骨",
+        "窄眼距与瘦尖下巴"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "眼裂极狭长上挑，眼尾细长勾勒",
+        "brow": "修长上挑眉骨",
+        "nose": "细直高挺水滴鼻，鼻翼精窄",
+        "lips": "薄而弧度狡黠的微笑唇",
+        "jaw": "瘦削流畅下颌收至纤巧尖颏"
+      },
+      "prompt_en_ref_only": "fox-like narrow elongated upturned eyes, slender straight nose, narrow interocular spacing, lean pointed chin, cunning grace",
+      "prompt_zh_ref_only": "狭长上扬狐眼与偏窄眼距，鼻梁细直精巧，下颌瘦削尖收，自带城府与魅惑",
+      "suitable_roles": [
+        "智谋权臣/女谋士",
+        "魅惑反派",
+        "仙侠狐族",
+        "心思深沉美型角色"
+      ],
+      "linked_anatomy_plates": [
+        "A001",
+        "A002"
+      ],
+      "anti_copy_note": "切勿做成夸张倒三角锥子脸，用细长眼裂和鼻梁精窄感表达狐系神韵。",
+      "svg_file": "assets/bones/B010.svg",
+      "svg_params": {
+        "face_w": 47,
+        "cheek_w": 49,
+        "jaw_w": 31,
+        "chin_y": 148,
+        "chin_w": 10,
+        "brow_depth": 6,
+        "mid_ratio": 0.36,
+        "accent": "#f97316",
+        "tag": "狐系智魅"
+      }
+    },
+    {
+      "id": "B011",
+      "type": "bone_structure",
+      "group": "动物系防同脸美型",
+      "name": "鹿系清澈温润骨相",
+      "en_name": "Fawn-Like Clear & Gentle Bone Structure",
+      "aesthetic_tier": "常规/美型/治愈",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.35,
+        "mid": 0.32,
+        "lower": 0.33,
+        "jaw_angle_deg": 128,
+        "profile": "柔润微圆"
+      },
+      "anatomical_landmarks": [
+        "开阔圆润眼眶",
+        "轻盈小巧圆钝鼻头",
+        "柔和饱满面颊骨肉"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "大而圆润清澈鹿眼，眼尾轻微下垂显温柔",
+        "brow": "自然柔和弯眉骨",
+        "nose": "鼻梁秀挺、鼻头柔和略圆",
+        "lips": "丰润自然樱桃唇",
+        "jaw": "下颌轮廓柔和圆润、毫无攻击性"
+      },
+      "prompt_en_ref_only": "fawn-like large luminous round eyes, gently downturned outer corners, soft rounded nose tip, gentle oval cheeks, warm purity",
+      "prompt_zh_ref_only": "眼眶开阔圆润，眼神清澈无害，鼻头柔润，面颊柔和流畅，富有亲和治愈感",
+      "suitable_roles": [
+        "纯善主角",
+        "忠犬/守护者",
+        "森林精灵",
+        "清澈治愈系少年少女"
+      ],
+      "linked_anatomy_plates": [
+        "A001"
+      ],
+      "anti_copy_note": "保留骨相支点与清晰下颌边缘，避免过度圆润显得模糊失真。",
+      "svg_file": "assets/bones/B011.svg",
+      "svg_params": {
+        "face_w": 50,
+        "cheek_w": 51,
+        "jaw_w": 37,
+        "chin_y": 142,
+        "chin_w": 15,
+        "brow_depth": 3,
+        "mid_ratio": 0.32,
+        "accent": "#14b8a6",
+        "tag": "鹿系清澈"
+      }
+    },
+    {
+      "id": "B012",
+      "type": "bone_structure",
+      "group": "动物系防同脸美型",
+      "name": "兔系柔萌娇憨骨相",
+      "en_name": "Rabbit-Like Soft & Innocent Bone Structure",
+      "aesthetic_tier": "常规/美型/甜暖",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.36,
+        "mid": 0.31,
+        "lower": 0.33,
+        "jaw_angle_deg": 131,
+        "profile": "软糯饱满"
+      },
+      "anatomical_landmarks": [
+        "圆饱满额颊软组织",
+        "短小人中与微翘唇珠",
+        "轻巧小下颌"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "亮泽杏圆眼、微带卧蚕显无辜",
+        "brow": "浅淡平缓短眉骨",
+        "nose": "小巧柔圆翘鼻",
+        "lips": "短人中配微凸饱满唇珠，似微微轻嘟",
+        "jaw": "柔软圆弧下颌线，面颊自带轻盈婴儿肥"
+      },
+      "prompt_en_ref_only": "rabbit-like delicate soft features, short mid-face, bright wide innocent eyes, subtly pouty full lips, soft rounded cheeks",
+      "prompt_zh_ref_only": "短中庭与饱满额颊，杏圆亮眼配短人中微翘唇珠，线条软糯亲切无攻击性",
+      "suitable_roles": [
+        "软萌小师妹",
+        "纯情配角",
+        "古灵精怪幼年角色",
+        "甜暖日常女主"
+      ],
+      "linked_anatomy_plates": [
+        "A001",
+        "A003"
+      ],
+      "anti_copy_note": "仅作柔美娇憨维度的词汇参考，严禁与写实历史正剧角色混用。",
+      "svg_file": "assets/bones/B012.svg",
+      "svg_params": {
+        "face_w": 51,
+        "cheek_w": 53,
+        "jaw_w": 39,
+        "chin_y": 139,
+        "chin_w": 16,
+        "brow_depth": 3,
+        "mid_ratio": 0.31,
+        "accent": "#fb7185",
+        "tag": "兔系软萌"
+      }
+    },
+    {
+      "id": "B013",
+      "type": "bone_structure",
+      "group": "动物系防同脸美型",
+      "name": "鹰系锐利威严骨相",
+      "en_name": "Hawk-Like Aquiline & Dominant Bone Structure",
+      "aesthetic_tier": "美型/权谋/史诗",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.31,
+        "mid": 0.36,
+        "lower": 0.33,
+        "jaw_angle_deg": 108,
+        "profile": "鹰钩峻峭"
+      },
+      "anatomical_landmarks": [
+        "低位厚重压眼眉弓",
+        "微驼峰高挺鹰鼻骨",
+        "瘦削锋利下颌折角"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "深陷狭长锐眼，目光自带俯视审视感",
+        "brow": "眉弓低且厚重前探，眉眼距极近",
+        "nose": "高挺带微驼峰骨节的鹰鼻",
+        "lips": "薄而紧抿的理性唇线",
+        "jaw": "瘦削劲挺、下颌线如刃般干脆"
+      },
+      "prompt_en_ref_only": "hawk-like aquiline nose bridge with subtle dorsal bump, heavy low-set brow ridge, piercing focused eyes, lean razor-sharp jaw",
+      "prompt_zh_ref_only": "厚重低位眉弓压眼，高挺微驼峰鼻骨，瘦削锋利下颌线，尽显鹰视狼顾之威严",
+      "suitable_roles": [
+        "上位掌权者",
+        "严苛统帅",
+        "冷峻导师",
+        "暗黑奇幻君王"
+      ],
+      "linked_anatomy_plates": [
+        "A002",
+        "A003",
+        "A006"
+      ],
+      "anti_copy_note": "驼峰鼻节度需自然克制，避免卡通化过度弯曲。",
+      "svg_file": "assets/bones/B013.svg",
+      "svg_params": {
+        "face_w": 50,
+        "cheek_w": 53,
+        "jaw_w": 42,
+        "chin_y": 148,
+        "chin_w": 15,
+        "brow_depth": 10,
+        "mid_ratio": 0.36,
+        "accent": "#b45309",
+        "tag": "鹰系峻峭"
+      }
+    },
+    {
+      "id": "B014",
+      "type": "bone_structure",
+      "group": "动物系防同脸美型",
+      "name": "蛇系冷冽骨感骨相",
+      "en_name": "Serpentine High-Cheekbone Cold Structure",
+      "aesthetic_tier": "美型/暗黑/反派",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.31,
+        "mid": 0.36,
+        "lower": 0.33,
+        "jaw_angle_deg": 120,
+        "profile": "低脂骨感"
+      },
+      "anatomical_landmarks": [
+        "极细长冷眼眶",
+        "高瘦外扩颧骨",
+        "低体脂削瘦薄颌"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "极细长冷漠眼裂，微遮瞳显危险感",
+        "brow": "高细冷锐眉骨",
+        "nose": "细直高峻、鼻翼极收紧",
+        "lips": "极薄紧绷的冷艳唇线",
+        "jaw": "高颧骨配极低体脂削瘦下颌线"
+      },
+      "prompt_en_ref_only": "serpentine narrow cold eyes, high lean prominent cheekbones, thin tight lips, low-body-fat sculpted sharp jawline, dangerous elegance",
+      "prompt_zh_ref_only": "极细长冷眼配高瘦颧骨，低体脂骨感强烈，薄唇紧敛，自带优雅而危险的气场",
+      "suitable_roles": [
+        "阴鸷反派",
+        "冷血刺客",
+        "毒舌贵族",
+        "暗黑异族角色"
+      ],
+      "linked_anatomy_plates": [
+        "A002",
+        "A004"
+      ],
+      "anti_copy_note": "用颧骨与冷眼比例建立辨识度，避免过度病态消瘦或尖锐失真。",
+      "svg_file": "assets/bones/B014.svg",
+      "svg_params": {
+        "face_w": 47,
+        "cheek_w": 53,
+        "jaw_w": 32,
+        "chin_y": 149,
+        "chin_w": 11,
+        "brow_depth": 7,
+        "mid_ratio": 0.36,
+        "accent": "#059669",
+        "tag": "蛇系冷锐"
+      }
+    },
+    {
+      "id": "B015",
+      "type": "bone_structure",
+      "group": "动物系防同脸美型",
+      "name": "狼系野性俊朗骨相",
+      "en_name": "Wolf-Like Wild & Untamed Bone Structure",
+      "aesthetic_tier": "美型/少年/武侠",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.32,
+        "mid": 0.34,
+        "lower": 0.34,
+        "jaw_angle_deg": 110,
+        "profile": "俊朗野性"
+      },
+      "anatomical_landmarks": [
+        "前探锐利眉弓",
+        "直挺带骨节鼻梁",
+        "紧实利落收紧下颌"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "眼尾微挑的俊朗狼眼，下三白或强聚焦感",
+        "brow": "斜飞硬朗浓眉骨",
+        "nose": "鼻骨直挺有力、鼻头棱角分明",
+        "lips": "线条清晰不羁的薄中唇",
+        "jaw": "下颌角分明而下巴精干收束，野性利落"
+      },
+      "prompt_en_ref_only": "wolf-like sharp untamed features, angled intense eyes, strong straight nasal bridge, taut angular jawline, wild heroic charisma",
+      "prompt_zh_ref_only": "斜飞眉骨配锐利狼眼，鼻骨直挺有力，下颌角清晰精干，兼具野性攻击力与少年俊朗",
+      "suitable_roles": [
+        "江湖浪子",
+        "少年战神",
+        "反叛骑士",
+        "野性不羁男主"
+      ],
+      "linked_anatomy_plates": [
+        "A002",
+        "A003",
+        "A005"
+      ],
+      "anti_copy_note": "狼系与鹰系的区别在于更年轻的骨肉紧实度与少年不羁感。",
+      "svg_file": "assets/bones/B015.svg",
+      "svg_params": {
+        "face_w": 51,
+        "cheek_w": 54,
+        "jaw_w": 43,
+        "chin_y": 147,
+        "chin_w": 16,
+        "brow_depth": 8,
+        "mid_ratio": 0.34,
+        "accent": "#4f46e5",
+        "tag": "狼系野性"
+      }
+    },
+    {
+      "id": "B016",
+      "type": "bone_structure",
+      "group": "动物系防同脸美型",
+      "name": "鹤系清逸仙姿骨相",
+      "en_name": "Crane-Like Ethereal & Noble Bone Structure",
+      "aesthetic_tier": "美型/仙侠/国风",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.32,
+        "mid": 0.36,
+        "lower": 0.32,
+        "jaw_angle_deg": 125,
+        "profile": "修长舒朗"
+      },
+      "anatomical_landmarks": [
+        "修长天庭与高颅顶",
+        "淡雅平长眉眼",
+        "清峻微直仙骨下颌"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "清长丹凤眼或静谧细杏眼，留白澄澈",
+        "brow": "淡远平展眉骨，气韵舒朗",
+        "nose": "鼻梁修直如玉箸、收尾清雅",
+        "lips": "淡色薄润秀唇，神情超然",
+        "jaw": "修长颈线承托清瘦流畅下颌，仙风鹤骨"
+      },
+      "prompt_en_ref_only": "crane-like ethereal slender bone structure, high cranial crown, serene elongated eyes, refined straight nose, graceful poised jawline",
+      "prompt_zh_ref_only": "高颅顶配清瘦修长骨相，眉眼舒朗淡雅，鼻若玉箸，整体散发出超然脱俗的鹤骨仙姿",
+      "suitable_roles": [
+        "仙侠师尊/仙君",
+        "隐世琴师",
+        "魏晋风流名士",
+        "清高神明"
+      ],
+      "linked_anatomy_plates": [
+        "A001",
+        "A005"
+      ],
+      "anti_copy_note": "必须配合修长脖颈、宽肩削体态与留白布光，忌油腻浓眉大眼。",
+      "svg_file": "assets/bones/B016.svg",
+      "svg_params": {
+        "face_w": 46,
+        "cheek_w": 47,
+        "jaw_w": 34,
+        "chin_y": 150,
+        "chin_w": 13,
+        "brow_depth": 4,
+        "mid_ratio": 0.36,
+        "accent": "#0284c7",
+        "tag": "鹤系清逸"
+      }
+    },
+    {
+      "id": "B017",
+      "type": "bone_structure",
+      "group": "历史写实与沧桑骨相（禁网红脸）",
+      "name": "乱世枭雄厚重骨相",
+      "en_name": "Historical Warlord Heavy Bone Structure",
+      "aesthetic_tier": "历史写实（严禁网红滤镜）",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.3,
+        "mid": 0.35,
+        "lower": 0.35,
+        "jaw_angle_deg": 106,
+        "profile": "厚重威压"
+      },
+      "anatomical_landmarks": [
+        "厚重压眼眉弓 (Heavy superciliary arch)",
+        "宽实坚硬下颌体 (Broad firm mandible)",
+        "深刻法令纹与川字眉间纹"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "深邃精明细长眼，眼袋与鱼尾纹自然可见",
+        "brow": "厚重低垂眉骨，眉心带常年思虑竖纹",
+        "nose": "鼻骨宽挺有力、鼻翼厚实",
+        "lips": "薄而紧抿的威严唇线，嘴角下压",
+        "jaw": "宽大厚实下颌与清晰咬肌，带真实风霜纹理"
+      },
+      "prompt_en_ref_only": "heavy brow ridge, deep-set piercing eyes, broad firm mandible, thin tight-lipped mouth, weathered skin with nasolabial folds, unpolished historical realism",
+      "prompt_zh_ref_only": "厚重眉弓压目，宽实下颌骨量雄浑，法令纹与眉间纹深刻，皮肤粗粝无磨皮，尽显枭雄威压",
+      "suitable_roles": [
+        "乱世枭雄",
+        "权谋霸主",
+        "中年开国统帅",
+        "铁血宰执"
+      ],
+      "linked_anatomy_plates": [
+        "A001",
+        "A002",
+        "A003",
+        "A004",
+        "A006",
+        "A007"
+      ],
+      "anti_copy_note": "严格禁止网红光滑磨皮与偶像化眉眼，必须保留真实年龄皱纹、毛孔与厚重下颌骨。",
+      "svg_file": "assets/bones/B017.svg",
+      "svg_params": {
+        "face_w": 57,
+        "cheek_w": 59,
+        "jaw_w": 52,
+        "chin_y": 146,
+        "chin_w": 24,
+        "brow_depth": 11,
+        "mid_ratio": 0.35,
+        "accent": "#78350f",
+        "tag": "历史·枭雄"
+      }
+    },
+    {
+      "id": "B018",
+      "type": "bone_structure",
+      "group": "历史写实与沧桑骨相（禁网红脸）",
+      "name": "清瘦谋士高颧骨相",
+      "en_name": "Historical Strategist Lean Zygomatic Structure",
+      "aesthetic_tier": "历史写实（严禁网红滤镜）",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.31,
+        "mid": 0.38,
+        "lower": 0.31,
+        "jaw_angle_deg": 118,
+        "profile": "清癯显骨"
+      },
+      "anatomical_landmarks": [
+        "微陷颞窝/太阳穴 (Hollow temporal fossa)",
+        "清晰高颧弓 (Prominent zygomatic arch)",
+        "微凹颊窝与抬头纹"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "深沉内敛细长眼，眼窝微陷显操劳思虑",
+        "brow": "清瘦微蹙眉骨，额间带真实细抬头纹",
+        "nose": "瘦挺高直鼻骨，骨节隐约可见",
+        "lips": "薄唇微抿，唇纹真实克制",
+        "jaw": "两颊微凹、颧弓与下颌骨线分明，清癯嶙峋"
+      },
+      "prompt_en_ref_only": "lean angular East Asian face, hollow temples, prominent zygomatic arches, slightly sunken cheeks, subtle forehead thinking lines, calculating deep-set eyes, historical realism",
+      "prompt_zh_ref_only": "太阳穴微陷、颧弓清晰显骨，两颊微凹带思虑抬头纹，眼神深沉，呈真实历史清癯谋士相",
+      "suitable_roles": [
+        "历史军师/谋士",
+        "清流谏臣",
+        "苦读老学者",
+        "隐忍幕僚"
+      ],
+      "linked_anatomy_plates": [
+        "A001",
+        "A002",
+        "A004",
+        "A005",
+        "A006",
+        "A007"
+      ],
+      "anti_copy_note": "切忌套成现代美男清冷脸，必须加入真实劳碌眼袋、肤色微黄与颞窝/颊窝骨感。",
+      "svg_file": "assets/bones/B018.svg",
+      "svg_params": {
+        "face_w": 46,
+        "cheek_w": 52,
+        "jaw_w": 36,
+        "chin_y": 150,
+        "chin_w": 15,
+        "brow_depth": 7,
+        "mid_ratio": 0.38,
+        "accent": "#475569",
+        "tag": "历史·谋士"
+      }
+    },
+    {
+      "id": "B019",
+      "type": "bone_structure",
+      "group": "历史写实与沧桑骨相（禁网红脸）",
+      "name": "久战武将粗粝骨相",
+      "en_name": "Battle-Hardened Historical General Bone Structure",
+      "aesthetic_tier": "历史写实（严禁网红滤镜）",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.3,
+        "mid": 0.34,
+        "lower": 0.36,
+        "jaw_angle_deg": 100,
+        "profile": "宽厚粗犷"
+      },
+      "anatomical_landmarks": [
+        "粗壮宽厚下颌与粗颈",
+        "微断/硬朗驼峰鼻骨",
+        "宽额眉骨与陈年风霜伤痕"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "久经沙场的锐利虎目，外眼角深刻日晒笑纹/风霜纹",
+        "brow": "粗硬前凸眉骨，局部可带旧伤断眉细节",
+        "nose": "宽厚粗犷鼻骨，略带微凸骨节",
+        "lips": "厚实粗粝唇形，周边带硬茬络腮胡",
+        "jaw": "宽大雄厚方颌配粗壮颈部，风吹日晒粗糙肤质"
+      },
+      "prompt_en_ref_only": "massive broad jaw, thick muscular neck, rugged slightly crooked nose bridge, sun-weathered rough skin texture, coarse stubble beard, battle-hardened historical anatomy",
+      "prompt_zh_ref_only": "宽厚方颌配粗颈，鼻骨粗硬带骨节，日晒粗粝肤质与硬朗胡茬，充满久战沙场的真实厚重感",
+      "suitable_roles": [
+        "边关大将",
+        "先锋猛将",
+        "乱世豪侠",
+        "中年铁骑统领"
+      ],
+      "linked_anatomy_plates": [
+        "A001",
+        "A002",
+        "A003",
+        "A005",
+        "A006",
+        "A007"
+      ],
+      "anti_copy_note": "严禁白净纤细小生脸，需确保颈围、颌骨宽度与日晒风霜皮质高度统一。",
+      "svg_file": "assets/bones/B019.svg",
+      "svg_params": {
+        "face_w": 59,
+        "cheek_w": 61,
+        "jaw_w": 55,
+        "chin_y": 146,
+        "chin_w": 27,
+        "brow_depth": 10,
+        "mid_ratio": 0.34,
+        "accent": "#991b1b",
+        "tag": "历史·武将"
+      }
+    },
+    {
+      "id": "B020",
+      "type": "bone_structure",
+      "group": "历史写实与沧桑骨相（禁网红脸）",
+      "name": "沧桑市井与老者骨相",
+      "en_name": "Weathered Elder & Commoner Cranial Structure",
+      "aesthetic_tier": "历史写实（严禁网红滤镜）",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.32,
+        "mid": 0.35,
+        "lower": 0.33,
+        "jaw_angle_deg": 115,
+        "profile": "松弛显骨"
+      },
+      "anatomical_landmarks": [
+        "可见颞骨与颧骨起伏",
+        "深刻鱼尾纹/木偶纹/眼袋",
+        "自然肤色不均与老年斑"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "眼皮微垂带深刻鱼尾纹与岁月浑浊光泽",
+        "brow": "眉骨清晰而眉梢花白稀疏",
+        "nose": "鼻翼略宽且皮肤毛孔粗大真实",
+        "lips": "唇周放射状细纹、略显干涩厚实",
+        "jaw": "下颌软组织自然微垂，仍见清晰骨骼起伏"
+      },
+      "prompt_en_ref_only": "visible cranial and zygomatic bone structure, deep crow's feet and expression lines, natural coarse skin pores, uneven sun-weathered complexion, documentary historical elder realism",
+      "prompt_zh_ref_only": "可见清晰颞骨与颧骨起伏，眼周鱼尾纹与唇周岁月纹深刻，毛孔与肤色不均真实自然",
+      "suitable_roles": [
+        "历史老臣",
+        "市井老匠人",
+        "乡村长者",
+        "饱经沧桑平民"
+      ],
+      "linked_anatomy_plates": [
+        "A003",
+        "A004",
+        "A005",
+        "A006",
+        "A007"
+      ],
+      "anti_copy_note": "不要仅仅“把年轻脸加几条白线皱纹”，必须体现眼皮微垂、颞凹、耳垂与颌下组织衰老。",
+      "svg_file": "assets/bones/B020.svg",
+      "svg_params": {
+        "face_w": 52,
+        "cheek_w": 55,
+        "jaw_w": 44,
+        "chin_y": 146,
+        "chin_w": 20,
+        "brow_depth": 7,
+        "mid_ratio": 0.35,
+        "accent": "#713f12",
+        "tag": "历史·老者"
+      }
+    },
+    {
+      "id": "B021",
+      "type": "bone_structure",
+      "group": "历史写实与沧桑骨相（禁网红脸）",
+      "name": "威严帝王方颐骨相",
+      "en_name": "Imperial Sovereign Broad-Mandible Structure",
+      "aesthetic_tier": "历史写实（严禁网红滤镜）",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.32,
+        "mid": 0.34,
+        "lower": 0.34,
+        "jaw_angle_deg": 110,
+        "profile": "饱满天庭地阁"
+      },
+      "anatomical_landmarks": [
+        "开阔天庭与饱满枕顶",
+        "端方隆准鼻骨",
+        "宽阔厚重地阁方颐"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "不怒自威的深沉凤目或端庄长眼，目光沉稳难测",
+        "brow": "舒展雄浑眉弓，印堂宽阔平正",
+        "nose": "鼻梁高广端正、准头丰隆",
+        "lips": "唇形厚实端方、闭合有仪态威势",
+        "jaw": "地阁方圆饱满，下颌稳重厚实具帝王气象"
+      },
+      "prompt_en_ref_only": "broad dignified imperial forehead, straight prominent nose, full firm square-round mandible, composed piercing gaze, mature weathered royal realism without beautification",
+      "prompt_zh_ref_only": "天庭开阔、印堂平正，准头丰隆，地阁方颐厚重稳健，带有不怒自威的真实史书帝王气象",
+      "suitable_roles": [
+        "历史开国皇帝",
+        "盛世君主",
+        "一代名相",
+        "宗室重臣"
+      ],
+      "linked_anatomy_plates": [
+        "A001",
+        "A002",
+        "A005",
+        "A006",
+        "A007"
+      ],
+      "anti_copy_note": "避免偶像古装剧里白嫩奶油皇帝形象，保留中年成熟体量、威仪肌理与历史厚重感。",
+      "svg_file": "assets/bones/B021.svg",
+      "svg_params": {
+        "face_w": 56,
+        "cheek_w": 58,
+        "jaw_w": 50,
+        "chin_y": 147,
+        "chin_w": 24,
+        "brow_depth": 8,
+        "mid_ratio": 0.34,
+        "accent": "#a16207",
+        "tag": "历史·帝王"
+      }
+    },
+    {
+      "id": "B022",
+      "type": "bone_structure",
+      "group": "历史写实与沧桑骨相（禁网红脸）",
+      "name": "边塞飒爽历史女将骨相",
+      "en_name": "Historical Frontier Female Warrior Bone Structure",
+      "aesthetic_tier": "历史写实（严禁网红滤镜）",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.32,
+        "mid": 0.34,
+        "lower": 0.34,
+        "jaw_angle_deg": 114,
+        "profile": "英气劲瘦"
+      },
+      "anatomical_landmarks": [
+        "英挺平直眉骨",
+        "高颧骨紧实面颊",
+        "清晰干练下颌转折"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "狭长炯炯英气眼，眼神果决坚毅，无浓妆眼线",
+        "brow": "自然英挺剑眉骨，眉宇利落",
+        "nose": "挺拔直鼻、线条硬朗干净",
+        "lips": "自然微干健康唇色，闭合果断",
+        "jaw": "下颌折角清晰约 114°，颧骨有力，带微晒高原红/风霜肌理"
+      },
+      "prompt_en_ref_only": "resolute historical East Asian female warrior face, clear 114-degree jawline, firm cheekbones, natural wind-chapped sun-kissed skin texture, zero modern makeup or beauty filter",
+      "prompt_zh_ref_only": "眉骨英挺、颧颌折角干脆利落，面颊紧实带边塞风沙晒痕与真实毛孔，彻底杜绝网红妆感",
+      "suitable_roles": [
+        "历史巾帼女将",
+        "边塞女斥候",
+        "乱世女族长",
+        "写实侠女"
+      ],
+      "linked_anatomy_plates": [
+        "A003",
+        "A005",
+        "A007"
+      ],
+      "anti_copy_note": "严禁画现代韩式半永久眉、假睫毛、红唇咬唇妆与磨皮白皮肤。",
+      "svg_file": "assets/bones/B022.svg",
+      "svg_params": {
+        "face_w": 51,
+        "cheek_w": 54,
+        "jaw_w": 43,
+        "chin_y": 145,
+        "chin_w": 17,
+        "brow_depth": 7,
+        "mid_ratio": 0.34,
+        "accent": "#be123c",
+        "tag": "历史·女将"
+      }
+    },
+    {
+      "id": "B023",
+      "type": "bone_structure",
+      "group": "历史写实与沧桑骨相（禁网红脸）",
+      "name": "丝路胡商深目高鼻骨相",
+      "en_name": "Silk Road Central-Asian High-Bridge Structure",
+      "aesthetic_tier": "历史写实（严禁网红滤镜）",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.31,
+        "mid": 0.36,
+        "lower": 0.33,
+        "jaw_angle_deg": 112,
+        "profile": "深目高鼻"
+      },
+      "anatomical_landmarks": [
+        "明显眉间鼻根落差 (Deep nasion)",
+        "高耸微弯鼻骨",
+        "深邃眼眶与立体颧骨"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "深陷有神大眼眶，眼窝投影浓郁",
+        "brow": "粗浓高耸眉弓，前探落差大",
+        "nose": "山根极高、鼻梁长挺略带西域微弯骨感",
+        "lips": "轮廓清晰自然唇形，常配修整胡须",
+        "jaw": "立体中下颌骨配风尘古铜肤色，真实西域风貌"
+      },
+      "prompt_en_ref_only": "Silk Road Central Asian historical bone structure, deep-set eyes under strong brow ridge, tall slightly curved nasal bridge, sculpted cheekbones, weathered bronze skin",
+      "prompt_zh_ref_only": "眉弓与鼻根落差深邃，鼻梁高耸修长，眼窝阴影分明，配古铜风尘肌理，还原丝路西域真实骨相",
+      "suitable_roles": [
+        "丝路胡商",
+        "西域使节",
+        "唐代胡人乐师/将领",
+        "异域历史旅者"
+      ],
+      "linked_anatomy_plates": [
+        "A003",
+        "A007"
+      ],
+      "anti_copy_note": "避免直接套用现代欧美超模脸，应体现中亚/西域民族真实的鼻骨弧度与风沙肤质。",
+      "svg_file": "assets/bones/B023.svg",
+      "svg_params": {
+        "face_w": 52,
+        "cheek_w": 55,
+        "jaw_w": 44,
+        "chin_y": 148,
+        "chin_w": 18,
+        "brow_depth": 11,
+        "mid_ratio": 0.36,
+        "accent": "#0f766e",
+        "tag": "历史·丝路"
+      }
+    },
+    {
+      "id": "B024",
+      "type": "bone_structure",
+      "group": "历史写实与沧桑骨相（禁网红脸）",
+      "name": "枯槁高僧与乱世隐士骨相",
+      "en_name": "Ascetic Monk & Hermit Gaunt Cranial Structure",
+      "aesthetic_tier": "历史写实（严禁网红滤镜）",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "3. 面部细节特征",
+      "proportions": {
+        "upper": 0.34,
+        "mid": 0.35,
+        "lower": 0.31,
+        "jaw_angle_deg": 122,
+        "profile": "清癯见骨"
+      },
+      "anatomical_landmarks": [
+        "明显颅顶骨感与颞窝凹陷",
+        "深陷眼眶与颧下颊凹",
+        "极低皮下脂肪筋骨毕露"
+      ],
+      "formula_slots_ref_only": {
+        "eye": "深陷古井无波之眼，上睑褶皱深而静定",
+        "brow": "眉骨清晰突显，眉尾垂淡",
+        "nose": "瘦削嶙峋直鼻，鼻骨边界清楚",
+        "lips": "枯淡静敛薄唇，无世俗火气",
+        "jaw": "双颊深收、颧骨与下颌骨轮廓毕现，如古画罗汉清癯有神"
+      },
+      "prompt_en_ref_only": "gaunt ascetic cranial bone structure, deep orbital hollows, sunken temples and canine fossae, pronounced cheekbones, serene weathered skin with fine age lines, documentary realism",
+      "prompt_zh_ref_only": "低皮脂见骨，颞窝与颊窝凹陷自然，眉骨与颧骨如古雕罗汉般清癯鲜明，神态枯寂澄明",
+      "suitable_roles": [
+        "得道高僧",
+        "乱世山野隐士",
+        "苦行道长",
+        "古籍抄经老儒"
+      ],
+      "linked_anatomy_plates": [
+        "A004",
+        "A005",
+        "A007"
+      ],
+      "anti_copy_note": "突出“清癯见骨而神采静定”的雕刻感，不要画成阴森恐怖干尸。",
+      "svg_file": "assets/bones/B024.svg",
+      "svg_params": {
+        "face_w": 46,
+        "cheek_w": 51,
+        "jaw_w": 34,
+        "chin_y": 149,
+        "chin_w": 14,
+        "brow_depth": 9,
+        "mid_ratio": 0.35,
+        "accent": "#57534e",
+        "tag": "历史·隐士"
+      }
+    }
+  ],
+  "hairs": [
+    {
+      "id": "H001",
+      "type": "hairstyle",
+      "group": "女性 · 现代与动漫幻想",
+      "gender": "女性",
+      "era": "现代/动漫",
+      "name": "姬发式 / 公主切",
+      "en_name": "Hime Cut",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "齐眉钝感刘海 + 两侧齐下颌垂落切面鬓发 + 顺直长发大轮廓",
+      "formula_slots_ref_only": {
+        "color": "乌黑 / 墨蓝黑 / 深酒红",
+        "texture": "垂顺丝滑带微冷反光",
+        "noun": "经典姬发式公主切长直发",
+        "motion": "两侧齐切鬓发贴合脸颊，后背长发微风轻扬"
+      },
+      "prompt_en_ref_only": "hime cut, blunt straight bangs, cheek-length flat sidelocks, long sleek straight hair",
+      "prompt_zh_ref_only": "齐刘海配两侧齐下颌公主切垂发，后披顺滑长直发，线条利落具东方贵族神秘感",
+      "suggested_bones": [
+        "B002",
+        "B005",
+        "B009"
+      ],
+      "svg_file": "assets/hairs/H001.svg",
+      "svg_params": {
+        "shape": "hime",
+        "accent": "#ec4899",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H002",
+      "type": "hairstyle",
+      "group": "女性 · 现代与动漫幻想",
+      "gender": "女性",
+      "era": "现代/动漫",
+      "name": "高耸利落高马尾",
+      "en_name": "Sleek High Ponytail",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "干净饱满发际线 + 脑后高位束起 + 弧度轻盈飘动长尾",
+      "formula_slots_ref_only": {
+        "color": "黑茶色 / 暖栗棕 / 焰红",
+        "texture": "紧致顺滑发根配轻盈发尾",
+        "noun": "高耸利落高马尾",
+        "motion": "几缕细碎耳发垂落，高马尾随动作大幅甩动"
+      },
+      "prompt_en_ref_only": "high ponytail, clean exposed hairline, sleek lifted crown, dynamic flowing ponytail strands",
+      "prompt_zh_ref_only": "额前干净利落，脑后高位束起饱满高马尾，发尾在风中划出飒爽动感弧线",
+      "suggested_bones": [
+        "B003",
+        "B007",
+        "B015",
+        "B022"
+      ],
+      "svg_file": "assets/hairs/H002.svg",
+      "svg_params": {
+        "shape": "high_ponytail",
+        "accent": "#f43f5e",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H003",
+      "type": "hairstyle",
+      "group": "女性 · 现代与动漫幻想",
+      "gender": "女性",
+      "era": "动漫/现代",
+      "name": "对称高/低双马尾",
+      "en_name": "Symmetrical Twintails",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "中分或偏分头顶 + 两侧对称束发 + 轻盈跳跃垂坠尾束",
+      "formula_slots_ref_only": {
+        "color": "浅金 / 樱粉 / 焦糖棕",
+        "texture": "蓬松轻盈空气感发丝",
+        "noun": "对称双马尾",
+        "motion": "双束发尾随步伐轻快晃动，发梢微卷"
+      },
+      "prompt_en_ref_only": "symmetrical high twintails, airy layered bangs, lively bouncy hair tails",
+      "prompt_zh_ref_only": "头顶蓬松自然，两侧对称束起轻盈双马尾，发尾微卷带元气灵动剪影",
+      "suggested_bones": [
+        "B006",
+        "B007",
+        "B012"
+      ],
+      "svg_file": "assets/hairs/H003.svg",
+      "svg_params": {
+        "shape": "twintails",
+        "accent": "#fb7185",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H004",
+      "type": "hairstyle",
+      "group": "女性 · 现代与动漫幻想",
+      "gender": "女性",
+      "era": "幻想/欧式",
+      "name": "螺旋钻头卷",
+      "en_name": "Ornate Twin Drill Ringlets",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "两侧高体量螺旋圆柱大卷 + 华丽层次发冠剪影",
+      "formula_slots_ref_only": {
+        "color": "香槟金 / 玫瑰金 / 银白",
+        "texture": "弹性饱满高光泽立体卷发",
+        "noun": "对称螺旋钻头大卷发",
+        "motion": "厚重弹性卷发随转身微颤，边缘透出逆光金边"
+      },
+      "prompt_en_ref_only": "twin drill hair, ornate sculpted spiral ringlets, regal voluminous curls",
+      "prompt_zh_ref_only": "两侧呈雕塑般饱满对称的螺旋钻头大卷，光泽华丽，凸显贵族大小姐辨识度",
+      "suggested_bones": [
+        "B001",
+        "B007",
+        "B009"
+      ],
+      "svg_file": "assets/hairs/H004.svg",
+      "svg_params": {
+        "shape": "drills",
+        "accent": "#f59e0b",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H005",
+      "type": "hairstyle",
+      "group": "女性 · 现代与动漫幻想",
+      "gender": "女性",
+      "era": "现代/古今通用",
+      "name": "温柔半扎披发",
+      "en_name": "Half-Up Half-Down Long Hair",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "上半区柔顺束于脑后 + 下半区自然垂落肩背 + 柔和八字碎刘海",
+      "formula_slots_ref_only": {
+        "color": "深栗棕 / 乌黑 / 柔灰褐",
+        "texture": "柔润微光泽自然顺直",
+        "noun": "优雅半扎披肩长发",
+        "motion": "肩头垂落发缕轻贴锁骨，微风吹散些许鬓丝"
+      },
+      "prompt_en_ref_only": "half-up half-down long hair, gentle face-framing wisps, elegant flowing shoulder strands",
+      "prompt_zh_ref_only": "上层发丝优雅半束，下层长发柔顺披落双肩，两侧留出柔和碎鬓发修饰脸庞",
+      "suggested_bones": [
+        "B002",
+        "B003",
+        "B011"
+      ],
+      "svg_file": "assets/hairs/H005.svg",
+      "svg_params": {
+        "shape": "half_up",
+        "accent": "#10b981",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H006",
+      "type": "hairstyle",
+      "group": "女性 · 现代与动漫幻想",
+      "gender": "女性",
+      "era": "现代/复古港风",
+      "name": "蓬松慵懒大波浪",
+      "en_name": "Voluminous Loose Waves",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "大偏分高颅顶弧度 + 饱满 S 型层次波浪 + 宽肩包裹感",
+      "formula_slots_ref_only": {
+        "color": "暖焦糖棕 / 深黑茶 / 勃艮第红",
+        "texture": "蓬松空气感弹性大卷",
+        "noun": "复古蓬松大波浪长卷发",
+        "motion": "刚睡醒般的慵懒凌乱层次，数缕发丝轻搭锁骨"
+      },
+      "prompt_en_ref_only": "voluminous long wavy hair, deep side part, soft layered loose S-waves, effortless glamour",
+      "prompt_zh_ref_only": "大偏分高颅顶配饱满弹性 S 型大波浪，层次蓬松慵懒，富有电影复古风情",
+      "suggested_bones": [
+        "B001",
+        "B003",
+        "B008",
+        "B010"
+      ],
+      "svg_file": "assets/hairs/H006.svg",
+      "svg_params": {
+        "shape": "long_waves",
+        "accent": "#d97706",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H007",
+      "type": "hairstyle",
+      "group": "女性 · 现代与动漫幻想",
+      "gender": "女性",
+      "era": "现代/职场/科幻",
+      "name": "一刀切齐短发 / 波波头",
+      "en_name": "Sleek Blunt Bob Cut",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "齐下颌线锋利水平底边 + 贴合头型几何直切轮廓",
+      "formula_slots_ref_only": {
+        "color": "冷乌黑 / 铂金灰 / 银白",
+        "texture": "哑光偏光直顺、发尾锐利整齐",
+        "noun": "一刀切齐下颌短波波头",
+        "motion": "发尾如刀裁般整齐，微微随转头轻扫下颌线"
+      },
+      "prompt_en_ref_only": "sleek blunt bob cut, chin-length razor-straight hair, crisp geometric edge",
+      "prompt_zh_ref_only": "齐下颌线一刀切直短发，发尾锋利整齐，紧贴头骨勾勒干练酷飒轮廓",
+      "suggested_bones": [
+        "B001",
+        "B005",
+        "B008",
+        "B014"
+      ],
+      "svg_file": "assets/hairs/H007.svg",
+      "svg_params": {
+        "shape": "blunt_bob",
+        "accent": "#6366f1",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H008",
+      "type": "hairstyle",
+      "group": "女性 · 现代与动漫幻想",
+      "gender": "女性",
+      "era": "现代/中性酷飒",
+      "name": "锁骨层次狼尾",
+      "en_name": "Feminine Shaggy Wolf Cut",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "头顶轻盈高层次蓬松 + 颈后修长碎尾外翘 + 碎感遮眉刘海",
+      "formula_slots_ref_only": {
+        "color": "冷灰黑 / 烟熏青 / 挑染银灰",
+        "texture": "轻薄微蓬碎发肌理",
+        "noun": "锁骨高层次女性狼尾发",
+        "motion": "发尾自然外翘杂而不乱，迎风翻飞感强"
+      },
+      "prompt_en_ref_only": "feminine wolf cut, shaggy high-layered shoulder-length hair, wispy flipped ends",
+      "prompt_zh_ref_only": "上蓬下收的锁骨高层次狼尾碎发，颈后发尾轻盈外翘，兼具少年感与酷飒气场",
+      "suggested_bones": [
+        "B005",
+        "B008",
+        "B009",
+        "B015"
+      ],
+      "svg_file": "assets/hairs/H008.svg",
+      "svg_params": {
+        "shape": "wolf_female",
+        "accent": "#0ea5e9",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H009",
+      "type": "hairstyle",
+      "group": "女性 · 现代与动漫幻想",
+      "gender": "女性",
+      "era": "国潮/动漫",
+      "name": "双丸子头 / 哪吒头",
+      "en_name": "Double High Hair Buns",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "头顶两侧对称圆润发包 + 轻盈胎毛碎发 + 可配丝带或流苏",
+      "formula_slots_ref_only": {
+        "color": "漆黑 / 深棕 / 红黑挑染",
+        "texture": "饱满紧实盘发配软萌碎发",
+        "noun": "对称高双丸子头",
+        "motion": "额角细碎绒发随微风颤动，俏皮利落"
+      },
+      "prompt_en_ref_only": "symmetrical double high hair buns, playful wispy forehead strands, energetic silhouette",
+      "prompt_zh_ref_only": "头顶左右对称盘起饱满双丸子头，耳际自然散落轻盈碎发，灵动俏皮辨识度高",
+      "suggested_bones": [
+        "B006",
+        "B007",
+        "B012"
+      ],
+      "svg_file": "assets/hairs/H009.svg",
+      "svg_params": {
+        "shape": "double_buns",
+        "accent": "#f97316",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H010",
+      "type": "hairstyle",
+      "group": "女性 · 现代与动漫幻想",
+      "gender": "女性",
+      "era": "现代/田园/奇幻",
+      "name": "单侧垂肩麻花辫",
+      "en_name": "Single Side Braid Over Shoulder",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "松弛蓬松顶发 + 粗松纹理单侧编辫垂落一侧胸前",
+      "formula_slots_ref_only": {
+        "color": "亚麻棕 / 深褐 / 蜜糖金",
+        "texture": "微松自然编织发股纹理",
+        "noun": "单侧慵懒垂肩麻花辫",
+        "motion": "辫身抽丝自然蓬松，耳畔垂落几缕柔和细丝"
+      },
+      "prompt_en_ref_only": "loose thick single braid draped over one shoulder, soft framing wisps, warm natural texture",
+      "prompt_zh_ref_only": "发丝松散编成粗纹理麻花辫垂落一侧肩前，鬓边留自然碎发，温婉质朴有故事感",
+      "suggested_bones": [
+        "B002",
+        "B003",
+        "B011"
+      ],
+      "svg_file": "assets/hairs/H010.svg",
+      "svg_params": {
+        "shape": "side_braid",
+        "accent": "#84cc16",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H011",
+      "type": "hairstyle",
+      "group": "女性 · 现代与动漫幻想",
+      "gender": "女性",
+      "era": "现代/职场/古典",
+      "name": "慵懒低盘丸子头",
+      "en_name": "Low Messy Chignon Bun",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "后枕低位松弛盘结 + 纤细脖颈完全露出 + 几缕自然垂落发丝",
+      "formula_slots_ref_only": {
+        "color": "自然黑 / 冷茶棕 / 银灰",
+        "texture": "柔和哑光轻蓬松质感",
+        "noun": "法式慵懒低盘丸子头",
+        "motion": "几缕碎发散落颈侧与脸颊边缘，松弛从容"
+      },
+      "prompt_en_ref_only": "low messy chignon hair bun at nape, loose face-framing strands, refined effortless updo",
+      "prompt_zh_ref_only": "发丝在后颈低位松弛盘成慵懒丸子髻，露出修长颈线，脸颊边零星碎发温柔随性",
+      "suggested_bones": [
+        "B002",
+        "B003",
+        "B005",
+        "B008"
+      ],
+      "svg_file": "assets/hairs/H011.svg",
+      "svg_params": {
+        "shape": "low_bun",
+        "accent": "#64748b",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H012",
+      "type": "hairstyle",
+      "group": "女性 · 现代与动漫幻想",
+      "gender": "女性",
+      "era": "暗黑/动漫/悬疑",
+      "name": "遮单眼不对称长斜发",
+      "en_name": "Asymmetrical One-Eye-Covered Cut",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "大比例斜分长刘海遮蔽一侧眼眶 + 左右不等长层次发尾",
+      "formula_slots_ref_only": {
+        "color": "深紫黑 / 乌黑 / 冷银灰",
+        "texture": "顺滑微重垂坠分束感",
+        "noun": "不对称遮单眼斜分长发",
+        "motion": "斜刘海在微风中若隐若现露出一只冷眸"
+      },
+      "prompt_en_ref_only": "asymmetrical long diagonal bangs covering one eye, uneven layered dark hair, mysterious silhouette",
+      "prompt_zh_ref_only": "大斜分长刘海自然遮掩一侧眼眸，左右层次错落不等长，营造强烈悬疑与暗黑张力",
+      "suggested_bones": [
+        "B001",
+        "B005",
+        "B010",
+        "B014"
+      ],
+      "svg_file": "assets/hairs/H012.svg",
+      "svg_params": {
+        "shape": "one_eye",
+        "accent": "#7c3aed",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H013",
+      "type": "hairstyle",
+      "group": "女性 · 现代与动漫幻想",
+      "gender": "女性",
+      "era": "动漫/日常",
+      "name": "呆毛配短碎发",
+      "en_name": "Short Tousled Hair with Ahoge",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "耳下蓬松轻碎短发 + 头顶一缕标志性翘起呆毛弧线",
+      "formula_slots_ref_only": {
+        "color": "琥珀棕 / 浅橘 / 墨黑",
+        "texture": "轻盈抓松凌乱短发丝",
+        "noun": "带标志性呆毛的蓬松短碎发",
+        "motion": "头顶翘起的单缕发丝随情绪晃动，朝气满满"
+      },
+      "prompt_en_ref_only": "short tousled layered hair with a distinct sticking-up ahoge strand on crown, lively casual cut",
+      "prompt_zh_ref_only": "轻盈凌乱的短碎发包裹耳际，头顶翘起一缕生动标志性呆毛，满溢元气少年/少女感",
+      "suggested_bones": [
+        "B006",
+        "B011",
+        "B012"
+      ],
+      "svg_file": "assets/hairs/H013.svg",
+      "svg_params": {
+        "shape": "ahoge_short",
+        "accent": "#eab308",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H014",
+      "type": "hairstyle",
+      "group": "女性 · 现代与动漫幻想",
+      "gender": "女性",
+      "era": "仙侠/神明/幻想",
+      "name": "极长及踝飘逸仙发",
+      "en_name": "Absurdly Long Ethereal Flowing Hair",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "超长瀑布般垂直与风动体量 + 轻纱般分缕尾端",
+      "formula_slots_ref_only": {
+        "color": "霜月银白 / 墨玉黑 / 极光浅金",
+        "texture": "丝绸般细腻通透发光发丝",
+        "noun": "极长及踝飘逸长发",
+        "motion": "发海随气流在半空舒展翻涌，发梢透出柔光"
+      },
+      "prompt_en_ref_only": "absurdly long floor-grazing flowing hair, ethereal weightless wind-swept strands, mythic silhouette",
+      "prompt_zh_ref_only": "极长至踝的瀑布长发如轻纱般在风中舒展悬浮，发丝分缕轻盈通透，极具神性史诗感",
+      "suggested_bones": [
+        "B002",
+        "B005",
+        "B016"
+      ],
+      "svg_file": "assets/hairs/H014.svg",
+      "svg_params": {
+        "shape": "ethereal_long",
+        "accent": "#38bdf8",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H015",
+      "type": "hairstyle",
+      "group": "女性 · 中国古代发髻",
+      "gender": "女性",
+      "era": "唐宋宫廷/古装",
+      "name": "盛唐高髻（峨髻 / 高椎髻）",
+      "en_name": "High Towering Tang Gaoji Bun",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "高耸饱满头顶云髻 + 饱满两侧抱面鬓角 + 玉簪金钗点缀",
+      "formula_slots_ref_only": {
+        "color": "漆黑如墨（带天然乌润光泽）",
+        "texture": "厚实饱满盘梳规整丝感",
+        "noun": "盛唐高耸峨髻",
+        "motion": "两鬓微贴面颊显端庄丰润，发簪步摇随步轻晃"
+      },
+      "prompt_en_ref_only": "high towering traditional Chinese Tang dynasty hair bun (Gaoji), full sculpted temples, ornate jade hairpins",
+      "prompt_zh_ref_only": "乌黑浓发高耸盘成端庄盛唐高髻，两鬓抱面丰盈，插素玉或金钿发簪，尽显雍容贵气",
+      "suggested_bones": [
+        "B002",
+        "B003",
+        "B021"
+      ],
+      "svg_file": "assets/hairs/H015.svg",
+      "svg_params": {
+        "shape": "ancient_gaoji",
+        "accent": "#d97706",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H016",
+      "type": "hairstyle",
+      "group": "女性 · 中国古代发髻",
+      "gender": "女性",
+      "era": "汉晋古装/闺秀",
+      "name": "汉晋堕马髻",
+      "en_name": "Asymmetrical Drooping Duomaji Bun",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "发髻明显偏向一侧下垂倾倒 + 慵懒垂耳软鬓发",
+      "formula_slots_ref_only": {
+        "color": "墨黑 / 柔和乌褐",
+        "texture": "柔顺厚实微松盘垂质感",
+        "noun": "古典侧倾堕马髻",
+        "motion": "偏坠发髻伴随侧颜慵懒倾垂，鬓丝随微风拂动"
+      },
+      "prompt_en_ref_only": "asymmetrical drooping traditional Chinese bun (Duomaji) tilted to one side, soft framing wisps, graceful classical allure",
+      "prompt_zh_ref_only": "发髻精巧偏向一侧垂堕而下，耳边留数缕轻柔鬓丝，呈现汉晋闺秀独有的慵懒娇媚韵味",
+      "suggested_bones": [
+        "B002",
+        "B009",
+        "B010"
+      ],
+      "svg_file": "assets/hairs/H016.svg",
+      "svg_params": {
+        "shape": "ancient_duoma",
+        "accent": "#c026d3",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H017",
+      "type": "hairstyle",
+      "group": "女性 · 中国古代发髻",
+      "gender": "女性",
+      "era": "汉晋/仙侠少女",
+      "name": "飞仙髻（结鬟双环式）",
+      "en_name": "Flying Immortal Twin-Loop Feixianji",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "头顶左右双空心高环发髻 + 脑后披散长发 + 轻纱发带",
+      "formula_slots_ref_only": {
+        "color": "乌黑 / 墨蓝黑",
+        "texture": "轻盈凌空盘环发丝",
+        "noun": "古典结鬟飞仙髻",
+        "motion": "双环凌空高耸，发带与背披长发随山风舒展"
+      },
+      "prompt_en_ref_only": "flying immortal twin-loop traditional Chinese hair bun (Feixianji), hollow elevated hair rings, flowing silk ribbons",
+      "prompt_zh_ref_only": "发丝左右结成高耸空心双环飞仙髻，余发自然披肩并缀轻纱丝带，极具灵动仙气",
+      "suggested_bones": [
+        "B002",
+        "B006",
+        "B007",
+        "B011"
+      ],
+      "svg_file": "assets/hairs/H017.svg",
+      "svg_params": {
+        "shape": "ancient_feixian",
+        "accent": "#06b6d4",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H018",
+      "type": "hairstyle",
+      "group": "女性 · 中国古代发髻",
+      "gender": "女性",
+      "era": "魏晋风流/才女",
+      "name": "拧旋灵蛇髻",
+      "en_name": "Twisted Sculptural Lingsheji Updo",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "长发股拧转盘旋叠加 + 蜿蜒雕塑感不对称流动发环",
+      "formula_slots_ref_only": {
+        "color": "浓墨乌黑",
+        "texture": "顺滑紧致拧股雕塑光泽",
+        "noun": "魏晋拧旋灵蛇髻",
+        "motion": "盘旋发股如游龙婉转，几缕细丝顺颈侧轻垂"
+      },
+      "prompt_en_ref_only": "twisted coiled traditional Chinese updo (Lingsheji), sculptural flowing hair loops, refined Wei-Jin scholar elegance",
+      "prompt_zh_ref_only": "乌发拧转盘旋叠出灵动不对称发环，轮廓如游龙般富有流动雕塑感，彰显魏晋名门才女气韵",
+      "suggested_bones": [
+        "B005",
+        "B008",
+        "B010",
+        "B016"
+      ],
+      "svg_file": "assets/hairs/H018.svg",
+      "svg_params": {
+        "shape": "ancient_lingshe",
+        "accent": "#0d9488",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H019",
+      "type": "hairstyle",
+      "group": "女性 · 中国古代发髻",
+      "gender": "女性",
+      "era": "古装少女/侍女",
+      "name": "双挂丫髻（垂环髻）",
+      "en_name": "Symmetrical Twin-Hanging Maiden Loops",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "中分露额 + 耳侧左右对称下垂环形双髻 + 简约彩绳或小花钿",
+      "formula_slots_ref_only": {
+        "color": "自然乌黑",
+        "texture": "规整软顺细密发丝",
+        "noun": "古风对称双挂丫髻",
+        "motion": "垂环轻贴耳后，碎刘海与胎毛自然贴额显娇俏"
+      },
+      "prompt_en_ref_only": "symmetrical twin-hanging looped hair buns beside ears, youthful ancient Chinese maiden hairstyle, simple silk ties",
+      "prompt_zh_ref_only": "中分清爽露额，耳侧对称垂挂精致双环丫髻，缀以素雅丝绳，充满古代灵动少女朝气",
+      "suggested_bones": [
+        "B006",
+        "B011",
+        "B012"
+      ],
+      "svg_file": "assets/hairs/H019.svg",
+      "svg_params": {
+        "shape": "ancient_yaji",
+        "accent": "#f43f5e",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H020",
+      "type": "hairstyle",
+      "group": "女性 · 中国古代发髻",
+      "gender": "女性",
+      "era": "宋明正剧/主母",
+      "name": "盘叠端庄低髻配步摇",
+      "en_name": "Folded Low Classical Bun with Buyao",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "后脑规整层叠低发髻 + 利落分缝全露额头 + 珠玉步摇垂饰",
+      "formula_slots_ref_only": {
+        "color": "乌黑 / 中年微夹几缕银丝",
+        "texture": "细腻紧贴克制哑光发丝",
+        "noun": "宋明盘叠端庄低髻",
+        "motion": "整体仪态稳重端方，珠玉步摇在侧颜微晃生光"
+      },
+      "prompt_en_ref_only": "neatly folded low coiled traditional Chinese updo, exposed clean forehead, adorned with subtle gold pearl Buyao hairpin",
+      "prompt_zh_ref_only": "乌发向后规整层叠盘成端方低髻，额际干净克制，仅以一支珠玉步摇点缀，沉稳持重",
+      "suggested_bones": [
+        "B002",
+        "B003",
+        "B020"
+      ],
+      "svg_file": "assets/hairs/H020.svg",
+      "svg_params": {
+        "shape": "ancient_low_buyao",
+        "accent": "#b45309",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H021",
+      "type": "hairstyle",
+      "group": "女性 · 中国古代发髻",
+      "gender": "女性",
+      "era": "宋代写实/清雅",
+      "name": "宋式素雅珍珠矮髻",
+      "en_name": "Song Dynasty Minimalist Pearl Low Bun",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "低平圆润脑后矮髻 + 素色抹额或极简珍珠排簪 + 清淡无繁饰",
+      "formula_slots_ref_only": {
+        "color": "自然纯黑",
+        "texture": "柔和哑光自然微蓬质感",
+        "noun": "宋代素雅矮髻",
+        "motion": "耳际极少量软碎发随风微动，整体素净留白"
+      },
+      "prompt_en_ref_only": "Song dynasty understated low rounded Chinese bun, minimalist small white pearl hairpins, restrained classical aesthetics",
+      "prompt_zh_ref_only": "发丝在后脑柔顺挽成低平圆润宋式矮髻，仅点缀一排极简小白珍珠簪，素雅清丽极富宋画韵味",
+      "suggested_bones": [
+        "B002",
+        "B005",
+        "B016"
+      ],
+      "svg_file": "assets/hairs/H021.svg",
+      "svg_params": {
+        "shape": "ancient_song",
+        "accent": "#64748b",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H022",
+      "type": "hairstyle",
+      "group": "女性 · 中国古代发髻",
+      "gender": "女性",
+      "era": "古装武侠/女将",
+      "name": "侠女束冠高马尾混编发",
+      "en_name": "Wuxia Female Warrior Topknot & Ponytail",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "顶心利落金属/皮质小冠束起 + 长直发高束垂落 + 侧边极细编辫",
+      "formula_slots_ref_only": {
+        "color": "乌黑 / 深栗黑",
+        "texture": "紧实利落微带风尘韧感",
+        "noun": "古风女侠束冠高束发",
+        "motion": "高束长尾与两鬓散落碎丝迎风翻卷，飒爽果敢"
+      },
+      "prompt_en_ref_only": "traditional Chinese female warrior high topknot with simple dark bronze crown, long wind-swept ponytail and slim side braids",
+      "prompt_zh_ref_only": "顶心以素铁小冠利落束起高马尾，耳侧编入一两股细辫，全露英挺额眉，尽显边塞女将与女侠风范",
+      "suggested_bones": [
+        "B003",
+        "B015",
+        "B022"
+      ],
+      "svg_file": "assets/hairs/H022.svg",
+      "svg_params": {
+        "shape": "ancient_wuxia_f",
+        "accent": "#be123c",
+        "gender": "女性"
+      }
+    },
+    {
+      "id": "H023",
+      "type": "hairstyle",
+      "group": "男性 · 现代与动漫潮流",
+      "gender": "男性",
+      "era": "现代/硬汉/军旅",
+      "name": "干练寸头 / 极短平头",
+      "en_name": "Crisp Military Buzz Cut",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "紧贴头骨极短轮廓 + 清晰硬朗发际线与颞角转折",
+      "formula_slots_ref_only": {
+        "color": "乌黑 / 铁灰短茬",
+        "texture": "粗糙硬挺极短发茬质感",
+        "noun": "利落硬汉寸头",
+        "motion": "完全露出头骨与眉骨比例，毫无遮挡修饰"
+      },
+      "prompt_en_ref_only": "short military buzz cut, crisp exposed hairline, tight cranial contour, rugged masculine minimalism",
+      "prompt_zh_ref_only": "紧贴头骨的极短寸头，清晰展现额角发际线、颅顶弧度与下颌硬朗块面，极度干练硬核",
+      "suggested_bones": [
+        "B004",
+        "B017",
+        "B019"
+      ],
+      "svg_file": "assets/hairs/H023.svg",
+      "svg_params": {
+        "shape": "male_buzz",
+        "accent": "#334155",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H024",
+      "type": "hairstyle",
+      "group": "男性 · 现代与动漫潮流",
+      "gender": "男性",
+      "era": "现代/商务/复古",
+      "name": "侧分油头 / 渐变背头",
+      "en_name": "Slicked-Back Undercut Side Part",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "两侧渐变修短 + 顶部整齐侧分向后梳拢 + 饱满立体弧度",
+      "formula_slots_ref_only": {
+        "color": "漆黑 / 深棕 / 鬓角微灰",
+        "texture": "微光泽整洁定型分明发束",
+        "noun": "经典侧分渐变背头",
+        "motion": "整体一丝不苟，仅前额偶有一缕微松垂落增添张力"
+      },
+      "prompt_en_ref_only": "slicked-back undercut with crisp side parting, faded temples, refined gentleman silhouette",
+      "prompt_zh_ref_only": "两侧利落渐变推短，顶发清晰侧分并向后梳起饱满弧度，展现精英权贵或复古绅士克制气场",
+      "suggested_bones": [
+        "B001",
+        "B003",
+        "B004",
+        "B013"
+      ],
+      "svg_file": "assets/hairs/H024.svg",
+      "svg_params": {
+        "shape": "male_slick",
+        "accent": "#1d4ed8",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H025",
+      "type": "hairstyle",
+      "group": "男性 · 现代与动漫潮流",
+      "gender": "男性",
+      "era": "现代/都市/偶像",
+      "name": "三七分括号微卷刘海",
+      "en_name": "Two-Block Parted Curtain Bangs",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "自然三七分露部分额头 + 两侧柔和内扣括号弧度 + 后颈干净收短",
+      "formula_slots_ref_only": {
+        "color": "自然黑 / 冷茶棕 / 深亚麻",
+        "texture": "柔软蓬松自然空气感",
+        "noun": "都市三七分括号刘海短发",
+        "motion": "前额两缕括号弧度刘海随微风轻晃，层次清爽"
+      },
+      "prompt_en_ref_only": "modern two-block haircut, 70-30 parted curtain bangs softly framing forehead, natural airy volume",
+      "prompt_zh_ref_only": "清爽三七分露额轮廓，前额发丝呈柔和括号弧度轻修饰眉眼，蓬松自然贴合现代都市青年气质",
+      "suggested_bones": [
+        "B002",
+        "B005",
+        "B011",
+        "B015"
+      ],
+      "svg_file": "assets/hairs/H025.svg",
+      "svg_params": {
+        "shape": "male_curtain",
+        "accent": "#0284c7",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H026",
+      "type": "hairstyle",
+      "group": "男性 · 现代与动漫潮流",
+      "gender": "男性",
+      "era": "现代/少年/校园",
+      "name": "纹理蓬松碎盖短发",
+      "en_name": "Textured Tousled Short Crop",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "圆润蓬松顶部层次 + 轻薄凌乱齐眉碎刘海 + 耳际轻盈收尾",
+      "formula_slots_ref_only": {
+        "color": "自然黑 / 暖栗褐",
+        "texture": "轻盈抓松哑光纹理碎发",
+        "noun": "自然纹理蓬松碎短发",
+        "motion": "发顶略显刚运动后的随意蓬松感，生动少年气息"
+      },
+      "prompt_en_ref_only": "textured tousled short crop, lightweight layered messy fringe, natural youthful movement",
+      "prompt_zh_ref_only": "头顶抓出蓬松自然纹理层次，前额轻薄碎刘海微遮眉梢，洋溢清澈自然的少年感与日常真实感",
+      "suggested_bones": [
+        "B006",
+        "B011",
+        "B015"
+      ],
+      "svg_file": "assets/hairs/H026.svg",
+      "svg_params": {
+        "shape": "male_crop",
+        "accent": "#10b981",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H027",
+      "type": "hairstyle",
+      "group": "男性 · 现代与动漫潮流",
+      "gender": "男性",
+      "era": "现代/动漫/酷哥",
+      "name": "层次不羁男性狼尾",
+      "en_name": "Layered Men's Shaggy Wolf Mullet",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "顶区蓬松抓乱 + 两侧锐利鬓发修饰颧颊 + 后颈修长层次碎尾",
+      "formula_slots_ref_only": {
+        "color": "冷乌黑 / 银灰挑染 / 暗蓝黑",
+        "texture": "干爽锋利分缕碎发肌理",
+        "noun": "高层次不羁男性狼尾发",
+        "motion": "后颈发尾随风扬起，前额碎发微遮半眼显叛逆"
+      },
+      "prompt_en_ref_only": "layered men's wolf cut, shaggy elongated mullet nape, sharp face-framing side locks, rebellious edge",
+      "prompt_zh_ref_only": "前碎后长的锐利层次男性狼尾，后颈修长碎尾自然外散，极具现代酷哥与二次元不羁辨识度",
+      "suggested_bones": [
+        "B001",
+        "B005",
+        "B014",
+        "B015"
+      ],
+      "svg_file": "assets/hairs/H027.svg",
+      "svg_params": {
+        "shape": "male_wolf",
+        "accent": "#6366f1",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H028",
+      "type": "hairstyle",
+      "group": "男性 · 现代与动漫潮流",
+      "gender": "男性",
+      "era": "动漫/热血少年",
+      "name": "锐利动态刺猬短发",
+      "en_name": "Spiky Dynamic Anime Shounen Hair",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "放射状锐利分簇发尖 + 向上张扬的动态大剪影",
+      "formula_slots_ref_only": {
+        "color": "炭黑 / 烈焰红棕 / 亮金",
+        "texture": "分簇明确富有张力的硬朗发束",
+        "noun": "热血动态层次刺猬短发",
+        "motion": "发簇如火焰般向斜上方自然张扬，力量感强烈"
+      },
+      "prompt_en_ref_only": "spiky dynamic anime shounen hairstyle, sharp layered directional hair clumps, energetic heroic silhouette",
+      "prompt_zh_ref_only": "棱角分明的放射状分簇短发，发束自带强烈向上的动势张力，是热血少年与动作主角经典轮廓",
+      "suggested_bones": [
+        "B004",
+        "B006",
+        "B015"
+      ],
+      "svg_file": "assets/hairs/H028.svg",
+      "svg_params": {
+        "shape": "male_spiky",
+        "accent": "#ef4444",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H029",
+      "type": "hairstyle",
+      "group": "男性 · 现代与动漫潮流",
+      "gender": "男性",
+      "era": "现代/文艺/悬疑",
+      "name": "中分齐耳慵懒长微卷",
+      "en_name": "Center-Parted Ear-Length Wavy Hair",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "自然中分弧度 + 齐耳至下颌柔卷发尾 + 略遮眉尾阴郁文艺感",
+      "formula_slots_ref_only": {
+        "color": "深黑 / 深棕 / 灰褐",
+        "texture": "微湿哑光自然垂顺微卷",
+        "noun": "文艺中分齐耳微卷发",
+        "motion": "发缕轻拂颧骨与耳廓，微风吹动下自带电影故事感"
+      },
+      "prompt_en_ref_only": "center-parted ear-length slightly wavy men's hair, relaxed melancholic cinema silhouette, soft layered ends",
+      "prompt_zh_ref_only": "中分齐耳微卷发自然贴合颧颊，质感略带松弛哑光，非常适合悬疑侦探、艺术家或忧郁智性男角",
+      "suggested_bones": [
+        "B005",
+        "B008",
+        "B014"
+      ],
+      "svg_file": "assets/hairs/H029.svg",
+      "svg_params": {
+        "shape": "male_center_wave",
+        "accent": "#4f46e5",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H030",
+      "type": "hairstyle",
+      "group": "男性 · 现代与动漫潮流",
+      "gender": "男性",
+      "era": "现代/日系/都市",
+      "name": "艺术感武士低马尾 / 半丸子",
+      "en_name": "Modern Samurai Half-Bun / Low Tie",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "两侧微短或自然垂落 + 头顶后部随性扎成小丸子或低短马尾",
+      "formula_slots_ref_only": {
+        "color": "自然黑 / 深咖啡 / 烟灰",
+        "texture": "略显粗硬自然松散束发",
+        "noun": "现代随性后束半丸子短长发",
+        "motion": "鬓边散落几缕碎发，干练中透着不羁松弛"
+      },
+      "prompt_en_ref_only": "modern men's half-up man bun, low tied back knot with loose side strands, rugged creative silhouette",
+      "prompt_zh_ref_only": "将上层中长发随性在脑后扎成低丸子或短束，耳际留自然散落碎丝，兼具雅痞与行动派气场",
+      "suggested_bones": [
+        "B001",
+        "B004",
+        "B015"
+      ],
+      "svg_file": "assets/hairs/H030.svg",
+      "svg_params": {
+        "shape": "male_manbun",
+        "accent": "#0f766e",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H031",
+      "type": "hairstyle",
+      "group": "男性 · 现代与动漫潮流",
+      "gender": "男性",
+      "era": "现代/成熟精英",
+      "name": "两鬓霜白大背头",
+      "en_name": "Mature Silver-Templed Swept-Back Hair",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "饱满成熟额角发际线 + 向后自然梳拢微浪 + 两鬓清晰自然斑白",
+      "formula_slots_ref_only": {
+        "color": "乌黑底色配两鬓自然霜白 (Salt-and-pepper temples)",
+        "texture": "干爽微硬成熟质感",
+        "noun": "成熟两鬓霜白后梳短发",
+        "motion": "发际线自然微后移显真实阅历，稳重有压迫感"
+      },
+      "prompt_en_ref_only": "mature men's swept-back hair with natural salt-and-pepper graying temples, authentic receding hairline, authoritative presence",
+      "prompt_zh_ref_only": "成熟自然的向后微浪梳发，两鬓点缀真实斑白霜丝与微后移发际线，尽显中年重臣、父辈或商界大佬威仪",
+      "suggested_bones": [
+        "B003",
+        "B013",
+        "B017",
+        "B021"
+      ],
+      "svg_file": "assets/hairs/H031.svg",
+      "svg_params": {
+        "shape": "male_silver_back",
+        "accent": "#475569",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H032",
+      "type": "hairstyle",
+      "group": "男性 · 现代与动漫潮流",
+      "gender": "男性",
+      "era": "动漫/暗黑奇幻",
+      "name": "银灰偏分过眉冷峻长碎发",
+      "en_name": "Long Swept Fringe Dark-Fantasy Cut",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "大偏分锐利长刘海斜掠眉眼 + 贴颈修长分束碎发",
+      "formula_slots_ref_only": {
+        "color": "霜银灰 / 墨紫黑 / 冷白",
+        "texture": "丝滑锐利细长分束感",
+        "noun": "偏分过眉冷峻长碎发",
+        "motion": "斜长碎刘海半掩锋利眼神，气场冷冽危险"
+      },
+      "prompt_en_ref_only": "long asymmetrical swept fringe skimming past eyes, sleek silver-ash layered anime-cinema hair, cold dangerous aura",
+      "prompt_zh_ref_only": "大偏分锐利长碎刘海斜掠一侧眉眼，颈后发缕纤细修长，极具暗黑奇幻与高冷反派张力",
+      "suggested_bones": [
+        "B001",
+        "B005",
+        "B010",
+        "B014"
+      ],
+      "svg_file": "assets/hairs/H032.svg",
+      "svg_params": {
+        "shape": "male_long_fringe",
+        "accent": "#7c3aed",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H033",
+      "type": "hairstyle",
+      "group": "男性 · 古风束冠与史诗奇幻",
+      "gender": "男性",
+      "era": "古风/世子/侠客",
+      "name": "高束玉冠半披长发",
+      "en_name": "High Jade-Crown Topknot with Flowing Back",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "全露饱满额头 + 头顶高耸小冠束发 + 下半长直发如瀑披散",
+      "formula_slots_ref_only": {
+        "color": "乌墨黑",
+        "texture": "顺直微光泽长发丝配精致束冠",
+        "noun": "古风高束玉冠半披长发",
+        "motion": "脑后长发与冠带随策马疾风向后翻卷"
+      },
+      "prompt_en_ref_only": "traditional Chinese male high topknot secured with carved jade crown (Guan), clean exposed forehead, flowing loose back hair",
+      "prompt_zh_ref_only": "前额洁净无刘海，头顶高束精致青玉发冠，后背长发如墨披散并随风扬起，少年侠客与世子经典形制",
+      "suggested_bones": [
+        "B002",
+        "B005",
+        "B015",
+        "B016"
+      ],
+      "svg_file": "assets/hairs/H033.svg",
+      "svg_params": {
+        "shape": "ancient_m_jade",
+        "accent": "#0ea5e9",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H034",
+      "type": "hairstyle",
+      "group": "男性 · 古风束冠与史诗奇幻",
+      "gender": "男性",
+      "era": "历史正剧/文臣帝王",
+      "name": "全部束冠正式发髻",
+      "en_name": "Formal Fully Gathered Crowned Topknot",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "发丝全部向上一丝不苟收拢 + 顶心正规梁冠/金冠/纱冠 + 零散碎披发",
+      "formula_slots_ref_only": {
+        "color": "纯黑 / 中年两鬓斑白",
+        "texture": "严整紧贴哑光历史发丝",
+        "noun": "古代正式全束冠发髻",
+        "motion": "鬓角修整严密，无多余现代飘逸碎发，恪守礼法威严"
+      },
+      "prompt_en_ref_only": "fully gathered traditional Chinese male topknot inside formal historical crown, completely clean hairline, zero loose modern bangs, authentic period drama",
+      "prompt_zh_ref_only": "全部发丝严密向上梳拢束入礼冠，无一缕现代碎刘海，干净显露真实额骨与鬓角，符合历史正剧文臣帝王礼制",
+      "suggested_bones": [
+        "B003",
+        "B017",
+        "B018",
+        "B021"
+      ],
+      "svg_file": "assets/hairs/H034.svg",
+      "svg_params": {
+        "shape": "ancient_m_formal",
+        "accent": "#a16207",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H035",
+      "type": "hairstyle",
+      "group": "男性 · 古风束冠与史诗奇幻",
+      "gender": "男性",
+      "era": "仙侠/隐士/道家",
+      "name": "道髻木簪半披长发",
+      "en_name": "Taoist Topknot with Wooden Pin",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "顶心松雅挽出圆润道髻 + 素色木簪横插 + 垂顺长发披肩",
+      "formula_slots_ref_only": {
+        "color": "乌黑 / 灰白霜发",
+        "texture": "轻盈自然哑光微松发丝",
+        "noun": "古朴木簪道髻半披发",
+        "motion": "双鬓垂落两缕清逸碎发，长发随山岚轻拂"
+      },
+      "prompt_en_ref_only": "Taoist scholar topknot fastened with plain weathered wooden hairpin, half-up half-down straight hair, serene hermit silhouette",
+      "prompt_zh_ref_only": "头顶以朴素旧木簪横挽道髻，余发自然垂肩，双鬓零星碎发随清风微动，尽显隐士道长超然风骨",
+      "suggested_bones": [
+        "B005",
+        "B016",
+        "B018",
+        "B024"
+      ],
+      "svg_file": "assets/hairs/H035.svg",
+      "svg_params": {
+        "shape": "ancient_m_taoist",
+        "accent": "#14b8a6",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H036",
+      "type": "hairstyle",
+      "group": "男性 · 古风束冠与史诗奇幻",
+      "gender": "男性",
+      "era": "乱世/狂士/武将",
+      "name": "乱世布带半束披散发",
+      "en_name": "Wild Cloth-Headband Swept Long Hair",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "粗麻或暗色布带束额/半扎 + 凌乱厚重黑发狂放披散",
+      "formula_slots_ref_only": {
+        "color": "粗粝墨黑 / 沾尘灰黑",
+        "texture": "略显粗糙干爽凌乱发缕",
+        "noun": "乱世布带半束狂放长发",
+        "motion": "大股乱发随沙场狂风肆意翻卷，豪迈沧桑"
+      },
+      "prompt_en_ref_only": "wild partially tied long dark hair with worn cloth headband, rugged wind-swept tangled strands, battle-scarred wanderer",
+      "prompt_zh_ref_only": "以旧粗布带简单束额或半扎，厚重略乱的长发在沙场或山风中狂放翻卷，饱含乱世豪杰与狂士野气",
+      "suggested_bones": [
+        "B004",
+        "B015",
+        "B017",
+        "B019"
+      ],
+      "svg_file": "assets/hairs/H036.svg",
+      "svg_params": {
+        "shape": "ancient_m_wild",
+        "accent": "#b91c1c",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H037",
+      "type": "hairstyle",
+      "group": "男性 · 古风束冠与史诗奇幻",
+      "gender": "男性",
+      "era": "历史/沙场武将",
+      "name": "武将铁箍高椎髻（配硬茬胡须）",
+      "en_name": "General Iron-Circlet War Topknot",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "厚实发丝全部紧束为结实高椎髻 + 暗铁箍/皮绳缠束 + 两侧干净贴合头盔",
+      "formula_slots_ref_only": {
+        "color": "硬挺炭黑 / 灰白夹杂",
+        "texture": "粗硬微乱带风沙质感",
+        "noun": "沙场武将铁箍高椎髻",
+        "motion": "额角有少许汗湿碎发贴附，粗犷实用可随时戴盔"
+      },
+      "prompt_en_ref_only": "tightly bound historical Chinese general high war topknot wrapped with dark iron circlet and leather cord, sweat-dampened stray hairs at temples",
+      "prompt_zh_ref_only": "全部粗硬发丝以皮绳铁箍紧束为结实高椎髻，额角残留几缕沙场汗湿碎丝，粗犷写实毫无偶像浮华",
+      "suggested_bones": [
+        "B004",
+        "B017",
+        "B019"
+      ],
+      "svg_file": "assets/hairs/H037.svg",
+      "svg_params": {
+        "shape": "ancient_m_general",
+        "accent": "#78350f",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H038",
+      "type": "hairstyle",
+      "group": "男性 · 古风束冠与史诗奇幻",
+      "gender": "男性",
+      "era": "历史/清雅谋士",
+      "name": "幅巾/纶巾包发配斑白双鬓",
+      "en_name": "Historical Scholar Kerchief with Graying Temples",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "素布幅巾或纶巾包覆头顶发髻 + 露出清癯额骨与斑白两鬓",
+      "formula_slots_ref_only": {
+        "color": "乌黑夹杂自然霜白两鬓",
+        "texture": "干爽细瘦略显稀疏发丝",
+        "noun": "古风谋士幅巾包发",
+        "motion": "两鬓斑白碎丝微现，巾带在脑后轻垂"
+      },
+      "prompt_en_ref_only": "traditional Chinese historical scholar cloth kerchief (Funjin) wrapping topknot, exposed lean forehead and salt-and-pepper temples",
+      "prompt_zh_ref_only": "以素色麻布幅巾规整包覆头顶发髻，露出清瘦思虑的额头与斑白双鬓，高度贴合三国两宋真实谋士形象",
+      "suggested_bones": [
+        "B018",
+        "B020",
+        "B024"
+      ],
+      "svg_file": "assets/hairs/H038.svg",
+      "svg_params": {
+        "shape": "ancient_m_kerchief",
+        "accent": "#475569",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H039",
+      "type": "hairstyle",
+      "group": "男性 · 古风束冠与史诗奇幻",
+      "gender": "男性",
+      "era": "历史/高僧苦行",
+      "name": "写实戒疤/青茬光头（全露颅骨）",
+      "en_name": "Authentic Shaved Monk Head with Stubble",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "完全呈现颅骨顶骨/额骨/枕骨真实起伏 + 极浅青灰色剃发发茬",
+      "formula_slots_ref_only": {
+        "color": "极浅青灰短剃茬",
+        "texture": "真实头皮纹理、毛孔与轻微风霜晒痕",
+        "noun": "写实青茬光头",
+        "motion": "全无遮挡，头骨解剖比例与光影立体度一览无余"
+      },
+      "prompt_en_ref_only": "authentic shaved monk head showing cranial bone contour and subtle bluish hair stubble, weathered natural scalp skin texture",
+      "prompt_zh_ref_only": "全露真实颅骨起伏与极浅青灰剃发发茬，保留头皮真实光影与岁月肌理，绝非塑料反光卤蛋头",
+      "suggested_bones": [
+        "B019",
+        "B020",
+        "B024"
+      ],
+      "svg_file": "assets/hairs/H039.svg",
+      "svg_params": {
+        "shape": "ancient_m_monk",
+        "accent": "#57534e",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H040",
+      "type": "hairstyle",
+      "group": "男性 · 古风束冠与史诗奇幻",
+      "gender": "男性",
+      "era": "丝路/北方游牧历史",
+      "name": "游牧民族多股细辫垂肩发",
+      "en_name": "Steppe Nomad Multi-Braid Shoulder Hair",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "头顶留发或分股编成多条紧实细辫垂落双肩 + 骨珠/皮绳装饰",
+      "formula_slots_ref_only": {
+        "color": "深褐黑 / 日晒微棕黑",
+        "texture": "粗硬干爽紧实细辫纹理",
+        "noun": "草原/丝路多股细辫发",
+        "motion": "数十缕紧编细辫随骑射晃动，充满边塞异域真实感"
+      },
+      "prompt_en_ref_only": "historical steppe nomad hairstyle with multiple tight slim braids falling over shoulders, leather ties and weathered bronze beads",
+      "prompt_zh_ref_only": "粗硬黑发编成多股紧实细辫垂落双肩，点缀皮绳与做旧铜珠，高度还原草原与丝路异域历史武士风貌",
+      "suggested_bones": [
+        "B019",
+        "B023"
+      ],
+      "svg_file": "assets/hairs/H040.svg",
+      "svg_params": {
+        "shape": "epic_nomad_braids",
+        "accent": "#0f766e",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H041",
+      "type": "hairstyle",
+      "group": "男性 · 古风束冠与史诗奇幻",
+      "gender": "男性",
+      "era": "欧美史诗/维京奇幻",
+      "name": "维京铲青编发战髻",
+      "en_name": "Viking Undercut Braided Warrior Hair",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "两侧剃短铲青显露颞骨 + 顶部厚发向后编入粗辫并扎战髻",
+      "formula_slots_ref_only": {
+        "color": "暗灰金 / 粗褐 / 铁灰",
+        "texture": "粗糙风霜干涩发丝与粗辫",
+        "noun": "维京铲青战辫发",
+        "motion": "顶辫厚重粗犷，侧边剃短发茬配浓密胡须"
+      },
+      "prompt_en_ref_only": "Viking warrior shaved-sides undercut with thick braided top locks pulled into rugged back knot, medieval epic realism",
+      "prompt_zh_ref_only": "两侧铲青突出硬朗颧颌与颞骨，顶发编成粗犷战辫向后扎结，洋溢北欧史诗战场的野性力量感",
+      "suggested_bones": [
+        "B001",
+        "B004",
+        "B013",
+        "B019"
+      ],
+      "svg_file": "assets/hairs/H041.svg",
+      "svg_params": {
+        "shape": "epic_viking",
+        "accent": "#b45309",
+        "gender": "男性"
+      }
+    },
+    {
+      "id": "H042",
+      "type": "hairstyle",
+      "group": "男性 · 古风束冠与史诗奇幻",
+      "gender": "男性",
+      "era": "欧美古典/暗黑史诗",
+      "name": "中世纪贵族中分微卷披肩发",
+      "en_name": "Medieval Noble Shoulder-Length Wavy Hair",
+      "usage_policy": "reference_only_do_not_use_directly",
+      "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+      "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+      "formula_dimension": "5. 发型 / 发色",
+      "silhouette_features": "优雅中分或微偏分 + 及肩厚实自然大微卷 + 贵族高贵剪影",
+      "formula_slots_ref_only": {
+        "color": "深栗棕 / 苍白银金 / 墨黑",
+        "texture": "厚重柔润带自然油画光泽波浪",
+        "noun": "中世纪贵族及肩微卷发",
+        "motion": "齐肩波浪发缕轻垂披风领口，沉郁古典史诗氛围"
+      },
+      "prompt_en_ref_only": "medieval European noble shoulder-length wavy hair, natural center parting, heavy Renaissance-like flowing locks, regal solemn silhouette",
+      "prompt_zh_ref_only": "自然中分的及肩厚重微卷发，发尾轻覆古典披风领口，带有欧洲古典油画与史诗奇幻领主的高贵沉郁感",
+      "suggested_bones": [
+        "B001",
+        "B005",
+        "B013",
+        "B014"
+      ],
+      "svg_file": "assets/hairs/H042.svg",
+      "svg_params": {
+        "shape": "epic_medieval",
+        "accent": "#4338ca",
+        "gender": "男性"
+      }
+    }
+  ],
+  "hair_color_modifiers": [
+    {
+      "category": "自然经典单色",
+      "zh": "漆黑如墨",
+      "en": "jet-black hair",
+      "note": "国风古典、历史写实、高冷对比首选"
+    },
+    {
+      "category": "自然经典单色",
+      "zh": "墨蓝黑",
+      "en": "ink-blue black hair",
+      "note": "冷调月光、仙侠、暗夜奇幻质感"
+    },
+    {
+      "category": "自然经典单色",
+      "zh": "暖栗棕",
+      "en": "warm chestnut brown hair",
+      "note": "柔和亲和、阳光治愈、日常电影感"
+    },
+    {
+      "category": "自然经典单色",
+      "zh": "烟灰银白",
+      "en": "ash silver-white hair",
+      "note": "神明、仙尊、赛博科幻、高冷反派"
+    },
+    {
+      "category": "自然经典单色",
+      "zh": "香槟浅金",
+      "en": "champagne blonde hair",
+      "note": "欧式贵族、史诗奇幻、温柔光感"
+    },
+    {
+      "category": "自然经典单色",
+      "zh": "深红酒棕",
+      "en": "deep crimson auburn hair",
+      "note": "热烈御姐、异域奇幻、强戏剧冲突"
+    },
+    {
+      "category": "岁月写实层次",
+      "zh": "两鬓霜白（盐椒灰）",
+      "en": "salt-and-pepper graying temples",
+      "note": "历史谋士、中年帝王、重臣与沧桑主角必用"
+    },
+    {
+      "category": "岁月写实层次",
+      "zh": "日晒微枯深褐",
+      "en": "sun-bleached dusty dark brown hair",
+      "note": "边塞女将、游牧武士、历史平民去塑料感"
+    },
+    {
+      "category": "现代动漫层次",
+      "zh": "发尾自然渐变",
+      "en": "subtle gradient dip-dyed hair ends",
+      "note": "现代潮酷、二次元幻想高辨识度"
+    },
+    {
+      "category": "现代动漫层次",
+      "zh": "挂耳染 / 挑染",
+      "en": "subtle inner-layer highlights / streaked highlights",
+      "note": "多人同框快速区分现代都市/赛博角色"
+    }
+  ],
+  "external_sources": [
+    {
+      "group": "3D 头骨块面与比例旋转参考（Sketchfab）",
+      "keywords": [
+        "Asaro Head / Planes of the Head",
+        "Reilly Head / Loomis Head 3D",
+        "Visual Art Anatomy (VAA): Base Head Planes With Skull & Bony Landmarks"
+      ],
+      "purpose": "定 3/4 侧颜光影切面、三庭五眼节律与骨-肌-皮三层对照"
+    },
+    {
+      "group": "面部解剖雕刻与肖像结构包（ArtStation Marketplace）",
+      "keywords": [
+        "Head Planes Reference Pack",
+        "Facial Anatomy Sculpt Pack",
+        "Portrait Construction Pack"
+      ],
+      "purpose": "区分不同年龄、性别、种族的真实骨量与软组织走向"
+    },
+    {
+      "group": "2D 发型三视图与动画设定集（ArtStation / Gumroad / Settei）",
+      "keywords": [
+        "Stylized Hair Asset Pack",
+        "Anime Hair Turnaround Sheet",
+        "Ancient Chinese Hairstyle Reference",
+        "Sakugabooru / Settei character sheet"
+      ],
+      "purpose": "参考发丝分组、前后左右轮廓剪影与古代发髻结构"
+    }
+  ]
+}

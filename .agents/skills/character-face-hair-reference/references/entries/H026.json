@@ -1,0 +1,33 @@
+{
+  "id": "H026",
+  "type": "hairstyle",
+  "group": "男性 · 现代与动漫潮流",
+  "gender": "男性",
+  "era": "现代/少年/校园",
+  "name": "纹理蓬松碎盖短发",
+  "en_name": "Textured Tousled Short Crop",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "圆润蓬松顶部层次 + 轻薄凌乱齐眉碎刘海 + 耳际轻盈收尾",
+  "formula_slots_ref_only": {
+    "color": "自然黑 / 暖栗褐",
+    "texture": "轻盈抓松哑光纹理碎发",
+    "noun": "自然纹理蓬松碎短发",
+    "motion": "发顶略显刚运动后的随意蓬松感，生动少年气息"
+  },
+  "prompt_en_ref_only": "textured tousled short crop, lightweight layered messy fringe, natural youthful movement",
+  "prompt_zh_ref_only": "头顶抓出蓬松自然纹理层次，前额轻薄碎刘海微遮眉梢，洋溢清澈自然的少年感与日常真实感",
+  "suggested_bones": [
+    "B006",
+    "B011",
+    "B015"
+  ],
+  "svg_file": "assets/hairs/H026.svg",
+  "svg_params": {
+    "shape": "male_crop",
+    "accent": "#10b981",
+    "gender": "男性"
+  }
+}

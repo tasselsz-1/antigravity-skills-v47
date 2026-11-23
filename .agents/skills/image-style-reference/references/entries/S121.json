@@ -1,0 +1,50 @@
+{
+  "id": "S121",
+  "category": "成熟商业·电影大师",
+  "slug": "commercial-cinema-bleach-bypass",
+  "name": "留银冲洗工业电影感（Bleach Bypass）",
+  "aliases": [
+    "银盐留银",
+    "去漂白工艺",
+    "BLEACH BYPASS"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "柯达电影胶片留银冲洗工艺（Bleach Bypass），跳过漂白工序保留黑白银盐颗粒；呈现极高明暗反差、深邃如铁的死黑暗部与大幅压低色彩饱和度；金属、汗水与武器高光锐利如刀锋，硬朗冷峻冷色调",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "留银冲洗工业电影感（Bleach Bypass）",
+  "source_original_prompt_en": "commercial-cinema-bleach-bypass",
+  "summary": "《拯救大兵瑞恩》《七宗罪》经典工艺：消灭数码塑料感的最强工业杀手锏。",
+  "visual_genes": {
+    "笔": "刀刻般锐利的物象边缘，极度分明的明暗交界线",
+    "光": "超大光比硬侧光，暗部阴影深不见底，高光硬朗发白",
+    "色": "去饱和度青灰、铁锈红、深墨绿，肤色呈蜡黄或冷灰",
+    "质": "胶片银盐粗颗粒质感、粗糙混凝土与钢铁金属冰冷反射",
+    "镜": "35mm变形宽银幕，深焦大景深，充满压迫感"
+  },
+  "palette": [
+    "#0A0E11",
+    "#263238",
+    "#455A64",
+    "#8D6E63",
+    "#B0BEC5"
+  ],
+  "use_cases": [
+    "硬核末世废土生存",
+    "冷血复仇黑帮短剧",
+    "特种军事与硬核战争"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

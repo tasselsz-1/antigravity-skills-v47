@@ -1,0 +1,21 @@
+{
+  "category": "传统",
+  "slug": "thai-puppet-theatre",
+  "name": "泰国皮影戏",
+  "style_prompt_zh": "镂空皮革剪影，活动关节与操纵杆，细密有序的透光纹样，琥珀色幕布背光，清楚侧影，舞台式空间",
+  "reference_image": "assets/thai-puppet-theatre.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/thai-puppet-theatre.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/thai-puppet-theatre.webp",
+  "source_title": "泰国皮影戏",
+  "source_original_prompt_zh": "把附上的照片转换成一幕尊重传统的泰国皮影戏，以精细镂空的皮革人物为中心。用暖棕色皮革剪出完整角色，加入花卉镂孔、鎏金点缀、可活动肘部、层叠服装边缘和两根清晰可见的竹制操纵杆。把人物置于象牙色布幕后，使用琥珀色逆光、红色侧幕和柔和舞台地面光。通过侧面脸型、黑色长发剪影和花卉服装图案保留她的可辨识特征，但要把包括脸部、眼睛和皮肤在内的每个部分重绘成雕刻皮革与镂空剪影；不得出现摄影质感皮肤或粘贴的写实面孔。让皮影人物以侧面姿势伸出一只手臂，不得带有王室或神圣属性。输出竖版 2:3，不得有文字、标志或水印。",
+  "source_negative_prompt_zh": "泰国寺庙壁画，绘制灰泥墙，扁平壁画人物，缺少操纵杆，不透明且未镂空的皮革，现代塑料木偶，真人演员登台，摄影质感面孔，粘贴的写实面孔，冒充王室，冒充神圣人物，文字，标志，水印",
+  "sha256": "3796edcfbea1a7858fec0001e4ad158e6e6ebdd4fe26aa66f7236a3dcadd8acc",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S058"
+}

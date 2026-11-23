@@ -1,0 +1,50 @@
+{
+  "id": "S081",
+  "category": "成熟商业·日漫与二游",
+  "slug": "commercial-shonen",
+  "name": "日式王道热血漫（G笔夸张粗细线与作画张力透视法）",
+  "aliases": [
+    "少年热血",
+    "SHONEN"
+  ],
+  "style_prompt_zh": "日本王道少年热血动画/漫画核心作画法（金田伊功/中村丰式张力作画），采用粗细顿挫极度强烈的G笔黑墨外轮廓与阴影卡黑（Kage）；大胆运用广角鱼眼夸张透视（三点透视近大远小），将爆发性的拳脚或兵刃推至镜头极近处；硬边二分高反差色块配合密集手绘速度线与冲击闪光帧",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/styles.html",
+  "source_snapshot": "references/sources/commercial-2026-11-01/styles.html",
+  "source_title": "少年热血",
+  "source_original_prompt_en": "shonen manga style, bold outlines, speed lines, dynamic pose",
+  "summary": "靠夸张透视、粗细G笔顿挫与手绘卡黑制造极致的速度感与热血爆发力。",
+  "use_cases": [
+    "热血战斗高潮分镜",
+    "少年逆袭觉醒瞬间",
+    "高燃动作番打戏"
+  ],
+  "reference_coordinates": "《火影忍者》《海贼王》",
+  "source_position": "main",
+  "source_position_note": "源作者的主流/细分/实验判断，未经独立市场数据验证。",
+  "related_entries": [],
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页未提供图片，代表作品名称仅作来源坐标，不等于已查看作品。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。",
+  "optional_effects_note": "颗粒、脏污、沙尘、旧化、光斑与抖动不默认继承；规则网点、像素与必要媒介纹理可受控保留。",
+  "license_note": "用户指定本地文本页面；未发现明确授权声明，不沿用其他来源的CC0许可。",
+  "sha256": null,
+  "image_size": null,
+  "tier": "mature_commercial",
+  "original_short_name": "少年热血",
+  "visual_genes": {
+    "笔": "粗狂有力的G笔顿挫黑线，转折与阴影死角大块涂黑（卡黑），充满手绘原画生命力",
+    "光": "爆炸中心强逆光或闪电高反差硬光，将人物切割为极亮受光面与深邃投影",
+    "色": "高饱和热血暖红、电光蓝、烈日黄与浓重纯黑对撞",
+    "质": "战损布料碎裂边缘、坚硬肌肉块面绷紧感、手绘烟尘块面与能量闪电弧",
+    "镜": "极端广角近大远小夸张透视、低角度仰拍冲刺机位"
+  },
+  "palette": [
+    "#0A0A0C",
+    "#2B2D42",
+    "#EF233C",
+    "#FFB703",
+    "#EDF2F4"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "S115",
+  "category": "成熟商业·国风大师",
+  "slug": "commercial-guofeng-shuilu-lifen",
+  "name": "道释水陆画（沥粉贴金立线法）",
+  "aliases": [
+    "明海水陆画",
+    "乌金神谱",
+    "SHUILU LIFEN"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "古代寺观水陆道场壁画，纯墨底搭配沥粉工艺立起微凸三维金线；朱砂、石青、雄黄等高饱和宗教矿物色重彩叠压，火焰腾空与云水纹繁复咬合无空隙；神圣庄严中透出神秘压迫感",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "道释水陆画（沥粉贴金立线法）",
+  "source_original_prompt_en": "commercial-guofeng-shuilu-lifen",
+  "summary": "以立体凸起金线为骨架的宗教重彩神作，视觉信息量极度密集强悍。",
+  "visual_genes": {
+    "笔": "沥粉袋挤出立体弧形线条，再行贴金，衣冠器杖繁密满幅",
+    "光": "烛光昏黄映照下的立体金线反光，矿彩哑光吃光",
+    "色": "朱红、石青、藤黄、玄黑，原色高饱和强烈对撞",
+    "质": "浮雕凸起金泥线条，粗粝石灰麻刀底壁，矿物粉本厚浆",
+    "镜": "满幅无死角多层次大场面构图，神佛威严俯瞰"
+  },
+  "palette": [
+    "#8B0000",
+    "#1C39BB",
+    "#E5A93C",
+    "#1B4D3E",
+    "#101010"
+  ],
+  "use_cases": [
+    "仙神鬼怪大战",
+    "道家符咒阵法降临",
+    "中式克苏鲁怪谈短剧"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

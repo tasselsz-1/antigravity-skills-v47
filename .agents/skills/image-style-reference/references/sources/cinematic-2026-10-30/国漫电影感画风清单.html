@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>银幕画风志 · 16 种电影级画风清单</title>
+<style>
+  :root{
+    --ink:#14110E; --ink2:#3B342C; --mute:#7A6F60;
+    --paper:#F3EDE2; --paper2:#EAE2D3; --line:#D5C9B4;
+    --red:#A83226; --gold:#B08A3E; --teal:#3E6B63;
+    --serif:"Noto Serif SC","Source Han Serif SC","Songti SC","SimSun",serif;
+    --sans:"Noto Sans SC","Source Han Sans SC","Microsoft YaHei",system-ui,sans-serif;
+    --mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:var(--sans);font-size:15px;line-height:1.75;
+    background-image:radial-gradient(circle at 20% 0%,rgba(176,138,62,.08),transparent 55%),
+                     radial-gradient(circle at 90% 10%,rgba(168,50,38,.06),transparent 45%);
+  }
+  a{color:var(--red)}
+  .wrap{max-width:1360px;margin:0 auto;padding:0 28px}
+
+  /* 页头 */
+  header.hero{
+    background:var(--ink);color:#EDE4D4;padding:64px 0 52px;position:relative;overflow:hidden;
+  }
+  header.hero:after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:repeating-linear-gradient(0deg,rgba(255,255,255,.03) 0 1px,transparent 1px 3px);
+  }
+  .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.32em;color:var(--gold);margin:0 0 22px}
+  h1{font-family:var(--serif);font-weight:700;font-size:clamp(34px,5vw,58px);line-height:1.15;margin:0 0 18px;letter-spacing:.02em}
+  h1 em{font-style:normal;color:var(--gold)}
+  .lede{max-width:640px;color:#C9BEAB;margin:0;font-size:15px}
+  .stats{display:flex;gap:36px;margin-top:34px;flex-wrap:wrap}
+  .stats div{border-left:1px solid rgba(237,228,212,.22);padding-left:14px}
+  .stats b{display:block;font-family:var(--serif);font-size:26px;color:#F3EDE2;line-height:1.2}
+  .stats span{font-size:11px;letter-spacing:.18em;color:#8E8474;font-family:var(--mono)}
+
+  /* 工具条 */
+  .toolbar{
+    position:sticky;top:0;z-index:20;background:rgba(243,237,226,.94);
+    backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+  }
+  .toolbar .wrap{display:flex;align-items:center;gap:14px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+  .search{flex:1 1 240px;min-width:200px;position:relative}
+  .search input{
+    width:100%;padding:9px 12px 9px 34px;border:1px solid var(--line);border-radius:2px;
+    background:#FBF7EF;font-family:var(--sans);font-size:14px;color:var(--ink);outline:none;
+  }
+  .search input:focus{border-color:var(--gold)}
+  .search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);opacity:.45}
+  .chips{display:flex;gap:6px;flex-wrap:wrap}
+  .chip{
+    border:1px solid var(--line);background:transparent;color:var(--ink2);
+    padding:6px 13px;border-radius:2px;cursor:pointer;font-size:13px;font-family:var(--sans);
+    transition:.15s;
+  }
+  .chip:hover{border-color:var(--gold);color:var(--ink)}
+  .chip[aria-pressed="true"]{background:var(--ink);color:#F3EDE2;border-color:var(--ink)}
+  .count{font-family:var(--mono);font-size:11px;color:var(--mute);letter-spacing:.08em;white-space:nowrap}
+  .btn-all{
+    border:1px solid var(--red);color:var(--red);background:transparent;border-radius:2px;
+    padding:7px 14px;font-size:13px;cursor:pointer;font-family:var(--sans);white-space:nowrap;
+  }
+  .btn-all:hover{background:var(--red);color:#FBF7EF}
+
+  /* 卡片 */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(480px,1fr));gap:26px;padding:34px 0 10px}
+  .card{
+    background:#FBF7EF;border:1px solid var(--line);padding:26px 26px 22px;
+    position:relative;transition:.2s;box-shadow:0 1px 0 rgba(20,17,14,.04);
+  }
+  .card:hover{box-shadow:0 10px 30px -18px rgba(20,17,14,.45);border-color:#C4B69C;transform:translateY(-2px)}
+  .card-head{display:flex;align-items:flex-start;gap:14px}
+  .no{font-family:var(--mono);font-size:12px;color:var(--mute);letter-spacing:.1em;padding-top:8px}
+  .titles{flex:1}
+  h2{font-family:var(--serif);font-size:25px;margin:0;line-height:1.2;letter-spacing:.02em}
+  .en{font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--mute);margin:4px 0 0}
+  .domain{
+    font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--red);
+    border:1px solid rgba(168,50,38,.35);padding:3px 7px;white-space:nowrap;
+  }
+  .origin{font-size:12px;color:var(--mute);margin:12px 0 0}
+  .tagline{
+    font-family:var(--serif);font-size:17px;line-height:1.6;margin:14px 0 10px;
+    padding-left:14px;border-left:2px solid var(--gold);color:var(--ink);
+  }
+  .summary{margin:0 0 18px;color:var(--ink2);font-size:14px}
+  .card h3{
+    font-family:var(--mono);font-size:10px;letter-spacing:.2em;color:var(--mute);
+    text-transform:uppercase;margin:0 0 9px;font-weight:400;
+  }
+  .card h3 .hint{font-family:var(--sans);letter-spacing:0;text-transform:none;font-size:11px;margin-left:6px}
+  .genes dl{margin:0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+  .genes dl div{display:grid;grid-template-columns:36px 1fr;background:#FBF7EF;gap:10px;padding:7px 10px}
+  .genes dt{
+    font-family:var(--serif);font-size:15px;color:var(--gold);text-align:center;
+    border-right:1px solid var(--line);
+  }
+  .genes dd{margin:0;font-size:13px;color:var(--ink2);line-height:1.6}
+
+  .palette{margin-top:18px}
+  .sws{display:flex;gap:6px}
+  .sw{flex:1;text-align:center}
+  .sw i{display:block;height:34px;background:var(--c);border:1px solid rgba(20,17,14,.12)}
+  .sw b{display:block;font-family:var(--mono);font-size:9px;color:var(--mute);margin-top:3px;letter-spacing:.02em;font-weight:400}
+
+  .prompts{margin-top:18px}
+  .prompt{background:var(--paper2);border:1px solid var(--line);padding:10px 12px 12px;margin-bottom:8px}
+  .prompt.dark{background:var(--ink);border-color:var(--ink);color:#DCD2C0}
+  .prompt-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+  .prompt-top span{font-family:var(--mono);font-size:9px;letter-spacing:.2em;color:var(--mute)}
+  .prompt.dark .prompt-top span{color:#8E8474}
+  .p-text{margin:0;font-size:12.5px;line-height:1.7;color:var(--ink2);word-break:break-word}
+  .prompt.dark .p-text{color:#DCD2C0;font-family:var(--mono);font-size:11.5px;line-height:1.75}
+  .copy{
+    border:1px solid var(--line);background:transparent;color:var(--mute);
+    font-size:11px;padding:2px 9px;border-radius:2px;cursor:pointer;font-family:var(--sans);transition:.15s;
+  }
+  .copy:hover{border-color:var(--gold);color:var(--ink)}
+  .prompt.dark .copy{border-color:#3B342C;color:#A79C89}
+  .prompt.dark .copy:hover{border-color:var(--gold);color:var(--gold)}
+  .copy.done{background:var(--teal);border-color:var(--teal);color:#fff}
+  .copy.tiny{padding:1px 7px;font-size:10px}
+
+  .negative{display:flex;align-items:flex-start;gap:8px;font-size:12px;color:var(--mute);margin-top:2px}
+  .negative span{font-family:var(--sans);font-size:11px;letter-spacing:.04em;color:var(--red);white-space:nowrap;padding-top:1px}
+  .negative p{margin:0;flex:1;line-height:1.6}
+
+  .meta{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+  .meta p{margin:0;display:flex;flex-wrap:wrap;gap:5px}
+  .meta span{
+    font-size:11px;color:var(--ink2);border:1px solid var(--line);padding:2px 7px;border-radius:2px;background:var(--paper);
+  }
+  .secret{
+    margin:18px 0 0;padding:10px 14px;background:rgba(176,138,62,.09);
+    border-left:2px solid var(--gold);font-family:var(--serif);font-size:14px;color:var(--ink2);
+  }
+  .secret span{font-family:var(--mono);font-size:9px;letter-spacing:.18em;color:var(--gold);margin-right:10px}
+
+  /* 现成模型 */
+  .models{padding:60px 0 6px}
+  .models h2{font-family:var(--serif);font-size:28px;margin:0 0 8px}
+  .models .sub{color:var(--mute);font-size:13px;margin:0 0 24px;max-width:760px}
+  .table-wrap{overflow-x:auto;border:1px solid var(--line);background:#FBF7EF}
+  table{width:100%;border-collapse:collapse;min-width:700px}
+  thead th{
+    font-family:var(--sans);font-size:11px;letter-spacing:.08em;color:var(--ink2);
+    text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);
+    font-weight:600;background:var(--paper2);white-space:nowrap;
+  }
+  tbody td{padding:11px 14px;border-bottom:1px solid rgba(213,201,180,.65);vertical-align:top;font-size:13px}
+  tbody tr:last-child td{border-bottom:0}
+  tbody tr:hover{background:rgba(176,138,62,.07)}
+  .m-name{font-family:var(--serif);font-size:14px;color:var(--ink);min-width:250px}
+  .m-name small{display:block;font-family:var(--sans);font-size:11px;color:var(--mute);margin-top:3px;line-height:1.5}
+  .base{font-family:var(--mono);font-size:10px;border:1px solid var(--line);padding:2px 6px;color:var(--ink2);white-space:nowrap}
+  .m-dl{font-family:var(--mono);font-size:11px;color:var(--mute)}
+  .m-map{font-size:12px;color:var(--red);white-space:nowrap}
+  tbody a{font-size:12px;color:var(--teal);text-decoration:none;white-space:nowrap}
+  tbody a:hover{text-decoration:underline}
+  .models .tip{font-size:11.5px;color:var(--mute);margin-top:12px}
+  .gpt-tip{
+    margin-top:14px;padding:11px 14px;background:rgba(176,138,62,.1);
+    border-left:2px solid var(--gold);color:var(--ink2);font-size:12px;line-height:1.7;
+  }
+  .gpt-tip b{color:var(--ink)}
+  .howto .steps .gpt{border-top-color:var(--gold)}
+  .howto .steps .gpt b{color:#E8C87A}
+
+  /* 说明 */
+  .howto{background:var(--ink);color:#C9BEAB;margin-top:50px;padding:56px 0}
+  .howto h2{font-family:var(--serif);color:#F3EDE2;font-size:28px;margin:0 0 8px}
+  .howto .sub{color:#8E8474;margin:0 0 34px;font-size:13px}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:26px}
+  .steps div{border-top:1px solid #3B342C;padding-top:14px}
+  .steps b{font-family:var(--serif);color:var(--gold);font-size:15px;display:block;margin-bottom:6px}
+  .steps p{margin:0;font-size:12.5px;line-height:1.7;color:#A79C89}
+  .method{margin-top:44px;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px}
+  .method div{background:rgba(255,255,255,.03);border:1px solid #2B251F;padding:14px}
+  .method em{font-family:var(--serif);font-style:normal;font-size:22px;color:#F3EDE2;display:block}
+  .method small{font-family:var(--mono);font-size:9px;letter-spacing:.16em;color:var(--gold)}
+  .method p{font-size:12px;margin:8px 0 0;color:#A79C89}
+
+  footer{padding:30px 0 50px;font-size:11.5px;color:var(--mute)}
+  footer p{margin:4px 0}
+
+  @media (max-width:560px){
+    .grid{grid-template-columns:1fr;gap:18px;padding-top:22px}
+    .card{padding:20px 18px}
+    .wrap{padding:0 16px}
+    .meta{grid-template-columns:1fr}
+    header.hero{padding:44px 0 36px}
+  }
+  @media print{
+    .toolbar,.copy,.btn-all{display:none!important}
+    body{background:#fff}
+    .card{break-inside:avoid;box-shadow:none;border-color:#bbb}
+    .howto{background:#fff;color:#000}
+    .howto h2,.method em{color:#000}
+    .prompt.dark{background:#eee;color:#000}
+    .prompt.dark .p-text{color:#000}
+    .prompt.dark .prompt-top span{color:#555}
+    .grid{grid-template-columns:1fr 1fr}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">THE CINEMATIC ATLAS OF ANIMATION · V1.0</p>
+    <h1>银幕画风志<br><em>16 种电影级画风</em>清单</h1>
+    <p class="lede">以国漫电影感为主轴，兼顾日韩、欧美与实验风格。每一种画风拆成「笔·光·色·质·镜」五项视觉基因，配中文与英文提示词、负面词与配色，可直接复制去出图。</p>
+    <div class="stats">
+      <div><b>16</b><span>种画风</span></div>
+      <div><b>8</b><span>种国漫电影风</span></div>
+      <div><b>5</b><span>项视觉基因</span></div>
+      <div><b>3</b><span>层提示词结构</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="toolbar">
+  <div class="wrap">
+    <label class="search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="q" type="search" placeholder="搜画风、代表作、关键词，例如：水墨 / 深海 / 霓虹" autocomplete="off">
+    </label>
+    <div class="chips" id="chips"></div>
+    <span class="count" id="count"></span>
+    <button class="btn-all" id="copyAll">复制全部提示词</button>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="grid" id="grid">
+  <article class="card" data-domain="国漫" data-search="粒子水墨 particle ink 深海 · 2023 把水墨拆成亿万颗粒，让情绪自己发光 传统水墨在这里被彻底粒子化：每一笔墨都由悬浮的发光微粒构成，色彩在深海里失去重力。它不靠外部打光，而是让画面内部发光，因此适合表现记忆、梦境与情绪的临界状态。 粒子 水墨 自发光 流体 梦境">
+    <header class="card-head">
+      <div class="no">01</div>
+      <div class="titles">
+        <h2>粒子水墨</h2>
+        <p class="en">PARTICLE INK</p>
+      </div>
+      <div class="domain">CHINESE</div>
+    </header>
+    <p class="origin">参考坐标 · 深海 · 2023</p>
+    <blockquote class="tagline">把水墨拆成亿万颗粒，让情绪自己发光</blockquote>
+    <p class="summary">传统水墨在这里被彻底粒子化：每一笔墨都由悬浮的发光微粒构成，色彩在深海里失去重力。它不靠外部打光，而是让画面内部发光，因此适合表现记忆、梦境与情绪的临界状态。</p>
+
+    <section class="genes">
+      <h3>视觉基因</h3>
+      <dl>
+        <div><dt>笔</dt><dd>散点笔触，墨带被拆成丝状粒子流，边缘不闭合</dd></div>
+        <div><dt>光</dt><dd>生物荧光自发光，光源藏在形体内部，无方向性主光</dd></div>
+        <div><dt>色</dt><dd>钴蓝与群青为底，荧光青绿、琥珀金、绯红对撞</dd></div>
+        <div><dt>质</dt><dd>流体涡旋、玻璃气泡、绒状微粒，画面始终在缓慢流动</dd></div>
+        <div><dt>镜</dt><dd>广角贴近，深焦，轻微色散与光晕，2.39:1 满画幅</dd></div>
+      </dl>
+    </section>
+
+    <section class="palette">
+      <h3>配色</h3>
+      <div class="sws"><span class="sw" style="--c:#061423" title="#061423"><i></i><b>061423</b></span><span class="sw" style="--c:#123B5E" title="#123B5E"><i></i><b>123B5E</b></span><span class="sw" style="--c:#2E8FA8" title="#2E8FA8"><i></i><b>2E8FA8</b></span><span class="sw" style="--c:#69E3D8" title="#69E3D8"><i></i><b>69E3D8</b></span><span class="sw" style="--c:#F0A94C" title="#F0A94C"><i></i><b>F0A94C</b></span></div>
+    </section>
+
+    <section class="prompts">
+      <h3>提示词 <span class="hint">点右上角复制</span></h3>
+      <div class="prompt">
+        <div class="prompt-top"><span>中文</span><button class="copy" data-copy="zh-deepsea">复制</button></div>
+        <p id="zh-deepsea" class="p-text">深海梦境，亿万发光粒子汇聚成水墨漩涡，生物荧光自发光，钴蓝与荧光青对撞，琥珀金点缀，体积雾，粒子水墨质感，2.39:1 宽银幕，深焦，轻微色散，电影感，无外部主光</p>
+      </div>
+      <div class="prompt dark">
+        <div class="prompt-top"><span>EN</span><button class="copy" data-copy="en-deepsea">复制</button></div>
+        <p id="en-deepsea" class="p-text">deep sea dreamscape, billions of luminous particles forming an ink-wash vortex, bioluminescent self-illumination, cobalt blue vs fluorescent teal, amber gold accents, volumetric haze, particle ink painting, anamorphic 2.39:1, deep focus, slight chromatic aberration, cinematic</p>
+      </div>
+      <div class="negative">
+        <span>负面词</span><p id="neg-deepsea">实拍照片，硬边高光，平涂色块，日光，塑料质感，过度锐化</p>
+        <button class="copy tiny" data-copy="neg-deepsea">复制</button>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div class="scenes"><h3>适配场景</h3><p><span>深海梦境</span><span>记忆闪回</span><span>情绪核爆</span></p></div>
+      <div class="tags"><h3>关键词</h3><p><span>粒子</span><span>水墨</span><span>自发光</span><span>流体</span><span>梦境</span></p></div>
+    </section>
+
+    <p class="secret"><span>秘诀</span>别打光，让主体自己发光。</p>
+  </article>
+  <article class="card" data-domain="国漫" data-search="东方厚涂 oriental impasto 哪吒之魔童降世 · 姜子牙 一笔一刀，把神魔画成有体温的实体 国内三维动画电影最主流的电影感解法：用厚涂笔触模拟油画堆叠，硬边高光切出结构，单一主光压出体积。人物的皮肤、皮革、青铜都要能看出笔触的方向，画面才不塑料。 厚涂 三维 神魔 暖调 硬光">
+    <header class="card-head">
+      <div class="no">02</div>
+      <div class="titles">
+        <h2>东方厚涂</h2>
+        <p class="en">ORIENTAL IMPASTO</p>
+      </div>
+      <div class="domain">CHINESE</div>
+    </header>
+    <p class="origin">参考坐标 · 哪吒之魔童降世 · 姜子牙</p>
+    <blockquote class="tagline">一笔一刀，把神魔画成有体温的实体</blockquote>
+    <p class="summary">国内三维动画电影最主流的电影感解法：用厚涂笔触模拟油画堆叠，硬边高光切出结构，单一主光压出体积。人物的皮肤、皮革、青铜都要能看出笔触的方向，画面才不塑料。</p>
+
+    <section class="genes">
+      <h3>视觉基因</h3>
+      <dl>
+        <div><dt>笔</dt><dd>可见的堆叠笔触，转折面用亮块直接切，不磨平</dd></div>
+        <div><dt>光</dt><dd>单一暖色主光 + 冷色轮廓光，金属高光锐利</dd></div>
+        <div><dt>色</dt><dd>暖橙红主导，暗部压紫褐，饱和度中高</dd></div>
+        <div><dt>质</dt><dd>油画颜料、青铜、皮革、粗布，皮肤带笔触过渡</dd></div>
+        <div><dt>镜</dt><dd>中近景为主，85mm 压缩，浅景深，人物顶天立地</dd></div>
+      </dl>
+    </section>
+
+    <section class="palette">
+      <h3>配色</h3>
+      <div class="sws"><span class="sw" style="--c:#2A120C" title="#2A120C"><i></i><b>2A120C</b></span><span class="sw" style="--c:#7A2B14" title="#7A2B14"><i></i><b>7A2B14</b></span><span class="sw" style="--c:#C4552A" title="#C4552A"><i></i><b>C4552A</b></span><span class="sw" style="--c:#E8A24A" title="#E8A24A"><i></i><b>E8A24A</b></span><span class="sw" style="--c:#3E4A6B" title="#3E4A6B"><i></i><b>3E4A6B</b></span></div>
+    </section>
+
+    <section class="prompts">
+      <h3>提示词 <span class="hint">点右上角复制</span></h3>
+      <div class="prompt">
+        <div class="prompt-top"><span>中文</span><button class="copy" data-copy="zh-thickpaint">复制</button></div>
+        <p id="zh-thickpaint" class="p-text">东方神魔厚涂，可见油画笔触堆叠，单一暖色主光与冷色轮廓光，硬边金属高光，青铜与皮革质感，皮肤有笔触过渡，暗部紫褐，中近景，85mm 压缩，浅景深，2.39:1，电影感</p>
+      </div>
+      <div class="prompt dark">
+        <div class="prompt-top"><span>EN</span><button class="copy" data-copy="en-thickpaint">复制</button></div>
+        <p id="en-thickpaint" class="p-text">oriental mythological impasto painting, visible oil brush strokes, single warm key light with cool rim light, hard specular highlights on metal, bronze and leather textures, painterly skin transitions, purple-brown shadows, medium close-up, 85mm compression, shallow depth of field, anamorphic 2.39:1, cinematic</p>
+      </div>
+      <div class="negative">
+        <span>负面词</span><p id="neg-thickpaint">塑料模型感，零纹理皮肤，均匀柔光，磨皮，网页游戏 CG，过曝</p>
+        <button class="copy tiny" data-copy="neg-thickpaint">复制</button>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div class="scenes"><h3>适配场景</h3><p><span>神魔对峙</span><span>人物特写</span><span>火场爆发</span></p></div>
+      <div class="tags"><h3>关键词</h3><p><span>厚涂</span><span>三维</span><span>神魔</span><span>暖调</span><span>硬光</span></p></div>
+    </section>
+
+    <p class="secret"><span>秘诀</span>高光要硬，暗部要脏，皮肤要有笔触。</p>
+  </article>
+  <article class="card" data-domain="国漫" data-search="绢本重彩 silk mineral 大鱼海棠 · 长安三万里 一层矿物颜料，一层绢丝呼吸 把院体画的材料感搬上银幕：朱砂、石青、石绿、蛤白层层罩染，色块之间靠细匀的墨线分隔。它几乎没有戏剧性打光，靠色彩本身的明度与饱和度叙事，适合宏大、克制、带时间感的题材。 绢本 重彩 矿物色 留白 长卷">
+    <header class="card-head">
+      <div class="no">03</div>
+      <div class="titles">
+        <h2>绢本重彩</h2>
+        <p class="en">SILK MINERAL</p>
+      </div>
+      <div class="domain">CHINESE</div>
+    </header>
+    <p class="origin">参考坐标 · 大鱼海棠 · 长安三万里</p>
+    <blockquote class="tagline">一层矿物颜料，一层绢丝呼吸</blockquote>
+    <p class="summary">把院体画的材料感搬上银幕：朱砂、石青、石绿、蛤白层层罩染，色块之间靠细匀的墨线分隔。它几乎没有戏剧性打光，靠色彩本身的明度与饱和度叙事，适合宏大、克制、带时间感的题材。</p>
+
+    <section class="genes">
+      <h3>视觉基因</h3>
+      <dl>
+        <div><dt>笔</dt><dd>平涂色块，边缘轻微渗化，勾线细而匀</dd></div>
+        <div><dt>光</dt><dd>无明确光源，均匀柔光，由色块明度塑造体积</dd></div>
+        <div><dt>色</dt><dd>朱砂、石青、石绿、蛤白、赭石，低饱和高质感</dd></div>
+        <div><dt>质</dt><dd>绢丝经纬、矿物颗粒、金箔勾边、轻微做旧</dd></div>
+        <div><dt>镜</dt><dd>平面化构图，大量留白，横向长卷式运镜</dd></div>
+      </dl>
+    </section>
+
+    <section class="palette">
+      <h3>配色</h3>
+      <div class="sws"><span class="sw" style="--c:#2E2A24" title="#2E2A24"><i></i><b>2E2A24</b></span><span class="sw" style="--c:#8C3B2E" title="#8C3B2E"><i></i><b>8C3B2E</b></span><span class="sw" style="--c:#C8A25A" title="#C8A25A"><i></i><b>C8A25A</b></span><span class="sw" style="--c:#3E6B63" title="#3E6B63"><i></i><b>3E6B63</b></span><span class="sw" style="--c:#E8DCC3" title="#E8DCC3"><i></i><b>E8DCC3</b></span></div>
+    </section>
+
+    <section class="prompts">
+      <h3>提示词 <span class="hint">点右上角复制</span></h3>
+      <div class="prompt">
+        <div class="prompt-top"><span>中文</span><button class="copy" data-copy="zh-silk">复制</button></div>
+        <p id="zh-silk" class="p-text">绢本设色重彩，矿物颜料层层罩染，朱砂石青石绿蛤白，细匀墨线勾边，均匀柔光无硬阴影，绢丝经纬纹理，金箔勾边，大面积留白，横向长卷构图，电影静帧，2.39:1</p>
+      </div>
+      <div class="prompt dark">
+        <div class="prompt-top"><span>EN</span><button class="copy" data-copy="en-silk">复制</button></div>
+        <p id="en-silk" class="p-text">silk scroll mineral pigment painting, layered cinnabar, azurite and malachite washes, fine even ink outlines, soft even light with no hard shadows, silk weave texture, gold leaf accents, generous negative space, horizontal scroll composition, cinematic still, 2.39:1</p>
+      </div>
+      <div class="negative">
+        <span>负面词</span><p id="neg-silk">浓重投影，霓虹，厚涂笔触，写实照片，高对比，赛博元素</p>
+        <button class="copy tiny" data-copy="neg-silk">复制</button>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div class="scenes"><h3>适配场景</h3><p><span>山河长卷</span><span>宫廷夜宴</span><span>离别空镜</span></p></div>
+      <div class="tags"><h3>关键词</h3><p><span>绢本</span><span>重彩</span><span>矿物色</span><span>留白</span><span>长卷</span></p></div>
+    </section>
+
+    <p class="secret"><span>秘诀</span>不打光，让颜色自己说话。</p>
+  </article>
+  <article class="card" data-domain="国漫" data-search="写意水墨 freehand ink 雾山五行 · 山水情 一笔下去，胜负已分 用最少的墨表达最快的动作：泼墨、飞白、枯笔，笔断意连。黑白之间只留一点朱砂，动静全靠运镜与留白对撞。它天生适合武打，因为没画完的地方正好留给观众想象。 水墨 写意 武打 留白 飞白">
+    <header class="card-head">
+      <div class="no">04</div>
+      <div class="titles">
+        <h2>写意水墨</h2>
+        <p class="en">FREEHAND INK</p>
+      </div>
+      <div class="domain">CHINESE</div>
+    </header>
+    <p class="origin">参考坐标 · 雾山五行 · 山水情</p>
+    <blockquote class="tagline">一笔下去，胜负已分</blockquote>
+    <p class="summary">用最少的墨表达最快的动作：泼墨、飞白、枯笔，笔断意连。黑白之间只留一点朱砂，动静全靠运镜与留白对撞。它天生适合武打，因为没画完的地方正好留给观众想象。</p>
+
+    <section class="genes">
+      <h3>视觉基因</h3>
+      <dl>
+        <div><dt>笔</dt><dd>泼墨、飞白、枯笔，速度感强，笔断意连</dd></div>
+        <div><dt>光</dt><dd>高对比黑白，局部朱红点睛，几乎不用灰</dd></div>
+        <div><dt>色</dt><dd>墨分五色，宣纸白为底，朱砂为唯一彩色</dd></div>
+        <div><dt>质</dt><dd>生宣渗化、水痕、纸纤维，墨色有干湿浓淡</dd></div>
+        <div><dt>镜</dt><dd>运动镜头与残影，冲撞式构图，大面积留白</dd></div>
+      </dl>
+    </section>
+
+    <section class="palette">
+      <h3>配色</h3>
+      <div class="sws"><span class="sw" style="--c:#111111" title="#111111"><i></i><b>111111</b></span><span class="sw" style="--c:#3A3A3A" title="#3A3A3A"><i></i><b>3A3A3A</b></span><span class="sw" style="--c:#7A7A7A" title="#7A7A7A"><i></i><b>7A7A7A</b></span><span class="sw" style="--c:#E9E4D8" title="#E9E4D8"><i></i><b>E9E4D8</b></span><span class="sw" style="--c:#B33A2B" title="#B33A2B"><i></i><b>B33A2B</b></span></div>
+    </section>
+
+    <section class="prompts">
+      <h3>提示词 <span class="hint">点右上角复制</span></h3>
+      <div class="prompt">
+        <div class="prompt-top"><span>中文</span><button class="copy" data-copy="zh-ink">复制</button></div>
+        <p id="zh-ink" class="p-text">写意水墨武打，泼墨飞白枯笔，墨分五色，生宣渗化水痕，朱砂一点，高速运镜残影，强烈黑白对比，大面积留白，纸纤维质感，2.39:1，电影感</p>
+      </div>
+      <div class="prompt dark">
+        <div class="prompt-top"><span>EN</span><button class="copy" data-copy="en-ink">复制</button></div>
+        <p id="en-ink" class="p-text">freehand ink wash martial arts, splashed ink with dry flying-white brush strokes, five tones of black, raw xuan paper bleeding and water stains, a single touch of cinnabar, high-speed motion blur afterimages, stark black-and-white contrast, large negative space, paper fiber texture, 2.39:1, cinematic</p>
+      </div>
+      <div class="negative">
+        <span>负面词</span><p id="neg-ink">彩色，写实渲染，厚涂，三维，渐变光，过度细节</p>
+        <button class="copy tiny" data-copy="neg-ink">复制</button>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div class="scenes"><h3>适配场景</h3><p><span>竹林对决</span><span>雨夜追殺</span><span>山水空镜</span></p></div>
+      <div class="tags"><h3>关键词</h3><p><span>水墨</span><span>写意</span><span>武打</span><span>留白</span><span>飞白</span></p></div>
+    </section>
+
+    <p class="secret"><span>秘诀</span>留白比墨更重要。</p>
+  </article>
+  <article class="card" data-domain="国漫" data-search="赛博国潮 cyber guochao 新神榜：杨戬 · 白蛇2 把神像接上电路，把宫阙点成霓虹 东方神话的骨架加赛博朋克的光。鎏金纹样与全息符文叠在机械结构上，青紫霓虹从建筑缝隙里渗出来。它解决了一个老问题：让古老的神明显得正在运行。 赛博 国潮 霓虹 机械 神话">
+    <header class="card-head">
+      <div class="no">05</div>
+      <div class="titles">
+        <h2>赛博国潮</h2>
+        <p class="en">CYBER GUOCHAO</p>
+      </div>
+      <div class="domain">CHINESE</div>
+    </header>
+    <p class="origin">参考坐标 · 新神榜：杨戬 · 白蛇2</p>
+    <blockquote class="tagline">把神像接上电路，把宫阙点成霓虹</blockquote>
+    <p class="summary">东方神话的骨架加赛博朋克的光。鎏金纹样与全息符文叠在机械结构上，青紫霓虹从建筑缝隙里渗出来。它解决了一个老问题：让古老的神明显得正在运行。</p>
+
+    <section class="genes">
+      <h3>视觉基因</h3>
+      <dl>
+        <div><dt>笔</dt><dd>硬边矢量结构 + 粒子光效，线条干净利落</dd></div>
+        <div><dt>光</dt><dd>霓虹自发光 + 体积光，青紫为主，金为补</dd></div>
+        <div><dt>色</dt><dd>品红、青、鎏金，黑底高饱和，暗部带蓝</dd></div>
+        <div><dt>质</dt><dd>金属机械、霓虹玻璃、全息投影、电路纹样</dd></div>
+        <div><dt>镜</dt><dd>广角仰拍，对称构图，轻微故障闪烁</dd></div>
+      </dl>
+    </section>
+
+    <section class="palette">
+      <h3>配色</h3>
+      <div class="sws"><span class="sw" style="--c:#07060F" title="#07060F"><i></i><b>07060F</b></span><span class="sw" style="--c:#2A1B4D" title="#2A1B4D"><i></i><b>2A1B4D</b></span><span class="sw" style="--c:#7B2CBF" title="#7B2CBF"><i></i><b>7B2CBF</b></span><span class="sw" style="--c:#22D3EE" title="#22D3EE"><i></i><b>22D3EE</b></span><span class="sw" style="--c:#D4A537" title="#D4A537"><i></i><b>D4A537</b></span></div>
+    </section>
+
+    <section class="prompts">
+      <h3>提示词 <span class="hint">点右上角复制</span></h3>
+      <div class="prompt">
+        <div class="prompt-top"><span>中文</span><button class="copy" data-copy="zh-cyberguochao">复制</button></div>
+        <p id="zh-cyberguochao" class="p-text">赛博国潮神话，机械神像与鎏金纹样，霓虹青紫自发光，体积光穿过建筑缝隙，全息浮空符文，金属与玻璃材质，广角仰拍对称构图，轻微故障闪烁，2.39:1，电影感</p>
+      </div>
+      <div class="prompt dark">
+        <div class="prompt-top"><span>EN</span><button class="copy" data-copy="en-cyberguochao">复制</button></div>
+        <p id="en-cyberguochao" class="p-text">cyber guochao mythology, mechanical deity statue with gilded ornament, neon magenta and cyan self-illumination, volumetric light through architecture gaps, holographic floating runes, metal and glass materials, wide-angle low-angle symmetrical composition, subtle glitch flicker, 2.39:1, cinematic</p>
+      </div>
+      <div class="negative">
+        <span>负面词</span><p id="neg-cyberguochao">低饱和，自然光，古装写实，绢本，平涂，模糊</p>
+        <button class="copy tiny" data-copy="neg-cyberguochao">复制</button>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div class="scenes"><h3>适配场景</h3><p><span>天宫夜巡</span><span>机械神像</span><span>都市追逐</span></p></div>
+      <div class="tags"><h3>关键词</h3><p><span>赛博</span><span>国潮</span><span>霓虹</span><span>机械</span><span>神话</span></p></div>
+    </section>
+
+    <p class="secret"><span>秘诀</span>古老纹样加现代光源，反差就是风格。</p>
+  </article>
+  <article class="card" data-domain="国漫" data-search="港漫硬派 hk comic brutal 风云决 · 龙虎门 肌肉、墨线，和一拳打穿纸面的力度 香港漫画的银幕化：粗黑描边锁住轮廓，块面高对比塑造肌肉，网点负责阴影。它不追求真实，追求重量。低角度英雄机位加上速度线，一拳就有风声。 港漫 硬派 武侠 网点 高对比">
+    <header class="card-head">
+      <div class="no">06</div>
+      <div class="titles">
+        <h2>港漫硬派</h2>
+        <p class="en">HK COMIC BRUTAL</p>
+      </div>
+      <div class="domain">CHINESE</div>
+    </header>
+    <p class="origin">参考坐标 · 风云决 · 龙虎门</p>
+    <blockquote class="tagline">肌肉、墨线，和一拳打穿纸面的力度</blockquote>
+    <p class="summary">香港漫画的银幕化：粗黑描边锁住轮廓，块面高对比塑造肌肉，网点负责阴影。它不追求真实，追求重量。低角度英雄机位加上速度线，一拳就有风声。</p>
+
+    <section class="genes">
+      <h3>视觉基因</h3>
+      <dl>
+        <div><dt>笔</dt><dd>粗黑描边，块面切分，肌肉线条夸张</dd></div>
+        <div><dt>光</dt><dd>硬光，明暗切割强烈，阴影用网点</dd></div>
+        <div><dt>色</dt><dd>红、黑、金三色主导，高对比印刷感</dd></div>
+        <div><dt>质</dt><dd>墨线、网点、纸张与油墨颗粒</dd></div>
+        <div><dt>镜</dt><dd>低角度英雄机位，速度线，分格式构图</dd></div>
+      </dl>
+    </section>
+
+    <section class="palette">
+      <h3>配色</h3>
+      <div class="sws"><span class="sw" style="--c:#0D0D0D" title="#0D0D0D"><i></i><b>0D0D0D</b></span><span class="sw" style="--c:#3D0F0F" title="#3D0F0F"><i></i><b>3D0F0F</b></span><span class="sw" style="--c:#A61B1B" title="#A61B1B"><i></i><b>A61B1B</b></span><span class="sw" style="--c:#D4A537" title="#D4A537"><i></i><b>D4A537</b></span><span class="sw" style="--c:#E8E1D3" title="#E8E1D3"><i></i><b>E8E1D3</b></span></div>
+    </section>
+
+    <section class="prompts">
+      <h3>提示词 <span class="hint">点右上角复制</span></h3>
+      <div class="prompt">
+        <div class="prompt-top"><span>中文</span><button class="copy" data-copy="zh-hkmanhua">复制</button></div>
+        <p id="zh-hkmanhua" class="p-text">港漫硬派武侠，粗黑描边，夸张肌肉块面，网点阴影，红黑金三色，硬光强烈明暗切割，低角度英雄机位，速度线，油墨印刷颗粒，2.39:1，电影感</p>
+      </div>
+      <div class="prompt dark">
+        <div class="prompt-top"><span>EN</span><button class="copy" data-copy="en-hkmanhua">复制</button></div>
+        <p id="en-hkmanhua" class="p-text">hong kong comic brutal wuxia, thick black outlines, exaggerated muscle planes, halftone dot shadows, red black and gold palette, hard light with strong chiaroscuro, low-angle hero shot, speed lines, ink print grain, 2.39:1, cinematic</p>
+      </div>
+      <div class="negative">
+        <span>负面词</span><p id="neg-hkmanhua">柔光，粉彩，写实皮肤，细线，低对比，日式萌系</p>
+        <button class="copy tiny" data-copy="neg-hkmanhua">复制</button>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div class="scenes"><h3>适配场景</h3><p><span>街頭決戰</span><span>英雄登场</span><span>掌风特写</span></p></div>
+      <div class="tags"><h3>关键词</h3><p><span>港漫</span><span>硬派</span><span>武侠</span><span>网点</span><span>高对比</span></p></div>
+    </section>
+
+    <p class="secret"><span>秘诀</span>让每一块肌肉都知道光从哪来。</p>
+  </article>
+  <article class="card" data-domain="国漫" data-search="敦煌岩彩 dunhuang mineral 九色鹿 · 敦煌 一千年的颜料，还在墙上发光 土红、石青、石绿、金箔，加上壁面龟裂与剥落。它的电影感不来自镜头，而来自时间的痕迹——好像画面本身已经存在了一千年。适合神话、寓言与轮回题材。 敦煌 岩彩 壁画 金箔 神话">
+    <header class="card-head">
+      <div class="no">07</div>
+      <div class="titles">
+        <h2>敦煌岩彩</h2>
+        <p class="en">DUNHUANG MINERAL</p>
+      </div>
+      <div class="domain">CHINESE</div>
+    </header>
+    <p class="origin">参考坐标 · 九色鹿 · 敦煌</p>
+    <blockquote class="tagline">一千年的颜料，还在墙上发光</blockquote>
+    <p class="summary">土红、石青、石绿、金箔，加上壁面龟裂与剥落。它的电影感不来自镜头，而来自时间的痕迹——好像画面本身已经存在了一千年。适合神话、寓言与轮回题材。</p>
+
+    <section class="genes">
+      <h3>视觉基因</h3>
+      <dl>
+        <div><dt>笔</dt><dd>壁画平涂，色块边缘有剥落与晕染</dd></div>
+        <div><dt>光</dt><dd>平面装饰光，靠金箔反光提亮</dd></div>
+        <div><dt>色</dt><dd>土红、石青、石绿、金、赭，暖而沉</dd></div>
+        <div><dt>质</dt><dd>壁面龟裂、金箔、矿物颗粒、烟熏痕</dd></div>
+        <div><dt>镜</dt><dd>横向叙事，装饰性构图，飘带引导视线</dd></div>
+      </dl>
+    </section>
+
+    <section class="palette">
+      <h3>配色</h3>
+      <div class="sws"><span class="sw" style="--c:#3B1F14" title="#3B1F14"><i></i><b>3B1F14</b></span><span class="sw" style="--c:#9C3B24" title="#9C3B24"><i></i><b>9C3B24</b></span><span class="sw" style="--c:#C97B3C" title="#C97B3C"><i></i><b>C97B3C</b></span><span class="sw" style="--c:#2F6B6B" title="#2F6B6B"><i></i><b>2F6B6B</b></span><span class="sw" style="--c:#D9B45B" title="#D9B45B"><i></i><b>D9B45B</b></span></div>
+    </section>
+
+    <section class="prompts">
+      <h3>提示词 <span class="hint">点右上角复制</span></h3>
+      <div class="prompt">
+        <div class="prompt-top"><span>中文</span><button class="copy" data-copy="zh-dunhuang">复制</button></div>
+        <p id="zh-dunhuang" class="p-text">敦煌壁画岩彩，土红石青石绿，金箔剥落，壁面龟裂与烟熏痕，飞天飘带，装饰性平面构图，暖调沉稳，矿物颜料颗粒，2.39:1，电影静帧</p>
+      </div>
+      <div class="prompt dark">
+        <div class="prompt-top"><span>EN</span><button class="copy" data-copy="en-dunhuang">复制</button></div>
+        <p id="en-dunhuang" class="p-text">dunhuang mural mineral color painting, earth red azurite and malachite, flaking gold leaf, cracked wall surface with soot stains, flying apsara ribbons, decorative flat composition, warm restrained palette, mineral pigment granulation, 2.39:1, cinematic still</p>
+      </div>
+      <div class="negative">
+        <span>负面词</span><p id="neg-dunhuang">三维渲染，霓虹，光滑表面，现代建筑，冷白光</p>
+        <button class="copy tiny" data-copy="neg-dunhuang">复制</button>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div class="scenes"><h3>适配场景</h3><p><span>飞天降临</span><span>本生故事</span><span>洞窟烛光</span></p></div>
+      <div class="tags"><h3>关键词</h3><p><span>敦煌</span><span>岩彩</span><span>壁画</span><span>金箔</span><span>神话</span></p></div>
+    </section>
+
+    <p class="secret"><span>秘诀</span>让画面显旧，故事才显老。</p>
+  </article>
+  <article class="card" data-domain="国漫" data-search="剪纸皮影 paper cut 葫芦兄弟 · 中国奇谭 一张红纸，剪出整台戏 镂空剪影加背光透射，是中国人自己的定格电影。正红与墨黑在米黄纸面上咬合，边缘锐利到能割手。它天然带舞台感，适合民俗、寓言与黑色幽默。 剪纸 皮影 定格 民俗 剪影">
+    <header class="card-head">
+      <div class="no">08</div>
+      <div class="titles">
+        <h2>剪纸皮影</h2>
+        <p class="en">PAPER CUT</p>
+      </div>
+      <div class="domain">CHINESE</div>
+    </header>
+    <p class="origin">参考坐标 · 葫芦兄弟 · 中国奇谭</p>
+    <blockquote class="tagline">一张红纸，剪出整台戏</blockquote>
+    <p class="summary">镂空剪影加背光透射，是中国人自己的定格电影。正红与墨黑在米黄纸面上咬合，边缘锐利到能割手。它天然带舞台感，适合民俗、寓言与黑色幽默。</p>
+
+    <section class="genes">
+      <h3>视觉基因</h3>
+      <dl>
+        <div><dt>笔</dt><dd>镂空剪影，边缘锐利，线条连续不断</dd></div>
+        <div><dt>光</dt><dd>背光透射，影窗式打光，纸面透出暖黄</dd></div>
+        <div><dt>色</dt><dd>正红、墨黑、米黄，三色封闭系统</dd></div>
+        <div><dt>质</dt><dd>宣纸纤维、驴皮透光、刀刻毛边</dd></div>
+        <div><dt>镜</dt><dd>舞台化正面构图，层叠景深，横向移动</dd></div>
+      </dl>
+    </section>
+
+    <section class="palette">
+      <h3>配色</h3>
+      <div class="sws"><span class="sw" style="--c:#1A1210" title="#1A1210"><i></i><b>1A1210</b></span><span class="sw" style="--c:#8C1C13" title="#8C1C13"><i></i><b>8C1C13</b></span><span class="sw" style="--c:#C8342A" title="#C8342A"><i></i><b>C8342A</b></span><span class="sw" style="--c:#E8D3A9" title="#E8D3A9"><i></i><b>E8D3A9</b></span><span class="sw" style="--c:#D9A441" title="#D9A441"><i></i><b>D9A441</b></span></div>
+    </section>
+
+    <section class="prompts">
+      <h3>提示词 <span class="hint">点右上角复制</span></h3>
+      <div class="prompt">
+        <div class="prompt-top"><span>中文</span><button class="copy" data-copy="zh-papercut">复制</button></div>
+        <p id="zh-papercut" class="p-text">剪纸皮影动画，镂空剪影，背光透射，正红墨黑米黄三色，宣纸纤维与刀刻毛边，舞台化正面构图，层叠景深，暖黄影窗光，2.39:1，电影感</p>
+      </div>
+      <div class="prompt dark">
+        <div class="prompt-top"><span>EN</span><button class="copy" data-copy="en-papercut">复制</button></div>
+        <p id="en-papercut" class="p-text">paper cut shadow puppet animation, hollowed silhouette, backlit transmission, vermilion black and rice-paper beige, xuan paper fibers with knife-cut edges, theatrical frontal composition, layered depth, warm yellow light box, 2.39:1, cinematic</p>
+      </div>
+      <div class="negative">
+        <span>负面词</span><p id="neg-papercut">写实光影，三维，渐变，噪点，复杂纹理，照片</p>
+        <button class="copy tiny" data-copy="neg-papercut">复制</button>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div class="scenes"><h3>适配场景</h3><p><span>灯下影戏</span><span>民俗年节</span><span>寓言开场</span></p></div>
+      <div class="tags"><h3>关键词</h3><p><span>剪纸</span><span>皮影</span><span>定格</span><span>民俗</span><span>剪影</span></p></div>
+    </section>
+
+    <p class="secret"><span>秘诀</span>只用一个红，红才有力。</p>
+  </article>
+  <article class="card" data-domain="日韩" data-search="新海诚光 makoto light 你的名字 · 天气之子 云、光，和一句没说出口的话 日本动画电影最被模仿的光影公式：天空占画面三分之二，逆光穿过云层，镜头光斑横穿画面，青蓝与橙金在同一个镜头里对撞。它把日常拍成了奇迹。 日漫 光影 云 逆光 青春">
+    <header class="card-head">
+      <div class="no">09</div>
+      <div class="titles">
+        <h2>新海诚光</h2>
+        <p class="en">MAKOTO LIGHT</p>
+      </div>
+      <div class="domain">JP · KR</div>
+    </header>
+    <p class="origin">参考坐标 · 你的名字 · 天气之子</p>
+    <blockquote class="tagline">云、光，和一句没说出口的话</blockquote>
+    <p class="summary">日本动画电影最被模仿的光影公式：天空占画面三分之二，逆光穿过云层，镜头光斑横穿画面，青蓝与橙金在同一个镜头里对撞。它把日常拍成了奇迹。</p>
+
+    <section class="genes">
+      <h3>视觉基因</h3>
+      <dl>
+        <div><dt>笔</dt><dd>精细云层，高光颗粒，细节密度极高</dd></div>
+        <div><dt>光</dt><dd>逆光/侧逆光，强镜头光斑，天空为光源</dd></div>
+        <div><dt>色</dt><dd>青蓝 + 橙金 + 品红晚霞，高饱和但通透</dd></div>
+        <div><dt>质</dt><dd>玻璃、水面、电线、金属栏杆的反射</dd></div>
+        <div><dt>镜</dt><dd>广角低机位，云层压迫感，2.39:1 横向</dd></div>
+      </dl>
+    </section>
+
+    <section class="palette">
+      <h3>配色</h3>
+      <div class="sws"><span class="sw" style="--c:#0E2340" title="#0E2340"><i></i><b>0E2340</b></span><span class="sw" style="--c:#2C6E9B" title="#2C6E9B"><i></i><b>2C6E9B</b></span><span class="sw" style="--c:#7EC8E3" title="#7EC8E3"><i></i><b>7EC8E3</b></span><span class="sw" style="--c:#F2A65A" title="#F2A65A"><i></i><b>F2A65A</b></span><span class="sw" style="--c:#E86A8A" title="#E86A8A"><i></i><b>E86A8A</b></span></div>
+    </section>
+
+    <section class="prompts">
+      <h3>提示词 <span class="hint">点右上角复制</span></h3>
+      <div class="prompt">
+        <div class="prompt-top"><span>中文</span><button class="copy" data-copy="zh-makoto">复制</button></div>
+        <p id="zh-makoto" class="p-text">新海诚式光影，巨大积云占据三分之二画面，逆光穿透云层，强烈镜头光斑，青蓝天空与橙金夕照对撞，电线与玻璃反射细节，广角低机位，超高细节云层，2.39:1，电影感</p>
+      </div>
+      <div class="prompt dark">
+        <div class="prompt-top"><span>EN</span><button class="copy" data-copy="en-makoto">复制</button></div>
+        <p id="en-makoto" class="p-text">makoto shinkai lighting, towering cumulus filling two-thirds of frame, backlight piercing clouds, strong lens flare, cyan-blue sky against amber sunset, detailed power lines and glass reflections, wide-angle low camera, hyper-detailed clouds, 2.39:1, cinematic</p>
+      </div>
+      <div class="negative">
+        <span>负面词</span><p id="neg-makoto">厚涂笔触，网点，黑白，低饱和，室内暗调，粗糙线条</p>
+        <button class="copy tiny" data-copy="neg-makoto">复制</button>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div class="scenes"><h3>适配场景</h3><p><span>黄昏天台</span><span>雨过天晴</span><span>列车窗景</span></p></div>
+      <div class="tags"><h3>关键词</h3><p><span>日漫</span><span>光影</span><span>云</span><span>逆光</span><span>青春</span></p></div>
+    </section>
+
+    <p class="secret"><span>秘诀</span>天空要占三分之二，光要穿过云。</p>
+  </article>
+  <article class="card" data-domain="日韩" data-search="吉卜力自然 ghibli nature 龙猫 · 千与千寻 风穿过草地的时候，电影就开始了 水粉手绘的饱和绿与积云，漫射光下没有一处死黑。它相信停留的力量：一个空镜、一阵风、一片草浪，就能把观众按在座位上。电影感来自节奏，而不是特效。 日漫 手绘 自然 治愈 长镜头">
+    <header class="card-head">
+      <div class="no">10</div>
+      <div class="titles">
+        <h2>吉卜力自然</h2>
+        <p class="en">GHIBLI NATURE</p>
+      </div>
+      <div class="domain">JP · KR</div>
+    </header>
+    <p class="origin">参考坐标 · 龙猫 · 千与千寻</p>
+    <blockquote class="tagline">风穿过草地的时候，电影就开始了</blockquote>
+    <p class="summary">水粉手绘的饱和绿与积云，漫射光下没有一处死黑。它相信停留的力量：一个空镜、一阵风、一片草浪，就能把观众按在座位上。电影感来自节奏，而不是特效。</p>
+
+    <section class="genes">
+      <h3>视觉基因</h3>
+      <dl>
+        <div><dt>笔</dt><dd>水粉平涂，柔和不透明，边缘松</dd></div>
+        <div><dt>光</dt><dd>自然漫射光，无强烈方向，暗部保留色彩</dd></div>
+        <div><dt>色</dt><dd>饱和草绿、天蓝、暖黄，干净通透</dd></div>
+        <div><dt>质</dt><dd>手绘背景纸感，草叶与树叶细密笔触</dd></div>
+        <div><dt>镜</dt><dd>固定全景，长镜头，风吹草动的持续运动</dd></div>
+      </dl>
+    </section>
+
+    <section class="palette">
+      <h3>配色</h3>
+      <div class="sws"><span class="sw" style="--c:#1E3320" title="#1E3320"><i></i><b>1E3320</b></span><span class="sw" style="--c:#3F7A3A" title="#3F7A3A"><i></i><b>3F7A3A</b></span><span class="sw" style="--c:#8FBF5A" title="#8FBF5A"><i></i><b>8FBF5A</b></span><span class="sw" style="--c:#D9E8F2" title="#D9E8F2"><i></i><b>D9E8F2</b></span><span class="sw" style="--c:#F2C14E" title="#F2C14E"><i></i><b>F2C14E</b></span></div>
+    </section>
+
+    <section class="prompts">
+      <h3>提示词 <span class="hint">点右上角复制</span></h3>
+      <div class="prompt">
+        <div class="prompt-top"><span>中文</span><button class="copy" data-copy="zh-ghibli">复制</button></div>
+        <p id="zh-ghibli" class="p-text">吉卜力式手绘动画背景，水粉平涂，饱和草绿与原野，巨大积云，自然漫射光，暗部保留色彩，风吹草浪，手绘纸感，固定全景宽景，2.39:1，怀旧电影感</p>
+      </div>
+      <div class="prompt dark">
+        <div class="prompt-top"><span>EN</span><button class="copy" data-copy="en-ghibli">复制</button></div>
+        <p id="en-ghibli" class="p-text">ghibli style hand-painted animation background, gouache flat colors, saturated meadow green, towering cumulus, natural diffuse light, colorful shadows, wind through grass, paper texture, static wide shot, 2.39:1, nostalgic cinematic</p>
+      </div>
+      <div class="negative">
+        <span>负面词</span><p id="neg-ghibli">三维渲染，硬边高光，霓虹，高对比，写实照片，暗黑</p>
+        <button class="copy tiny" data-copy="neg-ghibli">复制</button>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div class="scenes"><h3>适配场景</h3><p><span>田野长镜</span><span>夏日午后</span><span>森林入口</span></p></div>
+      <div class="tags"><h3>关键词</h3><p><span>日漫</span><span>手绘</span><span>自然</span><span>治愈</span><span>长镜头</span></p></div>
+    </section>
+
+    <p class="secret"><span>秘诀</span>让镜头多停三秒，风会替你叙事。</p>
+  </article>
+  <article class="card" data-domain="日韩" data-search="都市心理 urban psyche 未麻的部屋 · 攻壳机动队 城市是一面镜子，照出你不敢看的脸 精密线条画出的写实都市，配冷调霓虹与荧光灯。玻璃幕墙把人物切成碎片，重复的构图让人分不清现实与幻觉。它适合悬疑、心理与身份题材。 日漫 都市 心理 霓虹 悬疑">
+    <header class="card-head">
+      <div class="no">11</div>
+      <div class="titles">
+        <h2>都市心理</h2>
+        <p class="en">URBAN PSYCHE</p>
+      </div>
+      <div class="domain">JP · KR</div>
+    </header>
+    <p class="origin">参考坐标 · 未麻的部屋 · 攻壳机动队</p>
+    <blockquote class="tagline">城市是一面镜子，照出你不敢看的脸</blockquote>
+    <p class="summary">精密线条画出的写实都市，配冷调霓虹与荧光灯。玻璃幕墙把人物切成碎片，重复的构图让人分不清现实与幻觉。它适合悬疑、心理与身份题材。</p>
+
+    <section class="genes">
+      <h3>视觉基因</h3>
+      <dl>
+        <div><dt>笔</dt><dd>精密线条，背景近乎写实，人物略简化</dd></div>
+        <div><dt>光</dt><dd>霓虹与荧光灯，冷调，反光面多</dd></div>
+        <div><dt>色</dt><dd>青灰、品红、钠黄，低明度与高明度反差</dd></div>
+        <div><dt>质</dt><dd>玻璃幕墙、雨水、招牌、电视雪花</dd></div>
+        <div><dt>镜</dt><dd>广角畸变，镜面反射，重复与对称构图</dd></div>
+      </dl>
+    </section>
+
+    <section class="palette">
+      <h3>配色</h3>
+      <div class="sws"><span class="sw" style="--c:#0A0E14" title="#0A0E14"><i></i><b>0A0E14</b></span><span class="sw" style="--c:#1F3B4D" title="#1F3B4D"><i></i><b>1F3B4D</b></span><span class="sw" style="--c:#3E7C8C" title="#3E7C8C"><i></i><b>3E7C8C</b></span><span class="sw" style="--c:#C2185B" title="#C2185B"><i></i><b>C2185B</b></span><span class="sw" style="--c:#E8C547" title="#E8C547"><i></i><b>E8C547</b></span></div>
+    </section>
+
+    <section class="prompts">
+      <h3>提示词 <span class="hint">点右上角复制</span></h3>
+      <div class="prompt">
+        <div class="prompt-top"><span>中文</span><button class="copy" data-copy="zh-animecity">复制</button></div>
+        <p id="zh-animecity" class="p-text">日式都市心理动画，精密线条写实背景，霓虹雨夜，青灰与品红，玻璃幕墙反射与分割，荧光灯冷调，重复镜像构图，广角畸变，2.39:1，电影感</p>
+      </div>
+      <div class="prompt dark">
+        <div class="prompt-top"><span>EN</span><button class="copy" data-copy="en-animecity">复制</button></div>
+        <p id="en-animecity" class="p-text">japanese urban psychological animation, precise linework realistic background, neon rainy night, cyan-grey and magenta, glass curtain wall reflections cutting the figure, fluorescent cold light, repetitive mirrored composition, wide-angle distortion, 2.39:1, cinematic</p>
+      </div>
+      <div class="negative">
+        <span>负面词</span><p id="neg-animecity">温暖阳光，手绘水粉，低饱和，自然风景，萌系角色</p>
+        <button class="copy tiny" data-copy="neg-animecity">复制</button>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div class="scenes"><h3>适配场景</h3><p><span>雨夜街口</span><span>镜屋</span><span>电视监控</span></p></div>
+      <div class="tags"><h3>关键词</h3><p><span>日漫</span><span>都市</span><span>心理</span><span>霓虹</span><span>悬疑</span></p></div>
+    </section>
+
+    <p class="secret"><span>秘诀</span>让反射比本体更清楚。</p>
+  </article>
+  <article class="card" data-domain="欧美" data-search="皮克斯体积光 pixar volume 寻梦环游记 · 心灵奇旅 让光有重量，让材质有温度 好莱坞三维动画的工业标准：体积光穿过窗与尘埃，次表面散射让皮肤透出暖意，布料与毛发各有各的软硬。它不炫技，只是把真实调到比真实更讨喜。 欧美 三维 体积光 合家欢 高完成度">
+    <header class="card-head">
+      <div class="no">12</div>
+      <div class="titles">
+        <h2>皮克斯体积光</h2>
+        <p class="en">PIXAR VOLUME</p>
+      </div>
+      <div class="domain">WEST</div>
+    </header>
+    <p class="origin">参考坐标 · 寻梦环游记 · 心灵奇旅</p>
+    <blockquote class="tagline">让光有重量，让材质有温度</blockquote>
+    <p class="summary">好莱坞三维动画的工业标准：体积光穿过窗与尘埃，次表面散射让皮肤透出暖意，布料与毛发各有各的软硬。它不炫技，只是把真实调到比真实更讨喜。</p>
+
+    <section class="genes">
+      <h3>视觉基因</h3>
+      <dl>
+        <div><dt>笔</dt><dd>无笔触，形体由光照与材质定义</dd></div>
+        <div><dt>光</dt><dd>体积光、窗光、暖色反弹光，光源可见</dd></div>
+        <div><dt>色</dt><dd>暖橙主调 + 青色补光，明度高，暗部干净</dd></div>
+        <div><dt>质</dt><dd>布料、毛发、皮肤次表面散射、微尘</dd></div>
+        <div><dt>镜</dt><dd>35mm 中景，浅景深，大量柔和光斑</dd></div>
+      </dl>
+    </section>
+
+    <section class="palette">
+      <h3>配色</h3>
+      <div class="sws"><span class="sw" style="--c:#2A1A12" title="#2A1A12"><i></i><b>2A1A12</b></span><span class="sw" style="--c:#8C4A2A" title="#8C4A2A"><i></i><b>8C4A2A</b></span><span class="sw" style="--c:#D98E4A" title="#D98E4A"><i></i><b>D98E4A</b></span><span class="sw" style="--c:#F2D9A8" title="#F2D9A8"><i></i><b>F2D9A8</b></span><span class="sw" style="--c:#2E6B7A" title="#2E6B7A"><i></i><b>2E6B7A</b></span></div>
+    </section>
+
+    <section class="prompts">
+      <h3>提示词 <span class="hint">点右上角复制</span></h3>
+      <div class="prompt">
+        <div class="prompt-top"><span>中文</span><button class="copy" data-copy="zh-pixar">复制</button></div>
+        <p id="zh-pixar" class="p-text">皮克斯式三维动画电影画面，体积光穿过窗户与尘埃，次表面散射皮肤，暖橙主光配青色补光，布料与毛发材质，35mm 中景，浅景深柔和光斑，2.39:1，高完成度电影感</p>
+      </div>
+      <div class="prompt dark">
+        <div class="prompt-top"><span>EN</span><button class="copy" data-copy="en-pixar">复制</button></div>
+        <p id="en-pixar" class="p-text">pixar style 3d animated film still, volumetric god rays through window and dust, subsurface scattering skin, warm orange key with teal fill, fabric and fur materials, 35mm medium shot, shallow depth of field with soft bokeh, 2.39:1, polished cinematic</p>
+      </div>
+      <div class="negative">
+        <span>负面词</span><p id="neg-pixar">笔触，网点，平涂，黑白，颗粒噪点，粗糙边缘</p>
+        <button class="copy tiny" data-copy="neg-pixar">复制</button>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div class="scenes"><h3>适配场景</h3><p><span>家庭晚餐</span><span>回忆长廊</span><span>尘埃光束</span></p></div>
+      <div class="tags"><h3>关键词</h3><p><span>欧美</span><span>三维</span><span>体积光</span><span>合家欢</span><span>高完成度</span></p></div>
+    </section>
+
+    <p class="secret"><span>秘诀</span>光要能被看见，就要有尘埃。</p>
+  </article>
+  <article class="card" data-domain="欧美" data-search="蜘蛛宇宙 spider-verse 蜘蛛侠：平行宇宙 把漫画印在银幕上，再让它动起来 三维动画加二维手绘线加印刷网点，三种语言硬拼在一起，还故意抽帧、色差、错版。它证明了不完美本身就是风格——越像印坏的漫画，越有电影感。 欧美 漫画 半调 抽帧 撞色">
+    <header class="card-head">
+      <div class="no">13</div>
+      <div class="titles">
+        <h2>蜘蛛宇宙</h2>
+        <p class="en">SPIDER-VERSE</p>
+      </div>
+      <div class="domain">WEST</div>
+    </header>
+    <p class="origin">参考坐标 · 蜘蛛侠：平行宇宙</p>
+    <blockquote class="tagline">把漫画印在银幕上，再让它动起来</blockquote>
+    <p class="summary">三维动画加二维手绘线加印刷网点，三种语言硬拼在一起，还故意抽帧、色差、错版。它证明了不完美本身就是风格——越像印坏的漫画，越有电影感。</p>
+
+    <section class="genes">
+      <h3>视觉基因</h3>
+      <dl>
+        <div><dt>笔</dt><dd>半调网点 + 手绘线稿叠在三维模型上</dd></div>
+        <div><dt>光</dt><dd>硬光 + 强色差，光边带 RGB 分离</dd></div>
+        <div><dt>色</dt><dd>品红、青、黄，高饱和撞色，黑场压得住</dd></div>
+        <div><dt>质</dt><dd>印刷网点、油墨错版、故障条纹、纸张</dd></div>
+        <div><dt>镜</dt><dd>动态构图，速度线，抽帧（on twos）</dd></div>
+      </dl>
+    </section>
+
+    <section class="palette">
+      <h3>配色</h3>
+      <div class="sws"><span class="sw" style="--c:#0B0B12" title="#0B0B12"><i></i><b>0B0B12</b></span><span class="sw" style="--c:#C2185B" title="#C2185B"><i></i><b>C2185B</b></span><span class="sw" style="--c:#00C2D1" title="#00C2D1"><i></i><b>00C2D1</b></span><span class="sw" style="--c:#F2C300" title="#F2C300"><i></i><b>F2C300</b></span><span class="sw" style="--c:#E8E8F0" title="#E8E8F0"><i></i><b>E8E8F0</b></span></div>
+    </section>
+
+    <section class="prompts">
+      <h3>提示词 <span class="hint">点右上角复制</span></h3>
+      <div class="prompt">
+        <div class="prompt-top"><span>中文</span><button class="copy" data-copy="zh-spiderverse">复制</button></div>
+        <p id="zh-spiderverse" class="p-text">蜘蛛宇宙风格，半调网点与手绘线稿叠加三维形体，品红青黄撞色，RGB 色差错版，油墨印刷质感，漫画分格与速度线，动态构图，抽帧运动感，2.39:1</p>
+      </div>
+      <div class="prompt dark">
+        <div class="prompt-top"><span>EN</span><button class="copy" data-copy="en-spiderverse">复制</button></div>
+        <p id="en-spiderverse" class="p-text">spider-verse style, halftone dots and hand-drawn linework over 3d forms, magenta cyan yellow clashing palette, rgb misregistration, ink print texture, comic paneling and speed lines, dynamic composition, on-twos stepped motion, 2.39:1</p>
+      </div>
+      <div class="negative">
+        <span>负面词</span><p id="neg-spiderverse">柔和渐变，写实材质，低饱和，水粉手绘，均匀布光</p>
+        <button class="copy tiny" data-copy="neg-spiderverse">复制</button>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div class="scenes"><h3>适配场景</h3><p><span>高空坠落</span><span>平行世界</span><span>街头追逐</span></p></div>
+      <div class="tags"><h3>关键词</h3><p><span>欧美</span><span>漫画</span><span>半调</span><span>抽帧</span><span>撞色</span></p></div>
+    </section>
+
+    <p class="secret"><span>秘诀</span>抽掉一半的帧，动感反而更强。</p>
+  </article>
+  <article class="card" data-domain="欧美" data-search="凯尔经 kells 凯尔经的秘密 · 海洋之歌 每一个边框，都是一扇门 爱尔兰手抄本的美学：几何纹样、螺旋结、金箔与羊皮纸。画面被边框和纹样填满，却在中央留出神圣的空白。它适合神话、传说与故事中的故事。 欧美 手绘 装饰 神话 金箔">
+    <header class="card-head">
+      <div class="no">14</div>
+      <div class="titles">
+        <h2>凯尔经</h2>
+        <p class="en">KELLS</p>
+      </div>
+      <div class="domain">WEST</div>
+    </header>
+    <p class="origin">参考坐标 · 凯尔经的秘密 · 海洋之歌</p>
+    <blockquote class="tagline">每一个边框，都是一扇门</blockquote>
+    <p class="summary">爱尔兰手抄本的美学：几何纹样、螺旋结、金箔与羊皮纸。画面被边框和纹样填满，却在中央留出神圣的空白。它适合神话、传说与故事中的故事。</p>
+
+    <section class="genes">
+      <h3>视觉基因</h3>
+      <dl>
+        <div><dt>笔</dt><dd>装饰性线描，凯尔特结与螺旋，几何化</dd></div>
+        <div><dt>光</dt><dd>平面光，金箔反光，无写实阴影</dd></div>
+        <div><dt>色</dt><dd>米黄、墨绿、朱红、金，四色体系</dd></div>
+        <div><dt>质</dt><dd>羊皮纸、金箔、颜料颗粒、手绘抖动</dd></div>
+        <div><dt>镜</dt><dd>平面化构图，圆形/框式构图，装饰边框</dd></div>
+      </dl>
+    </section>
+
+    <section class="palette">
+      <h3>配色</h3>
+      <div class="sws"><span class="sw" style="--c:#1E2A1C" title="#1E2A1C"><i></i><b>1E2A1C</b></span><span class="sw" style="--c:#3E5B3A" title="#3E5B3A"><i></i><b>3E5B3A</b></span><span class="sw" style="--c:#8C2F1F" title="#8C2F1F"><i></i><b>8C2F1F</b></span><span class="sw" style="--c:#D9B45B" title="#D9B45B"><i></i><b>D9B45B</b></span><span class="sw" style="--c:#EDE0C4" title="#EDE0C4"><i></i><b>EDE0C4</b></span></div>
+    </section>
+
+    <section class="prompts">
+      <h3>提示词 <span class="hint">点右上角复制</span></h3>
+      <div class="prompt">
+        <div class="prompt-top"><span>中文</span><button class="copy" data-copy="zh-kells">复制</button></div>
+        <p id="zh-kells" class="p-text">凯尔经手抄本风格动画，凯尔特结与螺旋纹样，羊皮纸与金箔，米黄墨绿朱红四色，装饰性平面构图，圆形框式构图，手绘抖动线条，2.39:1，电影感</p>
+      </div>
+      <div class="prompt dark">
+        <div class="prompt-top"><span>EN</span><button class="copy" data-copy="en-kells">复制</button></div>
+        <p id="en-kells" class="p-text">book of kells manuscript style animation, celtic knots and spirals, parchment and gold leaf, beige deep green and vermilion palette, decorative flat composition, circular framed layout, hand-drawn wobbly lines, 2.39:1, cinematic</p>
+      </div>
+      <div class="negative">
+        <span>负面词</span><p id="neg-kells">三维，写实光影，霓虹，高对比黑白，现代城市</p>
+        <button class="copy tiny" data-copy="neg-kells">复制</button>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div class="scenes"><h3>适配场景</h3><p><span>手抄本内页</span><span>森林迷宫</span><span>传说开场</span></p></div>
+      <div class="tags"><h3>关键词</h3><p><span>欧美</span><span>手绘</span><span>装饰</span><span>神话</span><span>金箔</span></p></div>
+    </section>
+
+    <p class="secret"><span>秘诀</span>把画框也画成故事的一部分。</p>
+  </article>
+  <article class="card" data-domain="实验" data-search="黑色电影 film noir 罪恶之城 · 马耳他之鹰 光只照一半，另一半留给秘密 单一硬光、百叶窗条纹、浓烟与湿地面。黑白之间只留一点血红。它是最省的画风，也是最电影的画风——因为观众会自动补全黑暗里的东西。 实验 黑白 硬光 悬疑 胶片">
+    <header class="card-head">
+      <div class="no">15</div>
+      <div class="titles">
+        <h2>黑色电影</h2>
+        <p class="en">FILM NOIR</p>
+      </div>
+      <div class="domain">EXPERIMENTAL</div>
+    </header>
+    <p class="origin">参考坐标 · 罪恶之城 · 马耳他之鹰</p>
+    <blockquote class="tagline">光只照一半，另一半留给秘密</blockquote>
+    <p class="summary">单一硬光、百叶窗条纹、浓烟与湿地面。黑白之间只留一点血红。它是最省的画风，也是最电影的画风——因为观众会自动补全黑暗里的东西。</p>
+
+    <section class="genes">
+      <h3>视觉基因</h3>
+      <dl>
+        <div><dt>笔</dt><dd>写实黑白，边缘硬，暗部大面积死黑</dd></div>
+        <div><dt>光</dt><dd>单一硬光，百叶窗/门缝光，强逆光剪影</dd></div>
+        <div><dt>色</dt><dd>黑白灰 + 一点血红，几乎无中间调</dd></div>
+        <div><dt>质</dt><dd>胶片颗粒、烟雾、雨水、湿沥青反光</dd></div>
+        <div><dt>镜</dt><dd>低角度广角，深焦，荷兰角倾斜</dd></div>
+      </dl>
+    </section>
+
+    <section class="palette">
+      <h3>配色</h3>
+      <div class="sws"><span class="sw" style="--c:#050505" title="#050505"><i></i><b>050505</b></span><span class="sw" style="--c:#1A1A1A" title="#1A1A1A"><i></i><b>1A1A1A</b></span><span class="sw" style="--c:#4D4D4D" title="#4D4D4D"><i></i><b>4D4D4D</b></span><span class="sw" style="--c:#A6A6A6" title="#A6A6A6"><i></i><b>A6A6A6</b></span><span class="sw" style="--c:#8C1010" title="#8C1010"><i></i><b>8C1010</b></span></div>
+    </section>
+
+    <section class="prompts">
+      <h3>提示词 <span class="hint">点右上角复制</span></h3>
+      <div class="prompt">
+        <div class="prompt-top"><span>中文</span><button class="copy" data-copy="zh-noir">复制</button></div>
+        <p id="zh-noir" class="p-text">黑色电影画面，黑白高对比，单一硬光，百叶窗条纹投影，浓烟与雨夜湿街，湿润沥青反光，低角度广角，深焦，荷兰角倾斜，胶片颗粒，2.39:1，一点血红</p>
+      </div>
+      <div class="prompt dark">
+        <div class="prompt-top"><span>EN</span><button class="copy" data-copy="en-noir">复制</button></div>
+        <p id="en-noir" class="p-text">film noir frame, high-contrast black and white, single hard key light, venetian blind shadows, thick smoke and rainy wet street, wet asphalt reflections, low-angle wide lens, deep focus, dutch tilt, film grain, 2.39:1, a single touch of blood red</p>
+      </div>
+      <div class="negative">
+        <span>负面词</span><p id="neg-noir">彩色，柔光，平涂，卡通，高饱和，日光</p>
+        <button class="copy tiny" data-copy="neg-noir">复制</button>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div class="scenes"><h3>适配场景</h3><p><span>雨夜审讯</span><span>百叶窗独白</span><span>码头交易</span></p></div>
+      <div class="tags"><h3>关键词</h3><p><span>实验</span><span>黑白</span><span>硬光</span><span>悬疑</span><span>胶片</span></p></div>
+    </section>
+
+    <p class="secret"><span>秘诀</span>关掉一盏灯，比加十盏灯有效。</p>
+  </article>
+  <article class="card" data-domain="实验" data-search="故障艺术 glitch 实验动画 · 音乐影像 信号坏掉的那一刻，画面才真实 rgb 分离、像素位移、扫描线、数据块。它把传输错误当成一种笔触，用技术故障表达记忆失真与身份撕裂。适合科幻、惊悚与超现实段落。 实验 故障 赛博 电子 超现实">
+    <header class="card-head">
+      <div class="no">16</div>
+      <div class="titles">
+        <h2>故障艺术</h2>
+        <p class="en">GLITCH</p>
+      </div>
+      <div class="domain">EXPERIMENTAL</div>
+    </header>
+    <p class="origin">参考坐标 · 实验动画 · 音乐影像</p>
+    <blockquote class="tagline">信号坏掉的那一刻，画面才真实</blockquote>
+    <p class="summary">RGB 分离、像素位移、扫描线、数据块。它把传输错误当成一种笔触，用技术故障表达记忆失真与身份撕裂。适合科幻、惊悚与超现实段落。</p>
+
+    <section class="genes">
+      <h3>视觉基因</h3>
+      <dl>
+        <div><dt>笔</dt><dd>像素位移、块状撕裂、RGB 三色错位</dd></div>
+        <div><dt>光</dt><dd>屏幕自发光，冷白与青，局部过曝</dd></div>
+        <div><dt>色</dt><dd>青、品红、纯黑，高对比电子色</dd></div>
+        <div><dt>质</dt><dd>扫描线、压缩噪点、数据块、屏幕摩尔纹</dd></div>
+        <div><dt>镜</dt><dd>屏幕翻拍感，抖动，广角贴近</dd></div>
+      </dl>
+    </section>
+
+    <section class="palette">
+      <h3>配色</h3>
+      <div class="sws"><span class="sw" style="--c:#05070A" title="#05070A"><i></i><b>05070A</b></span><span class="sw" style="--c:#0E2A33" title="#0E2A33"><i></i><b>0E2A33</b></span><span class="sw" style="--c:#00E5FF" title="#00E5FF"><i></i><b>00E5FF</b></span><span class="sw" style="--c:#FF2E88" title="#FF2E88"><i></i><b>FF2E88</b></span><span class="sw" style="--c:#E8E8E8" title="#E8E8E8"><i></i><b>E8E8E8</b></span></div>
+    </section>
+
+    <section class="prompts">
+      <h3>提示词 <span class="hint">点右上角复制</span></h3>
+      <div class="prompt">
+        <div class="prompt-top"><span>中文</span><button class="copy" data-copy="zh-glitch">复制</button></div>
+        <p id="zh-glitch" class="p-text">故障艺术画面，RGB 三色分离，像素位移与块状撕裂，扫描线与压缩噪点，数据块，屏幕翻拍质感，青色与品红高对比，冷白自发光，抖动，2.39:1，电影感</p>
+      </div>
+      <div class="prompt dark">
+        <div class="prompt-top"><span>EN</span><button class="copy" data-copy="en-glitch">复制</button></div>
+        <p id="en-glitch" class="p-text">glitch art frame, rgb channel separation, pixel displacement and block tearing, scanlines and compression noise, data blocks, screen-capture texture, cyan and magenta high contrast, cold white self-illumination, jitter, 2.39:1, cinematic</p>
+      </div>
+      <div class="negative">
+        <span>负面词</span><p id="neg-glitch">手绘，水彩，柔和自然光，暖调，低对比，干净画面</p>
+        <button class="copy tiny" data-copy="neg-glitch">复制</button>
+      </div>
+    </section>
+
+    <section class="meta">
+      <div class="scenes"><h3>适配场景</h3><p><span>信号中断</span><span>记忆损坏</span><span>系统觉醒</span></p></div>
+      <div class="tags"><h3>关键词</h3><p><span>实验</span><span>故障</span><span>赛博</span><span>电子</span><span>超现实</span></p></div>
+    </section>
+
+    <p class="secret"><span>秘诀</span>错误要成系统，才像风格。</p>
+  </article></div>
+</main>
+
+<section class="models wrap">
+  <h2>现成模型 · 不用自己调</h2>
+  <p class="sub">Civitai 上现成的国漫／国风风格模型，下载即用（需代理）。按「对应画风」回到上面拿提示词，模型与提示词一对，就能出片。下载量截至 2026-10。</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>模型</th><th>底模</th><th>下载</th><th>对应画风</th><th></th></tr></thead>
+      <tbody>
+    <tr>
+      <td class="m-name">Donghua Style Illustrious<small>电影感 3D 国漫，最通用的一只</small></td>
+      <td><span class="base">Illustrious</span></td>
+      <td class="m-dl">236</td>
+      <td class="m-map">02 东方厚涂</td>
+      <td><a href="https://civitai.com/models/2419689" target="_blank" rel="noopener">打开 ↗</a></td>
+    </tr>
+    <tr>
+      <td class="m-name">3D Donghua · Illustrious Style<small>偏三维动画电影的角色质感</small></td>
+      <td><span class="base">Illustrious</span></td>
+      <td class="m-dl">642</td>
+      <td class="m-map">02 东方厚涂</td>
+      <td><a href="https://civitai.com/models/1885810" target="_blank" rel="noopener">打开 ↗</a></td>
+    </tr>
+    <tr>
+      <td class="m-name">Any Style to 3D Donghua Style<small>把任意风格转成 3D 国漫</small></td>
+      <td><span class="base">Qwen</span></td>
+      <td class="m-dl">638</td>
+      <td class="m-map">02 东方厚涂</td>
+      <td><a href="https://civitai.com/models/2418318" target="_blank" rel="noopener">打开 ↗</a></td>
+    </tr>
+    <tr>
+      <td class="m-name">GUOMAN<small>国漫综合风格，偏新神榜那一路</small></td>
+      <td><span class="base">Illustrious</span></td>
+      <td class="m-dl">58</td>
+      <td class="m-map">02 / 05</td>
+      <td><a href="https://civitai.com/models/2722284" target="_blank" rel="noopener">打开 ↗</a></td>
+    </tr>
+    <tr>
+      <td class="m-name">水墨风格 · ink wash painting<small>水墨类里下载量最高的老牌模型</small></td>
+      <td><span class="base">SDXL</span></td>
+      <td class="m-dl">8,985</td>
+      <td class="m-map">04 写意水墨</td>
+      <td><a href="https://civitai.com/models/231966" target="_blank" rel="noopener">打开 ↗</a></td>
+    </tr>
+    <tr>
+      <td class="m-name">Xianxia Art Style<small>仙侠古风，颜色偏矿物感</small></td>
+      <td><span class="base">Illustrious</span></td>
+      <td class="m-dl">901</td>
+      <td class="m-map">03 绢本重彩</td>
+      <td><a href="https://civitai.com/models/1955005" target="_blank" rel="noopener">打开 ↗</a></td>
+    </tr>
+    <tr>
+      <td class="m-name">Chinese Fantasy Xianxia · 仙侠古风<small>东方奇幻，适合大场面</small></td>
+      <td><span class="base">Qwen 2.1</span></td>
+      <td class="m-dl">885</td>
+      <td class="m-map">05 赛博国潮</td>
+      <td><a href="https://civitai.com/models/2979853" target="_blank" rel="noopener">打开 ↗</a></td>
+    </tr>
+    <tr>
+      <td class="m-name">90s Hong Kong Wuxia Film Style<small>九十年代港式武侠片颗粒感</small></td>
+      <td><span class="base">MiniMax H3</span></td>
+      <td class="m-dl">467</td>
+      <td class="m-map">06 港漫硬派</td>
+      <td><a href="https://civitai.com/models/2954281" target="_blank" rel="noopener">打开 ↗</a></td>
+    </tr>
+    <tr>
+      <td class="m-name">wuxia style · 武侠风<small>老底模，胜在轻量好跑</small></td>
+      <td><span class="base">SD 1.5</span></td>
+      <td class="m-dl">292</td>
+      <td class="m-map">04 / 06</td>
+      <td><a href="https://civitai.com/models/187489" target="_blank" rel="noopener">打开 ↗</a></td>
+    </tr></tbody>
+    </table>
+  </div>
+  <p class="tip">Civitai 默认会展示成人内容，注册后在设置里关掉 NSFW；底模优先 Illustrious / SDXL，通用性和生态最好。</p>
+  <p class="tip gpt-tip"><b>用 ChatGPT / GPT-Image 生图的，这一节可以跳过：</b>LoRA 是本地 Stable Diffusion / ComfyUI 的权重文件，GPT 加载不了。你要的东西在上面——直接用卡片里的中文提示词，删掉负面词那一行即可。</p>
+</section>
+
+<section class="howto">
+  <div class="wrap">
+    <h2>怎么用这份清单</h2>
+    <p class="sub">不必一条条硬背。按下面的顺序走，任何一种画风都能稳定复现。</p>
+    <div class="steps">
+      <div><b>01 先定画风，再定内容</b><p>从 16 条里选一条作为"画风锚点"，把它的提示词整段放在提示词最前面。模型对开头最敏感，先入为主。</p></div>
+      <div><b>02 只改主体，不改基因</b><p>替换人物、动作、场景，保留「笔·光·色·质·镜」五项描述不动。这才是同一种画风，而不是同一张图。</p></div>
+      <div><b>03 用负面词收口</b><p>每条都附了负面词。风格跑偏时优先加负面词，比反复调正向词有效得多。</p></div>
+      <div><b>04 统一靠抽查</b><p>一批图出来后，按饱和度、暖色占比、细节能量三项抽查，偏离基准的返工，不靠肉眼印象。</p></div>
+      <div class="gpt"><b>05 用 GPT 生图，删掉负面词</b><p>ChatGPT 不吃负面词，写了反而会被画出来。把「负面词」整行去掉，把想要的质感写成正向描述，再把画幅单独说一句。</p></div>
+    </div>
+    <div class="method">
+      <div><em>笔</em><small>STROKE</small><p>边缘是硬切、渗化还是颗粒？笔触方向决定画面是"画"出来的还是"算"出来的。</p></div><div><em>光</em><small>LIGHT</small><p>主光几个、方向在哪、有没有轮廓光。电影感的第一来源是光的逻辑，不是细节。</p></div><div><em>色</em><small>COLOR</small><p>先定三个色：底色、主色、点睛色。饱和度与明度决定这是"神话"还是"日常"。</p></div><div><em>质</em><small>TEXTURE</small><p>材质是可信度的来源：绢、纸、金属、皮肤、烟雾。缺了质感，风格就只剩滤镜。</p></div><div><em>镜</em><small>LENS</small><p>焦段、画幅、景深、色散。2.39:1 加 35mm 是电影，16:9 加手机广角是短视频。</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <p>银幕画风志 · 16 种电影级画风清单。画风描述与提示词为独立撰写，参考坐标仅用于标明风格来源，不含任何原作素材。</p>
+  <p>提示词可直接用于 LiblibAI / 即梦 / 魔多 / 堆友 / Midjourney / Stable Diffusion 等工具；英文版适配 SD 系模型，中文版适配国产模型。</p>
+</footer>
+
+<script>
+(function(){
+  var q = document.getElementById('q');
+  var grid = document.getElementById('grid');
+  var cards = [].slice.call(grid.querySelectorAll('.card'));
+  var count = document.getElementById('count');
+  var chips = document.getElementById('chips');
+  var active = '全部';
+  var domains = ['全部','国漫','日韩','欧美','实验'];
+
+  domains.forEach(function(d){
+    var b = document.createElement('button');
+    b.className = 'chip'; b.textContent = d;
+    b.setAttribute('aria-pressed', d === active ? 'true' : 'false');
+    b.onclick = function(){
+      active = d;
+      [].forEach.call(chips.children, function(c){ c.setAttribute('aria-pressed', c.textContent === d ? 'true' : 'false'); });
+      apply();
+    };
+    chips.appendChild(b);
+  });
+
+  function apply(){
+    var kw = q.value.trim().toLowerCase();
+    var n = 0;
+    cards.forEach(function(c){
+      var okD = active === '全部' || c.dataset.domain === active;
+      var okK = !kw || c.dataset.search.indexOf(kw) > -1;
+      var show = okD && okK;
+      c.style.display = show ? '' : 'none';
+      if (show) n++;
+    });
+    count.textContent = n + ' / ' + cards.length;
+  }
+  q.addEventListener('input', apply);
+  apply();
+
+  function fallbackCopy(text){
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch(e){}
+    document.body.removeChild(ta);
+  }
+  function copy(text, btn){
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function(){ ok(btn); }, function(){ fallbackCopy(text); ok(btn); });
+    } else { fallbackCopy(text); ok(btn); }
+  }
+  function ok(btn){
+    var old = btn.textContent;
+    btn.textContent = '已复制'; btn.classList.add('done');
+    setTimeout(function(){ btn.textContent = old; btn.classList.remove('done'); }, 1400);
+  }
+
+  document.addEventListener('click', function(e){
+    var b = e.target.closest('.copy');
+    if (!b) return;
+    var el = document.getElementById(b.dataset.copy);
+    if (el) copy(el.textContent, b);
+  });
+
+  document.getElementById('copyAll').onclick = function(){
+    var parts = cards.filter(function(c){ return c.style.display !== 'none'; }).map(function(c){
+      var h = c.querySelector('h2').textContent;
+      var zh = c.querySelector('.prompt .p-text').textContent;
+      return '【' + h + '】\n' + zh;
+    });
+    copy(parts.join('\n\n'), this);
+  };
+})();
+</script>
+</body>
+</html>

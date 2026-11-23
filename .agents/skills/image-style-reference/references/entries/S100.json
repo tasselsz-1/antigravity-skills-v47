@@ -1,0 +1,50 @@
+{
+  "id": "S100",
+  "category": "成熟商业·写实与短剧",
+  "slug": "commercial-post-apocalyptic",
+  "name": "疯狂麦克斯末世废土（高反差去饱和粗粝铁锈风化与逆光沙尘暴法）",
+  "aliases": [
+    "末世废土",
+    "POST-APOCALYPTIC"
+  ],
+  "style_prompt_zh": "好莱坞硬核末世废土（《疯狂的麦克斯》《辐射》）实拍工业美学；采用高反差、偏暖赭或荒漠青灰的风化胶片调色；烈日硬光穿透漫天漫射的沙尘暴与柴油黑烟，在破损混凝土废墟、重度锈蚀铆钉装甲与满身油污伤痕的幸存者身上切出硬朗高光；材质粗粝厚重，拒绝随机脏点噪波",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/styles.html",
+  "source_snapshot": "references/sources/commercial-2026-11-01/styles.html",
+  "source_title": "末世废土",
+  "source_original_prompt_en": "post-apocalyptic, desaturated, ruins, dust, gritty texture",
+  "summary": "漫剧与短剧常青爆款题材：真实铁锈风化 + 烈日沙尘体积光，硬核感拉满。",
+  "use_cases": [
+    "末世囤货/丧尸生存爽剧",
+    "废土机甲觉醒系统流",
+    "高燃硬汉生存动作片"
+  ],
+  "reference_coordinates": "《疯狂的麦克斯》",
+  "source_position": "main",
+  "source_position_note": "源作者的主流/细分/实验判断，未经独立市场数据验证。",
+  "related_entries": [],
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页未提供图片，代表作品名称仅作来源坐标，不等于已查看作品。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。",
+  "optional_effects_note": "颗粒、脏污、沙尘、旧化、光斑与抖动不默认继承；规则网点、像素与必要媒介纹理可受控保留。",
+  "license_note": "用户指定本地文本页面；未发现明确授权声明，不沿用其他来源的CC0许可。",
+  "sha256": null,
+  "image_size": null,
+  "tier": "mature_commercial",
+  "original_short_name": "末世废土",
+  "visual_genes": {
+    "笔": "硬朗刚毅的废墟断壁与改装重金属机械轮廓，破损边缘符合真实物理风化",
+    "光": "刺眼荒漠烈日顶侧光或火光冲天逆光，穿过浓厚沙尘形成粗犷丁达尔光束",
+    "色": "铁锈红、沙漠赭黄、柴油煤黑与苍穹冷青蓝高反差对撞",
+    "质": "剥落氧化铁锈、干裂皮革、粗麻布混合汗水油污、漫天可辨的飞沙颗粒",
+    "镜": "24mm广角低机位仰拍展现废土巨物压迫感，或长焦压缩热浪扭曲空间"
+  },
+  "palette": [
+    "#181410",
+    "#4A2E1B",
+    "#8C4A27",
+    "#D98A3C",
+    "#3A5A6B"
+  ]
+}

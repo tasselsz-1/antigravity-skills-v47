@@ -1,0 +1,63 @@
+{
+  "id": "S066",
+  "category": "成熟商业·国漫与实验视觉",
+  "slug": "cinematic-hkmanhua",
+  "name": "黄玉郎硬派港漫（粗黑毛笔排线肌肉切块与红黑金半调网点法）",
+  "aliases": [
+    "港漫硬派",
+    "银幕画风志06",
+    "HK COMIC BRUTAL"
+  ],
+  "style_prompt_zh": "经典硬派武侠港漫画法，刚猛粗黑毛笔描边与刀削斧劈的肌肉衣褶块面切分；强烈硬光切割出二分死黑阴影，过渡区铺设规则印刷半调网点（Halftone Dots）；严格锁定红、黑、金三色高反差配色体系，辅以方向明确的爆发速度线",
+  "reference_image": "assets/cinematic/S066-hkmanhua.jpg",
+  "source_page": "http://127.0.0.1:8766/国漫电影感画风清单.html",
+  "source_snapshot": "references/sources/cinematic-2026-10-30/国漫电影感画风清单.html",
+  "source_title": "港漫硬派",
+  "source_original_prompt_zh": "港漫硬派武侠，粗黑描边，夸张肌肉块面，网点阴影，红黑金三色，硬光强烈明暗切割，低角度英雄机位，速度线，油墨印刷颗粒，2.39:1，电影感",
+  "source_original_prompt_en": "hong kong comic brutal wuxia, thick black outlines, exaggerated muscle planes, halftone dot shadows, red black and gold palette, hard light with strong chiaroscuro, low-angle hero shot, speed lines, ink print grain, 2.39:1, cinematic",
+  "source_negative_prompt_zh": "柔光，粉彩，写实皮肤，细线，低对比，日式萌系",
+  "visual_genes": {
+    "笔": "粗黑描边，块面切分，肌肉线条夸张",
+    "光": "硬光，明暗切割强烈，阴影用网点",
+    "色": "红、黑、金三色主导，高对比印刷感",
+    "质": "墨线、网点、纸张与油墨颗粒",
+    "镜": "低角度英雄机位，速度线，分格式构图"
+  },
+  "palette": [
+    "#0D0D0D",
+    "#3D0F0F",
+    "#A61B1B",
+    "#D4A537",
+    "#E8E1D3"
+  ],
+  "use_cases": [
+    "街頭決戰",
+    "英雄登场",
+    "掌风特写"
+  ],
+  "tags": [
+    "港漫",
+    "硬派",
+    "武侠",
+    "网点",
+    "高对比"
+  ],
+  "summary": "香港漫画的银幕化：粗黑描边锁住轮廓，块面高对比塑造肌肉，网点负责阴影。它不追求真实，追求重量。低角度英雄机位加上速度线，一拳就有风声。",
+  "reference_coordinates": "参考坐标 · 风云决 · 龙虎门",
+  "sha256": "aaca4757dba1b7142950a117fe7b87217bef87434b74bf95a2cfb55967837648",
+  "image_size": [
+    760,
+    950
+  ],
+  "visual_review": "已查看8图总览：未见明显水印、签名或平台标识；实际调用前需看单张原图并复核。",
+  "reference_limitations": "样图为复古西式黑白漫画，并非准确港漫画风；仅参考墨线与块面。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。",
+  "optional_effects_note": "网点保留规则结构；油墨随机颗粒默认关闭，不强制肌肉与低角度。",
+  "license_note": "源页注明样图来自公开模型示例，版权归原作者，仅用于本地画风观察；未核实图片或模型商业许可。",
+  "source_image_page": "https://civitai.com/models/2661995",
+  "source_sample_prompt_zh": "一张电影静帧：街头决战前的一刻。港漫硬派，粗黑描边锁住轮廓，块面高对比塑造肌肉。阴影用网点，红黑金三色，油墨印刷的颗粒感。硬光强烈切割明暗，低角度英雄机位，画面里带速度线。2.39:1。",
+  "source_sample_caption": "近似参考：美式复古漫画，网点与墨线同源",
+  "tier": "mature_commercial",
+  "original_short_name": "港漫硬派"
+}

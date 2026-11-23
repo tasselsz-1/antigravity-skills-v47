@@ -1,0 +1,7 @@
+interface:
+  display_name: "双端短剧与生图工作流"
+  short_description: "Antigravity与Codex双端短剧制作、视频提示词与零膨胀高并发批次生图闭环"
+  default_prompt: "按 $dual-drama-workflow 执行双端短剧与批次生图流程。"
+policy:
+  allow_implicit_invocation: true
+

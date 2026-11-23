@@ -1,0 +1,34 @@
+{
+  "id": "H035",
+  "type": "hairstyle",
+  "group": "男性 · 古风束冠与史诗奇幻",
+  "gender": "男性",
+  "era": "仙侠/隐士/道家",
+  "name": "道髻木簪半披长发",
+  "en_name": "Taoist Topknot with Wooden Pin",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "顶心松雅挽出圆润道髻 + 素色木簪横插 + 垂顺长发披肩",
+  "formula_slots_ref_only": {
+    "color": "乌黑 / 灰白霜发",
+    "texture": "轻盈自然哑光微松发丝",
+    "noun": "古朴木簪道髻半披发",
+    "motion": "双鬓垂落两缕清逸碎发，长发随山岚轻拂"
+  },
+  "prompt_en_ref_only": "Taoist scholar topknot fastened with plain weathered wooden hairpin, half-up half-down straight hair, serene hermit silhouette",
+  "prompt_zh_ref_only": "头顶以朴素旧木簪横挽道髻，余发自然垂肩，双鬓零星碎发随清风微动，尽显隐士道长超然风骨",
+  "suggested_bones": [
+    "B005",
+    "B016",
+    "B018",
+    "B024"
+  ],
+  "svg_file": "assets/hairs/H035.svg",
+  "svg_params": {
+    "shape": "ancient_m_taoist",
+    "accent": "#14b8a6",
+    "gender": "男性"
+  }
+}

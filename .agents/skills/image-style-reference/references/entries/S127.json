@@ -1,0 +1,50 @@
+{
+  "id": "S127",
+  "category": "成熟商业·电影大师",
+  "slug": "commercial-cinema-panavision-anamorphic",
+  "name": "变形宽银幕光学耀斑（Panavision 椭圆散景）",
+  "aliases": [
+    "变形镜头",
+    "电影蓝线耀斑",
+    "PANAVISION FLARE"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "好莱坞Panavision变形宽银幕电影镜头特有光学质感；强点光源横向拉出贯穿画面的平直蓝青色拉丝眩光，焦外形成垂直椭圆形光斑；雨夜沥青路面镜面水光倒影，冷青与橙金交织，大片质感扑面而来",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "变形宽银幕光学耀斑（Panavision 椭圆散景）",
+  "source_original_prompt_en": "commercial-cinema-panavision-anamorphic",
+  "summary": "真正院线电影大片的光学标志：水平拉丝蓝线与垂直椭圆光斑，辨识度无可替代。",
+  "visual_genes": {
+    "笔": "水平方向拉长的光学衍射光束，焦外光斑呈现严格的垂直椭圆",
+    "光": "车灯与路灯在潮湿地面形成强镜面反射，冷青基底与暖黄亮点",
+    "色": "经典好莱坞双色冷暖对撞：青蓝色（Teal）与琥珀金（Orange）",
+    "质": "高质量现代镜头光学镀膜光晕、湿润雨水水雾反射",
+    "镜": "2.39:1 宽银幕画幅，中景或近景浅景深，横向空间延伸感极强"
+  },
+  "palette": [
+    "#071018",
+    "#0F2B48",
+    "#00A8B5",
+    "#E28743",
+    "#E6AF2E"
+  ],
+  "use_cases": [
+    "赛博朋克科幻巨作",
+    "都市财阀商战豪车追逐",
+    "现代刑侦破案夜景"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

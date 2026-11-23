@@ -1,0 +1,21 @@
+{
+  "category": "手绘",
+  "slug": "crayon-kids",
+  "name": "儿童蜡笔画",
+  "style_prompt_zh": "稚拙夸张比例，粗细不一的蜡笔轮廓，大色块自由填色，明快有限配色，保留克制的蜡质笔触",
+  "reference_image": "assets/crayon-kids.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/crayon-kids.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/crayon-kids.webp",
+  "source_title": "儿童蜡笔画",
+  "source_original_prompt_zh": "将附带照片转换为画在米白色速写本纸上的真实儿童蜡笔画。使用粗厚不均的黑褐色轮廓、歪斜的大头、不对称的圆眼睛、简单露齿笑容、僵直而活泼的四肢，以及越出轮廓的密集天蓝、叶绿、珊瑚、赭石和棕色涂鸦。将姿势和表情调整为欢快稚拙的比例。通过脸型、黑色长发和碎花连衣裙的配色保持她的辨识度，但将包括脸部、眼睛和皮肤在内的整个人物，用蜡质蜡笔笔触重绘；不得出现摄影质感皮肤或粘贴式写实脸。把街道、灯笼、房屋和水面画成歪歪扭扭的符号。输出竖版 2:3，不得出现书写内容、标签、文字、标志或水印。",
+  "source_negative_prompt_zh": "摄影质感脸部，粘贴式写实脸，专业精致的人体结构，干净矢量线，平滑数字渐变，写实透视，细腻色彩混合，完全填在线内的整洁色块，照片级写实，手写字，文字，水印",
+  "sha256": "1f7be931b66dbaa5eeb8cf7aa2a003c1d1d669ff32893e37db42f7e4054eb9c1",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S002"
+}

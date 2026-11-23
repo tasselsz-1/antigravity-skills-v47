@@ -1,0 +1,48 @@
+{
+  "id": "A007",
+  "name": "写实侧面头骨体积光影医学插画（Patrick J. Lynch）",
+  "en_name": "Realistic Lateral Skull Medical Illustration",
+  "file": "assets/anatomy/skull_lateral_view.jpg",
+  "view": "写实明暗体积解剖",
+  "license": "CC BY 2.5 (Patrick J. Lynch)",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Human_skull_lateral_view.jpg",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_link": {
+    "dimension": "2. 肤质纹理 & 3. 历史写实沧桑骨相（B017–B024 专用）",
+    "slots": [
+      "骨性体积明暗交界",
+      "颧弓与下颌支粗壮度",
+      "眼眶与鼻骨真实凹凸"
+    ],
+    "how_to_use": "专为历史正剧、乱世武将、谋士与老者角色提供真实体积与光影参照，彻底杜绝“平面贴图感”和“现代医美磨皮脸”。"
+  },
+  "mapped_landmarks": [
+    {
+      "landmark": "明暗交界与侧光显骨",
+      "slot": "2. 皮肤质感 + 3. 骨相特征",
+      "related_bones": [
+        "B017",
+        "B018",
+        "B019",
+        "B020",
+        "B021",
+        "B022",
+        "B023",
+        "B024"
+      ]
+    }
+  ],
+  "linked_bones": [
+    "B017",
+    "B018",
+    "B019",
+    "B020",
+    "B021",
+    "B022",
+    "B023",
+    "B024"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "category": "动漫",
+  "slug": "kawaii-pastel",
+  "name": "可爱粉彩",
+  "style_prompt_zh": "圆润简化造型，柔和马卡龙配色，少量高光，小巧装饰，清晰轮廓，轻松可爱",
+  "reference_image": "assets/kawaii-pastel.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/kawaii-pastel.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/kawaii-pastel.webp",
+  "source_title": "可爱粉彩",
+  "source_original_prompt_zh": "将附带照片转换为可爱粉彩插画。把角色塑造成三至四头身、圆润的大头、闪亮的动漫眼睛和小巧的鼻子与嘴巴，使用柔和米白轮廓、平涂的马卡龙桃色、薄荷绿、丁香紫、奶油黄和白色，以及糖果般柔软的漫射光。将姿势和表情调整为开朗、令人安心的吉祥物动作。通过脸型、黑色长发和碎花连衣裙保持她的辨识度，但将包括脸部、眼睛和皮肤在内的整个人物重绘为可爱动漫式抽象造型；不得出现摄影质感皮肤或粘贴式写实脸。把街道简化为带灯笼和云朵图案的浅米色背景。输出竖版 2:3，不得出现文字、标志或水印。",
+  "source_negative_prompt_zh": "摄影质感脸部，粘贴式写实脸，写实比例，暗黑哥特配色，锐利棱角人体结构，浓重黑色阴影，粗粝颗粒，照片级写实，密集场景，攻击性表情，可辨识字样，标志，水印",
+  "sha256": "06c3bee03917bac474ac318746e3cf829e187e093623b9efdc8ff178861e8e03",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S029"
+}

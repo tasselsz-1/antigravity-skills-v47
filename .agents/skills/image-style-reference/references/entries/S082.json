@@ -1,0 +1,50 @@
+{
+  "id": "S082",
+  "category": "成熟商业·日漫与二游",
+  "slug": "commercial-90s-ova",
+  "name": "90年代赛博OVA（高密度机械手绘线与多层赛璐璐冷暗阴影法）",
+  "aliases": [
+    "90 年代 OVA",
+    "90S OVA"
+  ],
+  "style_prompt_zh": "1990年代日本黄金期科幻OVA剧场版（《攻壳机动队1995》《阿基拉》）手绘赛璐璐画法；极高密度的手绘机械管线、枪械与破败城建结构线稿；人物与机体采用三至四层严谨硬边赛璐璐色块分层塑造厚重体积，整体笼罩在冷暗青绿、铁灰与暗红信号灯的世纪末低照度氛围中",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/styles.html",
+  "source_snapshot": "references/sources/commercial-2026-11-01/styles.html",
+  "source_title": "90 年代 OVA",
+  "source_original_prompt_en": "90s anime, film grain, dark palette, hand-painted cel, cyberpunk city",
+  "summary": "动画史上最硬核的黄金年代工艺：精密手绘机械线稿配深沉赛璐璐冷绿暗调。",
+  "use_cases": [
+    "硬核赛博朋克悬疑剧",
+    "机械义体改造与枪战",
+    "末日废土科幻动画"
+  ],
+  "reference_coordinates": "《攻壳机动队》《AKIRA》",
+  "source_position": "sub",
+  "source_position_note": "源作者的主流/细分/实验判断，未经独立市场数据验证。",
+  "related_entries": [],
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页未提供图片，代表作品名称仅作来源坐标，不等于已查看作品。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。",
+  "optional_effects_note": "颗粒、脏污、沙尘、旧化、光斑与抖动不默认继承；规则网点、像素与必要媒介纹理可受控保留。",
+  "license_note": "用户指定本地文本页面；未发现明确授权声明，不沿用其他来源的CC0许可。",
+  "sha256": null,
+  "image_size": null,
+  "tier": "mature_commercial",
+  "original_short_name": "90 年代 OVA",
+  "visual_genes": {
+    "笔": "精密冷峻的手绘铅笔轨目线与微糙外墨线，机械与建筑管线细节极度扎实",
+    "光": "夜间城市微弱漫射顶光搭配仪表盘、车灯与全息屏幕的局部冷调点光源",
+    "色": "标志性90年代赛璐璐暗色调：军绿灰、深海青蓝、铁锈暗红与冷白皮肤",
+    "质": "多张赛璐璐胶片叠压的厚重油漆色感、水粉手绘潮湿混凝土背景、金属冷光",
+    "镜": "押井守式沉静深焦远景或高速追逐的动态模糊分镜，充满哲学冷峻感"
+  },
+  "palette": [
+    "#0B1316",
+    "#1C313A",
+    "#455A64",
+    "#B71C1C",
+    "#CFD8DC"
+  ]
+}

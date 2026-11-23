@@ -1,0 +1,50 @@
+{
+  "id": "S130",
+  "category": "成熟商业·电影大师",
+  "slug": "commercial-cinema-vhs-analog-horror",
+  "name": "千禧年录像带模拟恐怖（VHS 色度错位与机顶闪光）",
+  "aliases": [
+    "伪纪录片",
+    "模拟恐怖",
+    "VHS ANALOG HORROR"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "千禧年家用便携摄像机与磁带录像视觉（VHS Analog）；隔行扫描线交错，高反差直打机顶闪光灯使人物面孔苍白并在身后墙壁投下浓重死黑硬影；边缘带红蓝色彩通道错位溢出，真实感恐怖拉满",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "千禧年录像带模拟恐怖（VHS 色度错位与机顶闪光）",
+  "source_original_prompt_en": "commercial-cinema-vhs-analog-horror",
+  "summary": "短视频平台完播率之王：粗糙但绝对可信的真实记录感与压迫感。",
+  "visual_genes": {
+    "笔": "磁带低解析度带来的柔化边缘，伴随微弱的水平噪波拉丝",
+    "光": "硬核机内直打闪光灯，前景人物刺眼高亮，背景瞬间隐入黑暗",
+    "色": "色度信号衰减带来的偏绿偏青暗部，高饱和局部红色溢出",
+    "质": "显像管水平扫描线、磁头磨损噪点条纹、低动态范围胶质感",
+    "镜": "手持便携机第一人称视角，急促推拉摇移与镜头晃动感"
+  },
+  "palette": [
+    "#080C08",
+    "#1A291E",
+    "#3E5C46",
+    "#D63031",
+    "#ECEEEA"
+  ],
+  "use_cases": [
+    "规则怪谈爆款短剧",
+    "中式/西式探险伪纪录片",
+    "无限流恐怖副本第一视角"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

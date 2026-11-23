@@ -1,0 +1,63 @@
+{
+  "id": "S062",
+  "category": "成熟商业·国漫与实验视觉",
+  "slug": "cinematic-thickpaint",
+  "name": "国漫神魔块面厚涂（有向油彩堆叠硬切面与冷暖双光塑形法）",
+  "aliases": [
+    "东方厚涂",
+    "银幕画风志02",
+    "ORIENTAL IMPASTO"
+  ],
+  "style_prompt_zh": "东方神魔动画厚涂画法，清晰可见方向性的油画刀笔触堆叠，结构转折面直接用硬边亮块切出体块（严禁平滑磨皮过渡）；左侧单一暖橙主光压出厚重体积，右侧冷青硬边轮廓光剥离背景，暗部压深紫褐色；青铜、皮革、粗麻与带笔触过渡的皮肤材质分明",
+  "reference_image": "assets/cinematic/S062-thickpaint.jpg",
+  "source_page": "http://127.0.0.1:8766/国漫电影感画风清单.html",
+  "source_snapshot": "references/sources/cinematic-2026-10-30/国漫电影感画风清单.html",
+  "source_title": "东方厚涂",
+  "source_original_prompt_zh": "东方神魔厚涂，可见油画笔触堆叠，单一暖色主光与冷色轮廓光，硬边金属高光，青铜与皮革质感，皮肤有笔触过渡，暗部紫褐，中近景，85mm 压缩，浅景深，2.39:1，电影感",
+  "source_original_prompt_en": "oriental mythological impasto painting, visible oil brush strokes, single warm key light with cool rim light, hard specular highlights on metal, bronze and leather textures, painterly skin transitions, purple-brown shadows, medium close-up, 85mm compression, shallow depth of field, anamorphic 2.39:1, cinematic",
+  "source_negative_prompt_zh": "塑料模型感，零纹理皮肤，均匀柔光，磨皮，网页游戏 CG，过曝",
+  "visual_genes": {
+    "笔": "可见的堆叠笔触，转折面用亮块直接切，不磨平",
+    "光": "单一暖色主光 + 冷色轮廓光，金属高光锐利",
+    "色": "暖橙红主导，暗部压紫褐，饱和度中高",
+    "质": "油画颜料、青铜、皮革、粗布，皮肤带笔触过渡",
+    "镜": "中近景为主，85mm 压缩，浅景深，人物顶天立地"
+  },
+  "palette": [
+    "#2A120C",
+    "#7A2B14",
+    "#C4552A",
+    "#E8A24A",
+    "#3E4A6B"
+  ],
+  "use_cases": [
+    "神魔对峙",
+    "人物特写",
+    "火场爆发"
+  ],
+  "tags": [
+    "厚涂",
+    "三维",
+    "神魔",
+    "暖调",
+    "硬光"
+  ],
+  "summary": "国内三维动画电影最主流的电影感解法：用厚涂笔触模拟油画堆叠，硬边高光切出结构，单一主光压出体积。人物的皮肤、皮革、青铜都要能看出笔触的方向，画面才不塑料。",
+  "reference_coordinates": "参考坐标 · 哪吒之魔童降世 · 姜子牙",
+  "sha256": "2830ded3999a5c01929bbc9cbaed72e81fb1b0f3e76dcb5db09c386727c78978",
+  "image_size": [
+    760,
+    950
+  ],
+  "visual_review": "已查看8图总览：未见明显水印、签名或平台标识；实际调用前需看单张原图并复核。",
+  "reference_limitations": "样图偏光滑三维国漫角色，厚涂笔触较弱；仅借材质和光色，不能当作厚涂场景标准。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。",
+  "optional_effects_note": "85mm、中近景、浅景深按当前镜头选择。",
+  "license_note": "源页注明样图来自公开模型示例，版权归原作者，仅用于本地画风观察；未核实图片或模型商业许可。",
+  "source_image_page": "https://civitai.com/models/1885810",
+  "source_sample_prompt_zh": "一张电影静帧：神魔对峙的瞬间，人物半身特写。厚涂油画质感，能看到堆叠的笔触，转折面用亮块直接切。单一暖色主光从左侧打来，右侧一道冷色轮廓光。青铜、皮革、粗布各有各的质感，皮肤有笔触过渡而不是磨皮。暗部压成紫褐色。85mm 压缩感，浅景深，2.39:1。",
+  "source_sample_caption": "氛围参考：3D 国漫角色质感，非场景",
+  "tier": "mature_commercial",
+  "original_short_name": "东方厚涂"
+}

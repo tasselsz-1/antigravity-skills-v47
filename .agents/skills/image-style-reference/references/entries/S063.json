@@ -1,0 +1,63 @@
+{
+  "id": "S063",
+  "category": "成熟商业·国风大师",
+  "slug": "cinematic-silk",
+  "name": "盛唐古画绢本重彩（细匀铁线勾边与朱砂石青无影层染法）",
+  "aliases": [
+    "绢本重彩",
+    "银幕画风志03",
+    "SILK MINERAL"
+  ],
+  "style_prompt_zh": "古典绢本设色重彩画法，细匀铁线描勾勒形体轮廓，天然矿物颜料（朱砂、石青、石绿、蛤白、赭石）分染与统染层层罩叠；采用无强烈投影的漫射柔光，完全依靠色块明度差与局部泥金勾边建立空间层次，底纹保留细腻有序的熟绢经纬肌理与呼吸留白",
+  "reference_image": "assets/cinematic/S063-silk.jpg",
+  "source_page": "http://127.0.0.1:8766/国漫电影感画风清单.html",
+  "source_snapshot": "references/sources/cinematic-2026-10-30/国漫电影感画风清单.html",
+  "source_title": "绢本重彩",
+  "source_original_prompt_zh": "绢本设色重彩，矿物颜料层层罩染，朱砂石青石绿蛤白，细匀墨线勾边，均匀柔光无硬阴影，绢丝经纬纹理，金箔勾边，大面积留白，横向长卷构图，电影静帧，2.39:1",
+  "source_original_prompt_en": "silk scroll mineral pigment painting, layered cinnabar, azurite and malachite washes, fine even ink outlines, soft even light with no hard shadows, silk weave texture, gold leaf accents, generous negative space, horizontal scroll composition, cinematic still, 2.39:1",
+  "source_negative_prompt_zh": "浓重投影，霓虹，厚涂笔触，写实照片，高对比，赛博元素",
+  "visual_genes": {
+    "笔": "平涂色块，边缘轻微渗化，勾线细而匀",
+    "光": "无明确光源，均匀柔光，由色块明度塑造体积",
+    "色": "朱砂、石青、石绿、蛤白、赭石，低饱和高质感",
+    "质": "绢丝经纬、矿物颗粒、金箔勾边、轻微做旧",
+    "镜": "平面化构图，大量留白，横向长卷式运镜"
+  },
+  "palette": [
+    "#2E2A24",
+    "#8C3B2E",
+    "#C8A25A",
+    "#3E6B63",
+    "#E8DCC3"
+  ],
+  "use_cases": [
+    "山河长卷",
+    "宫廷夜宴",
+    "离别空镜"
+  ],
+  "tags": [
+    "绢本",
+    "重彩",
+    "矿物色",
+    "留白",
+    "长卷"
+  ],
+  "summary": "把院体画的材料感搬上银幕：朱砂、石青、石绿、蛤白层层罩染，色块之间靠细匀的墨线分隔。它几乎没有戏剧性打光，靠色彩本身的明度与饱和度叙事，适合宏大、克制、带时间感的题材。",
+  "reference_coordinates": "参考坐标 · 大鱼海棠 · 长安三万里",
+  "sha256": "6cbd0e03877ca533785fcbb35ab950129e54dcd141911f9bcdee6b6473f758dc",
+  "image_size": [
+    760,
+    950
+  ],
+  "visual_review": "已查看8图总览：未见明显水印、签名或平台标识；实际调用前需看单张原图并复核。",
+  "reference_limitations": "样图为工笔山水近似参考，矿物色感接近；绢纹与重彩层染需要另行验证。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。",
+  "optional_effects_note": "横向长卷与金箔为可选项，不锁定山河题材。",
+  "license_note": "源页注明样图来自公开模型示例，版权归原作者，仅用于本地画风观察；未核实图片或模型商业许可。",
+  "source_image_page": "https://civitai.com/models/279926",
+  "source_sample_prompt_zh": "一张电影静帧：山河长卷，远山三层，留白处是云雾。绢本设色的质感，朱砂、石青、石绿、蛤白层层罩染，色块之间是细而匀的墨线。均匀柔光，阴影极淡，靠颜色明度塑造体积。绢丝的经纬纹理，金线勾边。横向 2.39:1 构图，大量留白。",
+  "source_sample_caption": "氛围参考：工笔山水，色感接近",
+  "tier": "mature_commercial",
+  "original_short_name": "绢本重彩"
+}

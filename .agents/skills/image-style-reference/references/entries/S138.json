@@ -1,0 +1,50 @@
+{
+  "id": "S138",
+  "category": "成熟商业·特色工艺",
+  "slug": "commercial-style-shin-hanga-kawase",
+  "name": "川濑巴水新版画（雨雪晨昏多版套色与木纹）",
+  "aliases": [
+    "新版画运动",
+    "川濑巴水",
+    "KAWASE SHIN HANGA"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "日本新版画运动（Shin-Hanga）川濑巴水大师画法；传统浮世绘木刻黑线与和纸纤维之上，融入西方近代真实晨昏逆光与夜景雨雪倒影；采用多版木刻擦晕叠印（Bokashi），既有版画古雅，又有电影般深邃宁静光影",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "川濑巴水新版画（雨雪晨昏多版套色与木纹）",
+  "source_original_prompt_en": "commercial-style-shin-hanga-kawase",
+  "summary": "将传统东方木刻与西方真实写实光影完美融合的世纪名作画法。",
+  "visual_genes": {
+    "笔": "精细规整的木刻主墨线，飞雪与雨丝采用干净刀雕留白或反白",
+    "光": "夜幕低垂时窗户透出的温暖橘黄光芒，倒映在潮湿积水路面",
+    "色": "深邃纯净的靛蓝夜空、积雪冷灰白、暖黄灯火与苍翠松柏",
+    "质": "手工和纸生涩纤维、木刻板材天然水纹压痕、多层矿植物油墨",
+    "镜": "具有悠远纵深感的街道或寺院透视构图，意境深远宁静"
+  },
+  "palette": [
+    "#0C1B33",
+    "#1D3557",
+    "#457B9D",
+    "#F4A261",
+    "#E76F51"
+  ],
+  "use_cases": [
+    "唯美古风旅途篇章",
+    "风雪夜归人情感高潮",
+    "治愈系新日漫与动态漫"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

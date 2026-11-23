@@ -1,0 +1,59 @@
+{
+  "id": "B001",
+  "type": "bone_structure",
+  "group": "基础骨相底盘",
+  "name": "高立体深邃骨相",
+  "en_name": "High-Relief Deep-Set Bone Structure",
+  "aesthetic_tier": "常规/美型/奇幻",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "3. 面部细节特征",
+  "proportions": {
+    "upper": 0.32,
+    "mid": 0.35,
+    "lower": 0.33,
+    "jaw_angle_deg": 116,
+    "profile": "高立体深折"
+  },
+  "anatomical_landmarks": [
+    "高突眉弓 (Prominent brow ridge)",
+    "深陷眼窝 (Deep orbital rim)",
+    "高直鼻骨 (High straight nasal bridge)",
+    "利落下颌折角"
+  ],
+  "formula_slots_ref_only": {
+    "eye": "深邃窄双或欧式大双，眼窝阴影清晰",
+    "brow": "眉弓高挑立体、眉眼距偏近",
+    "nose": "山根起势高、鼻梁笔直如刻",
+    "lips": "唇峰清晰、薄厚适中",
+    "jaw": "颧下微收、下颌线锐利分明"
+  },
+  "prompt_en_ref_only": "defined facial bone structure, prominent brow ridge, deep-set eyes, high straight nose bridge, sharp sculpted jawline",
+  "prompt_zh_ref_only": "高眉弓深眼窝，山根高挺笔直，颧颌转折立体分明，下颌线利落清晰",
+  "suitable_roles": [
+    "暗黑奇幻主角",
+    "冷艳御姐",
+    "硬朗贵族",
+    "高定视觉人物"
+  ],
+  "linked_anatomy_plates": [
+    "A002",
+    "A003",
+    "A004",
+    "A006"
+  ],
+  "anti_copy_note": "仅借鉴立体度与眉鼻落差，须结合角色种族与年龄重定肤质、眉形与眼神。",
+  "svg_file": "assets/bones/B001.svg",
+  "svg_params": {
+    "face_w": 52,
+    "cheek_w": 55,
+    "jaw_w": 39,
+    "chin_y": 146,
+    "chin_w": 13,
+    "brow_depth": 9,
+    "mid_ratio": 0.35,
+    "accent": "#6366f1",
+    "tag": "高立体"
+  }
+}

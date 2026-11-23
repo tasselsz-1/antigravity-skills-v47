@@ -1,0 +1,52 @@
+{
+  "id": "S098",
+  "category": "成熟商业·写实与短剧",
+  "slug": "commercial-cinematic",
+  "name": "院线真人剧照写实（阿莱Alexa宽动态范围物理布光与自然微肌理法）",
+  "aliases": [
+    "电影感写实",
+    "CINEMATIC"
+  ],
+  "style_prompt_zh": "院线级真人影视剧照（ARRI Alexa LF 数字电影机 + Master Prime 定焦镜头）摄影工艺；严格遵循真实物理世界光照衰减与宽广动态范围（14+档宽容度），高光柔和不死白、暗部层次深邃扎实；人物具备真实的亚洲/西方影视演员骨相、自然皮肤微纹理、汗毛与湿润眼球反光，严禁AI磨皮网红脸与虚假塑料感",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/styles.html",
+  "source_snapshot": "references/sources/commercial-2026-11-01/styles.html",
+  "source_title": "电影感写实",
+  "source_original_prompt_en": "cinematic photorealistic, volumetric light, shallow depth of field, film grain",
+  "summary": "真人AI短剧的基准母本：ARRI电影机色彩科学 + 真实演员骨相肌理，拒绝AI塑料味。",
+  "use_cases": [
+    "高品质真人AI短剧",
+    "都市职场/家庭伦理剧",
+    "影视项目概念预演分镜"
+  ],
+  "reference_coordinates": "真人剧照质感",
+  "source_position": "main",
+  "source_position_note": "源作者的主流/细分/实验判断，未经独立市场数据验证。",
+  "related_entries": [
+    "S053"
+  ],
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页未提供图片，代表作品名称仅作来源坐标，不等于已查看作品。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。",
+  "optional_effects_note": "颗粒、脏污、沙尘、旧化、光斑与抖动不默认继承；规则网点、像素与必要媒介纹理可受控保留。",
+  "license_note": "用户指定本地文本页面；未发现明确授权声明，不沿用其他来源的CC0许可。",
+  "sha256": null,
+  "image_size": null,
+  "tier": "mature_commercial",
+  "original_short_name": "电影感写实",
+  "visual_genes": {
+    "笔": "电影定焦镜头自然的光学清晰度与柔和焦外过渡，杜绝数码锐化白边",
+    "光": "影视剧组专业布光：主光（Key Light）经柔光布漫射塑形，辅以自然环境反弹光与眼神光",
+    "色": "ARRI经典自然色彩科学（ARRI LogC转Rec709电影LUT），肤色还原极其纯正耐看",
+    "质": "真实人类皮肤毛孔与微汗光泽、棉麻丝绸真实织物折痕、空气自然微尘景深",
+    "镜": "35mm/50mm/85mm标准电影叙事焦段，构图严谨，人物表演情绪张力真实可信"
+  },
+  "palette": [
+    "#14181C",
+    "#2C353D",
+    "#5A6978",
+    "#C89D82",
+    "#EAE6DF"
+  ]
+}

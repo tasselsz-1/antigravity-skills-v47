@@ -1,0 +1,55 @@
+{
+  "id": "A005",
+  "name": "侧面完整人颅骨结构图（含颞窝/枕骨/颈部承托）",
+  "en_name": "Human Skull Side Complete Vector",
+  "file": "assets/anatomy/skull_side_complete.svg",
+  "view": "侧面精细骨相",
+  "license": "Public domain (LadyofHats)",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Human_skull_side_complete.svg",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_link": {
+    "dimension": "3. 面部细节特征 & 5. 发型轮廓（颅顶与后脑勺饱满度）",
+    "slots": [
+      "颅顶高度",
+      "后脑勺枕骨弧度",
+      "颞窝凹陷度",
+      "下颌支长度"
+    ],
+    "how_to_use": "不仅定侧脸骨相，也决定第 5 维发型的头包脸比例、高颅顶/束冠受力点与后脑勺发髻支撑位置。"
+  },
+  "mapped_landmarks": [
+    {
+      "landmark": "颞窝与颞线 (Temporal Fossa)",
+      "slot": "3. 眉骨与太阳穴轮廓",
+      "related_bones": [
+        "B018",
+        "B020",
+        "B024"
+      ]
+    },
+    {
+      "landmark": "顶骨与枕骨隆凸 (Parietal & Occipital)",
+      "slot": "5. 发型颅顶与盘发支撑",
+      "related_bones": [
+        "B002",
+        "B016",
+        "B021",
+        "B022"
+      ]
+    }
+  ],
+  "linked_bones": [
+    "B002",
+    "B015",
+    "B016",
+    "B018",
+    "B019",
+    "B020",
+    "B021",
+    "B022",
+    "B024"
+  ]
+}

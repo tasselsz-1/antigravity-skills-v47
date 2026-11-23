@@ -1,0 +1,6 @@
+interface:
+  display_name: "视频分段提示词"
+  short_description: "复刻视频时分析原片镜头、对白与连续性，编写完整中文分段生成提示词"
+  default_prompt: "使用 $video-prompt-writer 复刻视频，分析原片并按当前人物和场景设定编写中文分段提示词。"
+policy:
+  allow_implicit_invocation: true

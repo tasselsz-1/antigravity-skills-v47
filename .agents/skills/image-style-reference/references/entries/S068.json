@@ -1,0 +1,63 @@
+{
+  "id": "S068",
+  "category": "成熟商业·国风大师",
+  "slug": "cinematic-papercut",
+  "name": "上美影传统剪纸皮影（镂空刀刻锐利剪影与驴皮暖黄影窗背光法）",
+  "aliases": [
+    "剪纸皮影",
+    "银幕画风志08",
+    "PAPER CUT"
+  ],
+  "style_prompt_zh": "中国传统剪纸皮影动画工艺，刀刻般锐利连续的镂空剪影轮廓与关节分件结构；采用影窗式暖黄强背光透射照明，半透明染色皮料与宣纸纤维透出温润暖光；严格限定正红、墨黑、米黄三色封闭系统，通过前后景多层纸片叠压建立舞台纵深",
+  "reference_image": "assets/cinematic/S068-papercut.jpg",
+  "source_page": "http://127.0.0.1:8766/国漫电影感画风清单.html",
+  "source_snapshot": "references/sources/cinematic-2026-10-30/国漫电影感画风清单.html",
+  "source_title": "剪纸皮影",
+  "source_original_prompt_zh": "剪纸皮影动画，镂空剪影，背光透射，正红墨黑米黄三色，宣纸纤维与刀刻毛边，舞台化正面构图，层叠景深，暖黄影窗光，2.39:1，电影感",
+  "source_original_prompt_en": "paper cut shadow puppet animation, hollowed silhouette, backlit transmission, vermilion black and rice-paper beige, xuan paper fibers with knife-cut edges, theatrical frontal composition, layered depth, warm yellow light box, 2.39:1, cinematic",
+  "source_negative_prompt_zh": "写实光影，三维，渐变，噪点，复杂纹理，照片",
+  "visual_genes": {
+    "笔": "镂空剪影，边缘锐利，线条连续不断",
+    "光": "背光透射，影窗式打光，纸面透出暖黄",
+    "色": "正红、墨黑、米黄，三色封闭系统",
+    "质": "宣纸纤维、驴皮透光、刀刻毛边",
+    "镜": "舞台化正面构图，层叠景深，横向移动"
+  },
+  "palette": [
+    "#1A1210",
+    "#8C1C13",
+    "#C8342A",
+    "#E8D3A9",
+    "#D9A441"
+  ],
+  "use_cases": [
+    "灯下影戏",
+    "民俗年节",
+    "寓言开场"
+  ],
+  "tags": [
+    "剪纸",
+    "皮影",
+    "定格",
+    "民俗",
+    "剪影"
+  ],
+  "summary": "镂空剪影加背光透射，是中国人自己的定格电影。正红与墨黑在米黄纸面上咬合，边缘锐利到能割手。它天然带舞台感，适合民俗、寓言与黑色幽默。",
+  "reference_coordinates": "参考坐标 · 葫芦兄弟 · 中国奇谭",
+  "sha256": "10dda6a00b2c95c8d42273f7adbef037b6fd274298430781320de8a81570d2ac",
+  "image_size": [
+    760,
+    950
+  ],
+  "visual_review": "已查看8图总览：未见明显水印、签名或平台标识；实际调用前需看单张原图并复核。",
+  "reference_limitations": "样图为蓝色层叠纸雕，非中国红色剪纸或皮影；仅借镂空与分层结构。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。",
+  "optional_effects_note": "刀刻毛边仅限必要材料边缘；不强制影窗、红色主体或正面构图。",
+  "license_note": "源页注明样图来自公开模型示例，版权归原作者，仅用于本地画风观察；未核实图片或模型商业许可。",
+  "source_image_page": "https://civitai.com/models/709461",
+  "source_sample_prompt_zh": "一张电影静帧：灯下影戏。剪纸皮影，镂空剪影的边缘锐利，背光从纸后面透出来，纸面是暖黄的。正红、墨黑、米黄三个颜色，宣纸纤维和刀刻的毛边。舞台化的正面构图，一层一层叠出景深。2.39:1。",
+  "source_sample_caption": "近似参考：纸雕镂空，非中国剪纸",
+  "tier": "mature_commercial",
+  "original_short_name": "剪纸皮影"
+}

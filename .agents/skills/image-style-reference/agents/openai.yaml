@@ -1,0 +1,6 @@
+interface:
+  display_name: "画风参考库 (S001-S108)"
+  short_description: "查询与复用本地 S001-S108 银幕画风志与商业画风全集提示词"
+  default_prompt: "使用 $image-style-reference 从本地画风参考库中选择或复用 S001-S108 画风提示词。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,50 @@
+{
+  "id": "S116",
+  "category": "成熟商业·国风大师",
+  "slug": "commercial-guofeng-huizhou-woodblock",
+  "name": "徽派版画双色套印（饾版拱花法）",
+  "aliases": [
+    "十竹斋饾版",
+    "朱墨双色",
+    "HUIZHOU WOODBLOCK"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "明清徽派木刻版画，刀劈斧刻的刚劲木纹线条与大块白宣留白；纯松烟黑墨与朱砂红双色分版套印，无色处依靠雕版施压形成凹凸拱花浮雕暗纹；极度洗练有力，极高审美格调",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "徽派版画双色套印（饾版拱花法）",
+  "source_original_prompt_en": "commercial-guofeng-huizhou-woodblock",
+  "summary": "只用黑红二色与纸张浮雕暗纹，就能做到极度洗练且过目难忘。",
+  "visual_genes": {
+    "笔": "阳刻与阴刻刻刀线条，木纹坚挺断续，转折如折铁",
+    "光": "侧光凸显纸张无色拱花浮雕压痕，纯粹黑红对比",
+    "色": "绝对双色系统：深黑松烟墨、正红朱砂印泥、手工桑皮纸素白",
+    "质": "手工木版凹凸压痕、木质纤维肌理、吸水油墨微渗",
+    "镜": "经典版画分格或横联构图，线面节奏清爽利落"
+  },
+  "palette": [
+    "#121212",
+    "#B22222",
+    "#F7F1E1",
+    "#4A4A4A",
+    "#8B2500"
+  ],
+  "use_cases": [
+    "古风悬赏令/通缉令",
+    "江湖传闻说书人转场",
+    "武功秘籍与历史短剧片头"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

@@ -1,0 +1,57 @@
+{
+  "id": "S073",
+  "category": "成熟商业·欧美与跨文化",
+  "slug": "cinematic-spiderverse",
+  "name": "平行宇宙三维抽帧美漫（3D模型叠手绘墨线与CMYK半调网点错版法）",
+  "aliases": [
+    "蜘蛛宇宙",
+    "银幕画风志13",
+    "SPIDER-VERSE"
+  ],
+  "style_prompt_zh": "《蜘蛛侠：平行宇宙》混血视觉工艺，在坚实的三维立体体积与硬光结构上，直接手绘漫画高光线条与阴影斜排线；亮部铺设规则Ben-Day圆点高光，暗部叠印CMYK半调网点；焦外边缘采用受控的品红与青色RGB色版错位替代传统镜头模糊，动势张力拉满",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/国漫电影感画风清单.html",
+  "source_snapshot": "references/sources/cinematic-2026-10-30/国漫电影感画风清单.html",
+  "source_title": "蜘蛛宇宙",
+  "source_original_prompt_zh": "蜘蛛宇宙风格，半调网点与手绘线稿叠加三维形体，品红青黄撞色，RGB 色差错版，油墨印刷质感，漫画分格与速度线，动态构图，抽帧运动感，2.39:1",
+  "source_original_prompt_en": "spider-verse style, halftone dots and hand-drawn linework over 3d forms, magenta cyan yellow clashing palette, rgb misregistration, ink print texture, comic paneling and speed lines, dynamic composition, on-twos stepped motion, 2.39:1",
+  "source_negative_prompt_zh": "柔和渐变，写实材质，低饱和，水粉手绘，均匀布光",
+  "visual_genes": {
+    "笔": "半调网点 + 手绘线稿叠在三维模型上",
+    "光": "硬光 + 强色差，光边带 RGB 分离",
+    "色": "品红、青、黄，高饱和撞色，黑场压得住",
+    "质": "印刷网点、油墨错版、故障条纹、纸张",
+    "镜": "动态构图，速度线，抽帧（on twos）"
+  },
+  "palette": [
+    "#0B0B12",
+    "#C2185B",
+    "#00C2D1",
+    "#F2C300",
+    "#E8E8F0"
+  ],
+  "use_cases": [
+    "高空坠落",
+    "平行世界",
+    "街头追逐"
+  ],
+  "tags": [
+    "欧美",
+    "漫画",
+    "半调",
+    "抽帧",
+    "撞色"
+  ],
+  "summary": "三维动画加二维手绘线加印刷网点，三种语言硬拼在一起，还故意抽帧、色差、错版。它证明了不完美本身就是风格——越像印坏的漫画，越有电影感。",
+  "reference_coordinates": "参考坐标 · 蜘蛛侠：平行宇宙",
+  "sha256": null,
+  "image_size": null,
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页面未提供此画风样图；不得宣称已按图参考。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。",
+  "optional_effects_note": "抽帧属于视频时序；静图用动势表达。色差错版局部受控，不添加漫画文字与分格边框。",
+  "license_note": "源页注明样图来自公开模型示例，版权归原作者，仅用于本地画风观察；未核实图片或模型商业许可。",
+  "tier": "mature_commercial",
+  "original_short_name": "蜘蛛宇宙"
+}

@@ -1,0 +1,21 @@
+{
+  "category": "电影",
+  "slug": "film-noir",
+  "name": "黑色电影",
+  "style_prompt_zh": "黑白电影剧照，硬质侧光，强烈明暗对比，图形化投影，深邃空间，主体剪影清楚",
+  "reference_image": "assets/film-noir.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/film-noir.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/film-noir.webp",
+  "source_title": "黑色电影",
+  "source_original_prompt_zh": "将附上的照片转换为以高反差黑白胶片拍摄的1940年代黑色电影剧照。采用略微倾斜的中近景构图，配合硬质侧光、压暗的黑位、银色高光、百叶窗投影和飘散烟雾，营造紧张的深夜氛围。保留同一人的真实面部特征，使她清晰可辨；再把发型改为盘起或侧分波浪卷，并将服装换成深色合体连衣裙或风衣。让她肩膀侧转、下巴保持水平，呈现冷静克制、闭口不笑的神情。将她置于陈设简洁的侦探办公室，窗外雨痕清晰可见。输出竖版2:3画面，不要文字、标志或水印。",
+  "source_negative_prompt_zh": "彩色图像，平淡光线，欢快氛围，整洁的现代办公室，现代太阳裙，柔和反差，人物身份被改变，文字，标志，水印",
+  "sha256": "317af890f409ed66817b0c01999356c4b1a72206adc0cea19479c481e8114942",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S048"
+}

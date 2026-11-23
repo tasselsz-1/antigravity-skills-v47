@@ -1,0 +1,46 @@
+{
+  "category": "成熟商业·电影大师",
+  "slug": "symmetrical-pastel-film",
+  "name": "韦斯·安德森对称美学（中心死对称构图与马卡龙粉彩平光法）",
+  "style_prompt_zh": "韦斯·安德森（《布达佩斯大饭店》）电影视觉工艺；严格执行几何学绝对中心对称构图与正面平视（Planimetric）机位；采用高明度、低反差的复古马卡龙粉彩配色（茱萸粉、薄荷绿、奶油黄、复古红）；均匀柔和的漫射平光消除浓重黑影，复古道具陈列如精密玩具屋般考究",
+  "reference_image": "assets/symmetrical-pastel-film.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/symmetrical-pastel-film.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/symmetrical-pastel-film.webp",
+  "source_title": "对称粉彩电影",
+  "source_original_prompt_zh": "将附上的照片转换为一帧精心布置的对称粉彩电影剧照。让主体严格位于正面中轴线上，姿态挺拔沉着，神情克制冷静；周围配置均衡对称的建筑、复古行李箱、转盘电话，以及玫瑰粉、薄荷绿、粉蓝和芥末黄的哑光表面。采用均匀正面光、克制的35mm颗粒与安静诙谐的氛围。保留同一人的真实面部特征、黑色长发和碎花服装，使她清晰可辨。场景设在一尘不染的复古酒店大堂。输出竖版2:3肖像，不要文字、标志或水印。",
+  "source_negative_prompt_zh": "不对称构图，杂乱，刺眼霓虹，深重阴影，面部被改变，手部扭曲，文字，标志，水印",
+  "sha256": "f53d5358f919d07131f21b9f8b7522eae1bf5ea1f67b7c21f7ade237c6908289",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S047",
+  "tier": "mature_commercial",
+  "summary": "一眼就能认出的大师级强迫症美学：绝对中心对称 + 复古马卡龙粉彩。",
+  "aliases": [
+    "对称粉彩电影"
+  ],
+  "original_short_name": "对称粉彩电影",
+  "visual_genes": {
+    "笔": "建筑线条横平竖直如建筑图纸般严整，人物轮廓端正干净",
+    "光": "柔和均匀的阴天漫射光或棚拍柔光，高光不爆、暗部通透温暖",
+    "色": "高辨识度糖果粉彩色板：千禧粉、松石绿、芥末黄、勃艮第红与奶油白",
+    "质": "复古天鹅绒制服、黄铜电梯按键、考究印刷纸品与精致糕点肌理",
+    "镜": "40mm变形或标准广角镜头，绝对中心对称构图，人物直视镜头冷面幽默"
+  },
+  "palette": [
+    "#D88C9A",
+    "#F2D0A9",
+    "#F1E3D3",
+    "#99C1B9",
+    "#8E7DBE"
+  ],
+  "use_cases": [
+    "荒诞喜剧短剧",
+    "复古酒店/庄园悬疑",
+    "高溢价时尚与商业广告片"
+  ]
+}

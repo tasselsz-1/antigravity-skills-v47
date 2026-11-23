@@ -1,0 +1,21 @@
+{
+  "category": "电影",
+  "slug": "space-opera-still",
+  "name": "太空歌剧",
+  "style_prompt_zh": "宏大星舰或未来空间，冷暖分色光，人物与环境尺度对比，清楚层次，电影剧照质感，受控高光",
+  "reference_image": "assets/space-opera-still.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/space-opera-still.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/space-opera-still.webp",
+  "source_title": "太空歌剧剧照",
+  "source_original_prompt_zh": "将附上的照片转换为一帧真人实拍风格的太空歌剧电影剧照，场景位于辽阔的星舰指挥甲板。采用拉丝金属、发光导航面板、合体未来制服、全景窗外的深空、克制的镜头泛光，以及青色仪表光与温暖紧急照明的对比。营造专注、利害攸关却沉着冷静的氛围。保留同一人的真实面部特征和黑色长发，使她清晰可辨；再将服装换成未来制服。让她保持平衡的指挥姿态，双手在控制台旁自然放松，神情坚定且闭口不笑。在竖版画面内营造宽银幕电影的规模感与纵深，不要上下黑边。输出2:3画面，不要可辨认文字、标志或水印。",
+  "source_negative_prompt_zh": "奇幻城堡，当代办公室，笨重头盔，遮住面部的面罩，随机控制装置，狭小飞船内景，夸张咧嘴笑，手部扭曲，可辨认文字，标志，水印",
+  "sha256": "4ee4c1723ee076bbc417eb1d2a88163ac9f4a75b8b303822bd17b02c2b756a5b",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S052"
+}

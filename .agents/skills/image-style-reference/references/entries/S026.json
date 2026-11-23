@@ -1,0 +1,21 @@
+{
+  "category": "动漫",
+  "slug": "shonen-manga-bw",
+  "name": "黑白少年漫画",
+  "style_prompt_zh": "有力黑色墨线，强烈黑白块面，局部规则网点，动态姿势，速度线集中于动作重点",
+  "reference_image": "assets/shonen-manga-bw.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/shonen-manga-bw.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/shonen-manga-bw.webp",
+  "source_title": "黑白少年漫画",
+  "source_original_prompt_zh": "将附带照片转换为用钢笔和毛笔墨线绘制的黑白少年漫画分镜。采用倾斜的胸部以上裁切、有力且粗细多变的轮廓、大面积浓黑、面部排线、层叠网点、爆发式速度线、强硬顶光和极端对比。将随意的微笑与转身改为向前冲的姿势和坚定闭口怒视。通过脸型、黑色长发和碎花连衣裙线索保持她的辨识度，但将包括脸部、眼睛和皮肤在内的整个人物重绘为强烈的漫画墨线；不得出现摄影质感皮肤或粘贴式写实脸。把老街抽象为斜向建筑和灯笼剪影。以单色输出竖版 2:3，不得出现对话气泡、音效字、文字或水印。",
+  "source_negative_prompt_zh": "摄影质感脸部，粘贴式写实脸，彩色，柔和水彩晕染，精致花卉边框，摄影式灰度明暗，轮廓薄弱，光泽眼睛，空洞背景，对话气泡，音效文字，水印",
+  "sha256": "2e13ff925b9491d5fc1263d7c29f4fd1a066dd247d612e682b35f331759ff2ed",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S026"
+}

@@ -1,0 +1,21 @@
+{
+  "category": "手工",
+  "slug": "mosaic-tile",
+  "name": "瓷砖马赛克",
+  "style_prompt_zh": "小型瓷砖镶嵌，以有限色块组织形体，规则接缝，局部尺寸变化，材质真实，整体轮廓清楚",
+  "reference_image": "assets/mosaic-tile.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/mosaic-tile.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/mosaic-tile.webp",
+  "source_title": "古典瓷砖马赛克",
+  "source_original_prompt_zh": "把附上的照片转换成一幅由小块、不规则方形陶瓷镶嵌块与浅灰灰浆拼成的古典墙面马赛克。把居中的正面胸像置于圆形徽章内，双肩保持水平，下巴微抬，神情平静且不带笑容。使用赭色、陶土色、奶油色、炭黑和低饱和绿松石色瓷砖；让镶嵌块行列仔细环绕眼睛、鼻子、嘴唇和长发弯曲排列，再以克制的回纹边框围绕徽章。呈现剥落釉面、不同瓷砖厚度，以及掠过墙面的博物馆侧向光。通过脸型、头发体块和花卉服装节奏保留她的可辨识特征，但要用彼此分离的瓷砖重构包括脸部、眼睛和皮肤在内的整个人物；不得出现摄影质感皮肤或粘贴的写实面孔。输出竖版 2:3，不得有文字、标志或水印。",
+  "source_negative_prompt_zh": "摄影质感面孔，粘贴的写实面孔，平滑绘制的肖像，连续渐变，看不见填缝剂，彩色玻璃窗，随机鹅卵石形状，微笑自拍姿势，光滑数码表面，文字，标志，水印",
+  "sha256": "effa737b454043913315a9c57f22c3c2acfa1dd5ab5d7d5b22e7eee81187931e",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S042"
+}

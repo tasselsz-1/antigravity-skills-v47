@@ -1,0 +1,57 @@
+{
+  "id": "S070",
+  "category": "成熟商业·日漫与二游",
+  "slug": "cinematic-ghibli",
+  "name": "吉卜力男鹿和雄水粉（不透明水粉厚涂自然漫射光与纸感笔触法）",
+  "aliases": [
+    "吉卜力自然",
+    "银幕画风志10",
+    "GHIBLI NATURE"
+  ],
+  "style_prompt_zh": "吉卜力手绘水粉动画画法，采用不透明水粉颜料（Gouache）在粗纹水彩纸上层叠平涂与干刷，草叶与林木笔触松散丰盈；户外自然天光漫射照明，无生硬黑影，暗部保留通透的草绿与青蓝色彩；人物造型简化圆润、线条温和，空间充满宁静呼吸感",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/国漫电影感画风清单.html",
+  "source_snapshot": "references/sources/cinematic-2026-10-30/国漫电影感画风清单.html",
+  "source_title": "吉卜力自然",
+  "source_original_prompt_zh": "吉卜力式手绘动画背景，水粉平涂，饱和草绿与原野，巨大积云，自然漫射光，暗部保留色彩，风吹草浪，手绘纸感，固定全景宽景，2.39:1，怀旧电影感",
+  "source_original_prompt_en": "ghibli style hand-painted animation background, gouache flat colors, saturated meadow green, towering cumulus, natural diffuse light, colorful shadows, wind through grass, paper texture, static wide shot, 2.39:1, nostalgic cinematic",
+  "source_negative_prompt_zh": "三维渲染，硬边高光，霓虹，高对比，写实照片，暗黑",
+  "visual_genes": {
+    "笔": "水粉平涂，柔和不透明，边缘松",
+    "光": "自然漫射光，无强烈方向，暗部保留色彩",
+    "色": "饱和草绿、天蓝、暖黄，干净通透",
+    "质": "手绘背景纸感，草叶与树叶细密笔触",
+    "镜": "固定全景，长镜头，风吹草动的持续运动"
+  },
+  "palette": [
+    "#1E3320",
+    "#3F7A3A",
+    "#8FBF5A",
+    "#D9E8F2",
+    "#F2C14E"
+  ],
+  "use_cases": [
+    "田野长镜",
+    "夏日午后",
+    "森林入口"
+  ],
+  "tags": [
+    "日漫",
+    "手绘",
+    "自然",
+    "治愈",
+    "长镜头"
+  ],
+  "summary": "水粉手绘的饱和绿与积云，漫射光下没有一处死黑。它相信停留的力量：一个空镜、一阵风、一片草浪，就能把观众按在座位上。电影感来自节奏，而不是特效。",
+  "reference_coordinates": "参考坐标 · 龙猫 · 千与千寻",
+  "sha256": null,
+  "image_size": null,
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页面未提供此画风样图；不得宣称已按图参考。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。",
+  "optional_effects_note": "自然题材、固定全景与草浪是来源示例，不锁定新内容。",
+  "license_note": "源页注明样图来自公开模型示例，版权归原作者，仅用于本地画风观察；未核实图片或模型商业许可。",
+  "tier": "mature_commercial",
+  "original_short_name": "吉卜力自然"
+}

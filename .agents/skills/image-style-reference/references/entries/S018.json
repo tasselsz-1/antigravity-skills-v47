@@ -1,0 +1,21 @@
+{
+  "category": "绘画",
+  "slug": "gongbi",
+  "name": "中国工笔",
+  "style_prompt_zh": "纤细准确的勾线，多层透明薄染，典雅克制配色，细节精致有序，绢本绘画质感",
+  "reference_image": "assets/gongbi.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/gongbi.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/gongbi.webp",
+  "source_title": "工笔画",
+  "source_original_prompt_zh": "将附带照片转换为绘制在做旧浅色绢上的精细工笔人物画。使用发丝般纤细的勾线、逐根描绘的发丝、准确面部轮廓、透明矿物色薄染、织物图案、清晰衣褶、青瓷色、浅朱砂、低饱和绿松石色和柔和均匀光线。将姿势调整为均衡正式的站立构图，表情调整为安宁的闭口平静。通过脸型、黑色长发和现代碎花服装保持她的辨识度，但将包括脸部、眼睛和皮肤在内的整个人物，以精细勾线与层叠罩染重绘；不得出现摄影质感皮肤或粘贴式写实脸。把栏杆、灯笼、花枝和海上云气安排为克制装饰。输出竖版 2:3，不得出现书法、印章、文字或水印。",
+  "source_negative_prompt_zh": "摄影质感脸部，粘贴式写实脸，写意泼墨，松散断续轮廓，厚重油画，现代喷枪渐变，更换服装，空白粗糙纸张，粗重黑色色块，书法，印章，水印",
+  "sha256": "843a5947959f1152349d15de50ea8f83c9bc8cbc93276f8fe3414df65ce48f37",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S018"
+}

@@ -1,0 +1,21 @@
+{
+  "category": "三维",
+  "slug": "modeling-clay-figure",
+  "name": "手捏橡皮泥",
+  "style_prompt_zh": "儿童手捏橡皮泥造型，饱和色块，圆润不规则体块，少量接缝与压痕，清楚剪影，柔和微缩摄影",
+  "reference_image": "assets/modeling-clay-figure.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/modeling-clay-figure.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/modeling-clay-figure.webp",
+  "source_title": "儿童橡皮泥人偶",
+  "source_original_prompt_zh": "将附上的照片转换为由手揉黏土块组装的儿童橡皮泥人偶。采用饱和色块、粗壮的手捏四肢、搓卷式头发、压扁的面部圆片、明显指纹、拇指压痕、不均匀接缝和挤压连接处。在手工桌上以温暖窗光拍摄人偶；结构要保留可爱的手作不完美，绝不能变成无缝数字黏土渲染。通过脸型、黑色长发和碎花太阳裙线索保持她可辨识，但包括脸部、眼睛和皮肤在内的每个部分都要用同一种橡皮泥重建；不要摄影质感皮肤，也绝不粘贴写实面孔。让它稳定站立，露出闭口的黏土微笑。在素色牛皮纸上撒落少量黏土碎屑。输出竖版2:3，不要文字、标志或水印。",
+  "source_negative_prompt_zh": "无缝数字黏土渲染，低饱和陶土色板，抛光聚合物表面，光滑3D网格，写实皮肤，光亮塑料，看不见接缝，摄影面孔，粘贴的写实面孔，人物身份被改变，文字，标志，水印",
+  "sha256": "45a95ba102fa71269874a02c75f9aba7b7a0bd50713f12c339f09f6d4226ac13",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S037"
+}

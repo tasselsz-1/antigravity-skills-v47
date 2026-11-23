@@ -1,0 +1,56 @@
+{
+  "id": "B008",
+  "type": "bone_structure",
+  "group": "基础骨相底盘",
+  "name": "宽眼距留白高级脸",
+  "en_name": "Wide-Set Editorial High-Fashion Bone Structure",
+  "aesthetic_tier": "电影/文艺/时尚",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "3. 面部细节特征",
+  "proportions": {
+    "upper": 0.33,
+    "mid": 0.34,
+    "lower": 0.33,
+    "jaw_angle_deg": 118,
+    "profile": "舒展松弛"
+  },
+  "anatomical_landmarks": [
+    "略宽眼距 (>1 眼宽)",
+    "平直微宽鼻骨",
+    "高颧骨微外扩留白"
+  ],
+  "formula_slots_ref_only": {
+    "eye": "眼距略宽显神秘空灵，眼神慵懒松弛",
+    "brow": "平直自然野生眉骨",
+    "nose": "鼻梁平直略宽、自带故事感",
+    "lips": "厚润松弛唇形、微张带呼吸感",
+    "jaw": "颧骨与下颌有清晰转折与高级留白"
+  },
+  "prompt_en_ref_only": "wide-set eyes with generous facial negative space, high sculpted cheekbones, relaxed full lips, editorial cinema bone structure",
+  "prompt_zh_ref_only": "眼距略宽留白充裕，颧骨微高有电影切面感，唇形丰润松弛，极具银幕文艺辨识度",
+  "suitable_roles": [
+    "文艺电影女主",
+    "神秘异域旅人",
+    "国际时尚角色",
+    "疏离感主角"
+  ],
+  "linked_anatomy_plates": [
+    "A001",
+    "A003"
+  ],
+  "anti_copy_note": "高级脸核心在留白与松弛神态，切忌叠加俗艳浓妆与尖锐美颜滤镜。",
+  "svg_file": "assets/bones/B008.svg",
+  "svg_params": {
+    "face_w": 53,
+    "cheek_w": 57,
+    "jaw_w": 42,
+    "chin_y": 144,
+    "chin_w": 17,
+    "brow_depth": 6,
+    "mid_ratio": 0.34,
+    "accent": "#8b5cf6",
+    "tag": "留白电影脸"
+  }
+}

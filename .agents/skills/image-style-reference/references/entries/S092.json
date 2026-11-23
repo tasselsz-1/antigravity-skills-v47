@@ -1,0 +1,50 @@
+{
+  "id": "S092",
+  "category": "成熟商业·韩漫主力",
+  "slug": "commercial-korean-wuxia",
+  "name": "韩式狂放武侠（水墨飞白叠厚涂体积切割法）",
+  "aliases": [
+    "韩式武侠",
+    "KOREAN WUXIA"
+  ],
+  "style_prompt_zh": "韩式动作武侠条漫画法（《北剑江湖》《高手》工艺），外轮廓采用极具速度感的狂放破笔墨线与飞白，内部形体则用高反差三维感厚涂色块直接切出夸张肌肉与衣袍体积；剑气与掌风化作凌厉的黑白撕裂线条与炫目内发光对撞，大面积清爽留白凸显极速动势",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/styles.html",
+  "source_snapshot": "references/sources/commercial-2026-11-01/styles.html",
+  "source_title": "韩式武侠",
+  "source_original_prompt_en": "korean wuxia, ink wash with impasto, flowing motion, negative space",
+  "summary": "将传统水墨的狂草线势与现代厚涂的立体打击感结合，动作戏爽感天花板。",
+  "use_cases": [
+    "高燃武侠打斗漫剧",
+    "男频战神系统爽剧",
+    "宗门大比巅峰对决"
+  ],
+  "reference_coordinates": "《热血江湖》《龙飞不败》",
+  "source_position": "sub",
+  "source_position_note": "源作者的主流/细分/实验判断，未经独立市场数据验证。",
+  "related_entries": [],
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页未提供图片，代表作品名称仅作来源坐标，不等于已查看作品。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。",
+  "optional_effects_note": "颗粒、脏污、沙尘、旧化、光斑与抖动不默认继承；规则网点、像素与必要媒介纹理可受控保留。",
+  "license_note": "用户指定本地文本页面；未发现明确授权声明，不沿用其他来源的CC0许可。",
+  "sha256": null,
+  "image_size": null,
+  "tier": "mature_commercial",
+  "original_short_name": "韩式武侠",
+  "visual_genes": {
+    "笔": "外线狂放枯笔飞白与破墨锐角，内里用硬朗厚涂块面雕刻爆发性肌肉结构",
+    "光": "高反差硬朗顶侧光搭配兵刃/内功爆发的强自发光轮廓切光",
+    "色": "深沉玄黑、苍狼灰、古铜肤色，碰撞冷冽剑气青蓝或烈焰霸气赤红",
+    "质": "粗粝战损布衣撕裂纤维、精钢刀剑寒光、飞溅血滴与尘土颗粒",
+    "镜": "大广角透视畸变与对角线破框冲刺机位，动作打击感力透纸背"
+  },
+  "palette": [
+    "#0D0F12",
+    "#262B33",
+    "#6C7A89",
+    "#E63946",
+    "#38B6FF"
+  ]
+}

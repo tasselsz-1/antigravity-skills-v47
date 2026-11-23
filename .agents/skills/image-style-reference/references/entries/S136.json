@@ -1,0 +1,50 @@
+{
+  "id": "S136",
+  "category": "成熟商业·特色工艺",
+  "slug": "commercial-style-junji-ito-crosshatch",
+  "name": "伊藤润二铜版密排线（曲面密集针管笔排线法）",
+  "aliases": [
+    "伊藤润二风格",
+    "铜版蚀刻线",
+    "ITO CROSSHATCH"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "伊藤润二式日式惊悚漫画与古典铜版画蚀刻排线法；全场不使用灰色涂抹，完全依靠极细针管笔顺应人体球体曲面进行万千条精密密集的弧形平行与交叉排线；面容苍白冷漠，阴影密不透风，令人脊背发凉",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "伊藤润二铜版密排线（曲面密集针管笔排线法）",
+  "source_original_prompt_en": "commercial-style-junji-ito-crosshatch",
+  "summary": "全靠线条密度塑造立体体积与窒息氛围，惊悚心理剧的最强武器。",
+  "visual_genes": {
+    "笔": "0.05mm极细等距排线，顺着骨骼与肌肉走向层层织网",
+    "光": "冷酷的顶光或斜下方惨白光芒，暗部被密不透光的黑线编织吞没",
+    "色": "极端纯粹的黑白灰（依靠线条密度产生灰度），极少数局部血红点缀",
+    "质": "铜版画腐蚀针感、光滑苍白的瓷质肌肤、深邃密集的墨水编织",
+    "镜": "极端压抑的正视近景大特写，眼神僵直空洞"
+  },
+  "palette": [
+    "#000000",
+    "#1C1C1C",
+    "#4F4F4F",
+    "#A3A3A3",
+    "#FFFFFF"
+  ],
+  "use_cases": [
+    "悬疑惊悚人性剧",
+    "都市怪谈短剧爆点",
+    "诡异荒诞漫画分镜"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

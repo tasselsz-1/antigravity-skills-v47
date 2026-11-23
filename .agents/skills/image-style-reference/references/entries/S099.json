@@ -1,0 +1,50 @@
+{
+  "id": "S099",
+  "category": "成熟商业·写实与短剧",
+  "slug": "commercial-simulated-human",
+  "name": "超写实真人短剧（微距真实毛孔绒毛与自然微表情防蜡质柔光法）",
+  "aliases": [
+    "AI 仿真人",
+    "SIMULATED HUMAN"
+  ],
+  "style_prompt_zh": "竖屏超写实真人短剧（微短剧特写级）光学实拍画法；专为近景与大特写设计的环形柔光与侧逆轮廓光组合，精准捕捉演员眉眼抽动、眼眶蓄泪与嘴角微表情；皮肤保留真实尺度下的细腻皮脂纹理、脸颊极细微绒毛与发际线碎发，彻底根除AI蜡像馆假脸与过度磨皮感",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/styles.html",
+  "source_snapshot": "references/sources/commercial-2026-11-01/styles.html",
+  "source_title": "AI 仿真人",
+  "source_original_prompt_en": "hyperrealistic human, skin texture, micro expression, natural hair",
+  "summary": "专为竖屏真人短剧特写调校：保留胎毛、泪光与真实皮脂感，一眼真人的高颜值镜头。",
+  "use_cases": [
+    "竖屏真人爽剧/虐恋短剧",
+    "情绪爆发哭戏大特写",
+    "真人口播与高转化率素材"
+  ],
+  "reference_coordinates": "平台稀缺品类",
+  "source_position": "sub",
+  "source_position_note": "源作者的主流/细分/实验判断，未经独立市场数据验证。",
+  "related_entries": [],
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页未提供图片，代表作品名称仅作来源坐标，不等于已查看作品。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。",
+  "optional_effects_note": "颗粒、脏污、沙尘、旧化、光斑与抖动不默认继承；规则网点、像素与必要媒介纹理可受控保留。",
+  "license_note": "用户指定本地文本页面；未发现明确授权声明，不沿用其他来源的CC0许可。",
+  "sha256": null,
+  "image_size": null,
+  "tier": "mature_commercial",
+  "original_short_name": "AI 仿真人",
+  "visual_genes": {
+    "笔": "真实光学镜头成像，发际线胎毛、睫毛根部与唇纹细节自然连续",
+    "光": "短剧剧组高颜值立体布光：正面大柔光保通透肤色 + 侧逆硬光切出立体下颌线",
+    "色": "通透健康的红润自然肤色，背景色温与主体冷暖适度分离以突出人物焦点",
+    "质": "真实真皮层血色透光、湿润泪光反射、高档现代时装面料与首饰精细反光",
+    "镜": "85mm大光圈浅景深人像特写，焦点死锁瞳孔眼神，背景虚化干净不抢戏"
+  },
+  "palette": [
+    "#1A1D24",
+    "#3A4150",
+    "#8C6D62",
+    "#E2B49A",
+    "#F7EDE8"
+  ]
+}

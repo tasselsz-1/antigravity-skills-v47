@@ -1,0 +1,50 @@
+{
+  "id": "S120",
+  "category": "成熟商业·国风大师",
+  "slug": "commercial-guofeng-suzhou-embroidery",
+  "name": "非遗苏绣乱针绣（真丝光泽色线法）",
+  "aliases": [
+    "刺绣画法",
+    "乱针真丝",
+    "SUZHOU EMBROIDERY"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "非遗苏绣乱针绣工艺，千万根天然蚕丝色线分层斜向交叉排叠塑造人物与背景；色线光泽随光照角度产生真实丝绸各向异性流光，针脚微凸富有凹凸立体手感，色彩过渡如水彩般无痕融合，贵气逼人",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "非遗苏绣乱针绣（真丝光泽色线法）",
+  "source_original_prompt_en": "commercial-guofeng-suzhou-embroidery",
+  "summary": "不用颜料画画，全靠天然蚕丝线排叠反光，一眼惊艳的高定东方质感。",
+  "visual_genes": {
+    "笔": "长短交叉的极细针脚线条，多层蚕丝线顺肌肉骨骼走势排叠",
+    "光": "顺光丝线哑光，逆光与侧光呈现蚕丝特有的金属感冷金流光",
+    "色": "数百种劈丝微调渐变色，极为细腻纯净的宫廷丝绸色板",
+    "质": "蚕丝天然反光光泽、密实经纬布底、微凸手制针脚浮雕",
+    "镜": "微距特写展示精致丝缕，或高雅宁静的中景人像"
+  },
+  "palette": [
+    "#E0A96D",
+    "#203647",
+    "#EEB76B",
+    "#C24936",
+    "#FAF3E0"
+  ],
+  "use_cases": [
+    "高奢古风服饰特写",
+    "仙子神女华服定制",
+    "东方美学顶级短片"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

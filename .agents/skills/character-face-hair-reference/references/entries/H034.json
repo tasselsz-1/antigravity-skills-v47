@@ -1,0 +1,34 @@
+{
+  "id": "H034",
+  "type": "hairstyle",
+  "group": "男性 · 古风束冠与史诗奇幻",
+  "gender": "男性",
+  "era": "历史正剧/文臣帝王",
+  "name": "全部束冠正式发髻",
+  "en_name": "Formal Fully Gathered Crowned Topknot",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "发丝全部向上一丝不苟收拢 + 顶心正规梁冠/金冠/纱冠 + 零散碎披发",
+  "formula_slots_ref_only": {
+    "color": "纯黑 / 中年两鬓斑白",
+    "texture": "严整紧贴哑光历史发丝",
+    "noun": "古代正式全束冠发髻",
+    "motion": "鬓角修整严密，无多余现代飘逸碎发，恪守礼法威严"
+  },
+  "prompt_en_ref_only": "fully gathered traditional Chinese male topknot inside formal historical crown, completely clean hairline, zero loose modern bangs, authentic period drama",
+  "prompt_zh_ref_only": "全部发丝严密向上梳拢束入礼冠，无一缕现代碎刘海，干净显露真实额骨与鬓角，符合历史正剧文臣帝王礼制",
+  "suggested_bones": [
+    "B003",
+    "B017",
+    "B018",
+    "B021"
+  ],
+  "svg_file": "assets/hairs/H034.svg",
+  "svg_params": {
+    "shape": "ancient_m_formal",
+    "accent": "#a16207",
+    "gender": "男性"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "category": "绘画",
+  "slug": "pop-art",
+  "name": "波普艺术",
+  "style_prompt_zh": "醒目黑色轮廓，鲜明高对比色块，局部规则半调网点，图标式概括，强烈视觉节奏",
+  "reference_image": "assets/pop-art.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/pop-art.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/pop-art.webp",
+  "source_title": "波普艺术",
+  "source_original_prompt_zh": "将附带照片转换为醒目的世纪中叶波普艺术肖像。使用紧凑的肩部以上裁切、粗黑漫画轮廓、突兀的面部阴影形状、覆盖皮肤与头发的超大Ben-Day网点、四色分版、饱和青色、柠檬黄、亮红、黑色和白色，以及强硬正面图形光。将姿势和表情调整为热情洋溢的广告图标。通过脸型、黑色长发和碎花连衣裙图案保持她的辨识度，但将包括脸部、眼睛和皮肤在内的整个人物，重绘为平面印刷网点和色块；不得出现摄影质感皮肤或粘贴式写实脸。用放射色块和灯笼圆形替代街道。输出竖版 2:3，不得出现对话气泡、文字、品牌标记或水印。",
+  "source_negative_prompt_zh": "摄影质感脸部，粘贴式写实脸，柔和粉彩配色，细腻写实明暗，画布笔触，纤细线条，自然摄影背景，低对比，低调表情，对话气泡，图注，水印",
+  "sha256": "145ac6773a80491803661b915b74bca302b8fd5118b9af7b79a82e884158f7f9",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S019",
+  "texture_note": "来源示例含明显媒介纹理或复古质感；默认仅参考绘制方式与色彩，不继承无关颗粒或污损。"
+}

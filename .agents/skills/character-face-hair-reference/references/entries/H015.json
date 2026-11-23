@@ -1,0 +1,33 @@
+{
+  "id": "H015",
+  "type": "hairstyle",
+  "group": "女性 · 中国古代发髻",
+  "gender": "女性",
+  "era": "唐宋宫廷/古装",
+  "name": "盛唐高髻（峨髻 / 高椎髻）",
+  "en_name": "High Towering Tang Gaoji Bun",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "高耸饱满头顶云髻 + 饱满两侧抱面鬓角 + 玉簪金钗点缀",
+  "formula_slots_ref_only": {
+    "color": "漆黑如墨（带天然乌润光泽）",
+    "texture": "厚实饱满盘梳规整丝感",
+    "noun": "盛唐高耸峨髻",
+    "motion": "两鬓微贴面颊显端庄丰润，发簪步摇随步轻晃"
+  },
+  "prompt_en_ref_only": "high towering traditional Chinese Tang dynasty hair bun (Gaoji), full sculpted temples, ornate jade hairpins",
+  "prompt_zh_ref_only": "乌黑浓发高耸盘成端庄盛唐高髻，两鬓抱面丰盈，插素玉或金钿发簪，尽显雍容贵气",
+  "suggested_bones": [
+    "B002",
+    "B003",
+    "B021"
+  ],
+  "svg_file": "assets/hairs/H015.svg",
+  "svg_params": {
+    "shape": "ancient_gaoji",
+    "accent": "#d97706",
+    "gender": "女性"
+  }
+}

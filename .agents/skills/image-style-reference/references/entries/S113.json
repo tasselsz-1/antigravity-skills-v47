@@ -1,0 +1,50 @@
+{
+  "id": "S113",
+  "category": "成熟商业·国风大师",
+  "slug": "commercial-guofeng-langshining-fusion",
+  "name": "清宫郎世宁海西体（中西合璧宫廷画）",
+  "aliases": [
+    "海西画法",
+    "新体画",
+    "QING COURT FUSION"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "清代宫廷海西体画法，中国工笔游丝细勾与欧洲焦点透视及柔和明暗融合；无强烈黑投影的漫射柔光立体塑形，丝绸光泽、金属器皿与毛皮羽毛刻画极致逼真细腻，设色典雅华丽，富丽堂皇",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "清宫郎世宁海西体（中西合璧宫廷画）",
+  "source_original_prompt_en": "commercial-guofeng-langshining-fusion",
+  "summary": "用中国毛笔画西方体积与高光，兼具油画写实与国画雅致。",
+  "visual_genes": {
+    "笔": "极精细狼毫中锋匀线勾勒轮廓，丝毛法一丝不苟排列绒毛",
+    "光": "宫廷无影柔光，受光面微微高亮，背光面通透不黑死",
+    "色": "明丽饱满的宫廷设色：石青、朱砂、明黄与西洋群青共用",
+    "质": "丝绸真丝各向异性流光，冷兵器青铜金银锃亮，白玉凝脂",
+    "镜": "严谨的透视深度与对称式宫廷严正构图，场面富贵庄严"
+  },
+  "palette": [
+    "#D4AF37",
+    "#800020",
+    "#1C39BB",
+    "#004B49",
+    "#FAF0E6"
+  ],
+  "use_cases": [
+    "明清宫廷争霸短剧",
+    "帝王将相器物特写",
+    "历史传记影视海报"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

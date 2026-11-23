@@ -1,0 +1,56 @@
+{
+  "id": "B014",
+  "type": "bone_structure",
+  "group": "动物系防同脸美型",
+  "name": "蛇系冷冽骨感骨相",
+  "en_name": "Serpentine High-Cheekbone Cold Structure",
+  "aesthetic_tier": "美型/暗黑/反派",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "3. 面部细节特征",
+  "proportions": {
+    "upper": 0.31,
+    "mid": 0.36,
+    "lower": 0.33,
+    "jaw_angle_deg": 120,
+    "profile": "低脂骨感"
+  },
+  "anatomical_landmarks": [
+    "极细长冷眼眶",
+    "高瘦外扩颧骨",
+    "低体脂削瘦薄颌"
+  ],
+  "formula_slots_ref_only": {
+    "eye": "极细长冷漠眼裂，微遮瞳显危险感",
+    "brow": "高细冷锐眉骨",
+    "nose": "细直高峻、鼻翼极收紧",
+    "lips": "极薄紧绷的冷艳唇线",
+    "jaw": "高颧骨配极低体脂削瘦下颌线"
+  },
+  "prompt_en_ref_only": "serpentine narrow cold eyes, high lean prominent cheekbones, thin tight lips, low-body-fat sculpted sharp jawline, dangerous elegance",
+  "prompt_zh_ref_only": "极细长冷眼配高瘦颧骨，低体脂骨感强烈，薄唇紧敛，自带优雅而危险的气场",
+  "suitable_roles": [
+    "阴鸷反派",
+    "冷血刺客",
+    "毒舌贵族",
+    "暗黑异族角色"
+  ],
+  "linked_anatomy_plates": [
+    "A002",
+    "A004"
+  ],
+  "anti_copy_note": "用颧骨与冷眼比例建立辨识度，避免过度病态消瘦或尖锐失真。",
+  "svg_file": "assets/bones/B014.svg",
+  "svg_params": {
+    "face_w": 47,
+    "cheek_w": 53,
+    "jaw_w": 32,
+    "chin_y": 149,
+    "chin_w": 11,
+    "brow_depth": 7,
+    "mid_ratio": 0.36,
+    "accent": "#059669",
+    "tag": "蛇系冷锐"
+  }
+}

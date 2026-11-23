@@ -1,0 +1,33 @@
+{
+  "id": "H013",
+  "type": "hairstyle",
+  "group": "女性 · 现代与动漫幻想",
+  "gender": "女性",
+  "era": "动漫/日常",
+  "name": "呆毛配短碎发",
+  "en_name": "Short Tousled Hair with Ahoge",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "耳下蓬松轻碎短发 + 头顶一缕标志性翘起呆毛弧线",
+  "formula_slots_ref_only": {
+    "color": "琥珀棕 / 浅橘 / 墨黑",
+    "texture": "轻盈抓松凌乱短发丝",
+    "noun": "带标志性呆毛的蓬松短碎发",
+    "motion": "头顶翘起的单缕发丝随情绪晃动，朝气满满"
+  },
+  "prompt_en_ref_only": "short tousled layered hair with a distinct sticking-up ahoge strand on crown, lively casual cut",
+  "prompt_zh_ref_only": "轻盈凌乱的短碎发包裹耳际，头顶翘起一缕生动标志性呆毛，满溢元气少年/少女感",
+  "suggested_bones": [
+    "B006",
+    "B011",
+    "B012"
+  ],
+  "svg_file": "assets/hairs/H013.svg",
+  "svg_params": {
+    "shape": "ahoge_short",
+    "accent": "#eab308",
+    "gender": "女性"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "category": "电影",
+  "slug": "technicolor-50s",
+  "name": "复古特艺彩色",
+  "style_prompt_zh": "浓郁原色，精致棚拍布光，清晰布景，温暖肤色，柔和高光，经典彩色电影质感",
+  "reference_image": "assets/technicolor-50s.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/technicolor-50s.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/technicolor-50s.webp",
+  "source_title": "1950年代三色特艺彩色",
+  "source_original_prompt_zh": "将附上的照片转换为一帧光彩夺目的1950年代三色特艺彩色好莱坞棚拍剧照。呈现饱和的宝石红、祖母绿和钴蓝、奶油般的肤色、细腻的染料转印质感与精致的摄影棚景深。采用明亮主光、柔和补光和细微金色轮廓光，营造戏剧性的乐观气息。保留同一人的真实面部特征，使她清晰可辨；再将发型打理成柔和定型卷发，换上缎面服装或搭配珍珠的New Look蓬裙礼服。让她摆出自然的1950年代明星姿态：肩膀轻轻侧转，一只手放松地置于腰间，并露出克制的闭口微笑。添加手绘舞厅背景。输出竖版2:3，不要文字、标志或水印。",
+  "source_negative_prompt_zh": "灰暗色彩，现代碎花太阳裙，现代LED灯光，粗粝手持画面，青橙调色，塑料质感皮肤，面部被改变，文字，标志，水印",
+  "sha256": "22453d377bec1e300b9024f77276c5f67d499f6419c815fd353a8146362c9e79",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S050"
+}

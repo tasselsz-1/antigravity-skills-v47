@@ -1,0 +1,50 @@
+{
+  "id": "S091",
+  "category": "成熟商业·韩漫主力",
+  "slug": "commercial-korean-painterly",
+  "name": "韩式成人半写实厚涂（冷调平笔肌理与氛围打光法）",
+  "aliases": [
+    "韩式厚涂",
+    "KOREAN PAINTERLY"
+  ],
+  "style_prompt_zh": "韩式成人向半写实厚涂画法，弱化外轮廓黑线，采用细腻有序的平头画笔直接塑造立体的亚洲骨相、下颌线与西装织物折角；照明采用偏冷的电影级戏剧侧光，暗部保留通透的蓝灰与紫灰冷调反弹光；皮肤兼具写实骨骼体感与克制的绘画笔触概括，气质冷冽成熟",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/styles.html",
+  "source_snapshot": "references/sources/commercial-2026-11-01/styles.html",
+  "source_title": "韩式厚涂",
+  "source_original_prompt_en": "korean semi-realistic, painterly skin, soft cool lighting, mature tone",
+  "summary": "兼具写实骨相张力与绘画高级感，是悬疑、商战与成人情感赛道的王牌画法。",
+  "use_cases": [
+    "财阀商战权谋短剧",
+    "犯罪悬疑刑侦漫剧",
+    "熟男熟女都市极限拉扯"
+  ],
+  "reference_coordinates": "《与神同行》原作漫画",
+  "source_position": "sub",
+  "source_position_note": "源作者的主流/细分/实验判断，未经独立市场数据验证。",
+  "related_entries": [],
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页未提供图片，代表作品名称仅作来源坐标，不等于已查看作品。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。",
+  "optional_effects_note": "颗粒、脏污、沙尘、旧化、光斑与抖动不默认继承；规则网点、像素与必要媒介纹理可受控保留。",
+  "license_note": "用户指定本地文本页面；未发现明确授权声明，不沿用其他来源的CC0许可。",
+  "sha256": null,
+  "image_size": null,
+  "tier": "mature_commercial",
+  "original_short_name": "韩式厚涂",
+  "visual_genes": {
+    "笔": "弱化描边，用平笔短促有序的块面笔触直接塑造骨相转折与眉弓深邃感",
+    "光": "冷调戏剧侧光或顶侧光，明暗交界线扎实且带微弱暖色次表面散射",
+    "色": "低饱和冷灰蓝、深炭黑、雾霾紫与克制的冷白皮肉色，氛围深沉内敛",
+    "质": "微哑光真实皮肤笔触、挺括精纺羊毛西装、金属腕表与眼镜冷冽反光",
+    "镜": "中近景电影越肩镜头或压迫感俯仰视，强调人物眼神博弈与成人氛围"
+  },
+  "palette": [
+    "#12161F",
+    "#283142",
+    "#526178",
+    "#9BA8B8",
+    "#D9B8A6"
+  ]
+}

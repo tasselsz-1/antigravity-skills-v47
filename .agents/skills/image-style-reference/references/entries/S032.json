@@ -1,0 +1,21 @@
+{
+  "category": "三维",
+  "slug": "balloon-inflatable",
+  "name": "充气气球人偶",
+  "style_prompt_zh": "圆润充气体块，光亮弹性表面，膨胀曲线，清楚接缝，受控镜面高光，轻盈玩具感，简洁背景",
+  "reference_image": "assets/balloon-inflatable.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/balloon-inflatable.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/balloon-inflatable.webp",
+  "source_title": "充气气球人偶",
+  "source_original_prompt_zh": "将附上的照片转换为光亮充气气球角色商品肖像。用彼此连接的充气橡胶体块构建完整人物，包含圆润四肢、绷紧的热合接缝、柔和受压褶痕、宽阔白色高光，以及珊瑚色、水蓝色、黄色、奶油色和炭灰色调色板。采用明亮三点式摄影棚布光，营造轻盈的商业活力。通过脸型、黑色长发和碎花太阳裙线索保持她可辨识，但包括脸部、眼睛和皮肤在内的每个部分都要由成形并印刷的充气橡胶制成；不要摄影质感皮肤，也绝不粘贴写实面孔。让玩具以宽阔稳定的站姿站立，双臂微抬，表情简洁欢快。将它置于无缝浅蓝地面。输出竖版2:3，不要文字、标志或水印。",
+  "source_negative_prompt_zh": "泄气身体，松垮起皱橡胶，硬塑料，毛绒布料，僵硬尖锐四肢，细小写实手掌，摄影面孔，粘贴的写实面孔，破孔，文字，标志，水印",
+  "sha256": "73756ea0ae6784d96281830b2396bcdaf5fff182c92e84a67a32c57881fbd6c6",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S032"
+}

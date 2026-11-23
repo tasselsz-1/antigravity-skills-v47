@@ -1,0 +1,56 @@
+{
+  "id": "B007",
+  "type": "bone_structure",
+  "group": "基础骨相底盘",
+  "name": "心形倒三角锐利骨相",
+  "en_name": "Heart-Shaped Tapered Bone Structure",
+  "aesthetic_tier": "美型/奇幻/动漫",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "3. 面部细节特征",
+  "proportions": {
+    "upper": 0.35,
+    "mid": 0.33,
+    "lower": 0.32,
+    "jaw_angle_deg": 128,
+    "profile": "灵动收尖"
+  },
+  "anatomical_landmarks": [
+    "宽润额骨与高点颧骨",
+    "快速内收下颌体",
+    "小巧精巧尖颏"
+  ],
+  "formula_slots_ref_only": {
+    "eye": "灵动上扬眼型、眼瞳明亮聚焦",
+    "brow": "微挑细眉骨、灵气鲜明",
+    "nose": "精巧细挺小翘鼻",
+    "lips": "唇角灵巧微翘、立体唇珠",
+    "jaw": "颧部饱满而下颌快速收窄至精巧尖下巴"
+  },
+  "prompt_en_ref_only": "heart-shaped face, slightly wider forehead and high cheek fullness, sharply tapered delicate chin, agile lively contours",
+  "prompt_zh_ref_only": "额与高颧处微宽饱满，下颌线迅速利落收尖，整体呈灵动精巧的心形倒三角",
+  "suitable_roles": [
+    "灵动精灵",
+    "机敏大小姐",
+    "傲娇女配",
+    "敏锐刺客少年"
+  ],
+  "linked_anatomy_plates": [
+    "A001",
+    "A002"
+  ],
+  "anti_copy_note": "防止做成畸形蛇精尖下巴，尖收幅度必须保留真实骨肉过渡。",
+  "svg_file": "assets/bones/B007.svg",
+  "svg_params": {
+    "face_w": 54,
+    "cheek_w": 56,
+    "jaw_w": 33,
+    "chin_y": 146,
+    "chin_w": 10,
+    "brow_depth": 5,
+    "mid_ratio": 0.33,
+    "accent": "#ec4899",
+    "tag": "心形灵动"
+  }
+}

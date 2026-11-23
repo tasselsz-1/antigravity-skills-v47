@@ -1,0 +1,33 @@
+{
+  "id": "H030",
+  "type": "hairstyle",
+  "group": "男性 · 现代与动漫潮流",
+  "gender": "男性",
+  "era": "现代/日系/都市",
+  "name": "艺术感武士低马尾 / 半丸子",
+  "en_name": "Modern Samurai Half-Bun / Low Tie",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "两侧微短或自然垂落 + 头顶后部随性扎成小丸子或低短马尾",
+  "formula_slots_ref_only": {
+    "color": "自然黑 / 深咖啡 / 烟灰",
+    "texture": "略显粗硬自然松散束发",
+    "noun": "现代随性后束半丸子短长发",
+    "motion": "鬓边散落几缕碎发，干练中透着不羁松弛"
+  },
+  "prompt_en_ref_only": "modern men's half-up man bun, low tied back knot with loose side strands, rugged creative silhouette",
+  "prompt_zh_ref_only": "将上层中长发随性在脑后扎成低丸子或短束，耳际留自然散落碎丝，兼具雅痞与行动派气场",
+  "suggested_bones": [
+    "B001",
+    "B004",
+    "B015"
+  ],
+  "svg_file": "assets/hairs/H030.svg",
+  "svg_params": {
+    "shape": "male_manbun",
+    "accent": "#0f766e",
+    "gender": "男性"
+  }
+}

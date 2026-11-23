@@ -1,0 +1,21 @@
+{
+  "category": "手工",
+  "slug": "stained-glass",
+  "name": "彩色玻璃",
+  "style_prompt_zh": "铅条分隔的宝石色玻璃，几何拼接形体，通透背光，局部自然色差，图案层级清晰",
+  "reference_image": "assets/stained-glass.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/stained-glass.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/stained-glass.webp",
+  "source_title": "彩色玻璃肖像",
+  "source_original_prompt_zh": "把附上的照片转换成一扇由尖拱哥特式边框围合、熠熠发光的教堂彩色玻璃窗。构图为居中的正面全身人物，双肩摆正，双手轻轻交叠在腰间，以庄严且嘴唇闭合的目光注视前方。用粗厚的深色铅条将画面分割成半透明的钴蓝、红宝石色、琥珀色和祖母绿色玻璃片，呈现细小气泡、波纹玻璃纹理以及从背后透入的灿烂阳光。把碎花连衣裙转化为重复的玫瑰窗格，把长发转化为流动的蓝黑色玻璃片。通过脸型、头发轮廓和服装图案保留她的可辨识特征，但要用彩色玻璃和铅条重构包括脸部、眼睛和皮肤在内的每个部分；不得出现摄影质感皮肤或粘贴的写实面孔。输出竖版 2:3，不得有文字、标志或水印。",
+  "source_negative_prompt_zh": "摄影质感面孔，粘贴的写实面孔，不透明画布绘画，无边框色域，纤细轮廓线，柔和喷枪明暗，随意姿势，露齿笑容，黑暗不透光的玻璃，文字，标志，水印",
+  "sha256": "4340dfc797ad7b219150269c27b5f0c4fda5adc94b4196adc85eeaa65aafdab9",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S040"
+}

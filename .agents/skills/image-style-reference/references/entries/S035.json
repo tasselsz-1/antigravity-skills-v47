@@ -1,0 +1,21 @@
+{
+  "category": "三维",
+  "slug": "plush-doll",
+  "name": "毛绒玩偶",
+  "style_prompt_zh": "柔软短绒材质，圆润缝制造型，刺绣五官，细致接缝，温暖柔光，纤维排列有序",
+  "reference_image": "assets/plush-doll.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/plush-doll.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/plush-doll.webp",
+  "source_title": "毛绒娃娃",
+  "source_original_prompt_zh": "将附上的照片转换为近距离拍摄的手工毛绒娃娃。制作圆润填充四肢、柔软短毛绒身体、细短绒面、可见锁边缝线、纽扣眼、刺绣嘴巴、分层毛毡头发，以及暖米色、铁锈色和海军蓝的迷你拼布服装。采用柔和窗光与轻柔接触阴影，营造舒适的手作暖意。通过脸型、黑色长发和碎花太阳裙线索保持她可辨识，但包括脸部、眼睛和皮肤在内的每个部分都要用布料、毛毡、纽扣与线缝制；不要摄影质感皮肤，也绝不粘贴写实面孔。让娃娃稳稳坐在木制手工桌上，双手放在膝上，露出温和的刺绣微笑。输出竖版2:3，不要文字、标志或水印。",
+  "source_negative_prompt_zh": "硬塑料，光亮乙烯基，黏土指纹，写实皮肤，尖锐金属关节，填充物松散，缝线损坏，摄影面孔，粘贴的写实面孔，人物身份被改变，文字，标志，水印",
+  "sha256": "b5ad7181f0e748e268f4d5cf370ef4b22da632c06d60252006b29aede42e500a",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S035"
+}

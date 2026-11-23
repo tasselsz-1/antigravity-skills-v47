@@ -1,0 +1,50 @@
+{
+  "id": "S124",
+  "category": "成熟商业·电影大师",
+  "slug": "commercial-cinema-monochrome-theatrical",
+  "name": "张艺谋极简单色戏剧感（纯色阵列与高速水滴）",
+  "aliases": [
+    "影风格",
+    "英雄纯色",
+    "YIMOU MONOCHROME"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "张艺谋电影美学，全场严格限制于单一纯色相的明暗阶梯之中；纯粹水墨黑白灰或通透猩红稠缎，搭配高速摄影下定格的万千晶莹水滴与飞溅水珠；极具中国戏剧舞台张力，形式感与纯粹感登峰造极",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "张艺谋极简单色戏剧感（纯色阵列与高速水滴）",
+  "source_original_prompt_en": "commercial-cinema-monochrome-theatrical",
+  "summary": "把色彩压到极致的纯单色系统，用形态的绝对严整爆发最大的戏剧张力。",
+  "visual_genes": {
+    "笔": "大面积无装饰几何形体块面，搭配极细碎透明水珠轨迹",
+    "光": "漫射天光打底，强逆光点亮飞溅水花与飞扬尘埃",
+    "色": "极端封闭单色系：黑白水墨灰或纯朱红单色阶梯",
+    "质": "湿透布料沉重垂坠感、竹木天然纹理、雨滴冰晶反光",
+    "镜": "对称式戏剧舞台构图，极度严整的几何阵列"
+  },
+  "palette": [
+    "#0F1112",
+    "#2B2F33",
+    "#5E656B",
+    "#9BA3A9",
+    "#E5E8EB"
+  ],
+  "use_cases": [
+    "朝堂惊天刺杀",
+    "黑白两仪决战",
+    "顶级东方悬疑视觉"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

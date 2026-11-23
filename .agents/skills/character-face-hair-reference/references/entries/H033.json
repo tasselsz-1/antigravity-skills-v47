@@ -1,0 +1,34 @@
+{
+  "id": "H033",
+  "type": "hairstyle",
+  "group": "男性 · 古风束冠与史诗奇幻",
+  "gender": "男性",
+  "era": "古风/世子/侠客",
+  "name": "高束玉冠半披长发",
+  "en_name": "High Jade-Crown Topknot with Flowing Back",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "全露饱满额头 + 头顶高耸小冠束发 + 下半长直发如瀑披散",
+  "formula_slots_ref_only": {
+    "color": "乌墨黑",
+    "texture": "顺直微光泽长发丝配精致束冠",
+    "noun": "古风高束玉冠半披长发",
+    "motion": "脑后长发与冠带随策马疾风向后翻卷"
+  },
+  "prompt_en_ref_only": "traditional Chinese male high topknot secured with carved jade crown (Guan), clean exposed forehead, flowing loose back hair",
+  "prompt_zh_ref_only": "前额洁净无刘海，头顶高束精致青玉发冠，后背长发如墨披散并随风扬起，少年侠客与世子经典形制",
+  "suggested_bones": [
+    "B002",
+    "B005",
+    "B015",
+    "B016"
+  ],
+  "svg_file": "assets/hairs/H033.svg",
+  "svg_params": {
+    "shape": "ancient_m_jade",
+    "accent": "#0ea5e9",
+    "gender": "男性"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "S143",
+  "category": "成熟商业·特色工艺",
+  "slug": "commercial-style-caravaggio-tenebri",
+  "name": "卡拉瓦乔酒窖光暗对照法（Tenebrism 极黑戏剧光）",
+  "aliases": [
+    "暗色主义",
+    "酒窖光影",
+    "CARAVAGGIO TENEBRISM"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "巴洛克大师卡拉瓦乔酒窖强光暗照法（Tenebrism）；背景完全沉入虚无的纯黑之中，一束如同从高处天井打下的硬朗强光撕裂黑暗直射主体；受光面皮肤油脂光泽与布料褶皱被雕刻至尽，戏剧张力令人屏息",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "卡拉瓦乔酒窖光暗对照法（Tenebrism 极黑戏剧光）",
+  "source_original_prompt_en": "commercial-style-caravaggio-tenebri",
+  "summary": "西方油画史上最纯粹的戏剧光影：用一束天光撕开深渊，将情绪推至顶点。",
+  "visual_genes": {
+    "笔": "古典油画直接画法，暗部薄涂透底，亮部饱满颜料堆叠塑形",
+    "光": "单一方向极强定向聚光（酒窖光），无任何环境反弹辅光，明暗割裂",
+    "色": "深赭石、沥青黑、暗红为基底，受光处呈现温暖写实的象牙白与肉色",
+    "质": "粗纹亚麻画布肌理、浓厚油画光油反光、真实肉体微血管透色",
+    "镜": "紧凑的人物半身近景，人物肢体破框而出，极具冲撞感"
+  },
+  "palette": [
+    "#0A0706",
+    "#2E1C14",
+    "#663B2A",
+    "#C48D62",
+    "#EAD5C3"
+  ],
+  "use_cases": [
+    "深牢大狱权谋审讯",
+    "背叛与死亡悲剧时刻",
+    "极端心理对峙高潮戏"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

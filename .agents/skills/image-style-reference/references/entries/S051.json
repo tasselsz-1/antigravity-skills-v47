@@ -1,0 +1,21 @@
+{
+  "category": "电影",
+  "slug": "wuxia",
+  "name": "武侠电影",
+  "style_prompt_zh": "武侠电影剧照，飘逸衣料与有力动作，层叠山水空间，薄雾与定向光，诗意构图，材质真实",
+  "reference_image": "assets/wuxia.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/wuxia.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/wuxia.webp",
+  "source_title": "武侠片剧照",
+  "source_original_prompt_zh": "将附上的照片转换为一帧色彩自然、意境悠远的武侠电影剧照。采用层叠丝绸长袍、飞扬宽袖、克制的玉色与水墨色调、细腻35mm颗粒、漫射晨光和流动薄雾，营造沉静的英雄张力。保留同一人的真实面部特征，使她清晰可辨；再将发型和服装改造成古代女剑客造型。让她神情安详、闭口不笑，绝不露齿，并保持平衡站姿：右手握直剑，剑锋向下并远离身体；左手控制拖曳衣袖，双脚自然着地。让竹林与山峦铺满竖版构图，不要上下黑边。输出2:3画面，不要文字、标志或水印。",
+  "source_negative_prompt_zh": "现代街头服装，静止布料，奇幻盔甲，霓虹色彩，拥挤战斗场面，面部身份被改变，文字，标志，水印",
+  "sha256": "84c9431d9c8a87cfbaf5232f32a5b219ed2b2e7cd090b9054385eb3b85c7aede",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S051"
+}

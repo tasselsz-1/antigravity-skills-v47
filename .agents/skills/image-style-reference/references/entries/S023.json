@@ -1,0 +1,22 @@
+{
+  "category": "动漫",
+  "slug": "anime-90s-cel",
+  "name": "复古赛璐璐",
+  "style_prompt_zh": "传统二维动画，略粗墨线，有限色阶平涂，硬边阴影，手绘背景，清晰色面，不加胶片颗粒",
+  "reference_image": "assets/anime-90s-cel.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/anime-90s-cel.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/anime-90s-cel.webp",
+  "source_title": "1990年代赛璐珞动画",
+  "source_original_prompt_zh": "将附带照片转换为手绘的1990年代赛璐珞动画画面。使用粗重且略不均匀的墨线轮廓、不透明平涂色块、两级赛璐珞阴影、简化的动漫面部平面、灰调青色、暖米白、砖红、柔桃色、细微胶片颗粒和柔和午后光线。将姿势和表情调整为放松自然的日常动画表演。通过脸型、黑色长发和碎花连衣裙保持她的辨识度，但将包括脸部、眼睛和皮肤在内的整个人物，以真实的赛璐珞动漫画法重绘；不得出现摄影质感皮肤或粘贴式写实脸。把老街简化为绘制的店面、灯笼和一带海面。输出竖版 2:3，不得出现文字、字幕、标志或水印。",
+  "source_negative_prompt_zh": "摄影质感脸部，粘贴式写实脸，现代光滑渲染，平滑矢量渐变，写实皮肤毛孔，霓虹配色，3D明暗，极细线条，细节过多，字幕，文字，标志，水印",
+  "sha256": "86b1f54739409d4e29319228ef39cf9f1b121fc3cc790072b7703d5f49ed30fe",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S023",
+  "texture_note": "来源示例含明显媒介纹理或复古质感；默认仅参考绘制方式与色彩，不继承无关颗粒或污损。"
+}

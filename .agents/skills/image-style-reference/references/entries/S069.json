@@ -1,0 +1,57 @@
+{
+  "id": "S069",
+  "category": "成熟商业·日漫与二游",
+  "slug": "cinematic-makoto",
+  "name": "新海诚超写实光影（高密度积云逆光穿透与冷暖环境色互染法）",
+  "aliases": [
+    "新海诚光",
+    "银幕画风志09",
+    "MAKOTO LIGHT"
+  ],
+  "style_prompt_zh": "新海诚式剧场版动画光影画法，极高细节密度的层叠体积积云占据背景，强烈夕阳或晨光逆光穿透云隙形成受控丁达尔光束；高饱和通透青蓝天空与橙金/品红晚霞冷暖对撞，人物暗部大面积吸取天空冷蓝环境光，水面、玻璃幕墙与金属栏杆具备精密镜面反射",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/国漫电影感画风清单.html",
+  "source_snapshot": "references/sources/cinematic-2026-10-30/国漫电影感画风清单.html",
+  "source_title": "新海诚光",
+  "source_original_prompt_zh": "新海诚式光影，巨大积云占据三分之二画面，逆光穿透云层，强烈镜头光斑，青蓝天空与橙金夕照对撞，电线与玻璃反射细节，广角低机位，超高细节云层，2.39:1，电影感",
+  "source_original_prompt_en": "makoto shinkai lighting, towering cumulus filling two-thirds of frame, backlight piercing clouds, strong lens flare, cyan-blue sky against amber sunset, detailed power lines and glass reflections, wide-angle low camera, hyper-detailed clouds, 2.39:1, cinematic",
+  "source_negative_prompt_zh": "厚涂笔触，网点，黑白，低饱和，室内暗调，粗糙线条",
+  "visual_genes": {
+    "笔": "精细云层，高光颗粒，细节密度极高",
+    "光": "逆光/侧逆光，强镜头光斑，天空为光源",
+    "色": "青蓝 + 橙金 + 品红晚霞，高饱和但通透",
+    "质": "玻璃、水面、电线、金属栏杆的反射",
+    "镜": "广角低机位，云层压迫感，2.39:1 横向"
+  },
+  "palette": [
+    "#0E2340",
+    "#2C6E9B",
+    "#7EC8E3",
+    "#F2A65A",
+    "#E86A8A"
+  ],
+  "use_cases": [
+    "黄昏天台",
+    "雨过天晴",
+    "列车窗景"
+  ],
+  "tags": [
+    "日漫",
+    "光影",
+    "云",
+    "逆光",
+    "青春"
+  ],
+  "summary": "日本动画电影最被模仿的光影公式：天空占画面三分之二，逆光穿过云层，镜头光斑横穿画面，青蓝与橙金在同一个镜头里对撞。它把日常拍成了奇迹。",
+  "reference_coordinates": "参考坐标 · 你的名字 · 天气之子",
+  "sha256": null,
+  "image_size": null,
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页面未提供此画风样图；不得宣称已按图参考。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。",
+  "optional_effects_note": "巨大天空、低机位、强镜头光斑属于构图选择，不强制占画面三分之二。",
+  "license_note": "源页注明样图来自公开模型示例，版权归原作者，仅用于本地画风观察；未核实图片或模型商业许可。",
+  "tier": "mature_commercial",
+  "original_short_name": "新海诚光"
+}

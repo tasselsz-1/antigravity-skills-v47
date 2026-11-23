@@ -1,0 +1,33 @@
+{
+  "id": "H037",
+  "type": "hairstyle",
+  "group": "男性 · 古风束冠与史诗奇幻",
+  "gender": "男性",
+  "era": "历史/沙场武将",
+  "name": "武将铁箍高椎髻（配硬茬胡须）",
+  "en_name": "General Iron-Circlet War Topknot",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "厚实发丝全部紧束为结实高椎髻 + 暗铁箍/皮绳缠束 + 两侧干净贴合头盔",
+  "formula_slots_ref_only": {
+    "color": "硬挺炭黑 / 灰白夹杂",
+    "texture": "粗硬微乱带风沙质感",
+    "noun": "沙场武将铁箍高椎髻",
+    "motion": "额角有少许汗湿碎发贴附，粗犷实用可随时戴盔"
+  },
+  "prompt_en_ref_only": "tightly bound historical Chinese general high war topknot wrapped with dark iron circlet and leather cord, sweat-dampened stray hairs at temples",
+  "prompt_zh_ref_only": "全部粗硬发丝以皮绳铁箍紧束为结实高椎髻，额角残留几缕沙场汗湿碎丝，粗犷写实毫无偶像浮华",
+  "suggested_bones": [
+    "B004",
+    "B017",
+    "B019"
+  ],
+  "svg_file": "assets/hairs/H037.svg",
+  "svg_params": {
+    "shape": "ancient_m_general",
+    "accent": "#78350f",
+    "gender": "男性"
+  }
+}

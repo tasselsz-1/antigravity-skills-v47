@@ -1,0 +1,34 @@
+{
+  "id": "H036",
+  "type": "hairstyle",
+  "group": "男性 · 古风束冠与史诗奇幻",
+  "gender": "男性",
+  "era": "乱世/狂士/武将",
+  "name": "乱世布带半束披散发",
+  "en_name": "Wild Cloth-Headband Swept Long Hair",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "粗麻或暗色布带束额/半扎 + 凌乱厚重黑发狂放披散",
+  "formula_slots_ref_only": {
+    "color": "粗粝墨黑 / 沾尘灰黑",
+    "texture": "略显粗糙干爽凌乱发缕",
+    "noun": "乱世布带半束狂放长发",
+    "motion": "大股乱发随沙场狂风肆意翻卷，豪迈沧桑"
+  },
+  "prompt_en_ref_only": "wild partially tied long dark hair with worn cloth headband, rugged wind-swept tangled strands, battle-scarred wanderer",
+  "prompt_zh_ref_only": "以旧粗布带简单束额或半扎，厚重略乱的长发在沙场或山风中狂放翻卷，饱含乱世豪杰与狂士野气",
+  "suggested_bones": [
+    "B004",
+    "B015",
+    "B017",
+    "B019"
+  ],
+  "svg_file": "assets/hairs/H036.svg",
+  "svg_params": {
+    "shape": "ancient_m_wild",
+    "accent": "#b91c1c",
+    "gender": "男性"
+  }
+}

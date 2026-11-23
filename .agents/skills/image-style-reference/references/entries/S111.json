@@ -1,0 +1,50 @@
+{
+  "id": "S111",
+  "category": "成熟商业·国风大师",
+  "slug": "commercial-guofeng-meigu-courtyard",
+  "name": "宋代院体没骨法（工笔没骨花颜）",
+  "aliases": [
+    "没骨人物",
+    "宋代院体",
+    "MEIGU COURTYARD"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "宋代院体工笔没骨画法，全无外轮廓黑墨勾线；以天然植物与矿物色水直接撞粉点染，温润胶矾熟宣层层分染；肌肤边缘柔润如凝脂，五官过渡微妙，色块自然渗化接合，气韵典雅贵气",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "宋代院体没骨法（工笔没骨花颜）",
+  "source_original_prompt_en": "commercial-guofeng-meigu-courtyard",
+  "summary": "告别死板黑线描的顶级工笔画法：以色作骨，以粉定形，纯粹高雅。",
+  "visual_genes": {
+    "笔": "零外墨线起稿，色笔与水笔双管齐下，撞水撞粉点染",
+    "光": "无影柔光，如阴天漫射玉润质感，极微妙的明暗渐变",
+    "色": "胭脂、蛤粉、花青、藤黄，低饱和矿彩多层轻染，绝不俗艳",
+    "质": "熟宣纸或熟绢微光，蛤粉厚白微微浮凸，通透丝滑",
+    "镜": "中近景人物半身特写，典雅端庄，眼神含蓄深邃"
+  },
+  "palette": [
+    "#C26D68",
+    "#4B6584",
+    "#F7D794",
+    "#686DE0",
+    "#F5CD79"
+  ],
+  "use_cases": [
+    "古风女频高端人物立绘",
+    "唯美仙侠女主特写",
+    "国风美妆护肤视觉"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

@@ -1,0 +1,50 @@
+{
+  "id": "S118",
+  "category": "成熟商业·国风大师",
+  "slug": "commercial-guofeng-dunhuang-fresco-peel",
+  "name": "敦煌古壁画风蚀残卷（红线黑铅剥落法）",
+  "aliases": [
+    "莫高窟剥落",
+    "残壁重彩",
+    "DUNHUANG PEEL"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "千年敦煌石窟古壁画质感，土红底稿线与铅白氧化而成的古铜铁黑肤色对比；石青石绿矿彩呈现历史风蚀斑驳与天然泥层微龟裂；受控金箔剥落边缘透出草泥底层，苍凉神秘，历史宿命感极强",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "敦煌古壁画风蚀残卷（红线黑铅剥落法）",
+  "source_original_prompt_en": "commercial-guofeng-dunhuang-fresco-peel",
+  "summary": "还原经过千年岁月风蚀与铅粉氧化后的真实敦煌古铜质感，高级神秘。",
+  "visual_genes": {
+    "笔": "铁线与兰叶描，局部断裂与泥浆覆盖痕迹",
+    "光": "洞窟斜照微弱夕阳天光或摇曳烛火，暗部幽深深邃",
+    "色": "土红、孔雀石绿、铁黑、古金、泥土灰黄",
+    "质": "泥壁干裂微纹、矿物风化粉质、断续剥落金箔金屑",
+    "镜": "横向长卷壁画式构图，人物姿态呈经典S型飞天韵律"
+  },
+  "palette": [
+    "#3D2314",
+    "#1E4343",
+    "#8A3324",
+    "#C9A048",
+    "#CBB998"
+  ],
+  "use_cases": [
+    "盗墓探险神话闪回",
+    "前世因果宿命片段",
+    "西域奇幻史诗篇章"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

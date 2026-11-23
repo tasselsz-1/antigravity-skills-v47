@@ -1,0 +1,50 @@
+{
+  "id": "S135",
+  "category": "成熟商业·特色工艺",
+  "slug": "commercial-style-amano-ethereal-gold",
+  "name": "天野喜孝妖异金箔水彩（流线灵动与繁复金线）",
+  "aliases": [
+    "最终幻想原画",
+    "天野喜孝画风",
+    "AMANO ETHEREAL GOLD"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "天野喜孝经典奇幻美学；极细柔美且带微弱颤抖的灵动钢笔线，迷幻水彩与半透明色晕自然流动交融；人物眼尾修长妖冶，无数发丝与披带化作轻盈游丝，金色细碎花纹点缀其间，空灵超凡、如梦如幻",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "天野喜孝妖异金箔水彩（流线灵动与繁复金线）",
+  "source_original_prompt_en": "commercial-style-amano-ethereal-gold",
+  "summary": "将线条流动感与水彩迷幻感发挥到极致的妖异神作。",
+  "visual_genes": {
+    "笔": "极细且连绵不绝的羽毛笔线条，发丝如水草般蜿蜒流动",
+    "光": "来自梦境深处的朦胧漫射冷光，金箔与矿彩在暗处自发微光",
+    "色": "梦幻渐变色：孔雀蓝、淡薰衣草紫、玫瑰金、象牙白与古金",
+    "质": "水彩湿画水渍自然晕染痕迹、真金金屑点缀、通透轻纱",
+    "镜": "修长纵向构图，人物姿态轻盈如漂浮在虚空之中"
+  },
+  "palette": [
+    "#121B28",
+    "#2D4059",
+    "#706897",
+    "#D4AF37",
+    "#F3E9D2"
+  ],
+  "use_cases": [
+    "西方奇幻神祇降世",
+    "吸血鬼贵族物语",
+    "超凡脱俗的神话梦境"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

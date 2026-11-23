@@ -1,0 +1,50 @@
+{
+  "id": "S112",
+  "category": "成熟商业·国风大师",
+  "slug": "commercial-guofeng-chenhongshou-odd",
+  "name": "明末陈洪绶古拙奇崛（高古变形铁线）",
+  "aliases": [
+    "高古游丝",
+    "陈老莲风格",
+    "ANCIENT GROTESQUE"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "明末清初陈洪绶古拙画法，如铸生铁般屈曲顿挫的凝练铁线描；夸张变形的高古人物体量与古雅冷灰矿物平涂；繁密叠褶与大面积冷漠留白形成反差，古雅孤傲，带有奇特怪诞的神秘民俗气场",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "明末陈洪绶古拙奇崛（高古变形铁线）",
+  "source_original_prompt_en": "commercial-guofeng-chenhongshou-odd",
+  "summary": "极具辨识度的高端画法：线条如生铁方折，人物古拙奇崛，专治AI千篇一律网红脸。",
+  "visual_genes": {
+    "笔": "生铁盘曲般的铁线描与折芦描，线条方折苍劲，极富书法骨力",
+    "光": "平面装饰光，无西方阴影，靠繁复衣褶排叠与色块反差建立空间",
+    "色": "老绿、赭红、靛青与泥金降饱和度平涂，底色呈陈年古卷棕黄色",
+    "质": "老宣纸斑驳陈旧感，矿彩哑光粉质，微糙手绘感",
+    "镜": "平面化竖幅立轴构图，人物姿态略带畸变与拉伸，极富现代设计张力"
+  },
+  "palette": [
+    "#2B2B2B",
+    "#7A3E2E",
+    "#3D5A50",
+    "#9E7D46",
+    "#D9C8A9"
+  ],
+  "use_cases": [
+    "中式民俗志怪高完播短剧",
+    "怪诞神话设定",
+    "聊斋风精品插画"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

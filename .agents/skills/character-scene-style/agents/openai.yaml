@@ -1,0 +1,6 @@
+interface:
+  display_name: "角色与场景风格创作"
+  short_description: "复刻视频时创建或替换人物与场景，调整画风并处理分段边界和连续性"
+  default_prompt: "使用 $character-scene-style 复刻视频，按当前要求创建或替换人物与场景，并处理画风和分段边界。"
+policy:
+  allow_implicit_invocation: true

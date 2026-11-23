@@ -1,0 +1,21 @@
+{
+  "category": "手绘",
+  "slug": "watercolor-sketch",
+  "name": "水彩速写",
+  "style_prompt_zh": "松散断续墨线，半透明水彩薄染，桃色与粉蓝点缀，轮廓局部开放，明亮纸面留白，轻盈观察式笔触",
+  "reference_image": "assets/watercolor-sketch.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/watercolor-sketch.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/watercolor-sketch.webp",
+  "source_title": "水彩速写",
+  "source_original_prompt_zh": "将附带照片转换为绘制在明亮纹理纸上的轻盈水彩墨线旅行速写。使用松散断续的钢笔线、富有动感的发丝笔触、选择性的面部线条、未经着色的白色空隙，以及半透明的腮红桃色、粉蓝、珊瑚色和冷灰色罩染，让色彩晕出轮廓之外。将姿势和表情调整为即兴观察式速写。通过脸型、黑色长发和碎花连衣裙保持她的辨识度，但将包括脸部、眼睛和皮肤在内的整个人物，以松散墨线与透明水彩重绘；不得出现摄影质感皮肤或粘贴式写实脸。用稀疏笔触暗示老街、灯笼、植物和海面。输出竖版 2:3，不得出现手写字、文字、标志或水印。",
+  "source_negative_prompt_zh": "摄影质感脸部，粘贴式写实脸，不透明颜料全覆盖，严谨技术线稿，照片级写实渲染，饱和的完整背景，硬边赛璐珞明暗，统一线宽，浑浊水彩，手写字，文字，水印",
+  "sha256": "b87e4c0e82d6a70bb85554ea223413764925fb4a775683922542239e58e192d2",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S001"
+}

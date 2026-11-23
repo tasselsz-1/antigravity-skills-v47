@@ -1,0 +1,50 @@
+{
+  "id": "S134",
+  "category": "成熟商业·特色工艺",
+  "slug": "commercial-style-shinkawa-ink-mech",
+  "name": "新川洋司毛笔水墨机甲（狂草飞白与战术结构）",
+  "aliases": [
+    "合金装备",
+    "新川洋司画风",
+    "SHINKAWA MECH INK"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "新川洋司大师级水墨机甲艺术，粗犷狂放的毛笔枯笔飞白勾勒高科技外骨骼装甲；水墨擦染出的精密灰阶阴影与透视铅笔草稿线共存；沉稳灰调中仅有一抹鲜明的战术警示红点缀，兼具东方泼墨写意与现代机械力量",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "新川洋司毛笔水墨机甲（狂草飞白与战术结构）",
+  "source_original_prompt_en": "commercial-style-shinkawa-ink-mech",
+  "summary": "东方毛笔与西方重装机械的终极结合，概念设计行业的天花板。",
+  "visual_genes": {
+    "笔": "狂草毛笔重按轻提，飞白断线遍布，伴随精密机械透视线",
+    "光": "概念设计散光，局部强受光点亮机械反光面",
+    "色": "炭黑墨色、水泥灰、钛白灰调，唯一的点睛战术警告红或警示橙",
+    "质": "宣纸生涩吸墨纹理、铅笔石墨光泽、机械磨砂涂层",
+    "镜": "富有进攻性的人体工程学机位，身体前倾动势极强"
+  },
+  "palette": [
+    "#0F0F12",
+    "#2B2B30",
+    "#595963",
+    "#A8A8B3",
+    "#D63031"
+  ],
+  "use_cases": [
+    "战术特工潜入",
+    "赛博机甲装甲对决",
+    "硬核男频科幻封面"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

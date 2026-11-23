@@ -1,0 +1,63 @@
+{
+  "id": "S061",
+  "category": "成熟商业·国漫与实验视觉",
+  "slug": "cinematic-deepsea",
+  "name": "深海粒子流体水墨（生物荧光内发光与丝状粒子涡旋运笔法）",
+  "aliases": [
+    "粒子水墨",
+    "银幕画风志01",
+    "PARTICLE INK"
+  ],
+  "style_prompt_zh": "深海粒子流体水墨画法，亿万发光微粒沿毛笔笔势汇聚成丝状水墨涡旋，边缘开放不闭合；形体内部生物荧光自发光（无外部生硬主光），深邃钴蓝与群青基底上碰撞荧光青绿与琥珀金点睛；流体涡旋、通透玻璃气泡与轻盈体积雾交织，保持主体结构清晰与宽银幕深焦纵深",
+  "reference_image": "assets/cinematic/S061-deepsea.jpg",
+  "source_page": "http://127.0.0.1:8766/国漫电影感画风清单.html",
+  "source_snapshot": "references/sources/cinematic-2026-10-30/国漫电影感画风清单.html",
+  "source_title": "粒子水墨",
+  "source_original_prompt_zh": "深海梦境，亿万发光粒子汇聚成水墨漩涡，生物荧光自发光，钴蓝与荧光青对撞，琥珀金点缀，体积雾，粒子水墨质感，2.39:1 宽银幕，深焦，轻微色散，电影感，无外部主光",
+  "source_original_prompt_en": "deep sea dreamscape, billions of luminous particles forming an ink-wash vortex, bioluminescent self-illumination, cobalt blue vs fluorescent teal, amber gold accents, volumetric haze, particle ink painting, anamorphic 2.39:1, deep focus, slight chromatic aberration, cinematic",
+  "source_negative_prompt_zh": "实拍照片，硬边高光，平涂色块，日光，塑料质感，过度锐化",
+  "visual_genes": {
+    "笔": "散点笔触，墨带被拆成丝状粒子流，边缘不闭合",
+    "光": "生物荧光自发光，光源藏在形体内部，无方向性主光",
+    "色": "钴蓝与群青为底，荧光青绿、琥珀金、绯红对撞",
+    "质": "流体涡旋、玻璃气泡、绒状微粒，画面始终在缓慢流动",
+    "镜": "广角贴近，深焦，轻微色散与光晕，2.39:1 满画幅"
+  },
+  "palette": [
+    "#061423",
+    "#123B5E",
+    "#2E8FA8",
+    "#69E3D8",
+    "#F0A94C"
+  ],
+  "use_cases": [
+    "深海梦境",
+    "记忆闪回",
+    "情绪核爆"
+  ],
+  "tags": [
+    "粒子",
+    "水墨",
+    "自发光",
+    "流体",
+    "梦境"
+  ],
+  "summary": "传统水墨在这里被彻底粒子化：每一笔墨都由悬浮的发光微粒构成，色彩在深海里失去重力。它不靠外部打光，而是让画面内部发光，因此适合表现记忆、梦境与情绪的临界状态。",
+  "reference_coordinates": "参考坐标 · 深海 · 2023",
+  "sha256": "70360a51e12de2b9ce65481472bd6610dce08c65ed535c96e206f1e218be1b57",
+  "image_size": [
+    760,
+    950
+  ],
+  "visual_review": "已查看8图总览：未见明显水印、签名或平台标识；实际调用前需看单张原图并复核。",
+  "reference_limitations": "样图是海底环境光色参考，未体现粒子水墨笔触；不能据图证明粒子效果。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。",
+  "optional_effects_note": "粒子是必要媒介效果，按笔势组织，不等于全图随机噪声；色散默认关闭。",
+  "license_note": "源页注明样图来自公开模型示例，版权归原作者，仅用于本地画风观察；未核实图片或模型商业许可。",
+  "source_image_page": "https://civitai.com/models/2514537",
+  "source_sample_prompt_zh": "一张电影静帧：深海梦境，一个人悬浮着仰望，亿万发光粒子汇聚成水墨漩涡，墨带被拆成丝状的粒子流。光源来自画面内部，像生物荧光一样自发光，没有外部打光。钴蓝与荧光青对撞，琥珀金点缀，体积雾、玻璃气泡的质感。2.39:1 宽银幕，广角贴近，深焦，轻微色散和光晕。",
+  "source_sample_caption": "氛围参考：深海 + 荧光，不是原作截帧",
+  "tier": "mature_commercial",
+  "original_short_name": "粒子水墨"
+}

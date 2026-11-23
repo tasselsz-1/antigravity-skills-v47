@@ -1,0 +1,2987 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>商业画风与画法全集 · 工业级分层库</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0d1117;color:#e6edf3;font:15px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+header,main{max-width:1600px;margin:auto;padding:24px 28px}
+h1{font-size:32px;margin:0 0 10px;color:#58a6ff;display:flex;align-items:center;gap:12px}
+.badge-gold{font-size:12px;background:#d29922;color:#121212;padding:4px 10px;border-radius:20px;font-weight:bold}
+header p{max-width:1180px;color:#8b949e;margin:6px 0 16px}
+.filter-bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:18px 0;background:#161b22;padding:16px;border-radius:12px;border:1px solid #30363d}
+input,select,button{font:inherit;padding:8px 14px;border:1px solid #30363d;border-radius:8px;background:#21262d;color:#c9d1d9}
+input{width:320px}
+input:focus,select:focus{outline:none;border-color:#58a6ff}
+#grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(370px,1fr));gap:20px}
+article{overflow:hidden;border:1px solid #30363d;border-radius:12px;background:#161b22;display:flex;flex-direction:column;transition:transform .15s,border-color .15s}
+article:hover{border-color:#58a6ff;transform:translateY(-2px)}
+article.mature{border-color:#388bfd;box-shadow:0 0 12px rgba(56,139,253,.15)}
+.mature-tag{background:#1f6feb;color:#fff;font-size:11px;font-weight:600;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:8px}
+.promoted-tag{background:#8957e5;color:#fff;font-size:11px;font-weight:600;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:8px;margin-left:6px}
+.ref-tag{background:#30363d;color:#8b949e;font-size:11px;padding:2px 8px;border-radius:6px;display:inline-block;margin-bottom:8px}
+.body{padding:18px;display:flex;flex-direction:column;flex:1}
+h2{font-size:18px;margin:4px 0 8px;color:#f0f6fc;line-height:1.35}
+.old-name{font-size:12px;color:#d29922;font-weight:normal;display:block;margin-top:2px}
+.category{color:#8b949e;font-size:12px;font-family:ui-monospace,monospace}
+.prompt{font-size:13px;color:#c9d1d9;background:#0d1117;padding:12px;border-radius:8px;border:1px solid #21262d;margin:10px 0;flex:1;line-height:1.55}
+.genes{font-size:12px;color:#7ee787;background:rgba(35,134,54,.1);border:1px solid rgba(46,160,67,.3);padding:10px;border-radius:8px;margin:8px 0}
+.genes div{margin:3px 0}
+.palette{display:flex;gap:6px;margin:8px 0}
+.color-dot{width:18px;height:18px;border-radius:50%;border:1px solid #30363d}
+button.copy{cursor:pointer;background:#238636;color:white;border:none;padding:8px 12px;border-radius:6px;font-weight:500;margin-top:auto}
+button.copy:hover{background:#2ea043}
+details{margin-top:10px;font-size:12px;color:#8b949e}
+summary{cursor:pointer;color:#58a6ff;padding:4px 0}
+.summary-text{color:#8b949e;font-size:12px;margin:4px 0 8px}
+[hidden]{display:none!important}
+.tab-btn{cursor:pointer;padding:6px 14px;border-radius:20px;border:1px solid #30363d;background:#21262d;color:#8b949e}
+.tab-btn.active{background:#1f6feb;color:#fff;border-color:#58a6ff}
+</style>
+</head>
+<body>
+<header>
+  <h1>商业画风与画法全集 <span class="badge-gold">工业级五维画法库</span></h1>
+  <p><strong>两层分层架构</strong>：第一梯队为<strong>【🌟 成熟商业化风格库（共 77 套：含 S083-A、从旧库提拔重命名的 40 套精品、以及新扩充的 S109–S144 36 套大师画法）】</strong>，全部具备完整「笔·光·色·质·镜」五维工序；第二梯队为<strong>【📖 一般参考库（68 套，仅供参考）】</strong>。</p>
+  <div class="filter-bar">
+    <button class="tab-btn active" id="tab-mature">🌟 仅看成熟商业风格 (77)</button>
+    <button class="tab-btn" id="tab-all">全部 (145)</button>
+    <button class="tab-btn" id="tab-ref">📖 一般参考 (68)</button>
+    <input id="search" placeholder="搜索编号、新旧画风名、画法工序关键字..."/>
+    <select id="category">
+      <option value="">全部分类</option>
+      <option value="三维">三维</option>
+      <option value="传统">传统</option>
+      <option value="动漫">动漫</option>
+      <option value="商业画风·写实">商业画风·写实</option>
+      <option value="商业画风·国漫">商业画风·国漫</option>
+      <option value="商业画风·日式动画">商业画风·日式动画</option>
+      <option value="商业画风·欧美">商业画风·欧美</option>
+      <option value="商业画风·特殊媒介">商业画风·特殊媒介</option>
+      <option value="成熟商业·写实与短剧">成熟商业·写实与短剧</option>
+      <option value="成熟商业·国漫与实验视觉">成熟商业·国漫与实验视觉</option>
+      <option value="成熟商业·国漫特调">成熟商业·国漫特调</option>
+      <option value="成熟商业·国风大师">成熟商业·国风大师</option>
+      <option value="成熟商业·日漫与二游">成熟商业·日漫与二游</option>
+      <option value="成熟商业·欧美与跨文化">成熟商业·欧美与跨文化</option>
+      <option value="成熟商业·特色工艺">成熟商业·特色工艺</option>
+      <option value="成熟商业·电影大师">成熟商业·电影大师</option>
+      <option value="成熟商业·韩漫主力">成熟商业·韩漫主力</option>
+      <option value="手工">手工</option>
+      <option value="手绘">手绘</option>
+      <option value="摄影">摄影</option>
+      <option value="电影">电影</option>
+      <option value="绘画">绘画</option>
+    </select>
+    <span id="count" style="color:#58a6ff;font-weight:600;margin-left:auto"></span>
+  </div>
+</header>
+<main>
+  <div id="grid">
+    <article class="mature" data-category="成熟商业·国漫特调" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S083-A · 成熟商业·国漫特调</small>
+        <h2>柔光唯美三维国漫（无描线冷暗面与铜杏透光法）</h2>
+        <div class="summary-text">用户特调已确认标杆：冷灰紫通透暗面＋铜杏透光＋眼睑微结构，无描线软渐变塑形。</div>
+        <p class="prompt">唯美半写实三维国漫CG，以动漫化五官比例、连续柔和的三维明暗和克制的材质细节塑形，无外轮廓描线。保留细腻眼睑厚度与湿润眼球反射，骨相柔和；重点清晰度集中于眼神，大面积低照度冷灰紫面部暗面，极弱正面补光，局部铜杏暖侧逆光；深茶棕底色透出香槟铜杏光，顺发束弯折处保留稀疏短亮弧点状反射，暗部通透洁净。</p>
+        <div class="genes">
+          <div><strong>笔/形:</strong> 动漫化骨相，无描线，发缘及背景有虚实过渡</div>
+          <div><strong>光/色:</strong> 低照度冷灰紫面部暗面 + 局部铜杏暖侧逆光</div>
+          <div><strong>质/镜:</strong> 湿润眼球，主次发束透光，眼神情绪为核心</div>
+        </div>
+        <button class="copy">复制画风提示词</button>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国风大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S043 · 成熟商业·国风大师</small>
+        <h2>景德镇青花瓷釉下彩（苏麻离青钴料分水皴染与高光白瓷冰裂纹法）<span class="old-name">原名：青花瓷</span></h2>
+        <div class="summary-text">天青色等烟雨的极致物理还原：釉下苏麻离青分水晕染 + 釉面玻璃高光。</div>
+        <p class="prompt">明代永宣景德镇官窑青花瓷（釉下彩）工艺；在温润如玉、带细微开片冰裂纹的高光透明白瓷胎釉下，以进口苏麻离青钴料运笔勾勒并施“分水法”（浓淡五色青花层染）；浓重处呈现天然铁锈结晶黑斑，受光处白瓷釉面反射清冷锐利的高光，蓝白二色极尽典雅华贵</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 中锋圆润勾线配合陶瓷特有的“分水”蓄水晕染笔法，浓淡色阶边界如水波凝结</div>
+              <div><strong>光/影:</strong> 陶瓷高光釉面特有的锐利镜面反射光斑，与釉下深邃钴蓝形成通透纵深</div>
+              <div><strong>色/质:</strong> 纯粹蓝白双色体系：甜白釉底、宝石钴蓝、浅天青与苏麻离青铁锈黑结晶斑 | 高温烧制透明玻璃质白瓷釉面、极细微冰裂开片纹、釉下钴料微凹沉降感</div>
+              <div><strong>镜头:</strong> 器物弧面微距或将山水人物化入青花瓷韵的国风唯美构图</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0A1E46"></div><div class="color-dot" style="background:#1D4E89"></div><div class="color-dot" style="background:#5C88C4"></div><div class="color-dot" style="background:#A9C6E2"></div><div class="color-dot" style="background:#F5F7FA"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：顶级国风音乐/品牌视觉, 江南烟雨唯美转场, 东方高定瓷器美学短片</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国风大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S063 · 成熟商业·国风大师</small>
+        <h2>盛唐古画绢本重彩（细匀铁线勾边与朱砂石青无影层染法）<span class="old-name">原名：绢本重彩</span></h2>
+        <div class="summary-text">把院体画的材料感搬上银幕：朱砂、石青、石绿、蛤白层层罩染，色块之间靠细匀的墨线分隔。它几乎没有戏剧性打光，靠色彩本身的明度与饱和度叙事，适合宏大、克制、带时间感的题材。</div>
+        <p class="prompt">古典绢本设色重彩画法，细匀铁线描勾勒形体轮廓，天然矿物颜料（朱砂、石青、石绿、蛤白、赭石）分染与统染层层罩叠；采用无强烈投影的漫射柔光，完全依靠色块明度差与局部泥金勾边建立空间层次，底纹保留细腻有序的熟绢经纬肌理与呼吸留白</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 平涂色块，边缘轻微渗化，勾线细而匀</div>
+              <div><strong>光/影:</strong> 无明确光源，均匀柔光，由色块明度塑造体积</div>
+              <div><strong>色/质:</strong> 朱砂、石青、石绿、蛤白、赭石，低饱和高质感 | 绢丝经纬、矿物颗粒、金箔勾边、轻微做旧</div>
+              <div><strong>镜头:</strong> 平面化构图，大量留白，横向长卷式运镜</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#2E2A24"></div><div class="color-dot" style="background:#8C3B2E"></div><div class="color-dot" style="background:#C8A25A"></div><div class="color-dot" style="background:#3E6B63"></div><div class="color-dot" style="background:#E8DCC3"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：山河长卷, 宫廷夜宴, 离别空镜</p>
+          <p>说明：仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国风大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S064 · 成熟商业·国风大师</small>
+        <h2>武侠狂草写意水墨（生宣泼墨枯笔飞白与一点朱砂破黑法）<span class="old-name">原名：写意水墨</span></h2>
+        <div class="summary-text">用最少的墨表达最快的动作：泼墨、飞白、枯笔，笔断意连。黑白之间只留一点朱砂，动静全靠运镜与留白对撞。它天生适合武打，因为没画完的地方正好留给观众想象。</div>
+        <p class="prompt">东方武侠狂草写意水墨画法，高速运笔的泼墨、枯笔飞白与断续劲线相结合，笔断意连；墨分五色（焦、浓、重、淡、清）在生宣纸上自然渗化出水痕与干湿浓淡对比，大面积洁净留白计白当黑，全场仅用一处高饱和朱砂红点睛破开黑白死局</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 泼墨、飞白、枯笔，速度感强，笔断意连</div>
+              <div><strong>光/影:</strong> 高对比黑白，局部朱红点睛，几乎不用灰</div>
+              <div><strong>色/质:</strong> 墨分五色，宣纸白为底，朱砂为唯一彩色 | 生宣渗化、水痕、纸纤维，墨色有干湿浓淡</div>
+              <div><strong>镜头:</strong> 运动镜头与残影，冲撞式构图，大面积留白</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#111111"></div><div class="color-dot" style="background:#3A3A3A"></div><div class="color-dot" style="background:#7A7A7A"></div><div class="color-dot" style="background:#E9E4D8"></div><div class="color-dot" style="background:#B33A2B"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：竹林对决, 雨夜追殺, 山水空镜</p>
+          <p>说明：仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国风大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S067 · 成熟商业·国风大师</small>
+        <h2>盛唐敦煌飞天岩彩（土红石绿矿物平涂与流线飘带装饰构图法）<span class="old-name">原名：敦煌岩彩</span></h2>
+        <div class="summary-text">土红、石青、石绿、金箔，加上壁面龟裂与剥落。它的电影感不来自镜头，而来自时间的痕迹——好像画面本身已经存在了一千年。适合神话、寓言与轮回题材。</div>
+        <p class="prompt">敦煌壁画重彩岩彩画法，以流畅婉转的兰叶描与吴带当风的飘带曲线组织画面节奏；土红、石青、石绿与赭石矿物颜料厚重平涂，依靠局部金箔反光提亮平面装饰空间；保留有序细腻的天然矿石晶体颗粒感，色调温暖沉稳</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 壁画平涂，色块边缘有剥落与晕染</div>
+              <div><strong>光/影:</strong> 平面装饰光，靠金箔反光提亮</div>
+              <div><strong>色/质:</strong> 土红、石青、石绿、金、赭，暖而沉 | 壁面龟裂、金箔、矿物颗粒、烟熏痕</div>
+              <div><strong>镜头:</strong> 横向叙事，装饰性构图，飘带引导视线</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#3B1F14"></div><div class="color-dot" style="background:#9C3B24"></div><div class="color-dot" style="background:#C97B3C"></div><div class="color-dot" style="background:#2F6B6B"></div><div class="color-dot" style="background:#D9B45B"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：飞天降临, 本生故事, 洞窟烛光</p>
+          <p>说明：仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国风大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S068 · 成熟商业·国风大师</small>
+        <h2>上美影传统剪纸皮影（镂空刀刻锐利剪影与驴皮暖黄影窗背光法）<span class="old-name">原名：剪纸皮影</span></h2>
+        <div class="summary-text">镂空剪影加背光透射，是中国人自己的定格电影。正红与墨黑在米黄纸面上咬合，边缘锐利到能割手。它天然带舞台感，适合民俗、寓言与黑色幽默。</div>
+        <p class="prompt">中国传统剪纸皮影动画工艺，刀刻般锐利连续的镂空剪影轮廓与关节分件结构；采用影窗式暖黄强背光透射照明，半透明染色皮料与宣纸纤维透出温润暖光；严格限定正红、墨黑、米黄三色封闭系统，通过前后景多层纸片叠压建立舞台纵深</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 镂空剪影，边缘锐利，线条连续不断</div>
+              <div><strong>光/影:</strong> 背光透射，影窗式打光，纸面透出暖黄</div>
+              <div><strong>色/质:</strong> 正红、墨黑、米黄，三色封闭系统 | 宣纸纤维、驴皮透光、刀刻毛边</div>
+              <div><strong>镜头:</strong> 舞台化正面构图，层叠景深，横向移动</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#1A1210"></div><div class="color-dot" style="background:#8C1C13"></div><div class="color-dot" style="background:#C8342A"></div><div class="color-dot" style="background:#E8D3A9"></div><div class="color-dot" style="background:#D9A441"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：灯下影戏, 民俗年节, 寓言开场</p>
+          <p>说明：仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国风大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S109 · 成熟商业·国风大师</small>
+        <h2>北宋青绿重彩（千里江山法）</h2>
+        <div class="summary-text">真正脱离廉价网游感的国画大宗师级技法：勾斫皴染俱全，以天然石青石绿矿物厚涂与泥金复勾为核心。</div>
+        <p class="prompt">北宋院体青绿重彩，绢本赭石温底，工整铁线勾勒形体并施小斧劈皴；石青与石绿矿物颜料多层厚罩，山石脊线与衣褶受光处以细泥金复勾；矿物哑光微粒质感与沉稳冷青辉映，气韵高古磅礴，空间层次开阔</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 工整铁线描骨架，山石辅以紧密小斧劈皴，脊线泥金复勾</div>
+              <div><strong>光/影:</strong> 无明显强直射光，绢本散光漫射，靠矿物纯度与泥金反光提亮</div>
+              <div><strong>色/质:</strong> 深赭石温润绢底，群青、孔雀石绿厚重覆盖，局部点缀朱砂与金线 | 天然矿物细研颗粒感，熟绢紧密织纹，金属泥金微光，无现代高光</div>
+              <div><strong>镜头:</strong> 大全景散点透视或高古平远长卷，气势开阔雄浑</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#1B3B48"></div><div class="color-dot" style="background:#2D6A4F"></div><div class="color-dot" style="background:#B38B3F"></div><div class="color-dot" style="background:#8C3B24"></div><div class="color-dot" style="background:#D2B48C"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：仙侠大剧宏大场景, 史诗权谋朝堂开篇, 高端国潮品牌视觉</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国风大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S110 · 成熟商业·国风大师</small>
+        <h2>南宋马夏边角留白（寒江独钓法）</h2>
+        <div class="summary-text">中国极简美学巅峰：用大斧劈的刚硬切面与大面积虚空留白制造极致张力。</div>
+        <p class="prompt">南宋水墨写意，侧锋大斧劈皴刮擦出坚硬岩石与苍劲树木切面；大面积生宣水墨湿晕与极度克制的淡墨留白，人物采用折芦描简练概括；计白当黑，黑白灰三阶分明，冷寂肃穆的东方武侠意境</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 侧锋卧笔大斧劈皴，坚决凌厉的拖泥带水皴，人物衣褶折芦描</div>
+              <div><strong>光/影:</strong> 高冷漫射逆光，水气烟岚吞没远景，光影与雾气自然融为一体</div>
+              <div><strong>色/质:</strong> 纯墨分五色，焦墨定骨，浓墨破块，大片极淡灰与宣纸原白 | 粗纤维宣纸吸水渗化，枯墨飞白干擦，浓墨结晶漆亮</div>
+              <div><strong>镜头:</strong> 边角构图，主体偏居一隅，三分之二以上留白为虚空烟波</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0D0D0D"></div><div class="color-dot" style="background:#363636"></div><div class="color-dot" style="background:#8A8A8A"></div><div class="color-dot" style="background:#E3DEC3"></div><div class="color-dot" style="background:#4A3B32"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：顶尖剑客对决, 孤胆复仇江湖短剧, 道家禅意顿悟转场</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国风大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S111 · 成熟商业·国风大师</small>
+        <h2>宋代院体没骨法（工笔没骨花颜）</h2>
+        <div class="summary-text">告别死板黑线描的顶级工笔画法：以色作骨，以粉定形，纯粹高雅。</div>
+        <p class="prompt">宋代院体工笔没骨画法，全无外轮廓黑墨勾线；以天然植物与矿物色水直接撞粉点染，温润胶矾熟宣层层分染；肌肤边缘柔润如凝脂，五官过渡微妙，色块自然渗化接合，气韵典雅贵气</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 零外墨线起稿，色笔与水笔双管齐下，撞水撞粉点染</div>
+              <div><strong>光/影:</strong> 无影柔光，如阴天漫射玉润质感，极微妙的明暗渐变</div>
+              <div><strong>色/质:</strong> 胭脂、蛤粉、花青、藤黄，低饱和矿彩多层轻染，绝不俗艳 | 熟宣纸或熟绢微光，蛤粉厚白微微浮凸，通透丝滑</div>
+              <div><strong>镜头:</strong> 中近景人物半身特写，典雅端庄，眼神含蓄深邃</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#C26D68"></div><div class="color-dot" style="background:#4B6584"></div><div class="color-dot" style="background:#F7D794"></div><div class="color-dot" style="background:#686DE0"></div><div class="color-dot" style="background:#F5CD79"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：古风女频高端人物立绘, 唯美仙侠女主特写, 国风美妆护肤视觉</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国风大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S112 · 成熟商业·国风大师</small>
+        <h2>明末陈洪绶古拙奇崛（高古变形铁线）</h2>
+        <div class="summary-text">极具辨识度的高端画法：线条如生铁方折，人物古拙奇崛，专治AI千篇一律网红脸。</div>
+        <p class="prompt">明末清初陈洪绶古拙画法，如铸生铁般屈曲顿挫的凝练铁线描；夸张变形的高古人物体量与古雅冷灰矿物平涂；繁密叠褶与大面积冷漠留白形成反差，古雅孤傲，带有奇特怪诞的神秘民俗气场</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 生铁盘曲般的铁线描与折芦描，线条方折苍劲，极富书法骨力</div>
+              <div><strong>光/影:</strong> 平面装饰光，无西方阴影，靠繁复衣褶排叠与色块反差建立空间</div>
+              <div><strong>色/质:</strong> 老绿、赭红、靛青与泥金降饱和度平涂，底色呈陈年古卷棕黄色 | 老宣纸斑驳陈旧感，矿彩哑光粉质，微糙手绘感</div>
+              <div><strong>镜头:</strong> 平面化竖幅立轴构图，人物姿态略带畸变与拉伸，极富现代设计张力</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#2B2B2B"></div><div class="color-dot" style="background:#7A3E2E"></div><div class="color-dot" style="background:#3D5A50"></div><div class="color-dot" style="background:#9E7D46"></div><div class="color-dot" style="background:#D9C8A9"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：中式民俗志怪高完播短剧, 怪诞神话设定, 聊斋风精品插画</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国风大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S113 · 成熟商业·国风大师</small>
+        <h2>清宫郎世宁海西体（中西合璧宫廷画）</h2>
+        <div class="summary-text">用中国毛笔画西方体积与高光，兼具油画写实与国画雅致。</div>
+        <p class="prompt">清代宫廷海西体画法，中国工笔游丝细勾与欧洲焦点透视及柔和明暗融合；无强烈黑投影的漫射柔光立体塑形，丝绸光泽、金属器皿与毛皮羽毛刻画极致逼真细腻，设色典雅华丽，富丽堂皇</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 极精细狼毫中锋匀线勾勒轮廓，丝毛法一丝不苟排列绒毛</div>
+              <div><strong>光/影:</strong> 宫廷无影柔光，受光面微微高亮，背光面通透不黑死</div>
+              <div><strong>色/质:</strong> 明丽饱满的宫廷设色：石青、朱砂、明黄与西洋群青共用 | 丝绸真丝各向异性流光，冷兵器青铜金银锃亮，白玉凝脂</div>
+              <div><strong>镜头:</strong> 严谨的透视深度与对称式宫廷严正构图，场面富贵庄严</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#D4AF37"></div><div class="color-dot" style="background:#800020"></div><div class="color-dot" style="background:#1C39BB"></div><div class="color-dot" style="background:#004B49"></div><div class="color-dot" style="background:#FAF0E6"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：明清宫廷争霸短剧, 帝王将相器物特写, 历史传记影视海报</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国风大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S114 · 成熟商业·国风大师</small>
+        <h2>大漆螺钿描金（黑漆嵌螺钿工艺）</h2>
+        <div class="summary-text">顶级奢华的非遗物理媒介：深渊黑漆与斑斓贝壳虹光对撞，视觉质感直接拉满。</div>
+        <p class="prompt">非遗大漆螺钿美学，纯正深邃的温润推光黑漆基底；彩贝螺钿切片镶嵌出虹彩折射反光，纯金粉由密到疏的莳绘晕金线条；黑金冷翠交相辉映，漆膜肥厚透亮，神秘暗黑而极尽奢华</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 莳绘细笔蘸生漆沥金线，螺钿几何切片拼嵌硬边</div>
+              <div><strong>光/影:</strong> 暗夜微光下的多角度虹彩偏振反射，金属反光柔和内敛</div>
+              <div><strong>色/质:</strong> 深不可测的纯黑（推光漆黑）为主，金色莳绘、螺钿虹彩绿与紫红 | 厚重镜面植物天然大漆质感，贝壳断纹天然虹彩，金粉颗粒</div>
+              <div><strong>镜头:</strong> 微距金属高光特写或低角度暗黑庄严构图</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#080808"></div><div class="color-dot" style="background:#D4AF37"></div><div class="color-dot" style="background:#20B2AA"></div><div class="color-dot" style="background:#BA55D3"></div><div class="color-dot" style="background:#8B0000"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：黑神话级神魔大片, 上古魔神降世, 高奢国风商业海报与片头</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国风大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S115 · 成熟商业·国风大师</small>
+        <h2>道释水陆画（沥粉贴金立线法）</h2>
+        <div class="summary-text">以立体凸起金线为骨架的宗教重彩神作，视觉信息量极度密集强悍。</div>
+        <p class="prompt">古代寺观水陆道场壁画，纯墨底搭配沥粉工艺立起微凸三维金线；朱砂、石青、雄黄等高饱和宗教矿物色重彩叠压，火焰腾空与云水纹繁复咬合无空隙；神圣庄严中透出神秘压迫感</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 沥粉袋挤出立体弧形线条，再行贴金，衣冠器杖繁密满幅</div>
+              <div><strong>光/影:</strong> 烛光昏黄映照下的立体金线反光，矿彩哑光吃光</div>
+              <div><strong>色/质:</strong> 朱红、石青、藤黄、玄黑，原色高饱和强烈对撞 | 浮雕凸起金泥线条，粗粝石灰麻刀底壁，矿物粉本厚浆</div>
+              <div><strong>镜头:</strong> 满幅无死角多层次大场面构图，神佛威严俯瞰</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#8B0000"></div><div class="color-dot" style="background:#1C39BB"></div><div class="color-dot" style="background:#E5A93C"></div><div class="color-dot" style="background:#1B4D3E"></div><div class="color-dot" style="background:#101010"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：仙神鬼怪大战, 道家符咒阵法降临, 中式克苏鲁怪谈短剧</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国风大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S116 · 成熟商业·国风大师</small>
+        <h2>徽派版画双色套印（饾版拱花法）</h2>
+        <div class="summary-text">只用黑红二色与纸张浮雕暗纹，就能做到极度洗练且过目难忘。</div>
+        <p class="prompt">明清徽派木刻版画，刀劈斧刻的刚劲木纹线条与大块白宣留白；纯松烟黑墨与朱砂红双色分版套印，无色处依靠雕版施压形成凹凸拱花浮雕暗纹；极度洗练有力，极高审美格调</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 阳刻与阴刻刻刀线条，木纹坚挺断续，转折如折铁</div>
+              <div><strong>光/影:</strong> 侧光凸显纸张无色拱花浮雕压痕，纯粹黑红对比</div>
+              <div><strong>色/质:</strong> 绝对双色系统：深黑松烟墨、正红朱砂印泥、手工桑皮纸素白 | 手工木版凹凸压痕、木质纤维肌理、吸水油墨微渗</div>
+              <div><strong>镜头:</strong> 经典版画分格或横联构图，线面节奏清爽利落</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#121212"></div><div class="color-dot" style="background:#B22222"></div><div class="color-dot" style="background:#F7F1E1"></div><div class="color-dot" style="background:#4A4A4A"></div><div class="color-dot" style="background:#8B2500"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：古风悬赏令/通缉令, 江湖传闻说书人转场, 武功秘籍与历史短剧片头</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国风大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S117 · 成熟商业·国风大师</small>
+        <h2>新国风水墨漫剧（毛笔压感与水痕边）</h2>
+        <div class="summary-text">目前短剧/动态漫市场最赚钱、量产效率最高的新国风商业画法。</div>
+        <p class="prompt">成熟新国风商业漫剧，书法压感毛笔勾勒人物面容与动势轮廓；清爽赛璐珞二分明暗打底，阴影边缘带有水彩扩散水痕硬边；发丝与衣摆带行草飞白，色彩通透现代，结构精准利落</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 压感数位毛笔线，起笔藏锋收笔出锋，兼具动势与精准形体</div>
+              <div><strong>光/影:</strong> 现代商业漫剧二分光，局部点缀半透明环境色冷暖反弹</div>
+              <div><strong>色/质:</strong> 黛青、朱红、茶白配现代高透亮冷暖色，暗部通透不脏 | 数字矢量平滑与水墨边缘水痕结合，兼顾高清与手绘手感</div>
+              <div><strong>镜头:</strong> 9:16竖屏电影级景别切换，仰拍斜角透视，冲击力强</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#1A252C"></div><div class="color-dot" style="background:#C0392B"></div><div class="color-dot" style="background:#2980B9"></div><div class="color-dot" style="background:#ECF0F1"></div><div class="color-dot" style="background:#D4AC0D"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：爆款修仙漫剧/短剧, 男频玄幻系统流, 都市异能国风战斗</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国风大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S118 · 成熟商业·国风大师</small>
+        <h2>敦煌古壁画风蚀残卷（红线黑铅剥落法）</h2>
+        <div class="summary-text">还原经过千年岁月风蚀与铅粉氧化后的真实敦煌古铜质感，高级神秘。</div>
+        <p class="prompt">千年敦煌石窟古壁画质感，土红底稿线与铅白氧化而成的古铜铁黑肤色对比；石青石绿矿彩呈现历史风蚀斑驳与天然泥层微龟裂；受控金箔剥落边缘透出草泥底层，苍凉神秘，历史宿命感极强</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 铁线与兰叶描，局部断裂与泥浆覆盖痕迹</div>
+              <div><strong>光/影:</strong> 洞窟斜照微弱夕阳天光或摇曳烛火，暗部幽深深邃</div>
+              <div><strong>色/质:</strong> 土红、孔雀石绿、铁黑、古金、泥土灰黄 | 泥壁干裂微纹、矿物风化粉质、断续剥落金箔金屑</div>
+              <div><strong>镜头:</strong> 横向长卷壁画式构图，人物姿态呈经典S型飞天韵律</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#3D2314"></div><div class="color-dot" style="background:#1E4343"></div><div class="color-dot" style="background:#8A3324"></div><div class="color-dot" style="background:#C9A048"></div><div class="color-dot" style="background:#CBB998"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：盗墓探险神话闪回, 前世因果宿命片段, 西域奇幻史诗篇章</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国风大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S119 · 成熟商业·国风大师</small>
+        <h2>当代实验水墨（宿墨破水爆破法）</h2>
+        <div class="summary-text">利用传统国画中隔夜宿墨脱胶特有的爆裂水晕肌理，制造极致的杀气与暴力美学。</div>
+        <p class="prompt">当代中国画实验宿墨技法，隔夜宿墨颗粒在宣纸上形成凝聚的焦黑墨核与向外扩散的毛细灰水圈；大面积狂放泼溅与锋利飞白穿透画面，局部单点极鲜明印泥朱红破开死墨，张力狂暴，杀气凛冽</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 枯笔干擦如钢丝划破纸面，大笔泼墨带爆破水珠飞溅</div>
+              <div><strong>光/影:</strong> 无真实光源，利用墨与水的剧烈反差制造心理压迫光影</div>
+              <div><strong>色/质:</strong> 焦黑墨核、灰调水晕、生宣米白，唯有一抹极刺目朱砂 | 宿墨天然胶质沉淀颗粒，宣纸水渍皱缩肌理</div>
+              <div><strong>镜头:</strong> 瞬间爆炸式对角线破框构图，极具视觉冲击</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#050505"></div><div class="color-dot" style="background:#242424"></div><div class="color-dot" style="background:#707070"></div><div class="color-dot" style="background:#EAE5D9"></div><div class="color-dot" style="background:#C00000"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：武功大招爆发瞬间, 角色黑化弑神定格, 硬核功夫打斗高潮帧</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国风大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S120 · 成熟商业·国风大师</small>
+        <h2>非遗苏绣乱针绣（真丝光泽色线法）</h2>
+        <div class="summary-text">不用颜料画画，全靠天然蚕丝线排叠反光，一眼惊艳的高定东方质感。</div>
+        <p class="prompt">非遗苏绣乱针绣工艺，千万根天然蚕丝色线分层斜向交叉排叠塑造人物与背景；色线光泽随光照角度产生真实丝绸各向异性流光，针脚微凸富有凹凸立体手感，色彩过渡如水彩般无痕融合，贵气逼人</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 长短交叉的极细针脚线条，多层蚕丝线顺肌肉骨骼走势排叠</div>
+              <div><strong>光/影:</strong> 顺光丝线哑光，逆光与侧光呈现蚕丝特有的金属感冷金流光</div>
+              <div><strong>色/质:</strong> 数百种劈丝微调渐变色，极为细腻纯净的宫廷丝绸色板 | 蚕丝天然反光光泽、密实经纬布底、微凸手制针脚浮雕</div>
+              <div><strong>镜头:</strong> 微距特写展示精致丝缕，或高雅宁静的中景人像</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#E0A96D"></div><div class="color-dot" style="background:#203647"></div><div class="color-dot" style="background:#EEB76B"></div><div class="color-dot" style="background:#C24936"></div><div class="color-dot" style="background:#FAF3E0"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：高奢古风服饰特写, 仙子神女华服定制, 东方美学顶级短片</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国漫与实验视觉" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S061 · 成熟商业·国漫与实验视觉</small>
+        <h2>深海粒子流体水墨（生物荧光内发光与丝状粒子涡旋运笔法）<span class="old-name">原名：粒子水墨</span></h2>
+        <div class="summary-text">传统水墨在这里被彻底粒子化：每一笔墨都由悬浮的发光微粒构成，色彩在深海里失去重力。它不靠外部打光，而是让画面内部发光，因此适合表现记忆、梦境与情绪的临界状态。</div>
+        <p class="prompt">深海粒子流体水墨画法，亿万发光微粒沿毛笔笔势汇聚成丝状水墨涡旋，边缘开放不闭合；形体内部生物荧光自发光（无外部生硬主光），深邃钴蓝与群青基底上碰撞荧光青绿与琥珀金点睛；流体涡旋、通透玻璃气泡与轻盈体积雾交织，保持主体结构清晰与宽银幕深焦纵深</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 散点笔触，墨带被拆成丝状粒子流，边缘不闭合</div>
+              <div><strong>光/影:</strong> 生物荧光自发光，光源藏在形体内部，无方向性主光</div>
+              <div><strong>色/质:</strong> 钴蓝与群青为底，荧光青绿、琥珀金、绯红对撞 | 流体涡旋、玻璃气泡、绒状微粒，画面始终在缓慢流动</div>
+              <div><strong>镜头:</strong> 广角贴近，深焦，轻微色散与光晕，2.39:1 满画幅</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#061423"></div><div class="color-dot" style="background:#123B5E"></div><div class="color-dot" style="background:#2E8FA8"></div><div class="color-dot" style="background:#69E3D8"></div><div class="color-dot" style="background:#F0A94C"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：深海梦境, 记忆闪回, 情绪核爆</p>
+          <p>说明：仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国漫与实验视觉" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S062 · 成熟商业·国漫与实验视觉</small>
+        <h2>国漫神魔块面厚涂（有向油彩堆叠硬切面与冷暖双光塑形法）<span class="old-name">原名：东方厚涂</span></h2>
+        <div class="summary-text">国内三维动画电影最主流的电影感解法：用厚涂笔触模拟油画堆叠，硬边高光切出结构，单一主光压出体积。人物的皮肤、皮革、青铜都要能看出笔触的方向，画面才不塑料。</div>
+        <p class="prompt">东方神魔动画厚涂画法，清晰可见方向性的油画刀笔触堆叠，结构转折面直接用硬边亮块切出体块（严禁平滑磨皮过渡）；左侧单一暖橙主光压出厚重体积，右侧冷青硬边轮廓光剥离背景，暗部压深紫褐色；青铜、皮革、粗麻与带笔触过渡的皮肤材质分明</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 可见的堆叠笔触，转折面用亮块直接切，不磨平</div>
+              <div><strong>光/影:</strong> 单一暖色主光 + 冷色轮廓光，金属高光锐利</div>
+              <div><strong>色/质:</strong> 暖橙红主导，暗部压紫褐，饱和度中高 | 油画颜料、青铜、皮革、粗布，皮肤带笔触过渡</div>
+              <div><strong>镜头:</strong> 中近景为主，85mm 压缩，浅景深，人物顶天立地</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#2A120C"></div><div class="color-dot" style="background:#7A2B14"></div><div class="color-dot" style="background:#C4552A"></div><div class="color-dot" style="background:#E8A24A"></div><div class="color-dot" style="background:#3E4A6B"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：神魔对峙, 人物特写, 火场爆发</p>
+          <p>说明：仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国漫与实验视觉" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S065 · 成熟商业·国漫与实验视觉</small>
+        <h2>新神榜赛博国潮（机械神像鎏金纹样与青紫霓虹体积光法）<span class="old-name">原名：赛博国潮</span></h2>
+        <div class="summary-text">东方神话的骨架加赛博朋克的光。鎏金纹样与全息符文叠在机械结构上，青紫霓虹从建筑缝隙里渗出来。它解决了一个老问题：让古老的神明显得正在运行。</div>
+        <p class="prompt">东方神话赛博国潮画法，硬边精密机械骨骼结构与传统重工鎏金錾刻纹样深度咬合；纯黑与深蓝暗部基底上，品红与青色霓虹自发光穿插金色体积光束穿透建筑缝隙；金属拉丝、霓虹灯管玻璃与抽象几何光纹材质分明，广角仰拍极具压迫感</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 硬边矢量结构 + 粒子光效，线条干净利落</div>
+              <div><strong>光/影:</strong> 霓虹自发光 + 体积光，青紫为主，金为补</div>
+              <div><strong>色/质:</strong> 品红、青、鎏金，黑底高饱和，暗部带蓝 | 金属机械、霓虹玻璃、全息投影、电路纹样</div>
+              <div><strong>镜头:</strong> 广角仰拍，对称构图，轻微故障闪烁</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#07060F"></div><div class="color-dot" style="background:#2A1B4D"></div><div class="color-dot" style="background:#7B2CBF"></div><div class="color-dot" style="background:#22D3EE"></div><div class="color-dot" style="background:#D4A537"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：天宫夜巡, 机械神像, 都市追逐</p>
+          <p>说明：仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国漫与实验视觉" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S066 · 成熟商业·国漫与实验视觉</small>
+        <h2>黄玉郎硬派港漫（粗黑毛笔排线肌肉切块与红黑金半调网点法）<span class="old-name">原名：港漫硬派</span></h2>
+        <div class="summary-text">香港漫画的银幕化：粗黑描边锁住轮廓，块面高对比塑造肌肉，网点负责阴影。它不追求真实，追求重量。低角度英雄机位加上速度线，一拳就有风声。</div>
+        <p class="prompt">经典硬派武侠港漫画法，刚猛粗黑毛笔描边与刀削斧劈的肌肉衣褶块面切分；强烈硬光切割出二分死黑阴影，过渡区铺设规则印刷半调网点（Halftone Dots）；严格锁定红、黑、金三色高反差配色体系，辅以方向明确的爆发速度线</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 粗黑描边，块面切分，肌肉线条夸张</div>
+              <div><strong>光/影:</strong> 硬光，明暗切割强烈，阴影用网点</div>
+              <div><strong>色/质:</strong> 红、黑、金三色主导，高对比印刷感 | 墨线、网点、纸张与油墨颗粒</div>
+              <div><strong>镜头:</strong> 低角度英雄机位，速度线，分格式构图</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0D0D0D"></div><div class="color-dot" style="background:#3D0F0F"></div><div class="color-dot" style="background:#A61B1B"></div><div class="color-dot" style="background:#D4A537"></div><div class="color-dot" style="background:#E8E1D3"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：街頭決戰, 英雄登场, 掌风特写</p>
+          <p>说明：仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国漫与实验视觉" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S083 · 成熟商业·国漫与实验视觉</small>
+        <h2>玄幻修仙3D国漫（高精度PBR丝绸金属与次表面散射体积光法）<span class="old-name">原名：3D 国漫</span></h2>
+        <div class="summary-text">国内3D玄幻番剧工业标杆：高颜值建模骨相配顶级丝绸金属PBR物理质感。</div>
+        <p class="prompt">主流大制作三维玄幻国漫（《凡人修仙传》《完美世界》电影级番剧）渲染工艺；采用东方审美的俊朗建模骨相与真实皮肤次表面散射（SSS），彻底消除塑胶死白感；刺绣暗纹丝绸、精雕鎏金护甲、寒铁兵刃与微风吹拂的成束飘逸长发具备高精度PBR物理反射，搭配仙气体积光与流光粒子</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 无二维描边，依靠高精度法线贴图、刺绣凹凸微浮雕与凌厉剑气光效定义边缘</div>
+              <div><strong>光/影:</strong> 大光比电影级三点布光：轮廓光勾勒飘逸仙袍与发丝，体积光束穿透云海大殿</div>
+              <div><strong>色/质:</strong> 玄黑、帝王金、仙家青白与高饱和灵力光效（冰蓝/紫金/赤炎）冷暖分明 | 丝绸各向异性高光、古铜鎏金金属磨损细节、通透白玉配饰与真实皮肤微纹理</div>
+              <div><strong>镜头:</strong> 85mm特写浅景深凸显绝美骨相，或大广角航拍展现修仙宗门宏伟气象</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0E131F"></div><div class="color-dot" style="background:#1F2D4A"></div><div class="color-dot" style="background:#C59B27"></div><div class="color-dot" style="background:#38BDF8"></div><div class="color-dot" style="background:#F1F5F9"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：修仙玄幻大男主短剧, 宗门圣女/仙帝登场, 法宝对轰仙侠大片</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·国漫与实验视觉" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S084 · 成熟商业·国漫与实验视觉</small>
+        <h2>三渲二英雄联盟风（三维硬光结构绑定手绘油彩贴图切面法）<span class="old-name">原名：三渲二</span></h2>
+        <div class="summary-text">全球动画工业公认的视觉天花板：3D的物理空间打光 + 2D大师手绘切面贴图。</div>
+        <p class="prompt">《双城之战》（Arcane）级顶奢三渲二（2.5D Stylized）制作工艺；底层具备严谨的三维骨骼立体透视与戏剧性物理体积光，表层材质则完全由手绘不透明水粉/油彩块面贴图构成；鼻梁、颧骨、指节与衣褶转折面直接用硬朗的手绘色块切出棱角，拒绝任何平滑CG渐变</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 三维模型表面直接绘制明显的平头画笔色块与结构切面线，边缘硬朗利落</div>
+              <div><strong>光/影:</strong> 剧场级高反差色彩打光（如暗部绿光配亮部暖金侧光），体积雾层次极深</div>
+              <div><strong>色/质:</strong> 浓郁戏剧化配色：暗金、铁锈红、蒸汽朋克蓝绿与深邃煤黑阴影 | 带明显手绘笔触的皮肤切面、磨损黄铜机械、厚重呢绒大衣与湿润眼眶高光</div>
+              <div><strong>镜头:</strong> 极具电影感的动态运镜与不对称构图，兼具3D空间深度与2D插画艺术感</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0F171E"></div><div class="color-dot" style="background:#1E3A4C"></div><div class="color-dot" style="background:#4E8C80"></div><div class="color-dot" style="background:#D97736"></div><div class="color-dot" style="background:#E8C589"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：蒸汽朋克/废土异能短剧, 高预算漫剧核心重头戏, 国际化精品动画分镜</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·电影大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S047 · 成熟商业·电影大师</small>
+        <h2>韦斯·安德森对称美学（中心死对称构图与马卡龙粉彩平光法）<span class="old-name">原名：对称粉彩电影</span></h2>
+        <div class="summary-text">一眼就能认出的大师级强迫症美学：绝对中心对称 + 复古马卡龙粉彩。</div>
+        <p class="prompt">韦斯·安德森（《布达佩斯大饭店》）电影视觉工艺；严格执行几何学绝对中心对称构图与正面平视（Planimetric）机位；采用高明度、低反差的复古马卡龙粉彩配色（茱萸粉、薄荷绿、奶油黄、复古红）；均匀柔和的漫射平光消除浓重黑影，复古道具陈列如精密玩具屋般考究</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 建筑线条横平竖直如建筑图纸般严整，人物轮廓端正干净</div>
+              <div><strong>光/影:</strong> 柔和均匀的阴天漫射光或棚拍柔光，高光不爆、暗部通透温暖</div>
+              <div><strong>色/质:</strong> 高辨识度糖果粉彩色板：千禧粉、松石绿、芥末黄、勃艮第红与奶油白 | 复古天鹅绒制服、黄铜电梯按键、考究印刷纸品与精致糕点肌理</div>
+              <div><strong>镜头:</strong> 40mm变形或标准广角镜头，绝对中心对称构图，人物直视镜头冷面幽默</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#D88C9A"></div><div class="color-dot" style="background:#F2D0A9"></div><div class="color-dot" style="background:#F1E3D3"></div><div class="color-dot" style="background:#99C1B9"></div><div class="color-dot" style="background:#8E7DBE"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：荒诞喜剧短剧, 复古酒店/庄园悬疑, 高溢价时尚与商业广告片</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·电影大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S056 · 成熟商业·电影大师</small>
+        <h2>柯达 Aerochrome 红外反转片（叶绿素绯红映射与深黑天空显影法）<span class="old-name">原名：红外摄影</span></h2>
+        <div class="summary-text">无需特效就能拍出异世界奇观的传奇胶片工艺：漫山绿叶尽化绯红，深空如墨。</div>
+        <p class="prompt">柯达绝版彩色红外反转胶片（Kodak Aerochrome III）特殊光学显影法；利用近红外波段感光特性，将自然界所有绿色植物叶绿素强制映射为超现实的霓虹绯红、洋红与珊瑚粉，同时将晴朗天空与水面压暗为深邃浓郁的墨蓝与青黑色；人物肤色呈现冷白陶瓷感，画面极具异星梦境冲击力</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 真实胶片光学成像边缘，受红外波长衍射影响在亮部边缘带微弱柔光</div>
+              <div><strong>光/影:</strong> 强烈晴天直射阳光（激发红外反射），形成亮部绯红植被与暗部深邃黑影的剧烈反差</div>
+              <div><strong>色/质:</strong> 标志性红外反转色板：满山绯红/品红树林、墨黑深蓝天空、冷白肤色 | 反转片细腻高反差颗粒感、真实树叶脉络与岩石冷硬质感</div>
+              <div><strong>镜头:</strong> 广角风景或人物置身红色森林的强烈超现实电影构图</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0A1128"></div><div class="color-dot" style="background:#1C2541"></div><div class="color-dot" style="background:#E63946"></div><div class="color-dot" style="background:#FF4D6D"></div><div class="color-dot" style="background:#F8F9FA"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：奇幻异世界秘境探索, 中式/西式诡异民俗梦境, 高视觉冲击力MV与片头</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·电影大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S075 · 成熟商业·电影大师</small>
+        <h2>经典好莱坞黑色电影（百叶窗单一硬光切割死黑与荷兰角湿街反光法）<span class="old-name">原名：黑色电影</span></h2>
+        <div class="summary-text">单一硬光、百叶窗条纹、浓烟与湿地面。黑白之间只留一点血红。它是最省的画风，也是最电影的画风——因为观众会自动补全黑暗里的东西。</div>
+        <p class="prompt">1940年代好莱坞经典黑色电影（Film Noir）摄影法，极端黑白高反差照明，几乎剥离中间灰调；单一硬朗侧逆光穿过百叶窗或门缝，将人物与空间切割为锐利的黑白条纹与死黑剪影；雨夜湿润沥青路面形成高光镜面反射，低角度广角配合微倾荷兰角构图，仅允许极少量叙事血红点睛</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 写实黑白，边缘硬，暗部大面积死黑</div>
+              <div><strong>光/影:</strong> 单一硬光，百叶窗/门缝光，强逆光剪影</div>
+              <div><strong>色/质:</strong> 黑白灰 + 一点血红，几乎无中间调 | 胶片颗粒、烟雾、雨水、湿沥青反光</div>
+              <div><strong>镜头:</strong> 低角度广角，深焦，荷兰角倾斜</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#050505"></div><div class="color-dot" style="background:#1A1A1A"></div><div class="color-dot" style="background:#4D4D4D"></div><div class="color-dot" style="background:#A6A6A6"></div><div class="color-dot" style="background:#8C1010"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：雨夜审讯, 百叶窗独白, 码头交易</p>
+          <p>说明：仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·电影大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S121 · 成熟商业·电影大师</small>
+        <h2>留银冲洗工业电影感（Bleach Bypass）</h2>
+        <div class="summary-text">《拯救大兵瑞恩》《七宗罪》经典工艺：消灭数码塑料感的最强工业杀手锏。</div>
+        <p class="prompt">柯达电影胶片留银冲洗工艺（Bleach Bypass），跳过漂白工序保留黑白银盐颗粒；呈现极高明暗反差、深邃如铁的死黑暗部与大幅压低色彩饱和度；金属、汗水与武器高光锐利如刀锋，硬朗冷峻冷色调</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 刀刻般锐利的物象边缘，极度分明的明暗交界线</div>
+              <div><strong>光/影:</strong> 超大光比硬侧光，暗部阴影深不见底，高光硬朗发白</div>
+              <div><strong>色/质:</strong> 去饱和度青灰、铁锈红、深墨绿，肤色呈蜡黄或冷灰 | 胶片银盐粗颗粒质感、粗糙混凝土与钢铁金属冰冷反射</div>
+              <div><strong>镜头:</strong> 35mm变形宽银幕，深焦大景深，充满压迫感</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0A0E11"></div><div class="color-dot" style="background:#263238"></div><div class="color-dot" style="background:#455A64"></div><div class="color-dot" style="background:#8D6E63"></div><div class="color-dot" style="background:#B0BEC5"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：硬核末世废土生存, 冷血复仇黑帮短剧, 特种军事与硬核战争</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·电影大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S122 · 成熟商业·电影大师</small>
+        <h2>王家卫杜可风（抽帧与霓虹色溢法）</h2>
+        <div class="summary-text">用极端的色彩溢出与动态模糊制造出无可替代的时代氛围与电影情绪。</div>
+        <p class="prompt">杜可风摄影风格，钨丝灯胶片在混合光源下的独特色偏；慢门抽帧导致的动势模糊残影与广角镜头贴脸夸张透视；高饱和芥末黄、墨绿与浓艳猩红霓虹灯光相互侵染溢出，胶片粗颗粒暗部微潮，情绪极度浓烈</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 边缘因动态模糊与色相溢出（Chroma Bleed）产生柔和拖尾</div>
+              <div><strong>光/影:</strong> 霓虹灯管直射面部，百叶窗切割光，反光水面冷暖光对撞</div>
+              <div><strong>色/质:</strong> 芥末黄、深墨绿、冷青、猩红，暗部带紫黑 | 柯达高感度胶片颗粒感、玻璃幕墙雨水折射、香烟薄雾</div>
+              <div><strong>镜头:</strong> 超广角贴近人物特写，或隔着门窗门帘的偷窥视角</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#061E1A"></div><div class="color-dot" style="background:#245C4F"></div><div class="color-dot" style="background:#C4942A"></div><div class="color-dot" style="background:#A31C24"></div><div class="color-dot" style="background:#0F0E17"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：都市男女暧昧纠缠, 卧底缉毒夜戏, 迷幻悬疑情感巅峰</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·电影大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S123 · 成熟商业·电影大师</small>
+        <h2>罗杰·狄金斯（单光源轮廓与大气体积雾）</h2>
+        <div class="summary-text">好莱坞封神级摄影语言：用单一光源和大气雾气构建极度干净有力量的画面。</div>
+        <p class="prompt">大师罗杰·狄金斯电影布光语言，严苛遵循单一物理自然光源；人物以极为精准利落的暗部剪影切入画面，背景浓烈大气体积雾穿透金黄日落或冷蓝天光；构图极简严谨，视觉主次一目了然，极具叙事厚重感</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 轮廓极为清晰的纯黑剪影，边缘带微弱菲涅尔柔和漫射光</div>
+              <div><strong>光/影:</strong> 单一大光源（如车灯、火海、窗外晨昏），大面积体积雾丁达尔光束</div>
+              <div><strong>色/质:</strong> 极度干净的冷青蓝搭配极度纯净的黄金暖光，色温两极分化 | 细腻胶片微粒，空气微尘丁达尔颗粒，湿漉沥青反光</div>
+              <div><strong>镜头:</strong> 黄金分割中心构图，长焦空间压缩或深邃广角纵深</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#050810"></div><div class="color-dot" style="background:#102A43"></div><div class="color-dot" style="background:#E28743"></div><div class="color-dot" style="background:#F4B266"></div><div class="color-dot" style="background:#223843"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：顶级大片开场, 荒野求生孤独独白, 宿命决斗定格帧</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·电影大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S124 · 成熟商业·电影大师</small>
+        <h2>张艺谋极简单色戏剧感（纯色阵列与高速水滴）</h2>
+        <div class="summary-text">把色彩压到极致的纯单色系统，用形态的绝对严整爆发最大的戏剧张力。</div>
+        <p class="prompt">张艺谋电影美学，全场严格限制于单一纯色相的明暗阶梯之中；纯粹水墨黑白灰或通透猩红稠缎，搭配高速摄影下定格的万千晶莹水滴与飞溅水珠；极具中国戏剧舞台张力，形式感与纯粹感登峰造极</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 大面积无装饰几何形体块面，搭配极细碎透明水珠轨迹</div>
+              <div><strong>光/影:</strong> 漫射天光打底，强逆光点亮飞溅水花与飞扬尘埃</div>
+              <div><strong>色/质:</strong> 极端封闭单色系：黑白水墨灰或纯朱红单色阶梯 | 湿透布料沉重垂坠感、竹木天然纹理、雨滴冰晶反光</div>
+              <div><strong>镜头:</strong> 对称式戏剧舞台构图，极度严整的几何阵列</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0F1112"></div><div class="color-dot" style="background:#2B2F33"></div><div class="color-dot" style="background:#5E656B"></div><div class="color-dot" style="background:#9BA3A9"></div><div class="color-dot" style="background:#E5E8EB"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：朝堂惊天刺杀, 黑白两仪决战, 顶级东方悬疑视觉</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·电影大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S125 · 成熟商业·电影大师</small>
+        <h2>胡金铨禅意武侠（竹林晨雾与变形宽银幕）</h2>
+        <div class="summary-text">中国武侠电影开山立派的视觉基因：竹林、晨雾与宽银幕的完美统一。</div>
+        <p class="prompt">经典邵氏胡金铨古装禅意武侠，35mm变形宽银幕镜头；清晨深山竹林中的垂直光柱穿透浓郁晨雾，人物身着褪色古朴粗麻布衣；京剧亮相式的端正凌厉构图，冷青晨光与自然竹木翠绿，超凡脱俗</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 垂直竹竿构成的密集线条阵列，人物衣衫随风扬起硬挺弧线</div>
+              <div><strong>光/影:</strong> 朝阳斜穿竹林的硬朗体积光束，地面斑驳光影</div>
+              <div><strong>色/质:</strong> 冷青竹绿、苍翠林木、灰白水气、米黄古麻布 | 粗粝手织土布纤维、竹节微糙肌理、晨露润泽水光</div>
+              <div><strong>镜头:</strong> 2.39:1 超宽画幅，长焦镜头空间压缩，人物与竹林虚实掩映</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#1B2E1E"></div><div class="color-dot" style="background:#3F5E4D"></div><div class="color-dot" style="background:#7A9A7E"></div><div class="color-dot" style="background:#C2C5A9"></div><div class="color-dot" style="background:#4A3B32"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：硬派传统武侠短剧, 深山古刹隐士出山, 高手竹林轻功追逐</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·电影大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S126 · 成熟商业·电影大师</small>
+        <h2>A24 独立电影压迫感（阴天冷漫射与负空间）</h2>
+        <div class="summary-text">欧美高口碑独立电影的黄金视觉法则：依靠巨大的负空间与死寂天光制造心悸感。</div>
+        <p class="prompt">A24标志性心理惊悚美学，北欧阴天无影冷漫射天光；极度克制柔和的高光滚降与苔藓绿冷灰低饱和调色；人物居于画面边缘甚至底部，头顶留出巨大阴郁的建筑或自然负空间，静穆中透出令人窒息的神秘压迫</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 柔和而毫无火气的物理边缘，完全杜绝过度锐化与轮廓光</div>
+              <div><strong>光/影:</strong> 无方向的铅灰色天空漫射光，暗部如同被微弱冷雾包裹</div>
+              <div><strong>色/质:</strong> 青苔绿、冷灰白、深泥褐、死草黄，极低饱和度但层级分明 | 天然羊毛织物粗麻感、古老风化石壁粗砺、潮湿泥土气息</div>
+              <div><strong>镜头:</strong> 极端反常规构图：大比例头顶留白，低机位平视，画面如凝固油画</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#1E2621"></div><div class="color-dot" style="background:#37413A"></div><div class="color-dot" style="background:#606C5D"></div><div class="color-dot" style="background:#A5A58D"></div><div class="color-dot" style="background:#D3D3C8"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：心理惊悚悬疑短剧, 中世纪暗黑传说, 高逼格文艺商业短片</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·电影大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S127 · 成熟商业·电影大师</small>
+        <h2>变形宽银幕光学耀斑（Panavision 椭圆散景）</h2>
+        <div class="summary-text">真正院线电影大片的光学标志：水平拉丝蓝线与垂直椭圆光斑，辨识度无可替代。</div>
+        <p class="prompt">好莱坞Panavision变形宽银幕电影镜头特有光学质感；强点光源横向拉出贯穿画面的平直蓝青色拉丝眩光，焦外形成垂直椭圆形光斑；雨夜沥青路面镜面水光倒影，冷青与橙金交织，大片质感扑面而来</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 水平方向拉长的光学衍射光束，焦外光斑呈现严格的垂直椭圆</div>
+              <div><strong>光/影:</strong> 车灯与路灯在潮湿地面形成强镜面反射，冷青基底与暖黄亮点</div>
+              <div><strong>色/质:</strong> 经典好莱坞双色冷暖对撞：青蓝色（Teal）与琥珀金（Orange） | 高质量现代镜头光学镀膜光晕、湿润雨水水雾反射</div>
+              <div><strong>镜头:</strong> 2.39:1 宽银幕画幅，中景或近景浅景深，横向空间延伸感极强</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#071018"></div><div class="color-dot" style="background:#0F2B48"></div><div class="color-dot" style="background:#00A8B5"></div><div class="color-dot" style="background:#E28743"></div><div class="color-dot" style="background:#E6AF2E"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：赛博朋克科幻巨作, 都市财阀商战豪车追逐, 现代刑侦破案夜景</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·电影大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S128 · 成熟商业·电影大师</small>
+        <h2>三色特艺彩色黄金年代（1950s Technicolor）</h2>
+        <div class="summary-text">好莱坞黄金年代的色彩圣杯：油画般的浓艳饱满与柔润肤色。</div>
+        <p class="prompt">20世纪50年代三色特艺彩色电影胶片（Three-Strip Technicolor），红绿蓝三卷黑白胶片分色染印法；呈现超越真实的浓郁油画感纯正红、翡翠绿与宝石蓝；肤色温暖如奶油红润，高光柔润无任何数码刺眼感</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 色块分明而柔和，轮廓清晰却带胶片光学轻微晕开感</div>
+              <div><strong>光/影:</strong> 好莱坞经典三点布光：大功率钨丝灯正面柔光箱，立体均匀</div>
+              <div><strong>色/质:</strong> 极度浓艳饱和但绝不偏色的红、绿、蓝原生三原色，纯净至极 | 胶片染料转印工艺带来的厚重油润感，无噪点暗部纯正黑</div>
+              <div><strong>镜头:</strong> 标准50mm中焦镜头，典雅考究的人像构图</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#B22222"></div><div class="color-dot" style="background:#2E8B57"></div><div class="color-dot" style="background:#1E3F66"></div><div class="color-dot" style="background:#F5DEB3"></div><div class="color-dot" style="background:#111111"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：民国豪门家族争产, 复古歌舞年代大剧, 奇幻童话真人电影</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·电影大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S129 · 成熟商业·电影大师</small>
+        <h2>19世纪湿版火棉胶（银盐药水沉淀法）</h2>
+        <div class="summary-text">数码相机永远无法模仿的历史厚重感：湿版药水流淌痕迹与深邃灵魂凝视。</div>
+        <p class="prompt">1850年代湿版火棉胶摄影工艺，玻璃板手工涂布硝酸银药水显影；仅对紫外线与蓝光敏感，人物面容雀斑、微纹理与深邃眼神被极端深刻刻画；边缘带有手工流淌药水的暗角、银斑与水痕，历史沧桑震撼人心</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 面部毛孔、发丝与胡茬呈现惊人的物理级超高清晰度</div>
+              <div><strong>光/影:</strong> 露天漫射天光长曝光，眼神因微动而极其深邃吸魂</div>
+              <div><strong>色/质:</strong> 纯粹的单色系：棕褐色（Sepia）、金属银灰与浓黑 | 玻璃板药水流淌暗角、银斑氧化斑痕、手工微瑕划痕</div>
+              <div><strong>镜头:</strong> 严正的大画幅相机正面胸像，目光穿透镜头直击心灵</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#1A130E"></div><div class="color-dot" style="background:#3D2B1F"></div><div class="color-dot" style="background:#785A46"></div><div class="color-dot" style="background:#B09A86"></div><div class="color-dot" style="background:#EAD9C8"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：民国乱世枭雄定格, 西部荒野赏金猎人, 末代王朝宿命人物照</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·电影大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S130 · 成熟商业·电影大师</small>
+        <h2>千禧年录像带模拟恐怖（VHS 色度错位与机顶闪光）</h2>
+        <div class="summary-text">短视频平台完播率之王：粗糙但绝对可信的真实记录感与压迫感。</div>
+        <p class="prompt">千禧年家用便携摄像机与磁带录像视觉（VHS Analog）；隔行扫描线交错，高反差直打机顶闪光灯使人物面孔苍白并在身后墙壁投下浓重死黑硬影；边缘带红蓝色彩通道错位溢出，真实感恐怖拉满</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 磁带低解析度带来的柔化边缘，伴随微弱的水平噪波拉丝</div>
+              <div><strong>光/影:</strong> 硬核机内直打闪光灯，前景人物刺眼高亮，背景瞬间隐入黑暗</div>
+              <div><strong>色/质:</strong> 色度信号衰减带来的偏绿偏青暗部，高饱和局部红色溢出 | 显像管水平扫描线、磁头磨损噪点条纹、低动态范围胶质感</div>
+              <div><strong>镜头:</strong> 手持便携机第一人称视角，急促推拉摇移与镜头晃动感</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#080C08"></div><div class="color-dot" style="background:#1A291E"></div><div class="color-dot" style="background:#3E5C46"></div><div class="color-dot" style="background:#D63031"></div><div class="color-dot" style="background:#ECEEEA"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：规则怪谈爆款短剧, 中式/西式探险伪纪录片, 无限流恐怖副本第一视角</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·电影大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S131 · 成熟商业·电影大师</small>
+        <h2>雷德利·斯科特史诗中世纪（冷铁青灰与烛火跳动）</h2>
+        <div class="summary-text">冷铁与烈火的冰火对撞，构建出无可挑剔的厚重史诗质感。</div>
+        <p class="prompt">雷德利·斯科特导演古装战争史诗视觉；全片被压抑冷酷的阴冷高海拔铁青色天光笼罩，室内与夜战仅依靠真实跳动的火把与烛火暖光切入；铠甲泥浆、冷兵器磨损与空气中翻滚的灰烬雪粒真实细腻，史诗感磅礴</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 密集兵刃与铠甲鳞片形成精密线条阵列，泥沙与血迹斑驳有致</div>
+              <div><strong>光/影:</strong> 冷青天光压制大背景，摇曳跳动的火光提供极度温暖的关键侧光</div>
+              <div><strong>色/质:</strong> 冷铁青、泥土深褐、青灰色，点缀跃动的火光橙与暗红 | 钢铁锻造锤痕、湿泥溅洒布料、空中飞扬的灰烬与细雪颗粒</div>
+              <div><strong>镜头:</strong> 长焦镜头大军压境压迫感，高速快门捕捉兵刃交击瞬间</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0E141B"></div><div class="color-dot" style="background:#1E2C3A"></div><div class="color-dot" style="background:#415A77"></div><div class="color-dot" style="background:#C86D3B"></div><div class="color-dot" style="background:#DDA15E"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：古代史诗攻城大战, 权力的游戏式列王纷争, 冷兵器硬核近战动作</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·电影大师" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S132 · 成熟商业·电影大师</small>
+        <h2>丹尼斯·维伦纽瓦巨物美学（极简沙尘与几何单色）</h2>
+        <div class="summary-text">依靠极致的比例反差与大气漫射，打造让观众震撼失语的巨物神性。</div>
+        <p class="prompt">丹尼斯·维伦纽瓦导演巨物史诗美学；超大远景中人类微小如蝼蚁，遮天蔽日的冷灰或暖赭几何巨构建筑矗立于地平线；漫天沙尘雾霾将空气染成均匀单色调，光影严格遵循大气物理散射规律，神性与压迫感兼具</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 极度干净绝对对称的建筑巨构外轮廓线条，无任何琐碎装饰</div>
+              <div><strong>光/影:</strong> 被浓厚沙尘散射后的纯粹漫射光，几乎无死黑阴影，空间层次由远近浓淡体现</div>
+              <div><strong>色/质:</strong> 大面积单色调：香料赭黄或工业冷灰白，极致极简纯粹 | 混凝土天然浇筑孔隙微纹、沙丘流体波纹、金属外壳哑光质感</div>
+              <div><strong>镜头:</strong> 极端远景（Extreme Long Shot），中心对称构图，极度开阔宏伟</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#2C1F16"></div><div class="color-dot" style="background:#6E5039"></div><div class="color-dot" style="background:#B08865"></div><div class="color-dot" style="background:#D4B895"></div><div class="color-dot" style="background:#EFE6D8"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：科幻巨舰降临, 上古洪荒巨兽现世, 末世文明神殿探索</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·写实与短剧" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S053 · 成熟商业·写实与短剧</small>
+        <h2>Vogue 高定时尚大片（中画幅哈苏锐利光学与银盐棚拍蝶形光法）<span class="old-name">原名：时尚编辑摄影</span></h2>
+        <div class="summary-text">时尚摄影工业最高标准：哈苏中画幅光学锐度 + 蝶形光骨相精雕，气场两米八。</div>
+        <p class="prompt">国际一线时尚杂志（Vogue Editorial）高定摄影画法；采用哈苏中画幅相机（Hasselblad 100MP）超高解析度光学质感，配合影棚大型八角柔光箱与正面蝶形光（Paramount Lighting）精雕面部立体骨相；保留真实细腻的高级皮肤微肌理与眼神光（严禁网红磨皮），高定面料剪裁与珠宝反光凌厉考究</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 中画幅镜头极致的光学锐度，发丝、睫毛与高定织物边缘刀锋般清晰</div>
+              <div><strong>光/影:</strong> 经典高定棚拍蝶形光或伦勃朗光，鼻下投射精致蝴蝶影，轮廓光干净利落</div>
+              <div><strong>色/质:</strong> 高级克制的胶片时尚色调：黑金、高级灰、冷调铂金白与浓郁正红唇色 | 带真实微毛孔的高级哑光肌肤、重磅真丝礼服、钻石火彩与金属冷光</div>
+              <div><strong>镜头:</strong> 80mm/110mm中画幅人像焦段，气场全开的仰视或平视编辑构图</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#111111"></div><div class="color-dot" style="background:#2C2C2C"></div><div class="color-dot" style="background:#8C7A6B"></div><div class="color-dot" style="background:#D9C3B0"></div><div class="color-dot" style="background:#B81D13"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：都市豪门女王归来短剧, 高奢品牌商业视觉, 顶流明星感角色定妆照</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·写实与短剧" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S098 · 成熟商业·写实与短剧</small>
+        <h2>院线真人剧照写实（阿莱Alexa宽动态范围物理布光与自然微肌理法）<span class="old-name">原名：电影感写实</span></h2>
+        <div class="summary-text">真人AI短剧的基准母本：ARRI电影机色彩科学 + 真实演员骨相肌理，拒绝AI塑料味。</div>
+        <p class="prompt">院线级真人影视剧照（ARRI Alexa LF 数字电影机 + Master Prime 定焦镜头）摄影工艺；严格遵循真实物理世界光照衰减与宽广动态范围（14+档宽容度），高光柔和不死白、暗部层次深邃扎实；人物具备真实的亚洲/西方影视演员骨相、自然皮肤微纹理、汗毛与湿润眼球反光，严禁AI磨皮网红脸与虚假塑料感</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 电影定焦镜头自然的光学清晰度与柔和焦外过渡，杜绝数码锐化白边</div>
+              <div><strong>光/影:</strong> 影视剧组专业布光：主光（Key Light）经柔光布漫射塑形，辅以自然环境反弹光与眼神光</div>
+              <div><strong>色/质:</strong> ARRI经典自然色彩科学（ARRI LogC转Rec709电影LUT），肤色还原极其纯正耐看 | 真实人类皮肤毛孔与微汗光泽、棉麻丝绸真实织物折痕、空气自然微尘景深</div>
+              <div><strong>镜头:</strong> 35mm/50mm/85mm标准电影叙事焦段，构图严谨，人物表演情绪张力真实可信</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#14181C"></div><div class="color-dot" style="background:#2C353D"></div><div class="color-dot" style="background:#5A6978"></div><div class="color-dot" style="background:#C89D82"></div><div class="color-dot" style="background:#EAE6DF"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：高品质真人AI短剧, 都市职场/家庭伦理剧, 影视项目概念预演分镜</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·写实与短剧" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S099 · 成熟商业·写实与短剧</small>
+        <h2>超写实真人短剧（微距真实毛孔绒毛与自然微表情防蜡质柔光法）<span class="old-name">原名：AI 仿真人</span></h2>
+        <div class="summary-text">专为竖屏真人短剧特写调校：保留胎毛、泪光与真实皮脂感，一眼真人的高颜值镜头。</div>
+        <p class="prompt">竖屏超写实真人短剧（微短剧特写级）光学实拍画法；专为近景与大特写设计的环形柔光与侧逆轮廓光组合，精准捕捉演员眉眼抽动、眼眶蓄泪与嘴角微表情；皮肤保留真实尺度下的细腻皮脂纹理、脸颊极细微绒毛与发际线碎发，彻底根除AI蜡像馆假脸与过度磨皮感</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 真实光学镜头成像，发际线胎毛、睫毛根部与唇纹细节自然连续</div>
+              <div><strong>光/影:</strong> 短剧剧组高颜值立体布光：正面大柔光保通透肤色 + 侧逆硬光切出立体下颌线</div>
+              <div><strong>色/质:</strong> 通透健康的红润自然肤色，背景色温与主体冷暖适度分离以突出人物焦点 | 真实真皮层血色透光、湿润泪光反射、高档现代时装面料与首饰精细反光</div>
+              <div><strong>镜头:</strong> 85mm大光圈浅景深人像特写，焦点死锁瞳孔眼神，背景虚化干净不抢戏</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#1A1D24"></div><div class="color-dot" style="background:#3A4150"></div><div class="color-dot" style="background:#8C6D62"></div><div class="color-dot" style="background:#E2B49A"></div><div class="color-dot" style="background:#F7EDE8"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：竖屏真人爽剧/虐恋短剧, 情绪爆发哭戏大特写, 真人口播与高转化率素材</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·写实与短剧" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S100 · 成熟商业·写实与短剧</small>
+        <h2>疯狂麦克斯末世废土（高反差去饱和粗粝铁锈风化与逆光沙尘暴法）<span class="old-name">原名：末世废土</span></h2>
+        <div class="summary-text">漫剧与短剧常青爆款题材：真实铁锈风化 + 烈日沙尘体积光，硬核感拉满。</div>
+        <p class="prompt">好莱坞硬核末世废土（《疯狂的麦克斯》《辐射》）实拍工业美学；采用高反差、偏暖赭或荒漠青灰的风化胶片调色；烈日硬光穿透漫天漫射的沙尘暴与柴油黑烟，在破损混凝土废墟、重度锈蚀铆钉装甲与满身油污伤痕的幸存者身上切出硬朗高光；材质粗粝厚重，拒绝随机脏点噪波</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 硬朗刚毅的废墟断壁与改装重金属机械轮廓，破损边缘符合真实物理风化</div>
+              <div><strong>光/影:</strong> 刺眼荒漠烈日顶侧光或火光冲天逆光，穿过浓厚沙尘形成粗犷丁达尔光束</div>
+              <div><strong>色/质:</strong> 铁锈红、沙漠赭黄、柴油煤黑与苍穹冷青蓝高反差对撞 | 剥落氧化铁锈、干裂皮革、粗麻布混合汗水油污、漫天可辨的飞沙颗粒</div>
+              <div><strong>镜头:</strong> 24mm广角低机位仰拍展现废土巨物压迫感，或长焦压缩热浪扭曲空间</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#181410"></div><div class="color-dot" style="background:#4A2E1B"></div><div class="color-dot" style="background:#8C4A27"></div><div class="color-dot" style="background:#D98A3C"></div><div class="color-dot" style="background:#3A5A6B"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：末世囤货/丧尸生存爽剧, 废土机甲觉醒系统流, 高燃硬汉生存动作片</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·韩漫主力" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S090 · 成熟商业·韩漫主力</small>
+        <h2>韩式财阀条漫（G笔清线与空气感喷枪渐变法）<span class="old-name">原名：Webtoon 竖屏</span></h2>
+        <div class="summary-text">竖屏条漫与都市漫剧第一生产力：G笔清线配空气感喷枪，专攻高颜值男女主情绪拉扯。</div>
+        <p class="prompt">顶级商业全彩韩式条漫（Webtoon）画法，利落有弹性的数位G笔闭合线稿（面部与锁骨线纤细并局部染红棕色トレース）；清爽二层赛璐珞硬边阴影打底，面颊、眼尾与唇部叠加空气感柔和喷枪渐变与水润高光点；高挑八头身都市时尚骨相，逆光发丝边缘透出柔和环境光晕</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 干净利落的数位G笔闭合线稿，内轮廓纤细且随肤色做局部色相融合（色トレース）</div>
+              <div><strong>光/影:</strong> 漫射唯美柔光搭配强逆光发丝光晕，面颊与鼻尖点缀水润高光</div>
+              <div><strong>色/质:</strong> 高明度通透冷白肤色、蜜桃腮红、低饱和高级西装灰与都市霓虹冷暖渐变 | 光滑丝绸衬衫垂坠折痕、水润玻璃唇彩、成束柔顺光泽发丝</div>
+              <div><strong>镜头:</strong> 竖屏条漫张力构图，突出修长身形比例与极具情绪张力的眉眼特写</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#1E2229"></div><div class="color-dot" style="background:#3B4252"></div><div class="color-dot" style="background:#D8DEE9"></div><div class="color-dot" style="background:#F2C6C2"></div><div class="color-dot" style="background:#E5A97C"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：豪门霸总甜宠漫剧, 都市逆袭复仇条漫, 高颜值女频情感短剧</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·韩漫主力" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S091 · 成熟商业·韩漫主力</small>
+        <h2>韩式成人半写实厚涂（冷调平笔肌理与氛围打光法）<span class="old-name">原名：韩式厚涂</span></h2>
+        <div class="summary-text">兼具写实骨相张力与绘画高级感，是悬疑、商战与成人情感赛道的王牌画法。</div>
+        <p class="prompt">韩式成人向半写实厚涂画法，弱化外轮廓黑线，采用细腻有序的平头画笔直接塑造立体的亚洲骨相、下颌线与西装织物折角；照明采用偏冷的电影级戏剧侧光，暗部保留通透的蓝灰与紫灰冷调反弹光；皮肤兼具写实骨骼体感与克制的绘画笔触概括，气质冷冽成熟</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 弱化描边，用平笔短促有序的块面笔触直接塑造骨相转折与眉弓深邃感</div>
+              <div><strong>光/影:</strong> 冷调戏剧侧光或顶侧光，明暗交界线扎实且带微弱暖色次表面散射</div>
+              <div><strong>色/质:</strong> 低饱和冷灰蓝、深炭黑、雾霾紫与克制的冷白皮肉色，氛围深沉内敛 | 微哑光真实皮肤笔触、挺括精纺羊毛西装、金属腕表与眼镜冷冽反光</div>
+              <div><strong>镜头:</strong> 中近景电影越肩镜头或压迫感俯仰视，强调人物眼神博弈与成人氛围</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#12161F"></div><div class="color-dot" style="background:#283142"></div><div class="color-dot" style="background:#526178"></div><div class="color-dot" style="background:#9BA8B8"></div><div class="color-dot" style="background:#D9B8A6"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：财阀商战权谋短剧, 犯罪悬疑刑侦漫剧, 熟男熟女都市极限拉扯</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·韩漫主力" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S092 · 成熟商业·韩漫主力</small>
+        <h2>韩式狂放武侠（水墨飞白叠厚涂体积切割法）<span class="old-name">原名：韩式武侠</span></h2>
+        <div class="summary-text">将传统水墨的狂草线势与现代厚涂的立体打击感结合，动作戏爽感天花板。</div>
+        <p class="prompt">韩式动作武侠条漫画法（《北剑江湖》《高手》工艺），外轮廓采用极具速度感的狂放破笔墨线与飞白，内部形体则用高反差三维感厚涂色块直接切出夸张肌肉与衣袍体积；剑气与掌风化作凌厉的黑白撕裂线条与炫目内发光对撞，大面积清爽留白凸显极速动势</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 外线狂放枯笔飞白与破墨锐角，内里用硬朗厚涂块面雕刻爆发性肌肉结构</div>
+              <div><strong>光/影:</strong> 高反差硬朗顶侧光搭配兵刃/内功爆发的强自发光轮廓切光</div>
+              <div><strong>色/质:</strong> 深沉玄黑、苍狼灰、古铜肤色，碰撞冷冽剑气青蓝或烈焰霸气赤红 | 粗粝战损布衣撕裂纤维、精钢刀剑寒光、飞溅血滴与尘土颗粒</div>
+              <div><strong>镜头:</strong> 大广角透视畸变与对角线破框冲刺机位，动作打击感力透纸背</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0D0F12"></div><div class="color-dot" style="background:#262B33"></div><div class="color-dot" style="background:#6C7A89"></div><div class="color-dot" style="background:#E63946"></div><div class="color-dot" style="background:#38B6FF"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：高燃武侠打斗漫剧, 男频战神系统爽剧, 宗门大比巅峰对决</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·日漫与二游" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S030 · 成熟商业·日漫与二游</small>
+        <h2>井上雄彦青年剧画（毛笔写实骨相与高密度交叉排线塑形法）<span class="old-name">原名：写实青年漫画</span></h2>
+        <div class="summary-text">漫画界的素描与水墨巅峰：用最扎实的解剖骨相和密集排线画出灵魂的重量。</div>
+        <p class="prompt">日本写实青年漫画（Seinen Gekiga，井上雄彦《浪客行》工艺）大师画法；以兼具弹性与顿挫的毛笔和钢笔直接勾勒精准写实的解剖学人体骨相、紧绷肌肉与沧桑眼神；摒弃平涂色块，完全采用顺应形体结构的密集交叉排线（Cross-hatching）与水墨干擦塑造深邃立体明暗</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 毛笔中锋与侧锋交替勾勒主轮廓，配合钢笔细密交叉排线雕刻面部骨相与肌理</div>
+              <div><strong>光/影:</strong> 强烈戏剧性自然光，亮部直接留出纯净纸白，暗部由层叠排线与浓墨压实</div>
+              <div><strong>色/质:</strong> 纯粹黑白水墨灰阶为主，或极克制的低饱和赭石、靛青淡彩点染 | 真实毛发胡茬、粗糙剑客麻衣、汗水淋漓的紧绷皮肤与纸面刮白高光</div>
+              <div><strong>镜头:</strong> 极具呼吸感的电影级分镜，特写直逼瞳孔深处的战意与孤寂</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#080808"></div><div class="color-dot" style="background:#2E2E2E"></div><div class="color-dot" style="background:#6E6E6E"></div><div class="color-dot" style="background:#B8B5AD"></div><div class="color-dot" style="background:#F4F1EA"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：硬核剑客生死决斗, 青年向深度历史权谋, 充满男性荷尔蒙的动作特写</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·日漫与二游" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S059 · 成熟商业·日漫与二游</small>
+        <h2>京都岩彩日本画（胡粉蛤白打底与粗颗粒天然岩绘具罩染法）<span class="old-name">原名：日本画</span></h2>
+        <div class="summary-text">用真实碾碎的宝石与矿石颗粒作画，胡粉与烧银箔带来的幽玄质感无可替代。</div>
+        <p class="prompt">京都传统岩彩日本画（Nihonga）工艺；以牡蛎壳研磨的胡粉（蛤白）铺设温润哑光底色，采用不同目数（颗粒粗细）的天然矿石粉末（岩绘具：群青、绿青、辰砂）拌鹿胶层层罩染与撞水；保留清晰的矿石结晶砂砾肌理与银箔氧化硫化的斑驳古意，构图空灵幽玄</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 含蓄温润的墨线骨法被厚重的矿物岩彩半覆盖，边缘呈天然沙粒沉淀感</div>
+              <div><strong>光/影:</strong> 幽暗茶室或晨雾般的静谧漫射光，银箔与云母粉在暗处泛起清冷微光</div>
+              <div><strong>色/质:</strong> 胡粉米白、深群青、铜绿青、珊瑚红与硫化熏银灰黑色 | 粗目天然矿石结晶颗粒感、麻纸粗纤维、金银箔烧箔斑驳肌理</div>
+              <div><strong>镜头:</strong> 大面积余白与折枝花卉/人物斜角切割构图，极具京都物哀美学</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#1D2A3A"></div><div class="color-dot" style="background:#3B6E6C"></div><div class="color-dot" style="background:#B84A39"></div><div class="color-dot" style="background:#A89F91"></div><div class="color-dot" style="background:#EDE8DD"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：阴阳师/百鬼夜行志怪剧, 高雅东方美学商业片, 唯美凄婉人物特写</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·日漫与二游" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S069 · 成熟商业·日漫与二游</small>
+        <h2>新海诚超写实光影（高密度积云逆光穿透与冷暖环境色互染法）<span class="old-name">原名：新海诚光</span></h2>
+        <div class="summary-text">日本动画电影最被模仿的光影公式：天空占画面三分之二，逆光穿过云层，镜头光斑横穿画面，青蓝与橙金在同一个镜头里对撞。它把日常拍成了奇迹。</div>
+        <p class="prompt">新海诚式剧场版动画光影画法，极高细节密度的层叠体积积云占据背景，强烈夕阳或晨光逆光穿透云隙形成受控丁达尔光束；高饱和通透青蓝天空与橙金/品红晚霞冷暖对撞，人物暗部大面积吸取天空冷蓝环境光，水面、玻璃幕墙与金属栏杆具备精密镜面反射</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 精细云层，高光颗粒，细节密度极高</div>
+              <div><strong>光/影:</strong> 逆光/侧逆光，强镜头光斑，天空为光源</div>
+              <div><strong>色/质:</strong> 青蓝 + 橙金 + 品红晚霞，高饱和但通透 | 玻璃、水面、电线、金属栏杆的反射</div>
+              <div><strong>镜头:</strong> 广角低机位，云层压迫感，2.39:1 横向</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0E2340"></div><div class="color-dot" style="background:#2C6E9B"></div><div class="color-dot" style="background:#7EC8E3"></div><div class="color-dot" style="background:#F2A65A"></div><div class="color-dot" style="background:#E86A8A"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：黄昏天台, 雨过天晴, 列车窗景</p>
+          <p>说明：仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·日漫与二游" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S070 · 成熟商业·日漫与二游</small>
+        <h2>吉卜力男鹿和雄水粉（不透明水粉厚涂自然漫射光与纸感笔触法）<span class="old-name">原名：吉卜力自然</span></h2>
+        <div class="summary-text">水粉手绘的饱和绿与积云，漫射光下没有一处死黑。它相信停留的力量：一个空镜、一阵风、一片草浪，就能把观众按在座位上。电影感来自节奏，而不是特效。</div>
+        <p class="prompt">吉卜力手绘水粉动画画法，采用不透明水粉颜料（Gouache）在粗纹水彩纸上层叠平涂与干刷，草叶与林木笔触松散丰盈；户外自然天光漫射照明，无生硬黑影，暗部保留通透的草绿与青蓝色彩；人物造型简化圆润、线条温和，空间充满宁静呼吸感</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 水粉平涂，柔和不透明，边缘松</div>
+              <div><strong>光/影:</strong> 自然漫射光，无强烈方向，暗部保留色彩</div>
+              <div><strong>色/质:</strong> 饱和草绿、天蓝、暖黄，干净通透 | 手绘背景纸感，草叶与树叶细密笔触</div>
+              <div><strong>镜头:</strong> 固定全景，长镜头，风吹草动的持续运动</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#1E3320"></div><div class="color-dot" style="background:#3F7A3A"></div><div class="color-dot" style="background:#8FBF5A"></div><div class="color-dot" style="background:#D9E8F2"></div><div class="color-dot" style="background:#F2C14E"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：田野长镜, 夏日午后, 森林入口</p>
+          <p>说明：仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·日漫与二游" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S071 · 成熟商业·日漫与二游</small>
+        <h2>今敏式都市心理悬疑（精密写实建筑透视与荧光灯镜像分割法）<span class="old-name">原名：都市心理</span></h2>
+        <div class="summary-text">精密线条画出的写实都市，配冷调霓虹与荧光灯。玻璃幕墙把人物切成碎片，重复的构图让人分不清现实与幻觉。它适合悬疑、心理与身份题材。</div>
+        <p class="prompt">日式成人都市心理悬疑动画画法，精密冷峻的建筑写实透视线稿搭配略微简化的写实骨相人物；夜间便利店惨白荧光灯、钠黄路灯与品红霓虹构成冷调多光源照明；大量运用湿滑路面、玻璃幕墙与后视镜进行几何分割构图与镜像折射，制造强烈心理疏离感</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 精密线条，背景近乎写实，人物略简化</div>
+              <div><strong>光/影:</strong> 霓虹与荧光灯，冷调，反光面多</div>
+              <div><strong>色/质:</strong> 青灰、品红、钠黄，低明度与高明度反差 | 玻璃幕墙、雨水、招牌、电视雪花</div>
+              <div><strong>镜头:</strong> 广角畸变，镜面反射，重复与对称构图</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0A0E14"></div><div class="color-dot" style="background:#1F3B4D"></div><div class="color-dot" style="background:#3E7C8C"></div><div class="color-dot" style="background:#C2185B"></div><div class="color-dot" style="background:#E8C547"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：雨夜街口, 镜屋, 电视监控</p>
+          <p>说明：仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·日漫与二游" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S079 · 成熟商业·日漫与二游</small>
+        <h2>京阿尼微表情日常（极细柔化线稿与逆光发丝透光法）<span class="old-name">原名：京都日常</span></h2>
+        <div class="summary-text">用最细腻的瞳孔光感、逆光发丝和微表情打动人心，治愈与青春题材的不二之选。</div>
+        <p class="prompt">京都动画（KyoAni）级细腻日常动画画法，采用极细且染入环境棕灰色的柔化收锋线稿；面部五官克制清秀，重在刻画瞳孔多层通透高光、眼睑微红与脸颊微妙红晕；柔和午后阳光形成半透明逆光发丝边缘与空气感柔光晕染（Bloom），室内外生活道具细节考究真实</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 极细且带温和收锋的彩色融合线稿，发梢与睫毛分束精细柔和</div>
+              <div><strong>光/影:</strong> 温暖通透的窗边侧逆光，发丝边缘呈现半透明琥珀金透光与柔和光晕</div>
+              <div><strong>色/质:</strong> 明亮干净的奶油白、樱花粉、浅空蓝与温暖木质原色，暗部绝不发黑 | 清澈多层玻璃质感瞳孔、柔软校服百褶裙布料、教室木桌与阳光微尘</div>
+              <div><strong>镜头:</strong> 50mm/85mm浅景深生活化平视机位，聚焦眼神颤动与指尖微动作叙事</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#2E3A46"></div><div class="color-dot" style="background:#6D8299"></div><div class="color-dot" style="background:#F2D7D5"></div><div class="color-dot" style="background:#F9E79F"></div><div class="color-dot" style="background:#FDFEFE"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：青春校园暗恋短剧, 治愈系日常情感番, 高好感度女性向角色特写</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·日漫与二游" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S080 · 成熟商业·日漫与二游</small>
+        <h2>旗舰二游立绘（色トレース融入线与多材质PBR分层渲染法）<span class="old-name">原名：二游向</span></h2>
+        <div class="summary-text">二次元商业含金量最高的工业立绘标准：多材质精细区分，颜值与华丽度拉满。</div>
+        <p class="prompt">顶级二次元幻想游戏（《原神》《明日方舟》PV级）主视觉画法，精密锐利的角色结构线稿配合局部色トレース（线稿染色融合）；服装配饰严格执行多材质分区渲染：丝绸流光、高光金属镶边、半透明黑丝/薄纱与发光宝石各司其职；闭塞阴影（AO）染暖肉色与紫灰，色彩饱和浓郁且层级分明</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 极高精度的疏密收锋数码线稿，结构交界处加粗卡闭塞黑点，受光处线稿染亮</div>
+              <div><strong>光/影:</strong> 双光源立体棚拍光：通透正面柔光保脸部颜值 + 强饱和戏剧轮廓光切出华丽剪影</div>
+              <div><strong>色/质:</strong> 高纯度主色配金银黑白高级中性色压阵，阴影偏冷紫或暖洋红，绝不灰脏 | 金属高光锐利反射、半透明薄纱透肤、宝石内折射与柔顺环形天使高光发丝</div>
+              <div><strong>镜头:</strong> 富有张力的动态立绘或电影级PV运镜，前景与背景分层虚化凸显角色主体</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#141824"></div><div class="color-dot" style="background:#2E3856"></div><div class="color-dot" style="background:#6C5CE7"></div><div class="color-dot" style="background:#FDCB6E"></div><div class="color-dot" style="background:#F8F9FA"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：奇幻异世界冒险漫剧, 核心角色高颜值设定卡, 游戏宣发级PV分镜</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·日漫与二游" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S081 · 成熟商业·日漫与二游</small>
+        <h2>日式王道热血漫（G笔夸张粗细线与作画张力透视法）<span class="old-name">原名：少年热血</span></h2>
+        <div class="summary-text">靠夸张透视、粗细G笔顿挫与手绘卡黑制造极致的速度感与热血爆发力。</div>
+        <p class="prompt">日本王道少年热血动画/漫画核心作画法（金田伊功/中村丰式张力作画），采用粗细顿挫极度强烈的G笔黑墨外轮廓与阴影卡黑（Kage）；大胆运用广角鱼眼夸张透视（三点透视近大远小），将爆发性的拳脚或兵刃推至镜头极近处；硬边二分高反差色块配合密集手绘速度线与冲击闪光帧</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 粗狂有力的G笔顿挫黑线，转折与阴影死角大块涂黑（卡黑），充满手绘原画生命力</div>
+              <div><strong>光/影:</strong> 爆炸中心强逆光或闪电高反差硬光，将人物切割为极亮受光面与深邃投影</div>
+              <div><strong>色/质:</strong> 高饱和热血暖红、电光蓝、烈日黄与浓重纯黑对撞 | 战损布料碎裂边缘、坚硬肌肉块面绷紧感、手绘烟尘块面与能量闪电弧</div>
+              <div><strong>镜头:</strong> 极端广角近大远小夸张透视、低角度仰拍冲刺机位</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0A0A0C"></div><div class="color-dot" style="background:#2B2D42"></div><div class="color-dot" style="background:#EF233C"></div><div class="color-dot" style="background:#FFB703"></div><div class="color-dot" style="background:#EDF2F4"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：热血战斗高潮分镜, 少年逆袭觉醒瞬间, 高燃动作番打戏</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·日漫与二游" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S082 · 成熟商业·日漫与二游</small>
+        <h2>90年代赛博OVA（高密度机械手绘线与多层赛璐璐冷暗阴影法）<span class="old-name">原名：90 年代 OVA</span></h2>
+        <div class="summary-text">动画史上最硬核的黄金年代工艺：精密手绘机械线稿配深沉赛璐璐冷绿暗调。</div>
+        <p class="prompt">1990年代日本黄金期科幻OVA剧场版（《攻壳机动队1995》《阿基拉》）手绘赛璐璐画法；极高密度的手绘机械管线、枪械与破败城建结构线稿；人物与机体采用三至四层严谨硬边赛璐璐色块分层塑造厚重体积，整体笼罩在冷暗青绿、铁灰与暗红信号灯的世纪末低照度氛围中</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 精密冷峻的手绘铅笔轨目线与微糙外墨线，机械与建筑管线细节极度扎实</div>
+              <div><strong>光/影:</strong> 夜间城市微弱漫射顶光搭配仪表盘、车灯与全息屏幕的局部冷调点光源</div>
+              <div><strong>色/质:</strong> 标志性90年代赛璐璐暗色调：军绿灰、深海青蓝、铁锈暗红与冷白皮肤 | 多张赛璐璐胶片叠压的厚重油漆色感、水粉手绘潮湿混凝土背景、金属冷光</div>
+              <div><strong>镜头:</strong> 押井守式沉静深焦远景或高速追逐的动态模糊分镜，充满哲学冷峻感</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0B1316"></div><div class="color-dot" style="background:#1C313A"></div><div class="color-dot" style="background:#455A64"></div><div class="color-dot" style="background:#B71C1C"></div><div class="color-dot" style="background:#CFD8DC"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：硬核赛博朋克悬疑剧, 机械义体改造与枪战, 末日废土科幻动画</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·欧美与跨文化" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S057 · 成熟商业·欧美与跨文化</small>
+        <h2>波斯细密画皇家工笔（极细猫毛笔金箔平涂与散点高视平线堆叠法）<span class="old-name">原名：波斯细密画</span></h2>
+        <div class="summary-text">东方装饰艺术的巅峰：宝石矿物色 + 24K金箔 + 纵向叠压无影构图，华丽绝伦。</div>
+        <p class="prompt">16世纪波斯萨法维王朝皇家细密画（Persian Miniature）工艺；使用单根猫毛制成的极细画笔勾勒毫发毕现的人物与繁复几何藤蔓花砖；采用高视平线纵向散点透视（远景建筑与人物向上层层叠高且大小不减），全平面无阴影，大量使用天然青金石蓝、绿松石、朱砂与24K真金泥平涂</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 极细如发丝的匀整墨线与金线，建筑瓷砖、地毯与衣袍纹样繁复到极致</div>
+              <div><strong>光/影:</strong> 神圣无影平面光，全画无任何明暗投影，完全靠宝石色块与金箔反光区分层次</div>
+              <div><strong>色/质:</strong> 顶级宝石矿物色板：阿富汗青金石蓝、波斯绿松石、朱砂红、藏红花黄与纯金 | 打磨光滑的古法手工纸、璀璨真金箔天空、繁密织毯与釉面彩砖质感</div>
+              <div><strong>镜头:</strong> 高视平线纵向叠压散点构图，如同从空中俯瞰展开的华丽皇室长卷</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#102A6B"></div><div class="color-dot" style="background:#1B8A7A"></div><div class="color-dot" style="background:#C83E2B"></div><div class="color-dot" style="background:#D9A441"></div><div class="color-dot" style="background:#F2E6CE"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：丝绸之路西域奇幻剧, 一千零一夜神话故事, 奢华异域宫廷视觉</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·欧美与跨文化" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S072 · 成熟商业·欧美与跨文化</small>
+        <h2>皮克斯三维合家欢（柔和丁达尔体积光与皮肤次表面散射补光法）<span class="old-name">原名：皮克斯体积光</span></h2>
+        <div class="summary-text">好莱坞三维动画的工业标准：体积光穿过窗与尘埃，次表面散射让皮肤透出暖意，布料与毛发各有各的软硬。它不炫技，只是把真实调到比真实更讨喜。</div>
+        <p class="prompt">顶级好莱坞三维动画电影渲染工艺，温暖夕阳窗光形成柔和体积光束，搭配青蓝色暗部环境反弹补光；人物皮肤具备细腻真实的次表面散射（SSS）红润透光感，毛发、针织粗布与木纹材质微观结构清晰可信，35mm浅景深焦外光斑圆润自然</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 无笔触，形体由光照与材质定义</div>
+              <div><strong>光/影:</strong> 体积光、窗光、暖色反弹光，光源可见</div>
+              <div><strong>色/质:</strong> 暖橙主调 + 青色补光，明度高，暗部干净 | 布料、毛发、皮肤次表面散射、微尘</div>
+              <div><strong>镜头:</strong> 35mm 中景，浅景深，大量柔和光斑</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#2A1A12"></div><div class="color-dot" style="background:#8C4A2A"></div><div class="color-dot" style="background:#D98E4A"></div><div class="color-dot" style="background:#F2D9A8"></div><div class="color-dot" style="background:#2E6B7A"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：家庭晚餐, 回忆长廊, 尘埃光束</p>
+          <p>说明：仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·欧美与跨文化" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S073 · 成熟商业·欧美与跨文化</small>
+        <h2>平行宇宙三维抽帧美漫（3D模型叠手绘墨线与CMYK半调网点错版法）<span class="old-name">原名：蜘蛛宇宙</span></h2>
+        <div class="summary-text">三维动画加二维手绘线加印刷网点，三种语言硬拼在一起，还故意抽帧、色差、错版。它证明了不完美本身就是风格——越像印坏的漫画，越有电影感。</div>
+        <p class="prompt">《蜘蛛侠：平行宇宙》混血视觉工艺，在坚实的三维立体体积与硬光结构上，直接手绘漫画高光线条与阴影斜排线；亮部铺设规则Ben-Day圆点高光，暗部叠印CMYK半调网点；焦外边缘采用受控的品红与青色RGB色版错位替代传统镜头模糊，动势张力拉满</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 半调网点 + 手绘线稿叠在三维模型上</div>
+              <div><strong>光/影:</strong> 硬光 + 强色差，光边带 RGB 分离</div>
+              <div><strong>色/质:</strong> 品红、青、黄，高饱和撞色，黑场压得住 | 印刷网点、油墨错版、故障条纹、纸张</div>
+              <div><strong>镜头:</strong> 动态构图，速度线，抽帧（on twos）</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0B0B12"></div><div class="color-dot" style="background:#C2185B"></div><div class="color-dot" style="background:#00C2D1"></div><div class="color-dot" style="background:#F2C300"></div><div class="color-dot" style="background:#E8E8F0"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：高空坠落, 平行世界, 街头追逐</p>
+          <p>说明：仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·欧美与跨文化" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S074 · 成熟商业·欧美与跨文化</small>
+        <h2>汤姆·摩尔凯尔经秘境（平面几何螺旋结纹与羊皮纸金箔四色平涂法）<span class="old-name">原名：凯尔经</span></h2>
+        <div class="summary-text">爱尔兰手抄本的美学：几何纹样、螺旋结、金箔与羊皮纸。画面被边框和纹样填满，却在中央留出神圣的空白。它适合神话、传说与故事中的故事。</div>
+        <p class="prompt">爱尔兰卡通沙龙（《凯尔经的秘密》《狼行者》）平面美学，完全抛弃西方三维透视，将森林、建筑与人物转化为几何化交织的凯尔特螺旋线与对称分割平面；采用米黄、翡翠墨绿、朱红与闪烁金箔四色封闭系统，在细腻羊皮纸肌理上靠色块叠压建立奇幻空间</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 装饰性线描，凯尔特结与螺旋，几何化</div>
+              <div><strong>光/影:</strong> 平面光，金箔反光，无写实阴影</div>
+              <div><strong>色/质:</strong> 米黄、墨绿、朱红、金，四色体系 | 羊皮纸、金箔、颜料颗粒、手绘抖动</div>
+              <div><strong>镜头:</strong> 平面化构图，圆形/框式构图，装饰边框</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#1E2A1C"></div><div class="color-dot" style="background:#3E5B3A"></div><div class="color-dot" style="background:#8C2F1F"></div><div class="color-dot" style="background:#D9B45B"></div><div class="color-dot" style="background:#EDE0C4"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：手抄本内页, 森林迷宫, 传说开场</p>
+          <p>说明：仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·欧美与跨文化" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S096 · 成熟商业·欧美与跨文化</small>
+        <h2>墨比斯法比清线派（Ligne Claire 等宽针管线与零渐变纯色平涂法）<span class="old-name">原名：法比清线派</span></h2>
+        <div class="summary-text">漫画大师墨比斯封神技法：等宽清线 + 零渐变高雅平涂，干净高级到极致。</div>
+        <p class="prompt">欧洲法比清线派（Ligne Claire，墨比斯 Moebius / 埃尔热工艺）大师画法；全场采用绝对清晰、粗细均匀闭合的精密针管笔墨线勾勒人物、奇幻生物与宏大建筑机械；彻底摒弃素描排线与柔和渐变过渡，完全依靠高明度、高审美调和的纯净平面色块与少量点状纹理构建无与伦比的空间纵深</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 等宽、连续、闭合且极度精准的钢笔/针管笔清线，岩石与沙丘辅以标志性短点线</div>
+              <div><strong>光/影:</strong> 晴朗高透的无影阳光或超现实平面光，阴影同样是边界锐利的纯色色块</div>
+              <div><strong>色/质:</strong> 墨比斯标志性高雅粉彩与荧光撞色：珊瑚粉、松石绿、沙漠鹅黄与深空钴蓝 | 绝对干净的平面印刷色感，无任何油画厚涂或CG油腻高光，清爽至极</div>
+              <div><strong>镜头:</strong> 深焦大广角全景，从近景人物一直清晰延伸到远景奇幻巨构建筑</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#1D3557"></div><div class="color-dot" style="background:#457B9D"></div><div class="color-dot" style="background:#A8DADC"></div><div class="color-dot" style="background:#F4A261"></div><div class="color-dot" style="background:#E76F51"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：高概念科幻奇幻漫剧, 异星球冒险探索, 高审美文化与商业品牌视觉</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·特色工艺" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S007 · 成熟商业·特色工艺</small>
+        <h2>Risograph 独立孔版套印（大豆油墨双色错版叠印与粗网点肌理法）<span class="old-name">原名：孔版套印</span></h2>
+        <div class="summary-text">设计圈最受追捧的复古印刷美学：荧光专色大豆油墨 + 1毫米错版叠印。</div>
+        <p class="prompt">日本理想科学 Risograph 孔版数码套印插画工艺；严格限制使用 2 至 3 种高饱和专色大豆油墨（如荧光粉、电光蓝、亮橘黄）在未涂布粗糙再生纸上分色印刷；利用半透明粗颗粒网点叠印（Overprint）在交界处自然混出第三色，并保留 1–2mm 真实物理套印错版偏移</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 无黑线描边，完全由分色版几何剪影与粗颗粒半调网点（Halftone）构成形体</div>
+              <div><strong>光/影:</strong> 平面图形化对比，高光直接留出未印刷的暖白纸面底色</div>
+              <div><strong>色/质:</strong> 标志性Riso专色油墨：荧光粉（Fluorescent Pink）、联邦蓝、向日葵黄叠印混色 | 粗糙吸墨的特种纸纤维、半透明大豆油墨斑驳未干感、套色错位边</div>
+              <div><strong>镜头:</strong> 现代先锋独立海报式极简构图，图形概括力极强</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#FF48B0"></div><div class="color-dot" style="background:#0078BF"></div><div class="color-dot" style="background:#FFE800"></div><div class="color-dot" style="background:#1E1E1E"></div><div class="color-dot" style="background:#F7F4EB"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：潮流商业广告插画, 独立播客/音乐封面, 高辨识度年轻化短片转场</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·特色工艺" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S034 · 成熟商业·特色工艺</small>
+        <h2>泡泡玛特潮玩盲盒（PVC磨砂软胶次表面散射与摄影棚三点柔光法）<span class="old-name">原名：软胶公仔</span></h2>
+        <div class="summary-text">百亿潮玩赛道的标准工业美学：磨砂PVC叠果冻亚克力，直击年轻消费群体。</div>
+        <p class="prompt">高端商业潮玩盲盒（Pop Mart 设计师公仔）工业渲染与实拍画法；二至三头身圆润Q版体块比例，主体采用高级哑光磨砂PVC/搪胶材质（面部带微弱次表面散射粉嫩透光），局部护目镜、嘴唇或配饰采用高光清漆（Glossy Varnish）与电镀金属形成冷暖软硬材质反差；微型摄影棚三点柔光箱照明</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 圆润饱满的3D工业倒角分件结构，部件接缝干净精密，无锐利死角</div>
+              <div><strong>光/影:</strong> 专业产品级三点柔光箱布光：顶部大柔光勾出圆润高光带，底部反光板提亮下颌</div>
+              <div><strong>色/质:</strong> 高明度奶油马卡龙色系配局部高饱和潮酷撞色，色彩纯净讨喜 | 细腻磨砂PVC肤感涂层、透明果冻亚克力配件、局部高光清漆与金属电镀</div>
+              <div><strong>镜头:</strong> 85mm微距人像镜头平视或微俯拍，柔和背景渐变突出潮玩立体存在感</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#2B2D42"></div><div class="color-dot" style="background:#FF8FA3"></div><div class="color-dot" style="background:#80ED99"></div><div class="color-dot" style="background:#FFD166"></div><div class="color-dot" style="background:#F8F9FA"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：潮玩IP商业企划, Q版萌系动画短片, 品牌吉祥物与电商主视觉</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·特色工艺" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S036 · 成熟商业·特色工艺</small>
+        <h2>多层背光立体纸雕（卡纸精密切边层叠景深与隐藏暖光透射法）<span class="old-name">原名：分层纸雕</span></h2>
+        <div class="summary-text">用十余层真实卡纸厚度与夹层隐藏暖光，打造令人惊叹的立体剧场纵深。</div>
+        <p class="prompt">立体光影纸雕灯箱（Layered Papercut Lightbox）工艺；整幅画面由十余层精密切割的特种纹理卡纸由前至后层叠排布；隐藏在纸层夹缝间的柔和暖光灯带向上透射，在每一层卡纸切边形成清晰的厚度高光与渐次柔和的层叠投影，利用纯物理纸层间隔营造深邃奇幻的剧场空间</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 手术刀般利落流畅的激光/手工刻刀切纸边缘，层与层之间轮廓错落咬合</div>
+              <div><strong>光/影:</strong> 夹层隐藏式背光与侧逆光透射，前景深色剪影、远景暖光最盛，投影层层递进</div>
+              <div><strong>色/质:</strong> 由近及远的同色系或冷暖渐变色阶：深靛蓝前景过渡至核心璀璨琥珀暖金 | 300g特种棉纸粗纤维表面、纸张切口真实物理厚度与半透光柔和漫射</div>
+              <div><strong>镜头:</strong> 剧场舞台式正面框景深焦构图，前后多层景别层次极度分明</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0B132B"></div><div class="color-dot" style="background:#1C2541"></div><div class="color-dot" style="background:#3A506B"></div><div class="color-dot" style="background:#F4A261"></div><div class="color-dot" style="background:#FDE293"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：奇幻童话故事开篇, 中秋/春节高端节庆商业片, 唯美MV与绘本动态化</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·特色工艺" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S046 · 成熟商业·特色工艺</small>
+        <h2>定格手工羊毛毡（动物蓬松纤维戳刺肌理与微距逆光金边轮廓法）<span class="old-name">原名：羊毛毡</span></h2>
+        <div class="summary-text">短视频治愈系流量密码：逆光下每一根羊毛绒丝都在发光，温暖触手可及。</div>
+        <p class="prompt">手工针毡羊毛毡（Needle Felted Wool）定格动画工艺；人物、动物与场景道具完全由蓬松杂乱而温暖的染色美利奴羊毛纤维戳刺塑形；表面布满细小的戳针凹孔与伸向空中的万千透明細碎绒毛；采用微距摄影强逆光照明，使边缘绒毛燃起一圈温暖柔和的金色透光轮廓</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 无硬朗边界，所有轮廓均由蓬松交织的卷曲羊毛纤维自然过渡</div>
+              <div><strong>光/影:</strong> 温暖午后强侧逆光，穿透边缘细碎羊毛绒丝形成极具治愈感的发光毛边</div>
+              <div><strong>色/质:</strong> 温暖治愈的自然植物染色色板：燕麦奶白、焦糖棕、牛油果绿与暖橘红 | 真实美利奴羊毛卷曲纤维、针毡手工戳刺小孔、木质纽扣或玻璃黑豆眼睛</div>
+              <div><strong>镜头:</strong> 100mm微距镜头极浅景深实拍质感，焦外柔和奶油散景</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#4A3525"></div><div class="color-dot" style="background:#9C6644"></div><div class="color-dot" style="background:#E6CCB2"></div><div class="color-dot" style="background:#7F9172"></div><div class="color-dot" style="background:#E07A5F"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：高治愈萌宠/母婴商业片, 童话寓言爆款短视频, 温暖冬季品牌广告</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·特色工艺" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span><span class="promoted-tag">✨ 旧库提拔重命名</span></div>
+        <small class="category">S076 · 成熟商业·特色工艺</small>
+        <h2>赛博受控数字故障（冷白屏幕自发光与RGB色道几何块状撕裂位移法）<span class="old-name">原名：故障艺术</span></h2>
+        <div class="summary-text">RGB 分离、像素位移、扫描线、数据块。它把传输错误当成一种笔触，用技术故障表达记忆失真与身份撕裂。适合科幻、惊悚与超现实段落。</div>
+        <p class="prompt">设计级受控数字故障美学（Controlled Glitch Art），纯黑暗部基底配冷白屏幕自发光与高饱和青色/品红对撞；在保持人物核心五官与主体轮廓清晰可读的前提下，沿水平方向施加有节奏的几何数据块错位撕裂、RGB三色通道分离与规则扫描线（严禁全图随机乱码噪点）</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 像素位移、块状撕裂、RGB 三色错位</div>
+              <div><strong>光/影:</strong> 屏幕自发光，冷白与青，局部过曝</div>
+              <div><strong>色/质:</strong> 青、品红、纯黑，高对比电子色 | 扫描线、压缩噪点、数据块、屏幕摩尔纹</div>
+              <div><strong>镜头:</strong> 屏幕翻拍感，抖动，广角贴近</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#05070A"></div><div class="color-dot" style="background:#0E2A33"></div><div class="color-dot" style="background:#00E5FF"></div><div class="color-dot" style="background:#FF2E88"></div><div class="color-dot" style="background:#E8E8E8"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：信号中断, 记忆损坏, 系统觉醒</p>
+          <p>说明：仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·特色工艺" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S133 · 成熟商业·特色工艺</small>
+        <h2>迈克·米格诺拉美漫极黑块面法（地狱男爵死影）</h2>
+        <div class="summary-text">以黑色为骨肉的大师级减法艺术，大面积纯黑不仅省算力，而且张力拉满。</div>
+        <p class="prompt">迈克·米格诺拉经典暗黑美漫工艺；画面多达70%由大面积纯黑剪影（Spot Blacks）吞没细节，几何方折的刚劲外轮廓线；受光面仅用沉稳冷青、石砖红极简双色平涂切出结构，克苏鲁神秘气息极强</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 极度果断的几何方折墨线，全无细碎排线，完全用死黑块面雕刻体积</div>
+              <div><strong>光/影:</strong> 如同用手电筒劈开虚无的极端剧场侧光，亮暗之间无任何过渡灰面</div>
+              <div><strong>色/质:</strong> 大面积绝对纯黑，仅搭配砖红、冷石青、古铜黄三种压抑平涂色 | 重油墨印刷平整质感，石头风化破角，古老金属断口</div>
+              <div><strong>镜头:</strong> 高度形式感的剪影式侧视构图，空间被压缩成二维浮雕</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#000000"></div><div class="color-dot" style="background:#7A2218"></div><div class="color-dot" style="background:#2F4F4F"></div><div class="color-dot" style="background:#8B7355"></div><div class="color-dot" style="background:#DCDCDC"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：地牢探险斩杀恶魔, 克苏鲁邪神低语, 冷硬派硬汉超级英雄</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·特色工艺" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S134 · 成熟商业·特色工艺</small>
+        <h2>新川洋司毛笔水墨机甲（狂草飞白与战术结构）</h2>
+        <div class="summary-text">东方毛笔与西方重装机械的终极结合，概念设计行业的天花板。</div>
+        <p class="prompt">新川洋司大师级水墨机甲艺术，粗犷狂放的毛笔枯笔飞白勾勒高科技外骨骼装甲；水墨擦染出的精密灰阶阴影与透视铅笔草稿线共存；沉稳灰调中仅有一抹鲜明的战术警示红点缀，兼具东方泼墨写意与现代机械力量</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 狂草毛笔重按轻提，飞白断线遍布，伴随精密机械透视线</div>
+              <div><strong>光/影:</strong> 概念设计散光，局部强受光点亮机械反光面</div>
+              <div><strong>色/质:</strong> 炭黑墨色、水泥灰、钛白灰调，唯一的点睛战术警告红或警示橙 | 宣纸生涩吸墨纹理、铅笔石墨光泽、机械磨砂涂层</div>
+              <div><strong>镜头:</strong> 富有进攻性的人体工程学机位，身体前倾动势极强</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0F0F12"></div><div class="color-dot" style="background:#2B2B30"></div><div class="color-dot" style="background:#595963"></div><div class="color-dot" style="background:#A8A8B3"></div><div class="color-dot" style="background:#D63031"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：战术特工潜入, 赛博机甲装甲对决, 硬核男频科幻封面</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·特色工艺" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S135 · 成熟商业·特色工艺</small>
+        <h2>天野喜孝妖异金箔水彩（流线灵动与繁复金线）</h2>
+        <div class="summary-text">将线条流动感与水彩迷幻感发挥到极致的妖异神作。</div>
+        <p class="prompt">天野喜孝经典奇幻美学；极细柔美且带微弱颤抖的灵动钢笔线，迷幻水彩与半透明色晕自然流动交融；人物眼尾修长妖冶，无数发丝与披带化作轻盈游丝，金色细碎花纹点缀其间，空灵超凡、如梦如幻</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 极细且连绵不绝的羽毛笔线条，发丝如水草般蜿蜒流动</div>
+              <div><strong>光/影:</strong> 来自梦境深处的朦胧漫射冷光，金箔与矿彩在暗处自发微光</div>
+              <div><strong>色/质:</strong> 梦幻渐变色：孔雀蓝、淡薰衣草紫、玫瑰金、象牙白与古金 | 水彩湿画水渍自然晕染痕迹、真金金屑点缀、通透轻纱</div>
+              <div><strong>镜头:</strong> 修长纵向构图，人物姿态轻盈如漂浮在虚空之中</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#121B28"></div><div class="color-dot" style="background:#2D4059"></div><div class="color-dot" style="background:#706897"></div><div class="color-dot" style="background:#D4AF37"></div><div class="color-dot" style="background:#F3E9D2"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：西方奇幻神祇降世, 吸血鬼贵族物语, 超凡脱俗的神话梦境</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·特色工艺" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S136 · 成熟商业·特色工艺</small>
+        <h2>伊藤润二铜版密排线（曲面密集针管笔排线法）</h2>
+        <div class="summary-text">全靠线条密度塑造立体体积与窒息氛围，惊悚心理剧的最强武器。</div>
+        <p class="prompt">伊藤润二式日式惊悚漫画与古典铜版画蚀刻排线法；全场不使用灰色涂抹，完全依靠极细针管笔顺应人体球体曲面进行万千条精密密集的弧形平行与交叉排线；面容苍白冷漠，阴影密不透风，令人脊背发凉</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 0.05mm极细等距排线，顺着骨骼与肌肉走向层层织网</div>
+              <div><strong>光/影:</strong> 冷酷的顶光或斜下方惨白光芒，暗部被密不透光的黑线编织吞没</div>
+              <div><strong>色/质:</strong> 极端纯粹的黑白灰（依靠线条密度产生灰度），极少数局部血红点缀 | 铜版画腐蚀针感、光滑苍白的瓷质肌肤、深邃密集的墨水编织</div>
+              <div><strong>镜头:</strong> 极端压抑的正视近景大特写，眼神僵直空洞</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#000000"></div><div class="color-dot" style="background:#1C1C1C"></div><div class="color-dot" style="background:#4F4F4F"></div><div class="color-dot" style="background:#A3A3A3"></div><div class="color-dot" style="background:#FFFFFF"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：悬疑惊悚人性剧, 都市怪谈短剧爆点, 诡异荒诞漫画分镜</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·特色工艺" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S137 · 成熟商业·特色工艺</small>
+        <h2>法国 Gobelins 独立动画（无轮廓色块与喷枪颗粒）</h2>
+        <div class="summary-text">欧洲顶级动画学院的看家画法：告别幼稚卡通，用前卫色块和颗粒喷枪表达高级感。</div>
+        <p class="prompt">法国高布兰（Gobelins）现代艺术动画风格；零外轮廓描线，完全由大块大胆冷暖剪影色块直接拼接体积；在明暗交界线与受光边缘点缀粗颗粒渐变喷枪（Grainy Airbrush）；设计感极强，色彩高雅前卫</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 大刀阔斧的极简几何大色块剪影，完全抛弃传统描线</div>
+              <div><strong>光/影:</strong> 强烈的设计性单侧色光，阴影直接采用高纯度对比色冷调</div>
+              <div><strong>色/质:</strong> 前卫高雅的色卡对撞：钴蓝与暖姜黄、翡翠绿与珊瑚橘 | 复古气动喷枪的细腻颗粒感散点，哑光无反光纸面质感</div>
+              <div><strong>镜头:</strong> 黄金分割几何分割构图，极富平面现代设计美感</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#1B263B"></div><div class="color-dot" style="background:#415A77"></div><div class="color-dot" style="background:#E0A96D"></div><div class="color-dot" style="background:#C84B31"></div><div class="color-dot" style="background:#F4F1DE"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：高端品牌概念广告, 深度情感独白动画, 获奖级独立艺术短片</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·特色工艺" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S138 · 成熟商业·特色工艺</small>
+        <h2>川濑巴水新版画（雨雪晨昏多版套色与木纹）</h2>
+        <div class="summary-text">将传统东方木刻与西方真实写实光影完美融合的世纪名作画法。</div>
+        <p class="prompt">日本新版画运动（Shin-Hanga）川濑巴水大师画法；传统浮世绘木刻黑线与和纸纤维之上，融入西方近代真实晨昏逆光与夜景雨雪倒影；采用多版木刻擦晕叠印（Bokashi），既有版画古雅，又有电影般深邃宁静光影</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 精细规整的木刻主墨线，飞雪与雨丝采用干净刀雕留白或反白</div>
+              <div><strong>光/影:</strong> 夜幕低垂时窗户透出的温暖橘黄光芒，倒映在潮湿积水路面</div>
+              <div><strong>色/质:</strong> 深邃纯净的靛蓝夜空、积雪冷灰白、暖黄灯火与苍翠松柏 | 手工和纸生涩纤维、木刻板材天然水纹压痕、多层矿植物油墨</div>
+              <div><strong>镜头:</strong> 具有悠远纵深感的街道或寺院透视构图，意境深远宁静</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0C1B33"></div><div class="color-dot" style="background:#1D3557"></div><div class="color-dot" style="background:#457B9D"></div><div class="color-dot" style="background:#F4A261"></div><div class="color-dot" style="background:#E76F51"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：唯美古风旅途篇章, 风雪夜归人情感高潮, 治愈系新日漫与动态漫</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·特色工艺" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S139 · 成熟商业·特色工艺</small>
+        <h2>莱卡定格动画（真实织物缝线与微距摄影景深）</h2>
+        <div class="summary-text">彻底摆脱CG虚拟感：用真实微型面料经纬和定格摄影打光唤醒观众的指尖触感。</div>
+        <p class="prompt">莱卡工作室（Laika）顶级定格动画工艺；人物身着真实手工微型缝纫布料，粗纺毛线与织物经纬纤维清晰可见；哑光树脂人偶带有微小机械替换面具微缝隙，微缩实体摄影棚真实微型灯具打光，浅景深虚化极具触感</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 实体微缩雕塑形体，棱角分明的造型风格，真实材料接缝</div>
+              <div><strong>光/影:</strong> 微缩摄影棚真实定向聚光灯，投射出硬朗真实的实体阴影</div>
+              <div><strong>色/质:</strong> 浓郁而略带暗沉的童话色调：墨蓝、芥末绿、酒红与旧羊毛白 | 粗织羊毛、真皮纽扣、粗糙纸模、微小指纹压痕与树脂哑光</div>
+              <div><strong>镜头:</strong> 物理微距镜头特有的极浅景深，焦外背景呈现真实物理光斑</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#17202A"></div><div class="color-dot" style="background:#2C3E50"></div><div class="color-dot" style="background:#7D6608"></div><div class="color-dot" style="background:#922B21"></div><div class="color-dot" style="background:#E5E7E9"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：奇幻暗黑童话短剧, 微缩世界冒险寓言, 差异化极高完播率短视频</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·特色工艺" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S140 · 成熟商业·特色工艺</small>
+        <h2>中世纪泥金手抄本（真羊皮纸与金叶压花画法）</h2>
+        <div class="summary-text">人类手抄本时代的艺术结晶：真金箔与羊皮纸构筑的神秘史诗感。</div>
+        <p class="prompt">欧洲中世纪修道院泥金手抄本艺术（Illuminated Manuscript）；泛黄带有天然毛孔的羊皮纸基底，铁胆墨水羽毛笔勾勒严整轮廓；24K打磨真金叶反光与昂贵青金石群青平涂，周围环绕繁复几何藤蔓花纹，神圣庄严</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 羽毛笔精细黑墨勾线，繁密交织的凯尔特结与植物藤蔓</div>
+              <div><strong>光/影:</strong> 平面装饰光，利用打磨真金叶在不同光线下耀眼反光</div>
+              <div><strong>色/质:</strong> 群青蓝、朱砂红、孔雀绿搭配奢华纯金，羊皮纸米黄温润底 | 老旧羊皮纸毛孔肌理、金箔微小裂纹浮凸、古老植物颜料</div>
+              <div><strong>镜头:</strong> 全平面无透视二维装饰构图，外带规整的四方装饰花框</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0D2040"></div><div class="color-dot" style="background:#990000"></div><div class="color-dot" style="background:#D4AF37"></div><div class="color-dot" style="background:#1F4E3B"></div><div class="color-dot" style="background:#EDE0C4"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：史诗奇幻世界观序章, 古老预言书与圣典揭秘, 塔罗与神秘学短片</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·特色工艺" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S141 · 成熟商业·特色工艺</small>
+        <h2>构成主义丝网套印海报（粗网目半调与红黑斜角）</h2>
+        <div class="summary-text">最富力量感的平面宣传艺术：斜角几何与红黑油墨压迫，气势如虹。</div>
+        <p class="prompt">早期构成主义与粗网目丝网套印海报艺术；极具煽动力的强劲对角线与斜角冲击构图，粗大半调网点压制沉重黑影；鲜红与纯黑两色厚重丝网油墨套印错位，几何图形切割空间，力量感排山倒海</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 锐利粗厚的几何直线与正圆形，全无拖泥带水的曲线修饰</div>
+              <div><strong>光/影:</strong> 无真实光源，利用红黑高反差几何光影营造视觉压迫</div>
+              <div><strong>色/质:</strong> 极端精简：纯正红旗红、纯重油墨黑、粗糙新闻纸淡米黄 | 丝网印刷厚重油墨微凸感、半调粗网点、套印错版边痕</div>
+              <div><strong>镜头:</strong> 低机位极端仰拍斜角透视，如纪念碑般巍峨耸立</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#D63031"></div><div class="color-dot" style="background:#111111"></div><div class="color-dot" style="background:#DFE6E9"></div><div class="color-dot" style="background:#2D3436"></div><div class="color-dot" style="background:#B71540"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：热血革命誓师短剧, 工业硬核科幻口播, 反乌托邦反抗高潮</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·特色工艺" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S142 · 成熟商业·特色工艺</small>
+        <h2>90年代赛璐璐胶片混血（硬边二分与红色光晕溢出）</h2>
+        <div class="summary-text">手绘赛璐璐的纯净色块与真实胶片红晕的绝妙交融，老粉与年轻人通吃。</div>
+        <p class="prompt">90年代巅峰手绘赛璐璐与35mm电影胶片的混血画法；坚实有力的铅笔手绘人物外线，严谨清晰的二至三层硬边色块阴影；高光边缘产生真实的胶片红色光晕溢出（Halation），背景水粉厚涂，兼具怀旧手感与现代华丽</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 富有轻重节奏的手绘动画铅笔线稿，阴影完全由明确色块边界切出</div>
+              <div><strong>光/影:</strong> 传统赛璐璐手绘光影，高光处因胶片乳剂过曝产生红橙色辉光边缘</div>
+              <div><strong>色/质:</strong> 90年代经典赛璐璐涂料色板：纯正天蓝、樱桃红、草绿与暖肉色 | 透明赛璐璐胶片温润塑料感、水粉绘制背景纸感、极微弱胶片微粒</div>
+              <div><strong>镜头:</strong> 黄金时代日本剧场版镜头语言，构图扎实，景深自然</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#1B1B2F"></div><div class="color-dot" style="background:#1F4068"></div><div class="color-dot" style="background:#E43F5A"></div><div class="color-dot" style="background:#F9A826"></div><div class="color-dot" style="background:#EAEAEA"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：怀旧治愈青春恋爱漫剧, 科幻经典重置短片, 高审美复古二次元</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·特色工艺" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S143 · 成熟商业·特色工艺</small>
+        <h2>卡拉瓦乔酒窖光暗对照法（Tenebrism 极黑戏剧光）</h2>
+        <div class="summary-text">西方油画史上最纯粹的戏剧光影：用一束天光撕开深渊，将情绪推至顶点。</div>
+        <p class="prompt">巴洛克大师卡拉瓦乔酒窖强光暗照法（Tenebrism）；背景完全沉入虚无的纯黑之中，一束如同从高处天井打下的硬朗强光撕裂黑暗直射主体；受光面皮肤油脂光泽与布料褶皱被雕刻至尽，戏剧张力令人屏息</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 古典油画直接画法，暗部薄涂透底，亮部饱满颜料堆叠塑形</div>
+              <div><strong>光/影:</strong> 单一方向极强定向聚光（酒窖光），无任何环境反弹辅光，明暗割裂</div>
+              <div><strong>色/质:</strong> 深赭石、沥青黑、暗红为基底，受光处呈现温暖写实的象牙白与肉色 | 粗纹亚麻画布肌理、浓厚油画光油反光、真实肉体微血管透色</div>
+              <div><strong>镜头:</strong> 紧凑的人物半身近景，人物肢体破框而出，极具冲撞感</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0A0706"></div><div class="color-dot" style="background:#2E1C14"></div><div class="color-dot" style="background:#663B2A"></div><div class="color-dot" style="background:#C48D62"></div><div class="color-dot" style="background:#EAD5C3"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：深牢大狱权谋审讯, 背叛与死亡悲剧时刻, 极端心理对峙高潮戏</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="mature" data-category="成熟商业·特色工艺" data-tier="mature_commercial">
+      <div class="body">
+        <div><span class="mature-tag">🌟 成熟商业化 · 主推首选</span></div>
+        <small class="category">S144 · 成熟商业·特色工艺</small>
+        <h2>慕夏新艺术配蒂芙尼彩绘玻璃（铅条与透光矿石）</h2>
+        <div class="summary-text">黑色铅条与透光宝石玻璃的完美结合，每一块颜色都在发光，华丽至极。</div>
+        <p class="prompt">慕夏新艺术优美流线与蒂芙尼彩色拼接玻璃工艺结合；粗重流畅的黑色铅条焊缝分割色块，内部填充具有半透光矿石气泡的彩色玻璃；背光穿透时呈现如宝石般璀璨斑斓的透射光芒，华美神圣，极富装饰美感</p>
+        <div class="genes">
+              <div><strong>笔/法:</strong> 连续圆润的黑色金属铅条焊缝轮廓，优雅回旋的花草植物曲线</div>
+              <div><strong>光/影:</strong> 强烈的漫射背光透射，光芒穿透彩色玻璃使每块颜色自发光</div>
+              <div><strong>色/质:</strong> 宝石级高纯度透光色彩：祖母绿、钴蓝、紫晶与琥珀黄交织 | 手工玻璃内部微小气泡与水波纹、黑色铅条金属焊接凸起</div>
+              <div><strong>镜头:</strong> 正面装饰性拱券圆窗框式构图，宏大对称而神圣</div>
+            </div>
+        <div class="palette"><div class="color-dot" style="background:#0B132B"></div><div class="color-dot" style="background:#1C2541"></div><div class="color-dot" style="background:#3A506B"></div><div class="color-dot" style="background:#5BC0BE"></div><div class="color-dot" style="background:#E0A96D"></div></div>
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：西幻神女觉醒瞬间, 魔法圣殿宏大穹顶, 奢华宫廷幻想漫剧</p>
+          <p>说明：仅借用媒介、笔法、线条、设色、材质与光影；具体人物、服装、场景由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="手绘" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S001 · 手绘</small>
+        <h2>水彩速写</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">松散断续墨线，半透明水彩薄染，桃色与粉蓝点缀，轮廓局部开放，明亮纸面留白，轻盈观察式笔触</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="手绘" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S002 · 手绘</small>
+        <h2>儿童蜡笔画</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">稚拙夸张比例，粗细不一的蜡笔轮廓，大色块自由填色，明快有限配色，保留克制的蜡质笔触</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="手绘" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S003 · 手绘</small>
+        <h2>石墨素描</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">石墨铅笔，方向性排线塑造体积，黑白灰层次分明，轮廓虚实变化，背景简化</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="手绘" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S004 · 手绘</small>
+        <h2>极简单线画</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">流畅连续线条概括主体，少量关键轮廓，大面积负空间，极少色彩点缀，无密集阴影</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="手绘" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S005 · 手绘</small>
+        <h2>扁平矢量</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">几何概括造型，清晰剪影，有限色彩平涂，利落边缘，明确图形层级，无复杂材质</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="手绘" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S006 · 手绘</small>
+        <h2>水粉绘本</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">柔和水粉笔触，哑光不透明色层，温暖协调配色，圆润简化形体，具有故事感的空间层次</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="手绘" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S008 · 手绘</small>
+        <h2>夸张肖像</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">选择性放大有辨识度的特征，富有表现力的比例，清晰立体明暗，幽默但友善，轮廓易读</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="手绘" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S009 · 手绘</small>
+        <h2>彩色铅笔</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">细密方向性笔触，多层轻压叠色，柔和混色，可见但克制的纸面纹理，形体清楚</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="手绘" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S010 · 手绘</small>
+        <h2>酒精马克笔</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">干净墨线轮廓，宽幅马克笔色层，透明色带重叠，局部自然晕边，清晰亮暗分区</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="手绘" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S011 · 手绘</small>
+        <h2>炭笔画</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">炭笔黑白绘画，以浓黑与柔和擦笔塑造体积，强弱边缘变化，亮部留白，背景克制</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="手绘" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S012 · 手绘</small>
+        <h2>圆珠笔排线</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">单色圆珠笔，细密交叉排线，依靠线条疏密建立明暗，顺应形体的笔触，无大面积涂抹</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="绘画" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S013 · 绘画</small>
+        <h2>古典油画</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">古典油画，多层透明罩染，深棕背景与温暖肤色，侧上方主光，明暗交界柔和，厚薄色层有序</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="绘画" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S014 · 绘画</small>
+        <h2>印象派</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">印象派绘画，以短促分离笔触记录自然光，相邻冷暖色组织体积，轻松边缘，明亮户外色感</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="绘画" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S015 · 绘画</small>
+        <h2>旋转厚涂后印象</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">后印象派厚涂，方向强烈的旋转笔触，钴蓝与明黄对照，色线顺应形体，情绪化但可读的结构</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="绘画" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S016 · 绘画</small>
+        <h2>浮世绘</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">木版主线清晰，有限色彩平涂，压缩透视，图案化云水与衣纹，不对称构图，干净套色</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="绘画" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S017 · 绘画</small>
+        <h2>中国水墨</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">浓淡墨色层叠，干湿笔交替，形体概括，宣纸留白，笔势流动，以少量墨色构成空间</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="绘画" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S018 · 绘画</small>
+        <h2>中国工笔</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">纤细准确的勾线，多层透明薄染，典雅克制配色，细节精致有序，绢本绘画质感</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="绘画" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S019 · 绘画</small>
+        <h2>波普艺术</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">醒目黑色轮廓，鲜明高对比色块，局部规则半调网点，图标式概括，强烈视觉节奏</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="绘画" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S020 · 绘画</small>
+        <h2>新艺术装饰</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">修长流动曲线，植物形态装饰，平面化色彩，形体与装饰线相互呼应，优雅节奏，不带标题文字</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="绘画" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S021 · 绘画</small>
+        <h2>立体主义</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">多视点分解形体，相互咬合的几何平面，平面与空间交错，有限协调色系，结构清楚</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="绘画" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S022 · 绘画</small>
+        <h2>野兽派</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">大胆非自然色彩，大块饱和色面，自由直接的笔触，简化明暗，色彩关系主导形体</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="动漫" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S023 · 动漫</small>
+        <h2>复古赛璐璐</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">传统二维动画，略粗墨线，有限色阶平涂，硬边阴影，手绘背景，清晰色面，不加胶片颗粒</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="动漫" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S024 · 动漫</small>
+        <h2>现代动画主视觉</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">精细二维动画线稿，干净赛璐璐人物，通透环境色，电影感逆光，层次丰富的绘制背景</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="动漫" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S025 · 动漫</small>
+        <h2>手绘动画电影</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">温暖手绘动画，柔和简化人物，水彩与水粉背景，自然环境光，轻盈色彩，富有生活感的细节</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="动漫" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S026 · 动漫</small>
+        <h2>黑白少年漫画</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">有力黑色墨线，强烈黑白块面，局部规则网点，动态姿势，速度线集中于动作重点</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="动漫" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S027 · 动漫</small>
+        <h2>少女漫画</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">轻盈纤细线条，柔和面部造型，明亮眼神，克制花卉装饰，细腻灰阶或淡彩，浪漫留白</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="动漫" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S028 · 动漫</small>
+        <h2>全彩条漫</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">干净数字线稿，清晰色彩平涂，少量柔和渐变，人物表情易读，背景细节服务叙事</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="动漫" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S029 · 动漫</small>
+        <h2>可爱粉彩</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">圆润简化造型，柔和马卡龙配色，少量高光，小巧装饰，清晰轮廓，轻松可爱</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="三维" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S031 · 三维</small>
+        <h2>三维动画角色</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">原创三维动画角色，富有表现力的比例，圆润清晰造型，柔和物理材质，细腻面部表情，自然全局光照</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="三维" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S032 · 三维</small>
+        <h2>充气气球人偶</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">圆润充气体块，光亮弹性表面，膨胀曲线，清楚接缝，受控镜面高光，轻盈玩具感，简洁背景</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="三维" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S033 · 三维</small>
+        <h2>体素微缩</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">统一尺寸立方体构成主体与场景，轴测微缩空间，有限色彩，清晰层级，柔和接触阴影</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="三维" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S035 · 三维</small>
+        <h2>毛绒玩偶</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">柔软短绒材质，圆润缝制造型，刺绣五官，细致接缝，温暖柔光，纤维排列有序</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="三维" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S037 · 三维</small>
+        <h2>手捏橡皮泥</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">儿童手捏橡皮泥造型，饱和色块，圆润不规则体块，少量接缝与压痕，清楚剪影，柔和微缩摄影</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="三维" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S038 · 三维</small>
+        <h2>木质积木</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">模块化木质形体，柔和倒角，嵌合关节，真实尺度木纹，哑光表面，温暖棚拍光</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="手工" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S039 · 手工</small>
+        <h2>红色剪纸</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">单张红纸剪刻，相连的实体与负形，明确轮廓，镂空纹样有序，简洁背景，纸边清晰</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="手工" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S040 · 手工</small>
+        <h2>彩色玻璃</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">铅条分隔的宝石色玻璃，几何拼接形体，通透背光，局部自然色差，图案层级清晰</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="手工" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S041 · 手工</small>
+        <h2>刺绣</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">以定向针脚塑造形体，分层彩色绣线，织物底面整洁，线材尺度真实，柔和侧光，细节有序</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="手工" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S042 · 手工</small>
+        <h2>瓷砖马赛克</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">小型瓷砖镶嵌，以有限色块组织形体，规则接缝，局部尺寸变化，材质真实，整体轮廓清楚</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="手工" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S044 · 手工</small>
+        <h2>折纸</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">合理纸张折面，清晰折痕，几何概括主体，哑光纸材，柔和定向光，简洁空间</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="手工" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S045 · 手工</small>
+        <h2>木雕</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">温润木材，以凿刻切面组织形体，顺应结构的真实木纹，清楚轮廓，柔和侧光，手工细节克制</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="电影" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S048 · 电影</small>
+        <h2>黑色电影</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">黑白电影剧照，硬质侧光，强烈明暗对比，图形化投影，深邃空间，主体剪影清楚</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="电影" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S049 · 电影</small>
+        <h2>港风霓虹</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">饱和都市霓虹，冷暖色光交错，湿润反射，临场感构图，人物与背景分层，暗部保留细节，不加录像噪声</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="电影" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S050 · 电影</small>
+        <h2>复古特艺彩色</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">浓郁原色，精致棚拍布光，清晰布景，温暖肤色，柔和高光，经典彩色电影质感</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="电影" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S051 · 电影</small>
+        <h2>武侠电影</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">武侠电影剧照，飘逸衣料与有力动作，层叠山水空间，薄雾与定向光，诗意构图，材质真实</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="电影" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S052 · 电影</small>
+        <h2>太空歌剧</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">宏大星舰或未来空间，冷暖分色光，人物与环境尺度对比，清楚层次，电影剧照质感，受控高光</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="摄影" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S054 · 摄影</small>
+        <h2>黄金时刻</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">低位温暖阳光，柔和金色轮廓光，自然肤色，空气透视，明暗过渡细腻，适度景深</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="摄影" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S055 · 摄影</small>
+        <h2>复古暖调摄影</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">温暖中间调，轻微橄榄色阴影，柔和高光，适度降低饱和度，真实材质，不额外添加颗粒或污损</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="传统" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S058 · 传统</small>
+        <h2>泰国皮影戏</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">镂空皮革剪影，活动关节与操纵杆，细密有序的透光纹样，琥珀色幕布背光，清楚侧影，舞台式空间</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="传统" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S060 · 传统</small>
+        <h2>马杜巴尼民间画</h2>
+        <div class="summary-text">早期分类参考条目，仅供风格初探与对照，不包含完整工业级画法工序。</div>
+        <p class="prompt">双重轮廓线，平面化形体，几何与植物纹样，鲜明有限配色，有序重复节奏，主体易辨</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·日式动画" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S077 · 商业画风·日式动画</small>
+        <h2>经典赛璐璐 TV</h2>
+        <div class="summary-text">平涂两三层阴影、干净线条、网点做暗部，制作成本最低</div>
+        <p class="prompt">经典电视动画赛璐璐，清晰线稿与平涂色块，两至三层硬边阴影；局部规则网点辅助暗部，色面整洁，形体关系明确</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：校园, 恋爱, 日常</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·日式动画" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S078 · 商业画风·日式动画</small>
+        <h2>剧场版精细</h2>
+        <div class="summary-text">高密度云层、强镜头光斑、超细节背景，单帧信息量最大</div>
+        <p class="prompt">精细二维动画电影质感，细密有序的背景描绘，云层具有丰富体积与层次，电影式光影和受控光晕，主体轮廓清晰</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：青春, 恋爱, 治愈</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·国漫" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S085 · 商业画风·国漫</small>
+        <h2>东方厚涂</h2>
+        <div class="summary-text">可见笔触、硬边高光、暖调压暗部，皮肤有笔触过渡</div>
+        <p class="prompt">东方厚涂，清楚可见且有方向的绘画笔触，硬边高光与暖色暗部形成层次，皮肤和物体通过笔触过渡塑形，材质干净</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：神话, 热血, 古风</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·国漫" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S086 · 商业画风·国漫</small>
+        <h2>水墨国风</h2>
+        <div class="summary-text">水墨与素描混用，上美影味道，二维里带三渲二运镜</div>
+        <p class="prompt">中国水墨动画，墨色浓淡与素描式结构线结合，轮廓虚实相生，层次简练，二维笔墨保留空间纵深与清楚形体</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：暗黑西游, 古风, 寓言</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·国漫" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S087 · 商业画风·国漫</small>
+        <h2>赛博国潮</h2>
+        <div class="summary-text">机械结构叠鎏金纹样，青紫霓虹配全息符文</div>
+        <p class="prompt">赛博国潮的材质与设色，精密机械表面结合克制鎏金装饰，青色与紫红霓虹对照，电子自发光受控；是否出现机械和纹样由当前内容决定</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：神话科幻, 都市玄幻</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·国漫" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S088 · 商业画风·国漫</small>
+        <h2>港漫硬派</h2>
+        <div class="summary-text">粗黑描边、网点阴影、肌肉块面，红黑金三色</div>
+        <p class="prompt">港漫硬派，粗黑轮廓与明确形体块面，规则网点阴影，红黑金高对比配色，硬朗而有力的墨线表现</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：武侠, 格斗, 热血</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·国漫" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S089 · 商业画风·国漫</small>
+        <h2>剪纸皮影</h2>
+        <div class="summary-text">镂空剪影、背光透射、正红墨黑米黄三色</div>
+        <p class="prompt">剪纸皮影视觉，镂空轮廓、平面色块和层叠纸片，背光透射形成边缘层次，朱红、墨黑与米黄配色，切边清晰</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：民俗, 寓言, 片头</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·欧美" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S093 · 商业画风·欧美</small>
+        <h2>美式卡通</h2>
+        <div class="summary-text">造型夸张、线条粗、色彩对比强，表情表演幅度大</div>
+        <p class="prompt">美式卡通，概括夸张的造型语言，粗而干净的轮廓，高对比色块，表情具有弹性；人物身份与基本比例遵循当前设定</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：喜剧, 儿童, 合家欢</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·欧美" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S094 · 商业画风·欧美</small>
+        <h2>3D 合家欢</h2>
+        <div class="summary-text">体积光、次表面散射、柔和景深，质感讨喜</div>
+        <p class="prompt">亲和三维动画电影质感，柔和体积光、自然次表面散射与受控景深，材质圆润细腻，形体结构清楚，暖冷照明协调</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：合家欢, 治愈, 冒险</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·欧美" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S095 · 商业画风·欧美</small>
+        <h2>美式超英</h2>
+        <div class="summary-text">肌肉块面、粗黑轮廓、网点阴影、动态构图</div>
+        <p class="prompt">美式英雄漫画质感，坚实形体块面、粗黑轮廓、规则半调网点和强明暗对比；动作与透视张力依剧情选择</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：动作, 都市, 热血</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·欧美" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S097 · 商业画风·欧美</small>
+        <h2>暗黑哥特</h2>
+        <div class="summary-text">细密钢笔线、扭曲造型、单一冷光、深阴影</div>
+        <p class="prompt">暗黑哥特绘画，细密有序钢笔线、适度拉长和扭曲的造型语言，单一冷光与深色阴影，暗部保留必要结构</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：恐怖, 寓言, 悬疑</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·写实" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S101 · 商业画风·写实</small>
+        <h2>赛博朋克</h2>
+        <div class="summary-text">冷底配高饱和霓虹、雨夜湿反射、雾气</div>
+        <p class="prompt">赛博朋克光色，冷暗底色搭配高饱和青色与品红局部光源，湿润表面的反射有序，薄雾层次受控；雨夜和城市内容按当前场景决定</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：科幻, 犯罪, 赛博</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·写实" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S102 · 商业画风·写实</small>
+        <h2>复古胶片</h2>
+        <div class="summary-text">颗粒、褪色、光晕、偏青绿，带年代记忆</div>
+        <p class="prompt">复古胶片色彩倾向，轻度褪色、青绿色偏色与柔和受控光晕，明暗过渡细腻，保留清晰结构；默认无随机颗粒和录像噪声</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：年代, 回忆, 情感</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·特殊媒介" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S103 · 商业画风·特殊媒介</small>
+        <h2>定格黏土</h2>
+        <div class="summary-text">指纹与工具痕、微缩布景、逐帧抖动</div>
+        <p class="prompt">定格黏土质感，可辨的塑形边缘和克制工具痕，微缩尺度的实体布景照明，材质柔软而形体清晰；不默认添加指纹、污痕或画面抖动</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：怪诞, 喜剧, 寓言</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·特殊媒介" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S104 · 商业画风·特殊媒介</small>
+        <h2>像素</h2>
+        <div class="summary-text">点阵、受限色板、抖动过渡</div>
+        <p class="prompt">像素艺术，清晰点阵与受限色板，形体以有序像素块概括；局部规则抖色用于层次过渡，不引入随机噪点或模糊缩放</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：游戏改, 复古, 科幻</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·特殊媒介" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S105 · 商业画风·特殊媒介</small>
+        <h2>水墨实验</h2>
+        <div class="summary-text">泼墨、飞白、大量留白，一笔成型</div>
+        <p class="prompt">实验水墨，受控泼墨、飞白和大面积洁净留白，笔势连贯，墨色浓淡层次清楚，笔迹服务形体，不出现无关污点</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：艺术短片, 诗意段落</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·特殊媒介" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S106 · 商业画风·特殊媒介</small>
+        <h2>故障艺术</h2>
+        <div class="summary-text">RGB 分离、扫描线、数据块</div>
+        <p class="prompt">受控故障艺术，局部RGB色道分离、规则扫描线与几何数据块，结构断裂具有设计节奏，主体仍可辨，不添加随机噪声或压缩伪影</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：科幻, 心理, 转场</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·特殊媒介" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S107 · 商业画风·特殊媒介</small>
+        <h2>拼贴</h2>
+        <div class="summary-text">撕纸、剪报、胶带，各元素光源冲突</div>
+        <p class="prompt">混合媒介拼贴，清晰撕纸边缘、剪纸层叠和克制胶带材质，多种表面形成有意的视觉差异；不添加可识别报刊文字、标志或无关污渍</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：实验, 讽喻, 意识流</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+    <article class="reference" data-category="商业画风·特殊媒介" data-tier="reference_only">
+      <div class="body">
+        <div><span class="ref-tag">📖 一般参考 · 仅供对照</span></div>
+        <small class="category">S108 · 商业画风·特殊媒介</small>
+        <h2>低多边形</h2>
+        <div class="summary-text">几何面片、平面着色、无纹理</div>
+        <p class="prompt">低多边形视觉，清楚几何面片与平面着色，以面片明暗塑造体积，色块整洁，不叠加表面纹理</p>
+        
+        
+        <button class="copy">复制画风提示词</button>
+        <details>
+          <summary>适用场景与工序说明</summary>
+          <p>适用场景：轻科幻, 独立游戏</p>
+          <p>说明：仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。</p>
+        </details>
+      </div>
+    </article>
+  </div>
+</main>
+<script>
+const cards = [...document.querySelectorAll('article')];
+const q = document.querySelector('#search');
+const sel = document.querySelector('#category');
+const tabAll = document.querySelector('#tab-all');
+const tabMature = document.querySelector('#tab-mature');
+const tabRef = document.querySelector('#tab-ref');
+let currentTier = 'mature_commercial';
+
+function setTab(tier, activeBtn) {
+  currentTier = tier;
+  [tabAll, tabMature, tabRef].forEach(b => b.classList.remove('active'));
+  activeBtn.classList.add('active');
+  filter();
+}
+
+tabAll.onclick = () => setTab('', tabAll);
+tabMature.onclick = () => setTab('mature_commercial', tabMature);
+tabRef.onclick = () => setTab('reference_only', tabRef);
+
+function filter() {
+  let n = 0;
+  const val = q.value.toLowerCase();
+  const cat = sel.value;
+  for (const c of cards) {
+    const matchText = c.innerText.toLowerCase().includes(val);
+    const matchCat = (!cat || c.dataset.category === cat);
+    const matchTier = (!currentTier || c.dataset.tier === currentTier);
+    const show = matchText && matchCat && matchTier;
+    c.hidden = !show;
+    if (show) n++;
+  }
+  document.querySelector('#count').textContent = n + ' / ' + cards.length + ' 个画风';
+}
+
+q.oninput = filter;
+sel.onchange = filter;
+filter();
+
+for (const b of document.querySelectorAll('.copy')) {
+  b.onclick = async () => {
+    const t = b.closest('article').querySelector('.prompt').textContent;
+    try {
+      await navigator.clipboard.writeText(t);
+      b.textContent = '已复制母词';
+    } catch(e) {
+      const x = document.createElement('textarea');
+      x.value = t;
+      document.body.append(x);
+      x.select();
+      document.execCommand('copy');
+      x.remove();
+      b.textContent = '已复制母词';
+    }
+    setTimeout(() => b.textContent = '复制画风提示词', 1500);
+  };
+}
+</script>
+</body>
+</html>

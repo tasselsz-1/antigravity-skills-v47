@@ -1,0 +1,33 @@
+{
+  "id": "H016",
+  "type": "hairstyle",
+  "group": "女性 · 中国古代发髻",
+  "gender": "女性",
+  "era": "汉晋古装/闺秀",
+  "name": "汉晋堕马髻",
+  "en_name": "Asymmetrical Drooping Duomaji Bun",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "发髻明显偏向一侧下垂倾倒 + 慵懒垂耳软鬓发",
+  "formula_slots_ref_only": {
+    "color": "墨黑 / 柔和乌褐",
+    "texture": "柔顺厚实微松盘垂质感",
+    "noun": "古典侧倾堕马髻",
+    "motion": "偏坠发髻伴随侧颜慵懒倾垂，鬓丝随微风拂动"
+  },
+  "prompt_en_ref_only": "asymmetrical drooping traditional Chinese bun (Duomaji) tilted to one side, soft framing wisps, graceful classical allure",
+  "prompt_zh_ref_only": "发髻精巧偏向一侧垂堕而下，耳边留数缕轻柔鬓丝，呈现汉晋闺秀独有的慵懒娇媚韵味",
+  "suggested_bones": [
+    "B002",
+    "B009",
+    "B010"
+  ],
+  "svg_file": "assets/hairs/H016.svg",
+  "svg_params": {
+    "shape": "ancient_duoma",
+    "accent": "#c026d3",
+    "gender": "女性"
+  }
+}

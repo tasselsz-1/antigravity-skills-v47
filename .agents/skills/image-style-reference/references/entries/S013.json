@@ -1,0 +1,21 @@
+{
+  "category": "绘画",
+  "slug": "oil-classical",
+  "name": "古典油画",
+  "style_prompt_zh": "古典油画，多层透明罩染，深棕背景与温暖肤色，侧上方主光，明暗交界柔和，厚薄色层有序",
+  "reference_image": "assets/oil-classical.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/oil-classical.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/oil-classical.webp",
+  "source_title": "古典油画肖像",
+  "source_original_prompt_zh": "将附带照片转换为绘制在粗纹亚麻画布上的古典油画肖像。采用四分之三侧身胸像、暖棕色底层、透明罩染、不透明高光、可见猪鬃笔触、柔化的阴影边缘、克制的绯红色，以及让一侧退入浓郁棕色阴影的伦勃朗式照明。将随意微笑和转身改为挺拔姿势、闭合嘴唇与沉着直视。通过脸型、黑色长发和碎花连衣裙线索保持她的辨识度，但将包括脸部、眼睛和皮肤在内的整个人物，以层叠油彩和厚涂重新绘制；不得出现摄影质感皮肤或粘贴式写实脸。使用近黑的深棕色背景。输出竖版 2:3，不得出现画框、文字、签名或水印。",
+  "source_negative_prompt_zh": "摄影质感脸部，粘贴式写实脸，平面数字明暗，明亮户外景色，平滑塑料皮肤，锐利摄影边缘，霓虹色，现代影棚背景，卡通人体结构，画框，题字，签名，水印",
+  "sha256": "09fd21aabf9b094abda4fdf18080bbf26a3ac880cf17e5c244bc262f8adfc433",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S013"
+}

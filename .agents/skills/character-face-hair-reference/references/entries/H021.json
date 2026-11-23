@@ -1,0 +1,33 @@
+{
+  "id": "H021",
+  "type": "hairstyle",
+  "group": "女性 · 中国古代发髻",
+  "gender": "女性",
+  "era": "宋代写实/清雅",
+  "name": "宋式素雅珍珠矮髻",
+  "en_name": "Song Dynasty Minimalist Pearl Low Bun",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "低平圆润脑后矮髻 + 素色抹额或极简珍珠排簪 + 清淡无繁饰",
+  "formula_slots_ref_only": {
+    "color": "自然纯黑",
+    "texture": "柔和哑光自然微蓬质感",
+    "noun": "宋代素雅矮髻",
+    "motion": "耳际极少量软碎发随风微动，整体素净留白"
+  },
+  "prompt_en_ref_only": "Song dynasty understated low rounded Chinese bun, minimalist small white pearl hairpins, restrained classical aesthetics",
+  "prompt_zh_ref_only": "发丝在后脑柔顺挽成低平圆润宋式矮髻，仅点缀一排极简小白珍珠簪，素雅清丽极富宋画韵味",
+  "suggested_bones": [
+    "B002",
+    "B005",
+    "B016"
+  ],
+  "svg_file": "assets/hairs/H021.svg",
+  "svg_params": {
+    "shape": "ancient_song",
+    "accent": "#64748b",
+    "gender": "女性"
+  }
+}

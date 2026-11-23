@@ -1,0 +1,21 @@
+{
+  "category": "三维",
+  "slug": "voxel",
+  "name": "体素微缩",
+  "style_prompt_zh": "统一尺寸立方体构成主体与场景，轴测微缩空间，有限色彩，清晰层级，柔和接触阴影",
+  "reference_image": "assets/voxel.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/voxel.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/voxel.webp",
+  "source_title": "体素角色",
+  "source_original_prompt_zh": "将附上的照片转换为等距视角微缩场景中的体素游戏角色。严格沿网格，用大小统一且清晰可见的立方体构建每个面部平面、发束、服装褶皱和道具；采用硬边、无平滑处理、有限的24色调色板和清晰可读的方块剪影。以明亮定向日光配合紧凑的环境光遮蔽阴影，营造欢快的微缩氛围。通过脸型、黑色长发和碎花太阳裙线索保持她可辨识，但包括脸部、眼睛和皮肤在内的每个部分都要重建为立方体与像素色块；不要摄影质感皮肤，也绝不粘贴写实面孔。让她以方正放松的姿势站立，神情平静简洁。重建一条阶梯式方块老街。输出竖版2:3，不要文字、标志或水印。",
+  "source_negative_prompt_zh": "光滑网格，圆润黏土，写实皮肤，曲线边缘，无限渐变，柔软剪影，摄影面孔，粘贴的写实面孔，人物身份被改变，文字，标志，水印",
+  "sha256": "aa7c2f8f9f949995cd50e43b57e916c0545166556d841a49ab77de0b64c2162e",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S033"
+}

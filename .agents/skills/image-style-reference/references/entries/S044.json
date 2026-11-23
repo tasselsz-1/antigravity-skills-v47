@@ -1,0 +1,21 @@
+{
+  "category": "手工",
+  "slug": "origami-paper",
+  "name": "折纸",
+  "style_prompt_zh": "合理纸张折面，清晰折痕，几何概括主体，哑光纸材，柔和定向光，简洁空间",
+  "reference_image": "assets/origami-paper.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/origami-paper.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/origami-paper.webp",
+  "source_title": "折纸人物",
+  "source_original_prompt_zh": "把附上的照片转换成一个站在浅灰色桌面上的全身折纸人物。头部、长发、躯干、碎花连衣裙、双臂和双腿全部由奶油色、珊瑚色、靛蓝色和鼠尾草绿色纸张折成几何平面，并呈现清晰的山折与谷折、层叠纸边和哑光纤维。让她双脚并拢直立，一只具有棱角的手臂抬起挥手，平静而多面的表情只由折痕形成。通过脸部轮廓、深色折纸长发和花卉色彩分布保留她的可辨识特征，但要把包括脸部、眼睛和皮肤在内的整个角色重新折成纸张几何；不得出现摄影质感皮肤或粘贴的写实面孔。使用柔和的定向棚灯和折痕阴影。输出竖版 2:3，不得有文字、标志或水印。",
+  "source_negative_prompt_zh": "摄影质感面孔，粘贴的写实面孔，绘制的写实五官，黏土雕塑，圆润塑料形体，布偶，彼此断开且不可能成立的折叠，湿亮光泽，繁杂场景，文字，标志，水印",
+  "sha256": "af2e3d83a5503a853abd3d80d7a6f42b47f3e36ea41ae5bf3ebaa7c3c4cb9d0a",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S044"
+}

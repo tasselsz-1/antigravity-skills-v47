@@ -1,0 +1,22 @@
+{
+  "category": "手绘",
+  "slug": "charcoal-portrait",
+  "name": "炭笔画",
+  "style_prompt_zh": "炭笔黑白绘画，以浓黑与柔和擦笔塑造体积，强弱边缘变化，亮部留白，背景克制",
+  "reference_image": "assets/charcoal-portrait.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/charcoal-portrait.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/charcoal-portrait.webp",
+  "source_title": "炭笔肖像",
+  "source_original_prompt_zh": "将附带照片转换为绘制在粗糙米色绘图纸上的表现性炭笔肖像。使用松散的柳炭粉、带来天鹅绒般浓黑的压缩炭笔、宽阔侧锋笔触、擦出的高光、抹开的中间调、可见的手指揉擦轨迹、断续边缘和戏剧性侧光。将姿势调整为静止的四分之三侧身胸像，配以安静闭口表情。通过脸型、黑色长发和碎花连衣裙的韵律保持她的辨识度，但将包括脸部、眼睛和皮肤在内的整个人物，只用炭粉和炭笔痕迹重绘；不得出现摄影质感皮肤或粘贴式写实脸。让老街消融为擦抹出的调子色块。输出竖版 2:3，不得出现颜色、文字、签名或水印。",
+  "source_negative_prompt_zh": "摄影质感脸部，粘贴式写实脸，石墨铅笔光泽，精确细排线，墨线轮廓，彩色色素，干净数字渐变，平滑喷枪，蜡笔，洁净无痕的纸面，文字，签名，水印",
+  "sha256": "55786a52327036daf3e32b68e8af9214ad0def05220404870b17fdd24fb54df3",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S011",
+  "texture_note": "来源示例含明显媒介纹理或复古质感；默认仅参考绘制方式与色彩，不继承无关颗粒或污损。"
+}

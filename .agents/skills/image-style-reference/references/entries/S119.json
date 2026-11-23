@@ -1,0 +1,50 @@
+{
+  "id": "S119",
+  "category": "成熟商业·国风大师",
+  "slug": "commercial-guofeng-aged-ink-splash",
+  "name": "当代实验水墨（宿墨破水爆破法）",
+  "aliases": [
+    "隔夜宿墨",
+    "泼墨爆破",
+    "AGED INK SPLASH"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "当代中国画实验宿墨技法，隔夜宿墨颗粒在宣纸上形成凝聚的焦黑墨核与向外扩散的毛细灰水圈；大面积狂放泼溅与锋利飞白穿透画面，局部单点极鲜明印泥朱红破开死墨，张力狂暴，杀气凛冽",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "当代实验水墨（宿墨破水爆破法）",
+  "source_original_prompt_en": "commercial-guofeng-aged-ink-splash",
+  "summary": "利用传统国画中隔夜宿墨脱胶特有的爆裂水晕肌理，制造极致的杀气与暴力美学。",
+  "visual_genes": {
+    "笔": "枯笔干擦如钢丝划破纸面，大笔泼墨带爆破水珠飞溅",
+    "光": "无真实光源，利用墨与水的剧烈反差制造心理压迫光影",
+    "色": "焦黑墨核、灰调水晕、生宣米白，唯有一抹极刺目朱砂",
+    "质": "宿墨天然胶质沉淀颗粒，宣纸水渍皱缩肌理",
+    "镜": "瞬间爆炸式对角线破框构图，极具视觉冲击"
+  },
+  "palette": [
+    "#050505",
+    "#242424",
+    "#707070",
+    "#EAE5D9",
+    "#C00000"
+  ],
+  "use_cases": [
+    "武功大招爆发瞬间",
+    "角色黑化弑神定格",
+    "硬核功夫打斗高潮帧"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

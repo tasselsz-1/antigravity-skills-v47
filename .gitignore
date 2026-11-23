@@ -1,0 +1,25 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Secrets & local configs
+.env
+.env.*
+*.pem
+*.key
+*_ed25519
+rclone.conf
+
+# Logs & temp artifacts
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+desktop.ini
+qa_v42_results.json

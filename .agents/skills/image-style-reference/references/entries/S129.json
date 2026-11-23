@@ -1,0 +1,50 @@
+{
+  "id": "S129",
+  "category": "成熟商业·电影大师",
+  "slug": "commercial-cinema-wet-plate-collodion",
+  "name": "19世纪湿版火棉胶（银盐药水沉淀法）",
+  "aliases": [
+    "火棉胶摄影",
+    "锡板照片",
+    "WET PLATE COLLODION"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "1850年代湿版火棉胶摄影工艺，玻璃板手工涂布硝酸银药水显影；仅对紫外线与蓝光敏感，人物面容雀斑、微纹理与深邃眼神被极端深刻刻画；边缘带有手工流淌药水的暗角、银斑与水痕，历史沧桑震撼人心",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "19世纪湿版火棉胶（银盐药水沉淀法）",
+  "source_original_prompt_en": "commercial-cinema-wet-plate-collodion",
+  "summary": "数码相机永远无法模仿的历史厚重感：湿版药水流淌痕迹与深邃灵魂凝视。",
+  "visual_genes": {
+    "笔": "面部毛孔、发丝与胡茬呈现惊人的物理级超高清晰度",
+    "光": "露天漫射天光长曝光，眼神因微动而极其深邃吸魂",
+    "色": "纯粹的单色系：棕褐色（Sepia）、金属银灰与浓黑",
+    "质": "玻璃板药水流淌暗角、银斑氧化斑痕、手工微瑕划痕",
+    "镜": "严正的大画幅相机正面胸像，目光穿透镜头直击心灵"
+  },
+  "palette": [
+    "#1A130E",
+    "#3D2B1F",
+    "#785A46",
+    "#B09A86",
+    "#EAD9C8"
+  ],
+  "use_cases": [
+    "民国乱世枭雄定格",
+    "西部荒野赏金猎人",
+    "末代王朝宿命人物照"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

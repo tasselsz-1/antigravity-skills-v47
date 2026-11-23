@@ -1,0 +1,50 @@
+{
+  "id": "S131",
+  "category": "成熟商业·电影大师",
+  "slug": "commercial-cinema-scott-iron-blue",
+  "name": "雷德利·斯科特史诗中世纪（冷铁青灰与烛火跳动）",
+  "aliases": [
+    "天国王朝",
+    "角斗士冷调",
+    "SCOTT IRON BLUE"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "雷德利·斯科特导演古装战争史诗视觉；全片被压抑冷酷的阴冷高海拔铁青色天光笼罩，室内与夜战仅依靠真实跳动的火把与烛火暖光切入；铠甲泥浆、冷兵器磨损与空气中翻滚的灰烬雪粒真实细腻，史诗感磅礴",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "雷德利·斯科特史诗中世纪（冷铁青灰与烛火跳动）",
+  "source_original_prompt_en": "commercial-cinema-scott-iron-blue",
+  "summary": "冷铁与烈火的冰火对撞，构建出无可挑剔的厚重史诗质感。",
+  "visual_genes": {
+    "笔": "密集兵刃与铠甲鳞片形成精密线条阵列，泥沙与血迹斑驳有致",
+    "光": "冷青天光压制大背景，摇曳跳动的火光提供极度温暖的关键侧光",
+    "色": "冷铁青、泥土深褐、青灰色，点缀跃动的火光橙与暗红",
+    "质": "钢铁锻造锤痕、湿泥溅洒布料、空中飞扬的灰烬与细雪颗粒",
+    "镜": "长焦镜头大军压境压迫感，高速快门捕捉兵刃交击瞬间"
+  },
+  "palette": [
+    "#0E141B",
+    "#1E2C3A",
+    "#415A77",
+    "#C86D3B",
+    "#DDA15E"
+  ],
+  "use_cases": [
+    "古代史诗攻城大战",
+    "权力的游戏式列王纷争",
+    "冷兵器硬核近战动作"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

@@ -1,0 +1,63 @@
+{
+  "id": "S065",
+  "category": "成熟商业·国漫与实验视觉",
+  "slug": "cinematic-cyberguochao",
+  "name": "新神榜赛博国潮（机械神像鎏金纹样与青紫霓虹体积光法）",
+  "aliases": [
+    "赛博国潮",
+    "银幕画风志05",
+    "CYBER GUOCHAO"
+  ],
+  "style_prompt_zh": "东方神话赛博国潮画法，硬边精密机械骨骼结构与传统重工鎏金錾刻纹样深度咬合；纯黑与深蓝暗部基底上，品红与青色霓虹自发光穿插金色体积光束穿透建筑缝隙；金属拉丝、霓虹灯管玻璃与抽象几何光纹材质分明，广角仰拍极具压迫感",
+  "reference_image": "assets/cinematic/S065-cyberguochao.jpg",
+  "source_page": "http://127.0.0.1:8766/国漫电影感画风清单.html",
+  "source_snapshot": "references/sources/cinematic-2026-10-30/国漫电影感画风清单.html",
+  "source_title": "赛博国潮",
+  "source_original_prompt_zh": "赛博国潮神话，机械神像与鎏金纹样，霓虹青紫自发光，体积光穿过建筑缝隙，全息浮空符文，金属与玻璃材质，广角仰拍对称构图，轻微故障闪烁，2.39:1，电影感",
+  "source_original_prompt_en": "cyber guochao mythology, mechanical deity statue with gilded ornament, neon magenta and cyan self-illumination, volumetric light through architecture gaps, holographic floating runes, metal and glass materials, wide-angle low-angle symmetrical composition, subtle glitch flicker, 2.39:1, cinematic",
+  "source_negative_prompt_zh": "低饱和，自然光，古装写实，绢本，平涂，模糊",
+  "visual_genes": {
+    "笔": "硬边矢量结构 + 粒子光效，线条干净利落",
+    "光": "霓虹自发光 + 体积光，青紫为主，金为补",
+    "色": "品红、青、鎏金，黑底高饱和，暗部带蓝",
+    "质": "金属机械、霓虹玻璃、全息投影、电路纹样",
+    "镜": "广角仰拍，对称构图，轻微故障闪烁"
+  },
+  "palette": [
+    "#07060F",
+    "#2A1B4D",
+    "#7B2CBF",
+    "#22D3EE",
+    "#D4A537"
+  ],
+  "use_cases": [
+    "天宫夜巡",
+    "机械神像",
+    "都市追逐"
+  ],
+  "tags": [
+    "赛博",
+    "国潮",
+    "霓虹",
+    "机械",
+    "神话"
+  ],
+  "summary": "东方神话的骨架加赛博朋克的光。鎏金纹样与全息符文叠在机械结构上，青紫霓虹从建筑缝隙里渗出来。它解决了一个老问题：让古老的神明显得正在运行。",
+  "reference_coordinates": "参考坐标 · 新神榜：杨戬 · 白蛇2",
+  "sha256": "fd13fe247d0a4f5d5bbcabaa32a3f1f750d6c93328d44e8d5b48f1ba76ae2ad0",
+  "image_size": [
+    760,
+    950
+  ],
+  "visual_review": "已查看8图总览：未见明显水印、签名或平台标识；实际调用前需看单张原图并复核。",
+  "reference_limitations": "样图为赛博兵俑角色，可参考机械与冷暖光色；不继承额头和装甲上的符号样装饰。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。",
+  "optional_effects_note": "全息可辨符文、故障闪烁默认关闭；抽象光纹不构成标识。",
+  "license_note": "源页注明样图来自公开模型示例，版权归原作者，仅用于本地画风观察；未核实图片或模型商业许可。",
+  "source_image_page": "https://civitai.com/models/1928082",
+  "source_sample_prompt_zh": "一张电影静帧：夜里的天宫，机械神像立在正中。赛博国潮，鎏金纹样叠在金属机械结构上，全息符文悬浮在半空。霓虹的青和紫从建筑缝隙里渗出来，体积光穿过雾气。黑底高饱和，暗部带蓝。广角仰拍，对称构图，轻微故障闪烁，2.39:1。",
+  "source_sample_caption": "氛围参考：兵马俑 + 赛博，接近清单描述",
+  "tier": "mature_commercial",
+  "original_short_name": "赛博国潮"
+}

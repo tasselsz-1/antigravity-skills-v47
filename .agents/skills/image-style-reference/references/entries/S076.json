@@ -1,0 +1,57 @@
+{
+  "id": "S076",
+  "category": "成熟商业·特色工艺",
+  "slug": "cinematic-glitch",
+  "name": "赛博受控数字故障（冷白屏幕自发光与RGB色道几何块状撕裂位移法）",
+  "aliases": [
+    "故障艺术",
+    "银幕画风志16",
+    "GLITCH"
+  ],
+  "style_prompt_zh": "设计级受控数字故障美学（Controlled Glitch Art），纯黑暗部基底配冷白屏幕自发光与高饱和青色/品红对撞；在保持人物核心五官与主体轮廓清晰可读的前提下，沿水平方向施加有节奏的几何数据块错位撕裂、RGB三色通道分离与规则扫描线（严禁全图随机乱码噪点）",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/国漫电影感画风清单.html",
+  "source_snapshot": "references/sources/cinematic-2026-10-30/国漫电影感画风清单.html",
+  "source_title": "故障艺术",
+  "source_original_prompt_zh": "故障艺术画面，RGB 三色分离，像素位移与块状撕裂，扫描线与压缩噪点，数据块，屏幕翻拍质感，青色与品红高对比，冷白自发光，抖动，2.39:1，电影感",
+  "source_original_prompt_en": "glitch art frame, rgb channel separation, pixel displacement and block tearing, scanlines and compression noise, data blocks, screen-capture texture, cyan and magenta high contrast, cold white self-illumination, jitter, 2.39:1, cinematic",
+  "source_negative_prompt_zh": "手绘，水彩，柔和自然光，暖调，低对比，干净画面",
+  "visual_genes": {
+    "笔": "像素位移、块状撕裂、RGB 三色错位",
+    "光": "屏幕自发光，冷白与青，局部过曝",
+    "色": "青、品红、纯黑，高对比电子色",
+    "质": "扫描线、压缩噪点、数据块、屏幕摩尔纹",
+    "镜": "屏幕翻拍感，抖动，广角贴近"
+  },
+  "palette": [
+    "#05070A",
+    "#0E2A33",
+    "#00E5FF",
+    "#FF2E88",
+    "#E8E8E8"
+  ],
+  "use_cases": [
+    "信号中断",
+    "记忆损坏",
+    "系统觉醒"
+  ],
+  "tags": [
+    "实验",
+    "故障",
+    "赛博",
+    "电子",
+    "超现实"
+  ],
+  "summary": "RGB 分离、像素位移、扫描线、数据块。它把传输错误当成一种笔触，用技术故障表达记忆失真与身份撕裂。适合科幻、惊悚与超现实段落。",
+  "reference_coordinates": "参考坐标 · 实验动画 · 音乐影像",
+  "sha256": null,
+  "image_size": null,
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页面未提供此画风样图；不得宣称已按图参考。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。",
+  "optional_effects_note": "源词中的压缩噪点、摩尔纹与抖动不默认继承；明确要求故障时仅保留设计性的断裂，不混淆为压缩质量问题。",
+  "license_note": "源页注明样图来自公开模型示例，版权归原作者，仅用于本地画风观察；未核实图片或模型商业许可。",
+  "tier": "mature_commercial",
+  "original_short_name": "故障艺术"
+}

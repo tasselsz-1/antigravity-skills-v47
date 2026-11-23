@@ -1,0 +1,21 @@
+{
+  "category": "摄影",
+  "slug": "golden-hour",
+  "name": "黄金时刻",
+  "style_prompt_zh": "低位温暖阳光，柔和金色轮廓光，自然肤色，空气透视，明暗过渡细腻，适度景深",
+  "reference_image": "assets/golden-hour.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/golden-hour.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/golden-hour.webp",
+  "source_title": "黄金时刻逆光",
+  "source_original_prompt_zh": "将附带照片转换为用 85mm 镜头和大光圈拍摄的黄金时刻环境肖像。把低位太阳直接放在一侧肩后，形成温暖发丝轮廓光、半透明发亮发丝、柔和琥珀色眩光、温和面部补光、奶油般背景分离、长阴影和略带雾气的空气。采用蜂蜜金、珊瑚色和冷蓝阴影，营造温柔开阔的日落氛围。保持同一人物清晰可辨的脸部、发型与表情，并保留服装。让老街、红灯笼和远处海面保持可辨的空间层次，并逐渐融入温暖空气。输出竖版 2:3，保留自然皮肤纹理，不得出现文字、标志或水印。",
+  "source_negative_prompt_zh": "正面正午阳光，冷调平光，脸部高光溢出，不透光头发，人造星芒，浓重橙色皮肤，室内影棚，黑色背景，文字，标志，水印",
+  "sha256": "7eaf0833ea08587939718df361a9a0107ded850f60dfa31df334939dd74d0486",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S054"
+}

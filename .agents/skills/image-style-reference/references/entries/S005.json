@@ -1,0 +1,21 @@
+{
+  "category": "手绘",
+  "slug": "flat-vector",
+  "name": "扁平矢量",
+  "style_prompt_zh": "几何概括造型，清晰剪影，有限色彩平涂，利落边缘，明确图形层级，无复杂材质",
+  "reference_image": "assets/flat-vector.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/flat-vector.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/flat-vector.webp",
+  "source_title": "扁平矢量插画",
+  "source_original_prompt_zh": "将附带照片转换为精致的扁平矢量编辑插画。用清晰几何造型、平滑的贝塞尔式曲线、统一的藏蓝轮廓、简化的矢量面部平面和两种平面阴影色构成腰部以上四分之三侧身肖像，不使用纹理，几乎不使用渐变。在均匀图形化光线下采用青色、珊瑚色、芥末黄、藏蓝和暖米白，并把姿势和表情调整为自信而平静的编辑风格。通过脸型、黑色长发和碎花连衣裙保持她的辨识度，但将包括脸部、眼睛和皮肤在内的整个人物重绘为扁平矢量造型；不得出现摄影质感皮肤或粘贴式写实脸。把街道抽象为矩形、半圆灯笼和一条海面色带。输出竖版 2:3，不得出现文字、标志或水印。",
+  "source_negative_prompt_zh": "摄影质感脸部，粘贴式写实脸，绘画笔触纹理，水彩渗色，照片级写实明暗，复杂渐变，不均匀草稿线，细小装饰细节，嘈杂背景，排版文字，标志，水印",
+  "sha256": "7c6b9b9db1852da7c85819ce6e0d97548ededdc6c03c41440df4616fc54281e2",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S005"
+}

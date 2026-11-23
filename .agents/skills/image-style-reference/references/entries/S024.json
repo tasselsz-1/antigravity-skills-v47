@@ -1,0 +1,21 @@
+{
+  "category": "动漫",
+  "slug": "anime-modern-kv",
+  "name": "现代动画主视觉",
+  "style_prompt_zh": "精细二维动画线稿，干净赛璐璐人物，通透环境色，电影感逆光，层次丰富的绘制背景",
+  "reference_image": "assets/anime-modern-kv.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/anime-modern-kv.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/anime-modern-kv.webp",
+  "source_title": "现代动画电影主视觉",
+  "source_original_prompt_zh": "将附带照片转换为具有电影级细节的当代动画长片主视觉。把四分之三侧身人物置于高耸云层下，使用精细收锋线条、明亮渐变色、迎风飘动的头发、空气透视、准确布料细节、强烈日落逆光，以及天蓝、白色和琥珀色配色。将姿势调整为自然迎风站立，表情调整为安静的希望感。通过脸型、黑色长发和碎花连衣裙保持她的辨识度，但将包括脸部、眼睛和皮肤在内的整个人物，用明确的动画面部结构与上色方式重绘；不得出现摄影质感皮肤或粘贴式写实脸。把街道和海面重新构想为纵深辽阔的绘制全景。输出竖版 2:3，不得出现文字、标志或水印。",
+  "source_negative_prompt_zh": "摄影质感脸部，粘贴式写实脸，平淡光线，天空狭小空洞，复古胶片损伤，粗重复古轮廓，浑浊云层，头发静止，照片级写实皮肤，细节不足，标题文字，标志，水印",
+  "sha256": "6c82bb8fe9277a25b7094be6d0881805811d5c28b9ba10b98b9f79c054311c6e",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S024"
+}

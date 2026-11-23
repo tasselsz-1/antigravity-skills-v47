@@ -1,0 +1,50 @@
+{
+  "id": "S144",
+  "category": "成熟商业·特色工艺",
+  "slug": "commercial-style-tiffany-stained-glass",
+  "name": "慕夏新艺术配蒂芙尼彩绘玻璃（铅条与透光矿石）",
+  "aliases": [
+    "彩色玻璃贴金",
+    "蒂芙尼玻璃",
+    "TIFFANY STAINED GLASS"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "慕夏新艺术优美流线与蒂芙尼彩色拼接玻璃工艺结合；粗重流畅的黑色铅条焊缝分割色块，内部填充具有半透光矿石气泡的彩色玻璃；背光穿透时呈现如宝石般璀璨斑斓的透射光芒，华美神圣，极富装饰美感",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "慕夏新艺术配蒂芙尼彩绘玻璃（铅条与透光矿石）",
+  "source_original_prompt_en": "commercial-style-tiffany-stained-glass",
+  "summary": "黑色铅条与透光宝石玻璃的完美结合，每一块颜色都在发光，华丽至极。",
+  "visual_genes": {
+    "笔": "连续圆润的黑色金属铅条焊缝轮廓，优雅回旋的花草植物曲线",
+    "光": "强烈的漫射背光透射，光芒穿透彩色玻璃使每块颜色自发光",
+    "色": "宝石级高纯度透光色彩：祖母绿、钴蓝、紫晶与琥珀黄交织",
+    "质": "手工玻璃内部微小气泡与水波纹、黑色铅条金属焊接凸起",
+    "镜": "正面装饰性拱券圆窗框式构图，宏大对称而神圣"
+  },
+  "palette": [
+    "#0B132B",
+    "#1C2541",
+    "#3A506B",
+    "#5BC0BE",
+    "#E0A96D"
+  ],
+  "use_cases": [
+    "西幻神女觉醒瞬间",
+    "魔法圣殿宏大穹顶",
+    "奢华宫廷幻想漫剧"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

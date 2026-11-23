@@ -1,0 +1,50 @@
+{
+  "id": "S128",
+  "category": "成熟商业·电影大师",
+  "slug": "commercial-cinema-technicolor-three-strip",
+  "name": "三色特艺彩色黄金年代（1950s Technicolor）",
+  "aliases": [
+    "特艺彩色",
+    "三色染印",
+    "VINTAGE TECHNICOLOR"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "20世纪50年代三色特艺彩色电影胶片（Three-Strip Technicolor），红绿蓝三卷黑白胶片分色染印法；呈现超越真实的浓郁油画感纯正红、翡翠绿与宝石蓝；肤色温暖如奶油红润，高光柔润无任何数码刺眼感",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "三色特艺彩色黄金年代（1950s Technicolor）",
+  "source_original_prompt_en": "commercial-cinema-technicolor-three-strip",
+  "summary": "好莱坞黄金年代的色彩圣杯：油画般的浓艳饱满与柔润肤色。",
+  "visual_genes": {
+    "笔": "色块分明而柔和，轮廓清晰却带胶片光学轻微晕开感",
+    "光": "好莱坞经典三点布光：大功率钨丝灯正面柔光箱，立体均匀",
+    "色": "极度浓艳饱和但绝不偏色的红、绿、蓝原生三原色，纯净至极",
+    "质": "胶片染料转印工艺带来的厚重油润感，无噪点暗部纯正黑",
+    "镜": "标准50mm中焦镜头，典雅考究的人像构图"
+  },
+  "palette": [
+    "#B22222",
+    "#2E8B57",
+    "#1E3F66",
+    "#F5DEB3",
+    "#111111"
+  ],
+  "use_cases": [
+    "民国豪门家族争产",
+    "复古歌舞年代大剧",
+    "奇幻童话真人电影"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

@@ -1,0 +1,50 @@
+{
+  "id": "S125",
+  "category": "成熟商业·电影大师",
+  "slug": "commercial-cinema-zen-wuxia-kinghu",
+  "name": "胡金铨禅意武侠（竹林晨雾与变形宽银幕）",
+  "aliases": [
+    "侠女竹林",
+    "空山灵雨",
+    "KING HU ZEN WUXIA"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "经典邵氏胡金铨古装禅意武侠，35mm变形宽银幕镜头；清晨深山竹林中的垂直光柱穿透浓郁晨雾，人物身着褪色古朴粗麻布衣；京剧亮相式的端正凌厉构图，冷青晨光与自然竹木翠绿，超凡脱俗",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "胡金铨禅意武侠（竹林晨雾与变形宽银幕）",
+  "source_original_prompt_en": "commercial-cinema-zen-wuxia-kinghu",
+  "summary": "中国武侠电影开山立派的视觉基因：竹林、晨雾与宽银幕的完美统一。",
+  "visual_genes": {
+    "笔": "垂直竹竿构成的密集线条阵列，人物衣衫随风扬起硬挺弧线",
+    "光": "朝阳斜穿竹林的硬朗体积光束，地面斑驳光影",
+    "色": "冷青竹绿、苍翠林木、灰白水气、米黄古麻布",
+    "质": "粗粝手织土布纤维、竹节微糙肌理、晨露润泽水光",
+    "镜": "2.39:1 超宽画幅，长焦镜头空间压缩，人物与竹林虚实掩映"
+  },
+  "palette": [
+    "#1B2E1E",
+    "#3F5E4D",
+    "#7A9A7E",
+    "#C2C5A9",
+    "#4A3B32"
+  ],
+  "use_cases": [
+    "硬派传统武侠短剧",
+    "深山古刹隐士出山",
+    "高手竹林轻功追逐"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

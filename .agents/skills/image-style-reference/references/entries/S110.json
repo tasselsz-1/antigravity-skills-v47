@@ -1,0 +1,50 @@
+{
+  "id": "S110",
+  "category": "成熟商业·国风大师",
+  "slug": "commercial-guofeng-maxia-bianjiao",
+  "name": "南宋马夏边角留白（寒江独钓法）",
+  "aliases": [
+    "马一角夏半边",
+    "残山剩水",
+    "MAXIA WUXIA"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "南宋水墨写意，侧锋大斧劈皴刮擦出坚硬岩石与苍劲树木切面；大面积生宣水墨湿晕与极度克制的淡墨留白，人物采用折芦描简练概括；计白当黑，黑白灰三阶分明，冷寂肃穆的东方武侠意境",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "南宋马夏边角留白（寒江独钓法）",
+  "source_original_prompt_en": "commercial-guofeng-maxia-bianjiao",
+  "summary": "中国极简美学巅峰：用大斧劈的刚硬切面与大面积虚空留白制造极致张力。",
+  "visual_genes": {
+    "笔": "侧锋卧笔大斧劈皴，坚决凌厉的拖泥带水皴，人物衣褶折芦描",
+    "光": "高冷漫射逆光，水气烟岚吞没远景，光影与雾气自然融为一体",
+    "色": "纯墨分五色，焦墨定骨，浓墨破块，大片极淡灰与宣纸原白",
+    "质": "粗纤维宣纸吸水渗化，枯墨飞白干擦，浓墨结晶漆亮",
+    "镜": "边角构图，主体偏居一隅，三分之二以上留白为虚空烟波"
+  },
+  "palette": [
+    "#0D0D0D",
+    "#363636",
+    "#8A8A8A",
+    "#E3DEC3",
+    "#4A3B32"
+  ],
+  "use_cases": [
+    "顶尖剑客对决",
+    "孤胆复仇江湖短剧",
+    "道家禅意顿悟转场"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

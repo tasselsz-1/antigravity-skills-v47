@@ -1,0 +1,6 @@
+interface:
+  display_name: "视频复刻总控（V4.7 按棒解耦）"
+  short_description: "视频复刻 V4.7 轻量总控路由器，按状态机直达 P1/P2/P3/P4/Fix 独立棒次 Skill"
+  default_prompt: "按 $video-recreation 查 phase-status 并路由对应棒次独立 Skill。"
+policy:
+  allow_implicit_invocation: true

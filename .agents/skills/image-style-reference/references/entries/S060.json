@@ -1,0 +1,21 @@
+{
+  "category": "传统",
+  "slug": "madhubani",
+  "name": "马杜巴尼民间画",
+  "style_prompt_zh": "双重轮廓线，平面化形体，几何与植物纹样，鲜明有限配色，有序重复节奏，主体易辨",
+  "reference_image": "assets/madhubani.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/madhubani.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/madhubani.webp",
+  "source_title": "马杜巴尼画",
+  "source_original_prompt_zh": "把附上的照片转换成一幅尊重传统的密提拉绘画，使用双线轮廓和平涂天然颜料红、黄、绿、靛蓝、黑色与纸张奶油色，并在封闭区域内填满条纹、圆点、交叉线、鱼、鸟、莲花瓣和叶片。让全身人物正面站立，双脚分开，双手对称地拿着一根开花枝条，风格化的大眼睛平静地注视观者。不得塑造光线或纵深。仅通过脸型、黑色长发图案和花卉服装线索保留人物的可辨识特征，但要用密集的图案线条与色彩重绘包括脸部、眼睛和皮肤在内的每个部分；不得出现摄影质感皮肤或粘贴的写实面孔。均匀填满背景，但不要挤压脸部空间。输出竖版 2:3，不得有文字或水印。",
+  "source_negative_prompt_zh": "摄影质感面孔，粘贴的写实面孔，单一纤细轮廓，空荡极简背景，写实人体明暗，平滑渐变，油画纹理，三维透视，笼统曼荼罗，服装戏仿，现代文字，签名，水印",
+  "sha256": "b5de9f8364f1e1cb920c960d26f972aa8b17b35e95792acfd6646d5eabdf6b61",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S060"
+}

@@ -1,0 +1,21 @@
+{
+  "category": "手绘",
+  "slug": "ink-line-minimal",
+  "name": "极简单线画",
+  "style_prompt_zh": "流畅连续线条概括主体，少量关键轮廓，大面积负空间，极少色彩点缀，无密集阴影",
+  "reference_image": "assets/ink-line-minimal.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/ink-line-minimal.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/ink-line-minimal.webp",
+  "source_title": "极简单线画",
+  "source_original_prompt_zh": "将附带照片转换为象牙白底上的极简连续线肖像。用一条暖黑色等粗线贯穿面部轮廓、眼睛、鼻子、嘴巴、发型轮廓、肩部和托特包肩带，另外只添加两笔简短辅助线。移除明暗、填色、排线和纹理；让负空间定义优雅的腰部以上四分之三侧身姿势与平静简化的表情。通过脸型、黑色长发和碎花连衣裙轮廓保持她的辨识度，但将包括脸部、眼睛和皮肤在内的整个人物，重绘为稀疏线条和空白纸面；不得出现摄影质感皮肤或粘贴式写实脸。将街道简化为三处几何线索。输出竖版 2:3，不得出现文字、签名、边框或水印。",
+  "source_negative_prompt_zh": "摄影质感脸部，粘贴式写实脸，多重草稿线，粗厚笔刷色块，彩色填充，渐变明暗，写实纹理，细致建筑，封闭装饰边框，排版文字，签名，水印",
+  "sha256": "956c602a7c7cf31f39132777666bad05efbdbf13326e2f329063a0fd99c4e377",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S004"
+}

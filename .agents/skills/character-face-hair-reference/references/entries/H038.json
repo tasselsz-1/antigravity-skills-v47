@@ -1,0 +1,33 @@
+{
+  "id": "H038",
+  "type": "hairstyle",
+  "group": "男性 · 古风束冠与史诗奇幻",
+  "gender": "男性",
+  "era": "历史/清雅谋士",
+  "name": "幅巾/纶巾包发配斑白双鬓",
+  "en_name": "Historical Scholar Kerchief with Graying Temples",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "5. 发型 / 发色",
+  "silhouette_features": "素布幅巾或纶巾包覆头顶发髻 + 露出清癯额骨与斑白两鬓",
+  "formula_slots_ref_only": {
+    "color": "乌黑夹杂自然霜白两鬓",
+    "texture": "干爽细瘦略显稀疏发丝",
+    "noun": "古风谋士幅巾包发",
+    "motion": "两鬓斑白碎丝微现，巾带在脑后轻垂"
+  },
+  "prompt_en_ref_only": "traditional Chinese historical scholar cloth kerchief (Funjin) wrapping topknot, exposed lean forehead and salt-and-pepper temples",
+  "prompt_zh_ref_only": "以素色麻布幅巾规整包覆头顶发髻，露出清瘦思虑的额头与斑白双鬓，高度贴合三国两宋真实谋士形象",
+  "suggested_bones": [
+    "B018",
+    "B020",
+    "B024"
+  ],
+  "svg_file": "assets/hairs/H038.svg",
+  "svg_params": {
+    "shape": "ancient_m_kerchief",
+    "accent": "#475569",
+    "gender": "男性"
+  }
+}

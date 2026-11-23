@@ -1,0 +1,56 @@
+{
+  "id": "B016",
+  "type": "bone_structure",
+  "group": "动物系防同脸美型",
+  "name": "鹤系清逸仙姿骨相",
+  "en_name": "Crane-Like Ethereal & Noble Bone Structure",
+  "aesthetic_tier": "美型/仙侠/国风",
+  "usage_policy": "reference_only_do_not_use_directly",
+  "usage_warning_zh": "⚠️ 仅作参考 · 不可直接使用（须结合剧本身份、时代背景与画风按 7 维人物设计公式原创改写）",
+  "usage_warning_en": "REFERENCE ONLY — DO NOT USE DIRECTLY. Rewrite originally via the 7-dimension character design formula.",
+  "formula_dimension": "3. 面部细节特征",
+  "proportions": {
+    "upper": 0.32,
+    "mid": 0.36,
+    "lower": 0.32,
+    "jaw_angle_deg": 125,
+    "profile": "修长舒朗"
+  },
+  "anatomical_landmarks": [
+    "修长天庭与高颅顶",
+    "淡雅平长眉眼",
+    "清峻微直仙骨下颌"
+  ],
+  "formula_slots_ref_only": {
+    "eye": "清长丹凤眼或静谧细杏眼，留白澄澈",
+    "brow": "淡远平展眉骨，气韵舒朗",
+    "nose": "鼻梁修直如玉箸、收尾清雅",
+    "lips": "淡色薄润秀唇，神情超然",
+    "jaw": "修长颈线承托清瘦流畅下颌，仙风鹤骨"
+  },
+  "prompt_en_ref_only": "crane-like ethereal slender bone structure, high cranial crown, serene elongated eyes, refined straight nose, graceful poised jawline",
+  "prompt_zh_ref_only": "高颅顶配清瘦修长骨相，眉眼舒朗淡雅，鼻若玉箸，整体散发出超然脱俗的鹤骨仙姿",
+  "suitable_roles": [
+    "仙侠师尊/仙君",
+    "隐世琴师",
+    "魏晋风流名士",
+    "清高神明"
+  ],
+  "linked_anatomy_plates": [
+    "A001",
+    "A005"
+  ],
+  "anti_copy_note": "必须配合修长脖颈、宽肩削体态与留白布光，忌油腻浓眉大眼。",
+  "svg_file": "assets/bones/B016.svg",
+  "svg_params": {
+    "face_w": 46,
+    "cheek_w": 47,
+    "jaw_w": 34,
+    "chin_y": 150,
+    "chin_w": 13,
+    "brow_depth": 4,
+    "mid_ratio": 0.36,
+    "accent": "#0284c7",
+    "tag": "鹤系清逸"
+  }
+}

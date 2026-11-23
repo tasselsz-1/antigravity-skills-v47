@@ -1,0 +1,35 @@
+{
+  "id": "S105",
+  "category": "商业画风·特殊媒介",
+  "slug": "commercial-ink-experiment",
+  "name": "水墨实验",
+  "aliases": [
+    "INK EXPERIMENT"
+  ],
+  "style_prompt_zh": "实验水墨，受控泼墨、飞白和大面积洁净留白，笔势连贯，墨色浓淡层次清楚，笔迹服务形体，不出现无关污点",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/styles.html",
+  "source_snapshot": "references/sources/commercial-2026-11-01/styles.html",
+  "source_title": "水墨实验",
+  "source_original_prompt_en": "ink wash, splashed ink, dry brush, negative space",
+  "summary": "泼墨、飞白、大量留白，一笔成型",
+  "use_cases": [
+    "艺术短片",
+    "诗意段落"
+  ],
+  "reference_coordinates": "《山水情》《小蝌蚪找妈妈》",
+  "source_position": "exp",
+  "source_position_note": "源作者的主流/细分/实验判断，未经独立市场数据验证。",
+  "related_entries": [
+    "S017",
+    "S064"
+  ],
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页未提供图片，代表作品名称仅作来源坐标，不等于已查看作品。",
+  "prompt_status": "根据源页特点通用化改写，未做出图实测。",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。",
+  "optional_effects_note": "颗粒、脏污、沙尘、旧化、光斑与抖动不默认继承；规则网点、像素与必要媒介纹理可受控保留。",
+  "license_note": "用户指定本地文本页面；未发现明确授权声明，不沿用其他来源的CC0许可。",
+  "sha256": null,
+  "image_size": null
+}

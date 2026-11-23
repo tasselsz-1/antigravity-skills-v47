@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 190" width="320" height="190">
+  <defs>
+    <linearGradient id="bg_B021" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="bone_B021" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a16207" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#a16207" stop-opacity="0.08"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="190" rx="12" fill="url(#bg_B021)"/>
+  <g stroke="#334155" stroke-width="0.7" stroke-dasharray="3,3" opacity="0.75">
+    <line x1="24" y1="48.1" x2="296" y2="48.1"/>
+    <line x1="24" y1="80.3" x2="296" y2="80.3"/>
+    <line x1="24" y1="119.4" x2="296" y2="119.4"/>
+    <line x1="24" y1="147.0" x2="296" y2="147.0"/>
+    <line x1="98" y1="24" x2="98" y2="162"/>
+  </g>
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#94a3b8">
+    <text x="10" y="51.1">上</text>
+    <text x="10" y="83.3">眉</text>
+    <text x="10" y="122.4">鼻</text>
+    <text x="10" y="150.0">颏</text>
+  </g>
+  <!-- Front Contour -->
+  <path d="M 98,32 C 138.32,32 154,50 151.76,80.3 C 156,96.2 156,110.2 148,133.2 Q 139.0,143.0 110.0,147.0 L 86.0,147.0 Q 57.0,143.0 48,133.2 C 40,110.2 40,96.2 44.24,80.3 C 42,50 57.68,32 98,32 Z" fill="url(#bone_B021)" stroke="#a16207" stroke-width="2"/>
+  <!-- Brow ridge & Zygomatic landmark plane -->
+  <path d="M 55.4,80.3 Q 98,75.9 140.6,80.3" fill="none" stroke="#e2e8f0" stroke-width="1.4" opacity="0.85"/>
+  <path d="M 44.6,102.2 L 65.5,133.2 M 151.4,102.2 L 130.5,133.2" stroke="#a16207" stroke-width="1.1" stroke-dasharray="2,2" opacity="0.85"/>
+  <!-- Eyes & Nose & Lips landmarks -->
+  <ellipse cx="82.0" cy="91.2" rx="8" ry="3.6" fill="none" stroke="#cbd5e1" stroke-width="1.2"/>
+  <ellipse cx="114.0" cy="91.2" rx="8" ry="3.6" fill="none" stroke="#cbd5e1" stroke-width="1.2"/>
+  <path d="M 98,82.3 L 98,119.4 M 92,118.4 Q 98,122.4 104,118.4" fill="none" stroke="#cbd5e1" stroke-width="1.2"/>
+  <path d="M 87,129.3 Q 98,132.3 109,129.3" fill="none" stroke="#cbd5e1" stroke-width="1.2"/>
+  <!-- Key bone landmark dots -->
+  <g fill="#f8fafc" stroke="#a16207" stroke-width="1">
+    <circle cx="41.0" cy="102.2" r="2.4"/>
+    <circle cx="155.0" cy="102.2" r="2.4"/>
+    <circle cx="48.0" cy="133.2" r="2.4"/>
+    <circle cx="148.0" cy="133.2" r="2.4"/>
+    <circle cx="98" cy="147.0" r="2.4"/>
+  </g>
+  <!-- Lateral Profile -->
+  <path d="M 226,32 C 252,32 259.2,48.1 263.2,80.3 L 259.7,91.2 L 273.0,116.4 L 263.2,121.4 Q 267.2,129.3 262.2,137.3 Q 266.6,141.0 263.6,147.0 L 224,139.2 L 218,106.2 C 194,102.2 194,50 226,32 Z" fill="url(#bone_B021)" stroke="#a16207" stroke-width="1.8"/>
+  <circle cx="224" cy="139.2" r="2.5" fill="#fbbf24"/>
+  <text x="200" y="153.2" font-family="monospace" font-size="8.5" fill="#fbbf24">110°</text>
+  <!-- Labels & Warning -->
+  <rect x="10" y="8" width="52" height="18" rx="4" fill="#a16207" opacity="0.9"/>
+  <text x="36" y="20" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#ffffff">B021</text>
+  <text x="70" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="600" fill="#e2e8f0">历史·帝王</text>
+  <rect x="178" y="8" width="132" height="17" rx="4" fill="#7f1d1d" stroke="#ef4444" stroke-width="0.8"/>
+  <text x="244" y="19.5" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8.2" font-weight="600" fill="#fecaca">仅作参考 · 不可直接使用</text>
+  <text x="98" y="180" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#94a3b8">正面骨点比例示意图</text>
+  <text x="234" y="180" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#94a3b8">侧颜折角示意</text>
+</svg>

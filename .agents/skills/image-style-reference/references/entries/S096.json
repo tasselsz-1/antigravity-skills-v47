@@ -1,0 +1,50 @@
+{
+  "id": "S096",
+  "category": "成熟商业·欧美与跨文化",
+  "slug": "commercial-ligne-claire",
+  "name": "墨比斯法比清线派（Ligne Claire 等宽针管线与零渐变纯色平涂法）",
+  "aliases": [
+    "法比清线派",
+    "LIGNE CLAIRE"
+  ],
+  "style_prompt_zh": "欧洲法比清线派（Ligne Claire，墨比斯 Moebius / 埃尔热工艺）大师画法；全场采用绝对清晰、粗细均匀闭合的精密针管笔墨线勾勒人物、奇幻生物与宏大建筑机械；彻底摒弃素描排线与柔和渐变过渡，完全依靠高明度、高审美调和的纯净平面色块与少量点状纹理构建无与伦比的空间纵深",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/styles.html",
+  "source_snapshot": "references/sources/commercial-2026-11-01/styles.html",
+  "source_title": "法比清线派",
+  "source_original_prompt_en": "ligne claire, uniform line weight, flat colors, clear staging",
+  "summary": "漫画大师墨比斯封神技法：等宽清线 + 零渐变高雅平涂，干净高级到极致。",
+  "use_cases": [
+    "高概念科幻奇幻漫剧",
+    "异星球冒险探索",
+    "高审美文化与商业品牌视觉"
+  ],
+  "reference_coordinates": "《丁丁历险记》",
+  "source_position": "sub",
+  "source_position_note": "源作者的主流/细分/实验判断，未经独立市场数据验证。",
+  "related_entries": [],
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页未提供图片，代表作品名称仅作来源坐标，不等于已查看作品。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前任务决定。",
+  "optional_effects_note": "颗粒、脏污、沙尘、旧化、光斑与抖动不默认继承；规则网点、像素与必要媒介纹理可受控保留。",
+  "license_note": "用户指定本地文本页面；未发现明确授权声明，不沿用其他来源的CC0许可。",
+  "sha256": null,
+  "image_size": null,
+  "tier": "mature_commercial",
+  "original_short_name": "法比清线派",
+  "visual_genes": {
+    "笔": "等宽、连续、闭合且极度精准的钢笔/针管笔清线，岩石与沙丘辅以标志性短点线",
+    "光": "晴朗高透的无影阳光或超现实平面光，阴影同样是边界锐利的纯色色块",
+    "色": "墨比斯标志性高雅粉彩与荧光撞色：珊瑚粉、松石绿、沙漠鹅黄与深空钴蓝",
+    "质": "绝对干净的平面印刷色感，无任何油画厚涂或CG油腻高光，清爽至极",
+    "镜": "深焦大广角全景，从近景人物一直清晰延伸到远景奇幻巨构建筑"
+  },
+  "palette": [
+    "#1D3557",
+    "#457B9D",
+    "#A8DADC",
+    "#F4A261",
+    "#E76F51"
+  ]
+}

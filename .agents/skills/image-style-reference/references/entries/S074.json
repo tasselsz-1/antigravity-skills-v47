@@ -1,0 +1,57 @@
+{
+  "id": "S074",
+  "category": "成熟商业·欧美与跨文化",
+  "slug": "cinematic-kells",
+  "name": "汤姆·摩尔凯尔经秘境（平面几何螺旋结纹与羊皮纸金箔四色平涂法）",
+  "aliases": [
+    "凯尔经",
+    "银幕画风志14",
+    "KELLS"
+  ],
+  "style_prompt_zh": "爱尔兰卡通沙龙（《凯尔经的秘密》《狼行者》）平面美学，完全抛弃西方三维透视，将森林、建筑与人物转化为几何化交织的凯尔特螺旋线与对称分割平面；采用米黄、翡翠墨绿、朱红与闪烁金箔四色封闭系统，在细腻羊皮纸肌理上靠色块叠压建立奇幻空间",
+  "reference_image": null,
+  "source_page": "http://127.0.0.1:8766/国漫电影感画风清单.html",
+  "source_snapshot": "references/sources/cinematic-2026-10-30/国漫电影感画风清单.html",
+  "source_title": "凯尔经",
+  "source_original_prompt_zh": "凯尔经手抄本风格动画，凯尔特结与螺旋纹样，羊皮纸与金箔，米黄墨绿朱红四色，装饰性平面构图，圆形框式构图，手绘抖动线条，2.39:1，电影感",
+  "source_original_prompt_en": "book of kells manuscript style animation, celtic knots and spirals, parchment and gold leaf, beige deep green and vermilion palette, decorative flat composition, circular framed layout, hand-drawn wobbly lines, 2.39:1, cinematic",
+  "source_negative_prompt_zh": "三维，写实光影，霓虹，高对比黑白，现代城市",
+  "visual_genes": {
+    "笔": "装饰性线描，凯尔特结与螺旋，几何化",
+    "光": "平面光，金箔反光，无写实阴影",
+    "色": "米黄、墨绿、朱红、金，四色体系",
+    "质": "羊皮纸、金箔、颜料颗粒、手绘抖动",
+    "镜": "平面化构图，圆形/框式构图，装饰边框"
+  },
+  "palette": [
+    "#1E2A1C",
+    "#3E5B3A",
+    "#8C2F1F",
+    "#D9B45B",
+    "#EDE0C4"
+  ],
+  "use_cases": [
+    "手抄本内页",
+    "森林迷宫",
+    "传说开场"
+  ],
+  "tags": [
+    "欧美",
+    "手绘",
+    "装饰",
+    "神话",
+    "金箔"
+  ],
+  "summary": "爱尔兰手抄本的美学：几何纹样、螺旋结、金箔与羊皮纸。画面被边框和纹样填满，却在中央留出神圣的空白。它适合神话、传说与故事中的故事。",
+  "reference_coordinates": "参考坐标 · 凯尔经的秘密 · 海洋之歌",
+  "sha256": null,
+  "image_size": null,
+  "visual_review": "无来源样图，仅文字描述；未完成视觉验证。",
+  "reference_limitations": "源页面未提供此画风样图；不得宣称已按图参考。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。",
+  "optional_effects_note": "羊皮纸旧化、装饰外框与宗教符号不默认继承。",
+  "license_note": "源页注明样图来自公开模型示例，版权归原作者，仅用于本地画风观察；未核实图片或模型商业许可。",
+  "tier": "mature_commercial",
+  "original_short_name": "凯尔经"
+}

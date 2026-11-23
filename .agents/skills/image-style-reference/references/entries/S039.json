@@ -1,0 +1,21 @@
+{
+  "category": "手工",
+  "slug": "paper-cut",
+  "name": "红色剪纸",
+  "style_prompt_zh": "单张红纸剪刻，相连的实体与负形，明确轮廓，镂空纹样有序，简洁背景，纸边清晰",
+  "reference_image": "assets/paper-cut.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/paper-cut.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/paper-cut.webp",
+  "source_title": "红色剪纸",
+  "source_original_prompt_zh": "把附上的照片转换成一幅传统单色红色剪纸作品，平整装裱在干净的暖白色背景上。让她呈现严格侧面的全身剪影，下巴保持水平，一只手轻轻拿着一朵花，长发延伸并融入对称的圆形边框。所有特征都由一张连续剪裁的纸构成：醒目的外轮廓、相连的桥接结构、镜像藤蔓、花朵镂空和剪刀裁出的利落负形空间，边缘带有轻微手工纸纤维。通过额头、鼻子与下巴的侧面轮廓、发丝曲线和碎花连衣裙图案保留她的可辨识特征，但要把包括脸部、眼睛和皮肤在内的整个人物重新剪成实心红纸形状；不得出现摄影质感皮肤或粘贴的写实面孔。输出竖版 2:3，不得有文字、标志或水印。",
+  "source_negative_prompt_zh": "摄影质感面孔，粘贴的写实面孔，正面肖像，多种纸张颜色，彼此断开的悬浮纸片，渐变，绘制阴影，柔软模糊边缘，写实皮肤，文字，标志，水印",
+  "sha256": "d578708ff5f5d29d77bebf148a086313f4a442fb7d2bf58fc3d3d884944cf7a5",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S039"
+}

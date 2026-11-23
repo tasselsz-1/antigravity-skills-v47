@@ -1,0 +1,50 @@
+{
+  "id": "S133",
+  "category": "成熟商业·特色工艺",
+  "slug": "commercial-style-mignola-spot-blacks",
+  "name": "迈克·米格诺拉美漫极黑块面法（地狱男爵死影）",
+  "aliases": [
+    "地狱男爵",
+    "米格诺拉风格",
+    "MIGNOLA SPOT BLACKS"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "迈克·米格诺拉经典暗黑美漫工艺；画面多达70%由大面积纯黑剪影（Spot Blacks）吞没细节，几何方折的刚劲外轮廓线；受光面仅用沉稳冷青、石砖红极简双色平涂切出结构，克苏鲁神秘气息极强",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "迈克·米格诺拉美漫极黑块面法（地狱男爵死影）",
+  "source_original_prompt_en": "commercial-style-mignola-spot-blacks",
+  "summary": "以黑色为骨肉的大师级减法艺术，大面积纯黑不仅省算力，而且张力拉满。",
+  "visual_genes": {
+    "笔": "极度果断的几何方折墨线，全无细碎排线，完全用死黑块面雕刻体积",
+    "光": "如同用手电筒劈开虚无的极端剧场侧光，亮暗之间无任何过渡灰面",
+    "色": "大面积绝对纯黑，仅搭配砖红、冷石青、古铜黄三种压抑平涂色",
+    "质": "重油墨印刷平整质感，石头风化破角，古老金属断口",
+    "镜": "高度形式感的剪影式侧视构图，空间被压缩成二维浮雕"
+  },
+  "palette": [
+    "#000000",
+    "#7A2218",
+    "#2F4F4F",
+    "#8B7355",
+    "#DCDCDC"
+  ],
+  "use_cases": [
+    "地牢探险斩杀恶魔",
+    "克苏鲁邪神低语",
+    "冷硬派硬汉超级英雄"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

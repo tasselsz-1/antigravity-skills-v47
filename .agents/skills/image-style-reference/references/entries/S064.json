@@ -1,0 +1,63 @@
+{
+  "id": "S064",
+  "category": "成熟商业·国风大师",
+  "slug": "cinematic-ink",
+  "name": "武侠狂草写意水墨（生宣泼墨枯笔飞白与一点朱砂破黑法）",
+  "aliases": [
+    "写意水墨",
+    "银幕画风志04",
+    "FREEHAND INK"
+  ],
+  "style_prompt_zh": "东方武侠狂草写意水墨画法，高速运笔的泼墨、枯笔飞白与断续劲线相结合，笔断意连；墨分五色（焦、浓、重、淡、清）在生宣纸上自然渗化出水痕与干湿浓淡对比，大面积洁净留白计白当黑，全场仅用一处高饱和朱砂红点睛破开黑白死局",
+  "reference_image": "assets/cinematic/S064-ink.jpg",
+  "source_page": "http://127.0.0.1:8766/国漫电影感画风清单.html",
+  "source_snapshot": "references/sources/cinematic-2026-10-30/国漫电影感画风清单.html",
+  "source_title": "写意水墨",
+  "source_original_prompt_zh": "写意水墨武打，泼墨飞白枯笔，墨分五色，生宣渗化水痕，朱砂一点，高速运镜残影，强烈黑白对比，大面积留白，纸纤维质感，2.39:1，电影感",
+  "source_original_prompt_en": "freehand ink wash martial arts, splashed ink with dry flying-white brush strokes, five tones of black, raw xuan paper bleeding and water stains, a single touch of cinnabar, high-speed motion blur afterimages, stark black-and-white contrast, large negative space, paper fiber texture, 2.39:1, cinematic",
+  "source_negative_prompt_zh": "彩色，写实渲染，厚涂，三维，渐变光，过度细节",
+  "visual_genes": {
+    "笔": "泼墨、飞白、枯笔，速度感强，笔断意连",
+    "光": "高对比黑白，局部朱红点睛，几乎不用灰",
+    "色": "墨分五色，宣纸白为底，朱砂为唯一彩色",
+    "质": "生宣渗化、水痕、纸纤维，墨色有干湿浓淡",
+    "镜": "运动镜头与残影，冲撞式构图，大面积留白"
+  },
+  "palette": [
+    "#111111",
+    "#3A3A3A",
+    "#7A7A7A",
+    "#E9E4D8",
+    "#B33A2B"
+  ],
+  "use_cases": [
+    "竹林对决",
+    "雨夜追殺",
+    "山水空镜"
+  ],
+  "tags": [
+    "水墨",
+    "写意",
+    "武打",
+    "留白",
+    "飞白"
+  ],
+  "summary": "用最少的墨表达最快的动作：泼墨、飞白、枯笔，笔断意连。黑白之间只留一点朱砂，动静全靠运镜与留白对撞。它天生适合武打，因为没画完的地方正好留给观众想象。",
+  "reference_coordinates": "参考坐标 · 雾山五行 · 山水情",
+  "sha256": "c74d8c3b7149a256a784126d940e93f33367748625bef184a0f0def30020cf5d",
+  "image_size": [
+    760,
+    950
+  ],
+  "visual_review": "已查看8图总览：未见明显水印、签名或平台标识；实际调用前需看单张原图并复核。",
+  "reference_limitations": "样图为水墨人像，笔性可参考；并非武打动作或电影镜头样张。",
+  "prompt_status": "由旧库高价值条目提拔重命名，已补齐完整五维画法工序",
+  "adaptation_note": "仅复用笔触、光影、配色、材质与空间组织；新任务决定人物、动作、场景、镜头与画幅。",
+  "optional_effects_note": "水痕、纸纤维与运动残影按需求启用，默认不额外加脏污。",
+  "license_note": "源页注明样图来自公开模型示例，版权归原作者，仅用于本地画风观察；未核实图片或模型商业许可。",
+  "source_image_page": "https://civitai.com/models/231966",
+  "source_sample_prompt_zh": "一张电影静帧：竹林对决的一瞬。写意水墨，泼墨和飞白，枯笔擦出速度感，笔断意连。墨分五色，宣纸做底，朱砂只点一处。生宣渗化、水痕、纸纤维的质感都保留。高对比黑白，大面积留白。运动镜头的残影，冲撞式构图，2.39:1。",
+  "source_sample_caption": "氛围参考：水墨人物，笔性接近",
+  "tier": "mature_commercial",
+  "original_short_name": "写意水墨"
+}

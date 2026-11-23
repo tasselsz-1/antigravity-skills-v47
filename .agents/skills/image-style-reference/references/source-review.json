@@ -1,0 +1,16 @@
+[
+  {
+    "id": "S032",
+    "excluded_source": "https://aistyleatlas.com/zh-CN/styles/clay-render.html",
+    "excluded_sha256": "0bfde8bb0fc7e44d8cbec29e60ee2e7dc8a0037dfca1d7bdff2aacd5822f823b",
+    "reason": "来源图片与 S031 完全相同且不表达黏土材质",
+    "replacement_source": "https://aistyleatlas.com/zh-CN/styles/balloon-inflatable.html"
+  },
+  {
+    "id": "S058",
+    "excluded_source": "https://aistyleatlas.com/zh-CN/styles/egyptian-tomb-painting.html",
+    "excluded_sha256": "ba61ef820b46ac9506e8e7303371098d700f3832aaa6f66e48ed080e074f7567",
+    "reason": "来源图含象形文字性符号，不符合无标识参考要求",
+    "replacement_source": "https://aistyleatlas.com/zh-CN/styles/thai-puppet-theatre.html"
+  }
+]

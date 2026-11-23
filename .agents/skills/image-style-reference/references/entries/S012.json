@@ -1,0 +1,21 @@
+{
+  "category": "手绘",
+  "slug": "ballpoint-pen-crosshatch",
+  "name": "圆珠笔排线",
+  "style_prompt_zh": "单色圆珠笔，细密交叉排线，依靠线条疏密建立明暗，顺应形体的笔触，无大面积涂抹",
+  "reference_image": "assets/ballpoint-pen-crosshatch.webp",
+  "source_page": "https://aistyleatlas.com/zh-CN/styles/ballpoint-pen-crosshatch.html",
+  "source_image": "https://aistyleatlas.com/assets/img/styles/ballpoint-pen-crosshatch.webp",
+  "source_title": "圆珠笔交叉排线",
+  "source_original_prompt_zh": "将附带照片转换为绘制在浅纹理笔记本纸上的单色藏蓝圆珠笔交叉排线肖像。每个明度都通过层叠油墨线条构建：亮部使用稀疏平行线，阴影使用紧密多向交叉排线，头发周围使用环绕轮廓线，并保留细微断墨和偶发深色积墨。采用清晰桌面照明和居中的腰部以上姿势，配以专注闭口表情。通过脸型、黑色长发和碎花连衣裙图案保持她的辨识度，但将包括脸部、眼睛和皮肤在内的整个人物，只用滚珠油墨线条重绘；不得出现摄影质感皮肤或粘贴式写实脸。把街道简化为稀疏线性骨架。使用一种墨色输出竖版 2:3，不得出现书写内容、签名或水印。",
+  "source_negative_prompt_zh": "摄影质感脸部，粘贴式写实脸，石墨明暗，炭笔擦痕，毛笔水墨晕染，实心填充阴影，多色笔，平滑数字渐变，矢量线稿，马克笔色块，手写字，签名，水印",
+  "sha256": "6da76e65be3f56e590c7cfd1e988a1417bc97e9b7b3f717139d422f6b7e6e37e",
+  "image_size": [
+    1024,
+    1536
+  ],
+  "visual_review": "已检查总览：未见明显水印、签名或平台标识；实际调用前仍需查看原图。",
+  "prompt_status": "根据公开图鉴特征改写为通用画风模块，未做本地出图实测",
+  "adaptation_note": "仅借用媒介、线条、设色、材质与光影；不继承示例人物、姿势、服装、背景、文字、颗粒及比例。",
+  "id": "S012"
+}

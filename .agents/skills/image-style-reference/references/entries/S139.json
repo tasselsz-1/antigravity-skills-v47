@@ -1,0 +1,50 @@
+{
+  "id": "S139",
+  "category": "成熟商业·特色工艺",
+  "slug": "commercial-style-laika-stopmotion-fabric",
+  "name": "莱卡定格动画（真实织物缝线与微距摄影景深）",
+  "aliases": [
+    "鬼妈妈定格",
+    "莱卡工作室",
+    "LAIKA STOPMOTION"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "莱卡工作室（Laika）顶级定格动画工艺；人物身着真实手工微型缝纫布料，粗纺毛线与织物经纬纤维清晰可见；哑光树脂人偶带有微小机械替换面具微缝隙，微缩实体摄影棚真实微型灯具打光，浅景深虚化极具触感",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "莱卡定格动画（真实织物缝线与微距摄影景深）",
+  "source_original_prompt_en": "commercial-style-laika-stopmotion-fabric",
+  "summary": "彻底摆脱CG虚拟感：用真实微型面料经纬和定格摄影打光唤醒观众的指尖触感。",
+  "visual_genes": {
+    "笔": "实体微缩雕塑形体，棱角分明的造型风格，真实材料接缝",
+    "光": "微缩摄影棚真实定向聚光灯，投射出硬朗真实的实体阴影",
+    "色": "浓郁而略带暗沉的童话色调：墨蓝、芥末绿、酒红与旧羊毛白",
+    "质": "粗织羊毛、真皮纽扣、粗糙纸模、微小指纹压痕与树脂哑光",
+    "镜": "物理微距镜头特有的极浅景深，焦外背景呈现真实物理光斑"
+  },
+  "palette": [
+    "#17202A",
+    "#2C3E50",
+    "#7D6608",
+    "#922B21",
+    "#E5E7E9"
+  ],
+  "use_cases": [
+    "奇幻暗黑童话短剧",
+    "微缩世界冒险寓言",
+    "差异化极高完播率短视频"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}

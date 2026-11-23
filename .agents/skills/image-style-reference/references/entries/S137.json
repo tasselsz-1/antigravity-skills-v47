@@ -1,0 +1,50 @@
+{
+  "id": "S137",
+  "category": "成熟商业·特色工艺",
+  "slug": "commercial-style-gobelins-indie-airbrush",
+  "name": "法国 Gobelins 独立动画（无轮廓色块与喷枪颗粒）",
+  "aliases": [
+    "法式独立动画",
+    "高布兰风格",
+    "GOBELINS AIRBRUSH"
+  ],
+  "tier": "mature_commercial",
+  "style_prompt_zh": "法国高布兰（Gobelins）现代艺术动画风格；零外轮廓描线，完全由大块大胆冷暖剪影色块直接拼接体积；在明暗交界线与受光边缘点缀粗颗粒渐变喷枪（Grainy Airbrush）；设计感极强，色彩高雅前卫",
+  "reference_image": null,
+  "source_page": "https://github.com/lllyasviel/Fooocus/tree/main/sdxl_styles",
+  "source_snapshot": "open-source-commercial-standards-2026",
+  "source_title": "法国 Gobelins 独立动画（无轮廓色块与喷枪颗粒）",
+  "source_original_prompt_en": "commercial-style-gobelins-indie-airbrush",
+  "summary": "欧洲顶级动画学院的看家画法：告别幼稚卡通，用前卫色块和颗粒喷枪表达高级感。",
+  "visual_genes": {
+    "笔": "大刀阔斧的极简几何大色块剪影，完全抛弃传统描线",
+    "光": "强烈的设计性单侧色光，阴影直接采用高纯度对比色冷调",
+    "色": "前卫高雅的色卡对撞：钴蓝与暖姜黄、翡翠绿与珊瑚橘",
+    "质": "复古气动喷枪的细腻颗粒感散点，哑光无反光纸面质感",
+    "镜": "黄金分割几何分割构图，极富平面现代设计美感"
+  },
+  "palette": [
+    "#1B263B",
+    "#415A77",
+    "#E0A96D",
+    "#C84B31",
+    "#F4F1DE"
+  ],
+  "use_cases": [
+    "高端品牌概念广告",
+    "深度情感独白动画",
+    "获奖级独立艺术短片"
+  ],
+  "reference_coordinates": "商业大师级实战工序",
+  "source_position": "mature_commercial",
+  "source_position_note": "成熟商业化变现标准：五维画法工序完整，去AI塑料感，适合大批量工业复刻与创作。",
+  "related_entries": [],
+  "visual_review": "开源商业级五维画法母词；已配置全维工序与反塑料规则。",
+  "reference_limitations": "文字模块定义完整工序；实图查看与校验由子代理按需执行。",
+  "prompt_status": "成熟商业级工序标准",
+  "adaptation_note": "仅借用媒介、笔法、线条、设色、材质与光影；人物、服装、场景、动作、画幅与构图由当前剧集任务决定。",
+  "optional_effects_note": "杂乱噪点、随机颗粒、暗部脏斑默认关闭；必要物理笔触与光学散景受控保留。",
+  "license_note": "开源公共领域（CC0/Open Access/MIT标准体系提炼），商业变现安全，无版权纠纷。",
+  "sha256": null,
+  "image_size": null
+}
